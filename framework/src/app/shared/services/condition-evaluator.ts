@@ -5,6 +5,7 @@ import {StoryState} from './story-state';
 import {Stats} from '../enums/stats';
 import {GameItems} from '../enums/game-items';
 import {NpcService} from '../../features/npc/services/npc-service';
+import {TimeService} from '../../features/time/services/time-service';
 
 @Injectable({
   providedIn: 'root',
@@ -14,7 +15,8 @@ export class ConditionEvaluator {
   constructor(
     private heroService: HeroService,
     private storyState: StoryState,
-    private npcService: NpcService
+    private npcService: NpcService,
+    private timeService: TimeService
   ) {}
 
   // Evalúa una lista entera de condiciones (todas deben cumplirse, un AND lógico)
@@ -46,11 +48,11 @@ export class ConditionEvaluator {
         break;
 
       case 'time':
-        //TODO: Cuando este hecho el sistema de tiempo agregar este caso que setea el hora actual como currentValue
+        currentValue = this.timeService.state().hour;
         break;
 
       case 'day':
-        // TODO: Cuando este hecho el sistema de tiempo agregar este caso que setea el dia actual como currentValue
+        currentValue = this.timeService.state().day;
         break;
 
 

@@ -12,7 +12,7 @@ export class HeroService {
 
   // 1. EL ESTADO CENTRAL (Signal)
   // Inicializamos al héroe con sus valores por defecto
-  public readonly state = signal<HeroState>({
+  public  state = signal<HeroState>({
     id: CharacterID.HERO,
     name: CharacterName.HERO,
     stats: {
