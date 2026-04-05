@@ -1,0 +1,26 @@
+<div class="card shadow-sm mb-4">
+  <div class="card-header bg-primary text-white">
+    <h5 class="mb-0">Stats</h5>
+  </div>
+
+  <!-- Usamos list-group de Bootstrap. d-flex y justify-content-between crean las 2 columnas -->
+  <ul class="list-group list-group-flush">
+
+    <!-- Nueva sintaxis @for de Angular (reemplaza a *ngFor) -->
+    @for (stat of statsList(); track stat.name) {
+      <li class="list-group-item d-flex justify-content-between align-items-center py-3">
+
+        <!-- Columna 1: Nombre del Stat (Capitalizado) -->
+        <span class="fw-bold text-capitalize">{{ stat.name }}</span>
+
+        <!-- Columna 2: Valor -->
+        <span class="badge bg-secondary rounded-pill fs-6">
+          {{ stat.level }}
+        </span>
+
+      </li>
+    }
+
+
+  </ul>
+</div>

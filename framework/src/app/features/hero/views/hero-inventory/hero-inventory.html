@@ -1,0 +1,36 @@
+<div class="card shadow-sm mb-4">
+  <div class="card-header bg-success text-white">
+    <h5 class="mb-0">Inventory</h5>
+  </div>
+
+  <ul class="list-group list-group-flush">
+
+    @for (item of inventoryList(); track item.itemName) {
+      <!-- Solo mostramos los items si la cantidad es mayor a 0 -->
+      @if (item.quantity > 0) {
+        <li class="list-group-item d-flex justify-content-between align-items-center py-3">
+
+          <!-- Columna 1: Nombre del Item -->
+          <div class="d-flex align-items-center">
+            <i class="bi bi-box me-2 text-muted"></i> <!-- Opcional: Icono de Bootstrap -->
+            <span class="text-capitalize">{{ item.itemName }}</span>
+          </div>
+
+          <!-- Columna 2: Cantidad -->
+          <span class="badge border border-success text-success rounded-pill fs-6 px-3">
+            x{{ item.quantity }}
+          </span>
+
+        </li>
+      }
+    }
+
+    <!-- Mensaje si el inventario está vacío -->
+    @if (inventoryList().length === 0) {
+      <li class="list-group-item text-center text-muted py-4">
+        The inventory is empty.
+      </li>
+    }
+
+  </ul>
+</div>
