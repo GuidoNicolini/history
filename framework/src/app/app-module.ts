@@ -4,16 +4,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
 import {HeroModule} from "./features/hero";
+import {NpcModule} from './features/npc/npc-module';
+import {TimeModule} from './features/time/time-module';
 
 @NgModule({
   declarations: [
     App
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        HeroModule
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HeroModule,
+    NpcModule,
+    TimeModule
+  ],
   providers: [
     provideBrowserGlobalErrorListeners()
   ],
