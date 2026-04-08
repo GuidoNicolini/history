@@ -1,0 +1,21 @@
+<div class="container-fluid">
+  @for (cube of displayCubes; track cube.id) {
+
+    @if (isText(cube)) {
+      <app-text-view [cube] = "cube" ></app-text-view>
+    }
+
+    @if (isImage(cube)) {
+      <app-image-view [cube] = "cube"></app-image-view>
+    }
+
+    @if (isVideo(cube)) {
+      <app-video-view [cube] = "cube" ></app-video-view>
+    }
+
+    @if (isButton(cube)) {
+      <app-button-view [cube] = "cube" ></app-button-view>
+    }
+
+  }
+</div>

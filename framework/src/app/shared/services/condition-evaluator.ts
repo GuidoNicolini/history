@@ -6,6 +6,7 @@ import {Stats} from '../enums/stats';
 import {GameItems} from '../enums/game-items';
 import {NpcService} from '../../features/npc/services/npc-service';
 import {TimeService} from '../../features/time/services/time-service';
+import {EventoService} from '../../features/evento/services/evento-service';
 
 @Injectable({
   providedIn: 'root',
@@ -16,23 +17,24 @@ export class ConditionEvaluator {
     private heroService: HeroService,
     private storyState: StoryState,
     private npcService: NpcService,
-    private timeService: TimeService
+    private timeService: TimeService,
+    private eventoService: EventoService
   ) {}
 
   // Evalúa una lista entera de condiciones (todas deben cumplirse, un AND lógico)
-  public checkAll(conditions: GameCondition[]): boolean {
+  public checkAll(conditions: GameCondition[], contextId?: string): boolean {
     if (!conditions || conditions.length === 0) return true;
-    return conditions.every(c => this.evaluate(c));
+    return conditions.every(c => this.evaluate(c, contextId));
   }
 
   // El motor que interpreta el JSON
-  private evaluate(condition: GameCondition): boolean {
+  private evaluate(condition: GameCondition, contextId?: string): boolean {
     let currentValue: any;
 
     // 1. Obtener el valor actual dependiendo de qué estamos buscando
     switch (condition.type) {
       case 'flag':
-        currentValue = this.storyState.getFlag(condition.target);
+        currentValue = this.storyState.getFlag(condition.target!);
         break;
       case 'stat-hero':
         currentValue = this.heroService.getStat(condition.target as unknown as Stats);
@@ -43,7 +45,7 @@ export class ConditionEvaluator {
 
         // en el json recordar separar el target con ':' donde primero ponemos el id y luego el nombre de la stat
       case 'stat-npc':
-        const [idString, statName] = condition.target.split(':');
+        const [idString, statName] = condition.target!.split(':');
         currentValue = this.npcService.getStat(parseInt(idString, 10), statName as unknown as Stats);
         break;
 
@@ -55,8 +57,26 @@ export class ConditionEvaluator {
         currentValue = this.timeService.state().day;
         break;
 
+      case 'cd': {
+        const eventoId = condition.target || contextId;
+        if (!eventoId) return false;
+
+        const evento = this.eventoService.getEventoById(eventoId);
+        if (!evento) return false;
+
+        // Si nunca se ha activado o no tiene lastDayActivated, permitimos activarlo (ya que no hay cooldown que comprobar)
+        if (evento.lastDayActivated === undefined || evento.lastDayActivated === null) return true;
+
+        const currentDay = this.timeService.state().day;
+        const cooldown = evento.cooldownDuration || 0;
+
+        return (currentDay - evento.lastDayActivated) >= cooldown;
+      }
 
     }
+
+    // Si la condición de 'cd' hace return directamente, solo procesamos el operador para los otros casos
+    if (!condition.operator) return true;
 
     // 2. Aplicar el operador matemático
     switch (condition.operator) {

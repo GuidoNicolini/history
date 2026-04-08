@@ -1,0 +1,22 @@
+:host {
+  display: block;
+  height: 100%;
+}
+
+.test{
+  background: blue;
+}
+
+.container-color{
+  background: black;
+}
+
+.patreon-fade {
+  opacity: 0;
+  transition: opacity 3s ease-in-out; /* Transición sutil y pausada */
+  cursor: pointer; /* Siempre mostrar cursor de mano */
+}
+
+.patreon-fade.visible {
+  opacity: 1;
+}

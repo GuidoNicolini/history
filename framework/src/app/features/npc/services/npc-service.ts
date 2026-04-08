@@ -30,27 +30,34 @@ export class NpcService {
     return npc.stats[stat] || 0;
   }
 
-  public modifyStat(npcId: CharacterID, stat: Stats, maxValue: number): void {
+  public getAvatar(npcId: CharacterID): string {
+    const npcs = this.state();
+    const npc = npcs[npcId];
+    return npc ? npc.avatar : '';
+  }
+
+  public getName(npcId: CharacterID): string {
+    const npcs = this.state();
+    const npc = npcs[npcId];
+    return npc ? npc.name : '';
+  }
+
+
+
+
+  public modifyStat(npcId: CharacterID, stat: Stats, amount: number): void {
     this.state.update(npcs => {
       const npc = npcs[npcId];
       if (!npc) return npcs;
 
       const currentLevel = npc.stats[stat] || 0;
-      let probability = 0.05;
-      if (maxValue > currentLevel) {
-        probability = (maxValue - currentLevel) / maxValue;
-      }
-
-      if (Math.random() <= probability) {
-        return {
-          ...npcs,
-          [npcId]: {
-            ...npc,
-            stats: { ...npc.stats, [stat]: currentLevel + 1 }
-          }
-        };
-      }
-      return npcs; // No hubo cambio
+      return {
+        ...npcs,
+        [npcId]: {
+          ...npc,
+          stats: { ...npc.stats, [stat]: currentLevel + amount }
+        }
+      };
     });
   }
 
@@ -75,6 +82,25 @@ export class NpcService {
     });
   }
 
+  public modifyAttraction(npcPrincipalId: CharacterID, npcSecondaryId: CharacterID, amount: number): void {
+    this.state.update(npcs => {
+      const npc = npcs[npcPrincipalId];
+      if (!npc) return npcs;
+
+      const currentAttraction = npc.attractions[npcSecondaryId] || 0;
+
+      return {
+        ...npcs,
+        [npcPrincipalId]: {
+          ...npc,
+          attractions: {
+            ...npc.attractions,
+            [npcSecondaryId]: currentAttraction + amount
+          }
+        }
+      };
+    });
+  }
 
   // MOTOR DE RUTINAS
 
@@ -137,13 +163,6 @@ export class NpcService {
       return hasChanges ? nextState : npcs;
     });
   }
-
-
-
-
-
-
-
 
   // 6. GUARDADO Y CARGA
   public exportState(): Record<number, NpcState> {

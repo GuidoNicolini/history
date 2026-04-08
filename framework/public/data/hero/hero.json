@@ -1,0 +1,20 @@
+{
+  "id": 0,
+  "name": "Mark",
+  "stats": {
+    "level": 1,
+    "energy": 100,
+    "arousal": 1,
+    "corruption": 1,
+    "strength": 1,
+    "agility": 1,
+    "intelligence": 1,
+    "charisma": 1,
+    "hygiene": 100
+  },
+  "inventory": {
+    "money": 100,
+    "snack": 5
+  },
+  "avatar": "assets/img/avatar/heroe.gif"
+}

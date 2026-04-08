@@ -6,6 +6,8 @@ import { App } from './app';
 import {HeroModule} from "./features/hero";
 import {NpcModule} from './features/npc/npc-module';
 import {TimeModule} from './features/time/time-module';
+import {EventoModule} from './features/evento';
+import {LocationModule} from './features/location';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import {TimeModule} from './features/time/time-module';
     AppRoutingModule,
     HeroModule,
     NpcModule,
-    TimeModule
+    TimeModule,
+    EventoModule,
+    LocationModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners()

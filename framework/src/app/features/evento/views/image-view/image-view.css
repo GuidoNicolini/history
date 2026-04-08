@@ -1,0 +1,7 @@
+.imagen-resposive{
+  max-width: 1000px;  /* Máximo ancho permitido */
+  max-height: 500px; /* Máximo alto permitido */
+  width: auto;       /* Permite que el ancho se ajuste */
+  height: auto;      /* Permite que el alto se ajuste */
+  display: block;    /* Para manejar mejor los márgenes y alineación */
+}

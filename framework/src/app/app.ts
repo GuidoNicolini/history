@@ -1,4 +1,5 @@
-import { Component, signal } from '@angular/core';
+import {Component, OnInit, signal} from '@angular/core';
+import {Initializer} from './shared/services/initializer';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,8 @@ import { Component, signal } from '@angular/core';
   standalone: false,
   styleUrl: './app.css'
 })
-export class App {
+export class App{
+
   protected readonly title = signal('framework');
+
 }

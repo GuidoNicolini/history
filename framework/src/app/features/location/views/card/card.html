@@ -1,0 +1,10 @@
+@if (location.isVisible) {
+  <div class="col">
+    <div class="card" (click)="location.isAvailable && goTo()">
+      <img [src]=thumbnail class="card-img-top" [class.gray-disable]="!location.isAvailable">
+      <div class="card-body">
+        <h5 class="card-title">{{ location.name}}</h5>
+      </div>
+    </div>
+  </div>
+}

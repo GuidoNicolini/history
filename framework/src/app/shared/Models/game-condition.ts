@@ -1,5 +1,5 @@
 export type Operator = '==' | '>' | '<' | '>=' | '<=' | '!=' | 'between';
-export type ConditionType = 'flag' | 'stat-hero' | 'item' | 'time' | 'day' | 'stat-npc' ;
+export type ConditionType = 'flag' | 'stat-hero' | 'item' | 'time' | 'day' | 'stat-npc' | 'cd';
 
 export interface GameCondition {
   type: ConditionType; // ¿Qué vamos a evaluar?
