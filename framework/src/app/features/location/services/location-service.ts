@@ -18,8 +18,12 @@ export class LocationService {
     private router: Router
   ) {}
 
-  public initilizeLocations(){
-    //TODO: INICIALIZAR CON LOS JSONS
+  public initilizeLocations(locationData: Location[]): void {
+    const locationsRecord = locationData.reduce((acc, location) => {
+      acc[location.id] = location;
+      return acc;
+    }, {} as Record<number, Location>);
+    this.state.set(locationsRecord);
   }
 
 

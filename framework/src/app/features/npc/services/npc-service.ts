@@ -17,10 +17,12 @@ export class NpcService {
   private injector = inject(Injector);
 
   // 2. INICIALIZACIÓN
-  public initializeNpcs(): void {
-    //TODO: Inicializar npcs desde jsons
-
-    //this.state.set(initialNpcs) esto esta como ejemplo para como debe terminar el metodo
+  public initializeNpcs(npcData: NpcState[]): void {
+    const npcsRecord = npcData.reduce((acc, npc) => {
+      acc[npc.id] = npc;
+      return acc;
+    }, {} as Record<number, NpcState>);
+    this.state.set(npcsRecord);
   }
 
   public getStat(npcId: CharacterID, stat: Stats): number {

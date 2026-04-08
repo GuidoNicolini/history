@@ -7,12 +7,11 @@ import {Day} from '../../../shared/enums/day';
 })
 export class TimeService {
 
-  public state = signal<Time>({
-    date: 1,
-    day: Day.MONDAY,
-    hour: 0,
-    minutes: 0
-  });
+  public state = signal<Time>({} as Time);
+
+  public initializeTime(timeData: Time): void {
+    this.state.set(timeData);
+  }
 
   /**
    * Avanza la cantidad de minutos especificada.
@@ -85,6 +84,14 @@ export class TimeService {
   private onDayChanged(): void {
     // TODO: Lógica en cada cambio de día
     // Por ejemplo: Reiniciar eventos diarios, regenerar recursos, etc.
+  }
+
+  public exportState(): Time {
+    return this.state();
+  }
+
+  public importState(newState: Time): void {
+    this.state.set(newState);
   }
 
 }

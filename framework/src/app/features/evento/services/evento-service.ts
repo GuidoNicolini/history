@@ -14,8 +14,12 @@ export class EventoService {
 
   constructor(private router: Router, private injector: Injector) {}
 
-  public initializeEventos(): void {
-    //TODO: Initializar eventos utilizando json en el futuro
+  public initializeEventos(eventoData:EventoState[]): void {
+    const eventosRecord = eventoData.reduce((acc, evento) => {
+      acc[evento.id] = evento;
+      return acc;
+    }, {} as Record<string, EventoState>);
+    this.state.set(eventosRecord);
   }
 
   public getEventoById(id: string): EventoState | undefined {
