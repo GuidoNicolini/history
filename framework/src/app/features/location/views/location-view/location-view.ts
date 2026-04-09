@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {Location} from '../../models/location';
 import {LocationID} from '../../../../shared/enums/location-id';
 import {LocationService} from '../../services/location-service';
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 import {EventoService} from '../../../evento/services/evento-service';
 import {TimeService} from '../../../time/services/time-service';
 import {TypeLocation} from '../../../../shared/enums/type-location';
@@ -23,13 +23,18 @@ export class LocationView implements OnInit {
     private locationService: LocationService,
     private route: ActivatedRoute,
     private eventoService: EventoService,
-    private timeService: TimeService
-  ) {}
+    private timeService: TimeService,
+    private router: Router
+  ) {
+
+    this.router.routeReuseStrategy.shouldReuseRoute = () => false;
+  }
 
   ngOnInit(): void {
     // 1- Setear el locationID obteniendolo de la url
     this.route.paramMap.subscribe(params => {
       const idParam = params.get('id');
+      console.log("tengo el parametro" + idParam)
       if (idParam) {
         this.LocationId = Number(idParam) as LocationID;
 
@@ -64,6 +69,8 @@ export class LocationView implements OnInit {
           }
         }
       }
+
+      console.log(this.location.name)
     });
   }
 }

@@ -35,16 +35,22 @@ export class LocationService {
   public findLocationById(locationId: LocationID): Location | undefined {
     const locations = Object.values(this.state());
     for (const location of locations) {
+      console.log("recorriendo encontre esta: " + location.id)
       const found = this.findInLocation(location, locationId);
       if (found) {
         return found;
+      } else {
+        console.log('Location with ID he sido llamado', locationId);
+        console.log("no he encontrado nada")
       }
     }
     return undefined;
   }
 
   private findInLocation(location: Location, locationId: LocationID): Location | undefined {
+    console.log("mira donde estoy! con location.id= " + location.id + " y con " + locationId)
     if (location.id === locationId) {
+      console.log("he entrado aqui!")
       return location;
     }
     if (location.subLocations) {

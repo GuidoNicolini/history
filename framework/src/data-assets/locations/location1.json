@@ -1,0 +1,99 @@
+{
+  "id": 100,
+  "name": "Happy City",
+  "type": 100,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "/assets/img/locations/world/city.jpg"
+    }
+  ],
+  "url": "location/100",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [],
+  "conditionsVisible": [],
+  "subLocations": [
+    {
+      "id": 1000,
+      "name": "Neighborhood",
+      "type": 90,
+      "images": [
+        {
+          "type": "thumbnail",
+          "url": "/assets/img/locations/distric/neighborhood.jpg"
+        }
+      ],
+      "url": "location/1000",
+      "isAvailable": true,
+      "isVisible": true,
+      "lastTimeVisited": 0,
+      "styleClass": [],
+      "conditionsAvailable": [],
+      "conditionsVisible": [],
+      "subLocations": [
+        {
+          "id": 10001,
+          "name": "Home",
+          "type": 80,
+          "images": [
+            {
+              "type": "thumbnail",
+              "url": "/assets/img/locations/building/home.jpg"
+            }
+          ],
+          "url": "location/10001",
+          "isAvailable": true,
+          "isVisible": true,
+          "lastTimeVisited": 0,
+          "styleClass": [],
+          "conditionsAvailable": [],
+          "conditionsVisible": [],
+          "subLocations": [
+            {
+              "id": 19999,
+              "name": "Back",
+              "type": 10,
+              "images": [
+                {
+                  "type": "thumbnail",
+                  "url": "/assets/img/others/exit.jpg"
+                }
+              ],
+              "url": "location/1000",
+              "isAvailable": true,
+              "isVisible": true,
+              "lastTimeVisited": 0,
+              "styleClass": [],
+              "conditionsAvailable": [],
+              "conditionsVisible": [],
+              "subLocations": []
+            }
+          ]
+        },
+        {
+          "id": 1999,
+          "name": "Back",
+          "type": 80,
+          "images": [
+            {
+              "type": "thumbnail",
+              "url": "/assets/img/others/exit.jpg"
+            }
+          ],
+          "url": "location/100",
+          "isAvailable": true,
+          "isVisible": true,
+          "lastTimeVisited": 0,
+          "styleClass": [],
+          "conditionsAvailable": [],
+          "conditionsVisible": [],
+          "subLocations": []
+        }
+
+      ]
+    }
+  ]
+}

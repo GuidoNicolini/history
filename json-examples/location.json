@@ -1,0 +1,19 @@
+{
+	"id": "1",
+	"name": "example",
+	"type": "100",
+	"images": [
+		{
+			"type": "thumbnail",
+			"url": "/assets/img/example.jpg"
+		}
+	],
+	"url": "location/1",
+	"isAvailable": true,
+	"isVisible": true,
+	"lastTimeVisited": 0,
+	"styleClass": [],
+	"conditionsAvailable": [],
+	"conditionsVisible": [],
+	"subLocations": []
+}
