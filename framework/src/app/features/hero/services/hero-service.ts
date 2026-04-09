@@ -125,6 +125,6 @@ export class HeroService {
   }
 
   public importState(savedState: HeroState): void {
-    this.state.set(savedState); // Restaura todo el estado de golpe
+    this.state.set(savedState); // Restaura tod0 el estado de golpe
   }
 }
