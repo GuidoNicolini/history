@@ -8,10 +8,14 @@ import {NpcModule} from './features/npc/npc-module';
 import {TimeModule} from './features/time/time-module';
 import {EventoModule} from './features/evento';
 import {LocationModule} from './features/location';
+import { StartView } from './shared/views/start-view/start-view';
+import { DebugStart } from './shared/views/debug-start/debug-start';
 
 @NgModule({
   declarations: [
-    App
+    App,
+    StartView,
+    DebugStart
   ],
   imports: [
     BrowserModule,

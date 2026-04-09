@@ -1,13 +1,16 @@
 {
   "name": "framework",
   "version": "0.0.0",
+  "main": "main.js",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "build:data": "node scripts/combine-data.js"
+    "build:data": "node scripts/combine-data.js",
+    "electron": "ng build && electron .",
+    "electron:serve": "electron ."
   },
   "prettier": {
     "printWidth": 100,
@@ -38,6 +41,7 @@
     "@angular/build": "^21.0.0",
     "@angular/cli": "^21.0.0",
     "@angular/compiler-cli": "^21.0.0",
+    "electron": "^28.2.1",
     "jsdom": "^27.1.0",
     "typescript": "~5.9.2",
     "vitest": "^4.0.8"
