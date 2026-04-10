@@ -1,0 +1,5 @@
+/* Estado inicial: Imagen en escala de grises */
+.gray-disable {
+  filter: grayscale(100%);
+}
+

@@ -10,11 +10,12 @@ export interface Location {
   type: TypeLocation
   images: Image[]
   url: string
+  backUrl: string
   isAvailable: boolean;
   isVisible: boolean
   lastTimeVisited: number
   styleClass: string[];
-  subLocations: Location[]
+  subLocations: LocationID[]
   conditionsAvailable: GameCondition[]
   conditionsVisible: GameCondition[]
 

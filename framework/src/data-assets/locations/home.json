@@ -1,0 +1,20 @@
+{
+  "id": 100,
+  "name": "Home",
+  "type": 20,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "/assets/img/locations/building/home.jpg"
+    }
+  ],
+  "url": "location/100",
+  "backUrl": "location/10",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [],
+  "conditionsVisible": [],
+  "subLocations": [1000,1001,1002,1003,1004,1005,1006,1007,1008]
+}

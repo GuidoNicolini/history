@@ -18,6 +18,7 @@ export class LocationView implements OnInit {
   location !: Location;
   LocationId !: LocationID;
   subLocations !: Location[];
+  backUrl !: string;
 
   constructor(
     private locationService: LocationService,
@@ -34,7 +35,6 @@ export class LocationView implements OnInit {
     // 1- Setear el locationID obteniendolo de la url
     this.route.paramMap.subscribe(params => {
       const idParam = params.get('id');
-      console.log("tengo el parametro" + idParam)
       if (idParam) {
         this.LocationId = Number(idParam) as LocationID;
 
@@ -44,10 +44,18 @@ export class LocationView implements OnInit {
           this.location = foundLocation;
 
           // 3- Setear las subLocations
-          this.subLocations = this.location.subLocations || [];
+          this.subLocations = this.locationService.findSubLocations(this.LocationId)
+
+          // 3b - Setear el exit
+
+          this.backUrl = this.location.backUrl
 
           // 4- Utilizar el metodo launchLocationEvento del servicio EventoService
           this.eventoService.launchLocationEvento(this.LocationId);
+
+
+          this.updates(this.LocationId)
+
 
           // 5- Actualizar el tiempo según el TypeLocation
           let minutesToAdd = 0;
@@ -70,7 +78,17 @@ export class LocationView implements OnInit {
         }
       }
 
-      console.log(this.location.name)
     });
   }
+
+
+  private updates(id: LocationID){
+    this.locationService.updateLastTimeVisited(id)
+    this.subLocations.forEach(location => {
+      this.locationService.updateAvailability(location.id)
+      this.locationService.updateVisibility(location.id)
+    })
+  }
+
+
 }

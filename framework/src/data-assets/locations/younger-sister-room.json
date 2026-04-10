@@ -1,0 +1,20 @@
+{
+  "id": 1003,
+  "name": "Suzy's Room",
+  "type": 40,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "/assets/img/locations/room/younger-sister-room.jpg"
+    }
+  ],
+  "url": "location/1003",
+  "backUrl": "location/100",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [],
+  "conditionsVisible": [],
+  "subLocations": []
+}

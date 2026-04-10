@@ -1,7 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Location} from '../../models/location';
 import {Router} from '@angular/router';
-import {TypeLocation} from '../../../../shared/enums/type-location';
+
 
 @Component({
   selector: 'app-card',
@@ -14,7 +14,12 @@ export class Card implements OnInit {
   @Input() location!: Location;
   thumbnail : string = ""
 
+
+
+
   constructor(private router: Router) {
+
+
   }
 
   ngOnInit(): void {
@@ -28,9 +33,12 @@ export class Card implements OnInit {
   }
 
   goTo() {
+
     if (this.location?.url) {
       this.router.navigate([this.location.url]);
     }
+
+
 
   }
 }
