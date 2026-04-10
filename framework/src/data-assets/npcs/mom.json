@@ -1,0 +1,13 @@
+{
+  "id": 4,
+  "name": "Mary",
+  "stats": {
+    "STRENGTH": 10,
+    "INTELLIGENCE": 10,
+    "CHARISMA": 10
+  },
+  "attractions": {},
+  "currentLocation": "100",
+  "routines": [],
+  "avatar": "AVATAR_1"
+}

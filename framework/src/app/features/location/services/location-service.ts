@@ -4,6 +4,7 @@ import {LocationID} from '../../../shared/enums/location-id';
 import {ConditionEvaluator} from '../../../shared/services/condition-evaluator';
 import {TimeService} from '../../time/services/time-service';
 import {Router} from '@angular/router';
+import {TypeLocation} from '../../../shared/enums/type-location';
 
 @Injectable({
   providedIn: 'root',
@@ -19,6 +20,7 @@ export class LocationService {
   ) {}
 
   public initilizeLocations(locationData: Location[]): void {
+
     const locationsRecord = locationData.reduce((acc, location) => {
       acc[location.id] = location;
       return acc;
@@ -28,35 +30,30 @@ export class LocationService {
 
 
   /**
-   * Busca una location por su ID de forma recursiva en el estado.
+   * Busca una location por su ID en el estado actual.
    * @param locationId El ID de la location a buscar.
-   * @returns La location si se encuentra, de lo contrario undefined.
+   * @returns La location encontrada o undefined si no existe.
    */
   public findLocationById(locationId: LocationID): Location | undefined {
-    const locations = Object.values(this.state());
-    for (const location of locations) {
-      const found = this.findInLocation(location, locationId);
-      if (found) {
-        return found;
-      }
-    }
-    return undefined;
+    return this.state()[locationId];
   }
 
-  private findInLocation(location: Location, locationId: LocationID): Location | undefined {
-    if (location.id === locationId) {
-      return location;
-    }
-    if (location.subLocations) {
-      for (const subLocation of location.subLocations) {
-        const found = this.findInLocation(subLocation, locationId);
-        if (found) {
-          return found;
-        }
+
+
+  public findSubLocations(locationId: LocationID): Location[] {
+    const location = this.findLocationById(locationId);
+    const subLocationArray:Location[] = []
+
+    location?.subLocations.forEach(id => {
+      const subLocation = this.findLocationById(id);
+      if (subLocation) {
+        subLocationArray.push(subLocation);
       }
-    }
-    return undefined;
+    })
+
+    return subLocationArray
   }
+
 
   /**
    * Actualiza el estado de disponibilidad de una location basado en sus condiciones.
@@ -119,4 +116,6 @@ export class LocationService {
   public importState(state: Record<number, Location>): void {
     this.state.set(state);
   }
+
+
 }

@@ -34,6 +34,7 @@ export class Initializer {
       if (heroes.length > 0) {
         this.heroService.initializeHero(heroes[0]);
       }
+      console.log(locations[0])
       this.locationService.initilizeLocations(locations)
       this.eventoService.initializeEventos(eventos)
       this.npcService.initializeNpcs(npcs);
