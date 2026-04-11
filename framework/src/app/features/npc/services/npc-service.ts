@@ -4,7 +4,9 @@ import {CharacterID} from '../../../shared/enums/character-id';
 import {Stats} from '../../../shared/enums/stats';
 import {Day} from '../../../shared/enums/day';
 import {LocationID} from '../../../shared/enums/location-id';
-import {ConditionEvaluator} from '../../../shared/services/condition-evaluator';
+import {ConditionEvaluator} from '../../condition/services/condition-evaluator';
+import {ConditionService} from '../../condition/services/condition-service';
+import {RelationState} from '../models/relation-state';
 
 @Injectable({
   providedIn: 'root',
@@ -13,16 +15,24 @@ export class NpcService {
   // 1. EL ESTADO CENTRAL (Diccionario de todos los NPCs)
   //el primer numero es el id del npc
   public state = signal<Record<number, NpcState>>({});
+  public stateRelation = signal<Record<number, RelationState>>({})
 
   private injector = inject(Injector);
 
   // 2. INICIALIZACIÓN
-  public initializeNpcs(npcData: NpcState[]): void {
+  public initializeNpcs(npcData: NpcState[], relationData: RelationState[] = []): void {
     const npcsRecord = npcData.reduce((acc, npc) => {
       acc[npc.id] = npc;
       return acc;
     }, {} as Record<number, NpcState>);
     this.state.set(npcsRecord);
+
+    const relationsRecord = relationData.reduce((acc, relation) => {
+      const relationId = this.generateRelationId(relation.id1, relation.id2);
+      acc[relationId] = relation;
+      return acc;
+    }, {} as Record<number, RelationState>);
+    this.stateRelation.set(relationsRecord);
   }
 
   public getStat(npcId: CharacterID, stat: Stats): number {
@@ -44,9 +54,6 @@ export class NpcService {
     return npc ? npc.name : '';
   }
 
-
-
-
   public modifyStat(npcId: CharacterID, stat: Stats, amount: number): void {
     this.state.update(npcs => {
       const npc = npcs[npcId];
@@ -63,44 +70,48 @@ export class NpcService {
     });
   }
 
+  public generateRelationId(id1: CharacterID, id2: CharacterID): number {
+    const minId = Math.min(id1, id2);
+    const maxId = Math.max(id1, id2);
+    return parseInt(`${minId}${maxId}`, 10);
+  }
 
-  public increaseAttraction(npcPrincipalId: CharacterID, npcSecondaryId: CharacterID): void {
-    this.state.update(npcs => {
-      const npc = npcs[npcPrincipalId];
-      if (!npc) return npcs;
+  public getRelationByCharacters(id1: CharacterID, id2: CharacterID): RelationState | undefined {
+    const relationId = this.generateRelationId(id1, id2);
+    return this.getRelationById(relationId);
+  }
 
-      const currentAttraction = npc.attractions[npcSecondaryId] || 0;
-
-      return {
-        ...npcs,
-        [npcPrincipalId]: {
-          ...npc,
-          attractions: {
-            ...npc.attractions,
-            [npcSecondaryId]: currentAttraction + 1
-          }
-        }
-      };
-    });
+  public getRelationById(relationId: number): RelationState | undefined {
+    return this.stateRelation()[relationId];
   }
 
   public modifyAttraction(npcPrincipalId: CharacterID, npcSecondaryId: CharacterID, amount: number): void {
-    this.state.update(npcs => {
-      const npc = npcs[npcPrincipalId];
-      if (!npc) return npcs;
+    const relationId = this.generateRelationId(npcPrincipalId, npcSecondaryId);
 
-      const currentAttraction = npc.attractions[npcSecondaryId] || 0;
+    this.stateRelation.update(relations => {
+      const existingRelation = relations[relationId];
 
-      return {
-        ...npcs,
-        [npcPrincipalId]: {
-          ...npc,
-          attractions: {
-            ...npc.attractions,
-            [npcSecondaryId]: currentAttraction + amount
+      if (existingRelation) {
+        return {
+          ...relations,
+          [relationId]: {
+            ...existingRelation,
+            value: existingRelation.value + amount
           }
-        }
-      };
+        };
+      } else {
+        const minId = Math.min(npcPrincipalId, npcSecondaryId);
+        const maxId = Math.max(npcPrincipalId, npcSecondaryId);
+
+        return {
+          ...relations,
+          [relationId]: {
+            id1: minId as CharacterID,
+            id2: maxId as CharacterID,
+            value: amount
+          }
+        };
+      }
     });
   }
 
@@ -110,6 +121,7 @@ export class NpcService {
     // Se obtiene de forma "lazy" (perezosa) para evitar una dependencia circular.
     // ConditionEvaluator ya inyecta a NpcService, si lo inyectamos de forma tradicional, Angular lanzaría error.
     const conditionEvaluator = this.injector.get(ConditionEvaluator);
+    const conditionService = this.injector.get(ConditionService);
 
     this.state.update(npcs => {
       let hasChanges = false;
@@ -130,7 +142,8 @@ export class NpcService {
 
           if (!isDayValid || !isTimeValid) return false;
 
-          return conditionEvaluator.checkAll(routine.routineConditions);
+          const conditions = conditionService.findConditions(routine.routineConditions || []);
+          return conditionEvaluator.checkAll(conditions);
         });
 
         if (availableRoutines.length === 1) {
@@ -167,12 +180,20 @@ export class NpcService {
   }
 
   // 6. GUARDADO Y CARGA
-  public exportState(): Record<number, NpcState> {
-    return this.state();
+  public exportState(): { npcs: Record<number, NpcState>, relations: Record<number, RelationState> } {
+    return {
+      npcs: this.state(),
+      relations: this.stateRelation()
+    };
   }
 
-  public importState(savedState: Record<number, NpcState>): void {
-    this.state.set(savedState);
+  public importState(savedState: { npcs: Record<number, NpcState>, relations: Record<number, RelationState> }): void {
+    if (savedState.npcs) {
+      this.state.set(savedState.npcs);
+    }
+    if (savedState.relations) {
+      this.stateRelation.set(savedState.relations);
+    }
   }
 
 }

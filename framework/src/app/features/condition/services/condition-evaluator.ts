@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
-import {GameCondition} from '../Models/game-condition';
-import {HeroService} from '../../features/hero';
-import {StoryState} from './story-state';
-import {Stats} from '../enums/stats';
-import {GameItems} from '../enums/game-items';
-import {NpcService} from '../../features/npc/services/npc-service';
-import {TimeService} from '../../features/time/services/time-service';
-import {EventoService} from '../../features/evento/services/evento-service';
+import {GameCondition} from '../models/game-condition';
+import {HeroService} from '../../hero';
+import {StoryState} from '../../../shared/services/story-state';
+import {Stats} from '../../../shared/enums/stats';
+import {GameItems} from '../../../shared/enums/game-items';
+import {NpcService} from '../../npc/services/npc-service';
+import {TimeService} from '../../time/services/time-service';
+import {EventoService} from '../../evento/services/evento-service';
 
 @Injectable({
   providedIn: 'root',

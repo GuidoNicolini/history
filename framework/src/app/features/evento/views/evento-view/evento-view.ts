@@ -29,7 +29,8 @@ export class EventoView implements OnInit{
        this.idEvento = params.get('id')!;
        this.evento = this.eventoService.getEventoById(this.idEvento)!
        this.eventoService.modifyLastDayUsedAndNumberOfTimesActivated(this.idEvento,this.timeService.state().day)
-       this.effects.applyAll(this.evento.effects)
+       const eventEffects = this.eventoService.getEffectsForEvento(this.idEvento);
+       this.effects.applyAll(eventEffects)
 
        this.processCubes();
     })

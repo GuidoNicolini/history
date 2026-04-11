@@ -1,5 +1,5 @@
 {
-  "id": 0,
+  "id": 1,
   "name": "Mark",
   "stats": {
     "level": 1,
@@ -16,5 +16,5 @@
     "money": 100,
     "snack": 5
   },
-  "avatar": "assets/img/avatar/heroe.gif"
+  "avatar": "assets/img/avatars/heroe.gif"
 }

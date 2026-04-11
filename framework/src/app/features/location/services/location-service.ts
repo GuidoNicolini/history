@@ -1,7 +1,7 @@
 import {Injectable, signal} from '@angular/core';
 import {Location} from '../models/location';
 import {LocationID} from '../../../shared/enums/location-id';
-import {ConditionEvaluator} from '../../../shared/services/condition-evaluator';
+import {ConditionEvaluator} from '../../condition/services/condition-evaluator';
 import {TimeService} from '../../time/services/time-service';
 import {Router} from '@angular/router';
 import {TypeLocation} from '../../../shared/enums/type-location';

@@ -1,6 +1,6 @@
 import {LocationID} from '../../../shared/enums/location-id';
 import {TypeLocation} from '../../../shared/enums/type-location';
-import {GameCondition} from '../../../shared/Models/game-condition';
+import {GameCondition} from '../../condition/models/game-condition';
 export type ImageType = 'thumbnail' | 'background';
 
 export interface Location {
