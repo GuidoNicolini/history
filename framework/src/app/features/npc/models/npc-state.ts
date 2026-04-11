@@ -10,8 +10,7 @@ export interface NpcState {
   id: CharacterID;
   name: CharacterName;
   stats: Record<Stats, number>;
-  attractions: Record<CharacterID,number>
-  currentLocation: LocationID
-  routines: Routine[]
-  avatar: Avatar
+  currentLocation: LocationID;
+  routines: Routine[];
+  avatar: Avatar;
 }

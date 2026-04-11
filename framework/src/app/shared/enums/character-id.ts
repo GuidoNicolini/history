@@ -1,10 +1,11 @@
 export enum CharacterID {
-  HERO = 0,
-  MOM = 1,
-  DAD = 2,
-  OLDSISTER = 3,
-  YOUNGSISTER = 4,
-  BROTHER = 5,
+  HERO = 1,
+  MOM = 2,
+  DAD = 3,
+  OLDSISTER = 4,
+  YOUNGSISTER = 5,
+  BROTHER = 6,
 
   NONE = 99999
+
 }

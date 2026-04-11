@@ -1,7 +1,7 @@
 import {Component, Input} from '@angular/core';
 import {ButtonCube} from '../../models/Cube/button-cube';
 import {CubeActionService} from '../../services/cube-action-service';
-import {ConditionEvaluator} from '../../../../shared/services/condition-evaluator';
+import {ConditionEvaluator} from '../../../condition/services/condition-evaluator';
 
 @Component({
   selector: 'app-button-view',
