@@ -20,7 +20,7 @@ export class DebugStart {
 
     //this.router.navigate(['/location/100']);
     setTimeout(() => {
-      this.router.navigate(['/location/100']);
+      this.router.navigate(['/evento/history0001']);
     }, 2000);
 
   }

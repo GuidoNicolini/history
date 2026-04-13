@@ -1,0 +1,22 @@
+{
+  "id": 3,
+  "name": "Carl",
+  "stats": {
+    "LEVEL": 1,
+    "AROUSAL": 0,
+    "CORRUPTION": 0
+  },
+  "attractions": {},
+  "currentLocation": "1",
+  "routines": [
+    {
+      "days": [1, 2, 3, 4, 5,6,7],
+      "initialTime": 0,
+      "finalTime": 23,
+      "location": 0,
+      "routineConditions": [],
+      "weight": 1
+    }
+  ],
+  "avatar": "assets/img/avatars/dad.png"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "history0001",
+  "type": 1,
+  "location": 0,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 0,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "You wake up in your room",
+      "character": 7
+    },
+    {
+      "id": 2,
+      "type": "button",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Wake Up",
+      "conditions": [],
+      "cubeAction":{
+        "type": "redirection",
+        "value": "location/1000"
+      }
+    }
+  ],
+  "conditions": [],
+  "effects": []
+}

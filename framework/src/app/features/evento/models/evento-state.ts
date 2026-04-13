@@ -1,6 +1,5 @@
 import {LocationID} from '../../../shared/enums/location-id';
 import {Cube} from './Cube/cube';
-import {EventoEffect} from './evento-effect';
 import {EventoType} from '../../../shared/enums/evento-type';
 
 export interface EventoState {
@@ -14,6 +13,7 @@ export interface EventoState {
   lastDayActivated: number;
   cubes: Cube[];
   conditions: number[]
-  effects : number[]
+  effects: number[]
+
 
 }

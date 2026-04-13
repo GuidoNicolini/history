@@ -25,9 +25,15 @@ export class NpcStats {
     return Object.entries(data.stats).map(([key, value]) => ({ key, value }));
   });
 
-  npcAttractionsArray = computed(() => {
-    const data = this.npc();
-    if (!data || !data.attractions) return [];
-    return Object.entries(data.attractions).map(([key, value]) => ({ key, value }));
+  npcRelationsArray = computed(() => {
+    const relations = this.npcService.stateRelation();
+    const id = this.npcId as number;
+
+    return Object.values(relations)
+      .filter(rel => rel.id1 === id || rel.id2 === id)
+      .map(rel => {
+        const otherId = rel.id1 === id ? rel.id2 : rel.id1;
+        return { key: otherId, value: rel.value };
+      });
   });
 }

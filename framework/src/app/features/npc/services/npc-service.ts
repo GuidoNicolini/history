@@ -70,6 +70,23 @@ export class NpcService {
     });
   }
 
+  public modifyRandomStat(npcId: CharacterID, stat: Stats, maxValue: number): void {
+    const npcs = this.state();
+    const npc = npcs[npcId];
+    if (!npc) return;
+
+    const currentLevel = npc.stats[stat] || 0;
+
+    let probability = 0.10;
+    if (maxValue > currentLevel) {
+      probability = (maxValue - currentLevel) / maxValue;
+    }
+
+    if (Math.random() <= probability) {
+      this.modifyStat(npcId, stat, 1);
+    }
+  }
+
   public generateRelationId(id1: CharacterID, id2: CharacterID): number {
     const minId = Math.min(id1, id2);
     const maxId = Math.max(id1, id2);
@@ -138,7 +155,7 @@ export class NpcService {
         // 2a: ver cuáles cumplen todas sus condiciones (día, hora y routineConditions)
         const availableRoutines = npc.routines.filter(routine => {
           const isDayValid = routine.days.includes(day);
-          const isTimeValid = time >= routine.InitialTime && time < routine.FinalTime;
+          const isTimeValid = time >= routine.initialTime && time < routine.finalTime;
 
           if (!isDayValid || !isTimeValid) return false;
 

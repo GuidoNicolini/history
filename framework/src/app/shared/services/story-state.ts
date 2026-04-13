@@ -17,4 +17,21 @@ export class StoryState {
   getFlag(key: string): any {
     return this.flags()[key];
   }
+
+  /**
+   * Exporta el estado actual de la historia.
+   * @returns El estado actual.
+   */
+  public exportState(): Record<string, any> {
+    return this.flags();
+  }
+
+  /**
+   * Importa y establece un estado para la historia.
+   * @param state El estado a importar.
+   */
+  public importState(state: Record<string, any>): void {
+    this.flags.set(state);
+  }
+
 }
