@@ -1,51 +1,33 @@
 import { Injectable } from '@angular/core';
-import {ConditionService} from '../../features/condition/services/condition-service';
-import {EventoService} from '../../features/evento';
-import {EventoEffectService} from '../../features/evento/services/evento-effect-service';
-import {HeroService} from '../../features/hero';
-import {LocationService} from '../../features/location';
-import { NpcService } from "../../features/npc";
-import { TimeService } from "../../features/time";
-import {StoryState} from './story-state';
+import { ISaveable } from '../interfaces/saveable.interface';
 
 @Injectable({
   providedIn: 'root',
 })
 export class SaveLoadService {
 
-  constructor(
-    private conditionService: ConditionService,
-    private eventoService: EventoService,
-    private eventoEffectService: EventoEffectService,
-    private heroService: HeroService,
-    private locationService: LocationService,
-    private npcService: NpcService,
-    private timeService: TimeService,
-    private storyState: StoryState
-  ) {}
+  private subscribers: Map<string, ISaveable> = new Map();
+
+  constructor() {}
+
+  public register(service: ISaveable): void {
+    this.subscribers.set(service.saveKey, service);
+  }
 
   private gatherState(): any {
-    return {
-      hero: this.heroService.exportState(),
-      time: this.timeService.exportState(),
-      story: this.storyState.exportState(),
-      conditions: this.conditionService.exportState(),
-       eventos: this.eventoService.exportState(),
-      eventoEffects: this.eventoEffectService.exportState(),
-      locations: this.locationService.exportState(),
-       npcs: this.npcService.exportState(),
-    };
+    const state: any = {};
+    this.subscribers.forEach((service, key) => {
+      state[key] = service.exportState();
+    });
+    return state;
   }
 
   private importState(state: any): void {
-    this.heroService.importState(state.hero);
-    this.timeService.importState(state.time);
-    this.storyState.importState(state.story);
-    this.conditionService.importState(state.conditions);
-     this.eventoService.importState(state.eventos);
-    this.eventoEffectService.importState(state.eventoEffects);
-    this.locationService.importState(state.locations);
-   this.npcService.importState(state.npcs);
+    this.subscribers.forEach((service, key) => {
+      if (state[key]) {
+        service.importState(state[key]);
+      }
+    });
   }
 
   // --- Local Storage ---

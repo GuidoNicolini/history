@@ -1,11 +1,18 @@
 import {Injectable, signal} from '@angular/core';
 import {EventoEffect} from '../models/evento-effect';
+import { ISaveable } from '../../../shared/interfaces/saveable.interface';
+import { SaveLoadService } from '../../../shared/services/save-load-service';
 
 @Injectable({
   providedIn: 'root',
 })
-export class EventoEffectService {
+export class EventoEffectService implements ISaveable {
+  public saveKey = 'eventoEffects';
   public state = signal<Record<number, EventoEffect>>({})
+
+  constructor(private saveLoadService: SaveLoadService) {
+    this.saveLoadService.register(this);
+  }
 
   public initializeEffects(effects: EventoEffect[]): void {
     const newState: Record<number, EventoEffect> = {};

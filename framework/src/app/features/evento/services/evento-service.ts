@@ -7,15 +7,20 @@ import {ConditionEvaluator} from '../../condition/services/condition-evaluator';
 import {ConditionService} from '../../condition/services/condition-service';
 import {EventoEffectService} from './evento-effect-service';
 import {EventoEffect} from '../models/evento-effect';
+import { ISaveable } from '../../../shared/interfaces/saveable.interface';
+import { SaveLoadService } from '../../../shared/services/save-load-service';
 
 @Injectable({
   providedIn: 'root',
 })
-export class EventoService {
+export class EventoService implements ISaveable {
+  public saveKey = 'eventos';
   //el primer string es para el id del evento
   public state = signal<Record<string, EventoState>>({})
 
-  constructor(private router: Router, private injector: Injector, private eventoEffectService: EventoEffectService) {}
+  constructor(private router: Router, private injector: Injector, private eventoEffectService: EventoEffectService, private saveLoadService: SaveLoadService) {
+    this.saveLoadService.register(this);
+  }
 
   public initializeEventos(eventoData:EventoState[]): void {
     const eventosRecord = eventoData.reduce((acc, evento) => {

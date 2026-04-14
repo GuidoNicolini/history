@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {Router} from '@angular/router';
 import {Initializer} from '../../services/initializer';
+import {SaveLoadService} from '../../services/save-load-service';
 
 @Component({
   selector: 'app-start-view',
@@ -9,7 +10,7 @@ import {Initializer} from '../../services/initializer';
   styleUrl: './start-view.css',
 })
 export class StartView {
-  constructor(private router: Router) {
+  constructor(private router: Router,private saveLoadService: SaveLoadService) {
   }
   initilizer = new Initializer();
 
@@ -25,6 +26,7 @@ export class StartView {
   }
 
   protected loadGame() {
-
+    this.saveLoadService.loadStateFromLocalStorage()
+    this.router.navigate(['/location/1000']);
   }
 }

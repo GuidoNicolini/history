@@ -1,9 +1,17 @@
 import {Injectable, signal} from '@angular/core';
+import { ISaveable } from '../interfaces/saveable.interface';
+import { SaveLoadService } from './save-load-service';
 
 @Injectable({
   providedIn: 'root',
 })
-export class StoryState {
+export class StoryState implements ISaveable {
+  public saveKey = 'story';
+
+  constructor(private saveLoadService: SaveLoadService) {
+    this.saveLoadService.register(this);
+  }
+
   // Aquí guardamos TOD0 el progreso de la historia
   public flags = signal<Record<string, any>>({
     'juego_iniciado': true,
