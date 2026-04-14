@@ -1,23 +1,28 @@
 import {Injectable, signal} from '@angular/core';
+import {Router} from '@angular/router';
 import {Location} from '../models/location';
 import {LocationID} from '../../../shared/enums/location-id';
 import {ConditionEvaluator} from '../../condition/services/condition-evaluator';
 import {TimeService} from '../../time/services/time-service';
-import {Router} from '@angular/router';
-import {TypeLocation} from '../../../shared/enums/type-location';
+import { ISaveable } from '../../../shared/interfaces/saveable.interface';
+import { SaveLoadService } from '../../../shared/services/save-load-service';
 
 @Injectable({
   providedIn: 'root',
 })
-export class LocationService {
+export class LocationService implements ISaveable {
+  public saveKey = 'locations';
   //EL primer numero es para el id de la location
   public state = signal<Record<number, Location>>({})
 
   constructor(
     private conditionEvaluator: ConditionEvaluator,
     private timeService: TimeService,
-    private router: Router
-  ) {}
+    private router: Router,
+    private saveLoadService: SaveLoadService
+  ) {
+    this.saveLoadService.register(this);
+  }
 
   public initilizeLocations(locationData: Location[]): void {
 

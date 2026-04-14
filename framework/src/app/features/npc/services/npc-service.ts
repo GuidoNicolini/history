@@ -1,17 +1,25 @@
-import {Injectable, signal, Injector, inject} from '@angular/core';
+import {Injectable, signal, inject, Injector} from '@angular/core';
 import {NpcState} from '../models/npc-state';
-import {CharacterID} from '../../../shared/enums/character-id';
+import {RelationState} from '../models/relation-state';
 import {Stats} from '../../../shared/enums/stats';
-import {Day} from '../../../shared/enums/day';
+import {CharacterID} from '../../../shared/enums/character-id';
 import {LocationID} from '../../../shared/enums/location-id';
+import {Day} from '../../../shared/enums/day';
 import {ConditionEvaluator} from '../../condition/services/condition-evaluator';
 import {ConditionService} from '../../condition/services/condition-service';
-import {RelationState} from '../models/relation-state';
+import { ISaveable } from '../../../shared/interfaces/saveable.interface';
+import { SaveLoadService } from '../../../shared/services/save-load-service';
 
 @Injectable({
   providedIn: 'root',
 })
-export class NpcService {
+export class NpcService implements ISaveable {
+  public saveKey = 'npcs';
+
+  constructor(private saveLoadService: SaveLoadService) {
+    this.saveLoadService.register(this);
+  }
+
   // 1. EL ESTADO CENTRAL (Diccionario de todos los NPCs)
   //el primer numero es el id del npc
   public state = signal<Record<number, NpcState>>({});

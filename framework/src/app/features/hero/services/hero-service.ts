@@ -1,13 +1,20 @@
-import {computed, Injectable, signal} from '@angular/core';
+import {Injectable, signal, computed} from '@angular/core';
 import {HeroState} from '../models/hero-state';
 import {Stats} from '../../../shared/enums/stats';
-import {GameItems} from '../../../shared/enums/game-items';
 import {Avatar} from '../../../shared/enums/avatar';
+import {GameItems} from '../../../shared/enums/game-items';
+import { ISaveable } from '../../../shared/interfaces/saveable.interface';
+import { SaveLoadService } from '../../../shared/services/save-load-service';
 
 @Injectable({
   providedIn: 'root',
 })
-export class HeroService {
+export class HeroService implements ISaveable {
+  public saveKey = 'hero';
+
+  constructor(private saveLoadService: SaveLoadService) {
+    this.saveLoadService.register(this);
+  }
 
   // 1. EL ESTADO CENTRAL (Signal)
   // Inicializamos el estado vacío, esperando ser inicializado por initializeHero

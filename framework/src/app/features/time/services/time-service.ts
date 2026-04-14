@@ -1,11 +1,20 @@
-import {Injectable, signal} from '@angular/core';
+import {inject, Injectable, signal} from '@angular/core';
 import {Time} from '../models/time';
 import {Day} from '../../../shared/enums/day';
+import { ISaveable } from '../../../shared/interfaces/saveable.interface';
+import { SaveLoadService } from '../../../shared/services/save-load-service';
+import {NpcService} from '../../npc';
 
 @Injectable({
   providedIn: 'root',
 })
-export class TimeService {
+export class TimeService implements ISaveable {
+  public saveKey = 'time';
+  private npcService = inject(NpcService);
+
+  constructor(private saveLoadService: SaveLoadService) {
+    this.saveLoadService.register(this);
+  }
 
   public state = signal<Time>({} as Time);
 
@@ -74,16 +83,16 @@ export class TimeService {
    * Se ejecuta por cada cambio de hora en el sistema.
    */
   private onHourChanged(): void {
-    // TODO: Lógica en cada cambio de hora
-    // Por ejemplo: Los NPCs cambian su ubicación, se actualiza el clima, etc.
+
+    this.npcService.updateRoutines(this.state().day, this.state().hour);
   }
 
   /**
    * Se ejecuta por cada cambio de día en el sistema.
    */
   private onDayChanged(): void {
-    // TODO: Lógica en cada cambio de día
-    // Por ejemplo: Reiniciar eventos diarios, regenerar recursos, etc.
+
+    this.saveLoadService.saveStateToLocalStorage()
   }
 
   public exportState(): Time {
