@@ -1,0 +1,7 @@
+{
+  "id": 2022,
+  "type": "hero-stat",
+  "target": "strength",
+  "operator": "plus",
+  "value": 100
+}

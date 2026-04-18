@@ -7,6 +7,7 @@ import {GameItems} from '../../../shared/enums/game-items';
 import {NpcService} from '../../npc/services/npc-service';
 import {TimeService} from '../../time/services/time-service';
 import {EventoService} from '../../evento/services/evento-service';
+import {VipService} from '../../../shared/services/vip-service';
 
 @Injectable({
   providedIn: 'root',
@@ -18,7 +19,8 @@ export class ConditionEvaluator {
     private storyState: StoryState,
     private npcService: NpcService,
     private timeService: TimeService,
-    private eventoService: EventoService
+    private eventoService: EventoService,
+    private vipService: VipService
   ) {}
 
   // Evalúa una lista entera de condiciones (todas deben cumplirse, un AND lógico)
@@ -49,6 +51,13 @@ export class ConditionEvaluator {
         currentValue = this.npcService.getStat(parseInt(idString, 10), statName as unknown as Stats);
         break;
 
+      case 'relation': {
+        const [id1Str, id2Str] = condition.target!.split(':');
+        const relation = this.npcService.getRelationByCharacters(parseInt(id1Str, 10), parseInt(id2Str, 10));
+        currentValue = relation ? relation.value : 0;
+        break;
+      }
+
       case 'time':
         currentValue = this.timeService.state().hour;
         break;
@@ -56,6 +65,15 @@ export class ConditionEvaluator {
       case 'day':
         currentValue = this.timeService.state().day;
         break;
+
+      case 'vip': {
+        // En este caso el target estará vacío y el value será el nivel de VIP.
+        // Como 'evaluate' normalmente compara currentValue con condition.value,
+        // devolvemos directamente el estado (boolean) si no hay un operador para verificar.
+        // Para mantener compatibilidad con la estructura actual:
+        currentValue = this.vipService.getVipStatus(condition.value as number);
+        break;
+      }
 
       case 'cd': {
         const eventoId = condition.target || contextId;
@@ -74,6 +92,9 @@ export class ConditionEvaluator {
       }
 
     }
+
+    // Para 'vip', si currentValue es boolean y no hay operador o el operador es '==', podemos retornar currentValue
+    if (condition.type === 'vip' && !condition.operator) return currentValue;
 
     // Si la condición de 'cd' hace return directamente, solo procesamos el operador para los otros casos
     if (!condition.operator) return true;

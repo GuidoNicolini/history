@@ -5,8 +5,8 @@ export enum CharacterID {
   OLDSISTER = 4, //  Annabel Redd
   YOUNGSISTER = 5, // Penelope Kay
   BROTHER = 6,
-  NARRATOR= 7,
 
+  NARRATOR= 500,
   NONE = 99999
 
 }

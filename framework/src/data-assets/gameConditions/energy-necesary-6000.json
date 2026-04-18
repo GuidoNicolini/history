@@ -1,0 +1,7 @@
+{
+  "id": 34,
+  "type": "stat-hero",
+  "target": "energy",
+  "operator": ">=",
+  "value": 6000
+}

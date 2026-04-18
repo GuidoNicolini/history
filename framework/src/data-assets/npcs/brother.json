@@ -2,9 +2,9 @@
   "id": 6,
   "name": "Matt",
   "stats": {
-    "LEVEL": 1,
-    "AROUSAL": 0,
-    "CORRUPTION": 0
+    "level": 1,
+    "arousal": 0,
+    "corruption": 0
   },
   "attractions": {},
   "currentLocation": "1",

@@ -1,0 +1,7 @@
+{
+  "id": 800,
+  "type": "stat-hero",
+  "target": "hygiene",
+  "operator": ">=",
+  "value": 5
+}

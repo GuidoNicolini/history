@@ -1,0 +1,7 @@
+{
+  "id": 2,
+  "type": "energy",
+  "target": "",
+  "operator": "plus",
+  "value": 20
+}

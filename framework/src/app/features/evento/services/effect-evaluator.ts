@@ -84,6 +84,30 @@ export class EffectEvaluator {
         this.heroService.modifyEnergy(amount);
         break;
       }
+      case 'hero-lvl': {
+        this.heroService.modifyStat(Stats.LEVEL, 1);
+        break;
+      }
+      case 'npc-lvl': {
+        const [idString, valueString] = String(effect.value).split(':');
+        const npcId = parseInt(idString, 10) as CharacterID;
+        const amount = isPlus ? Number(valueString) : -Number(valueString);
+        this.npcService.modifyStat(npcId, Stats.LEVEL, amount);
+        break;
+      }
+
+      case 'hero-arousal': {
+        const amount = isPlus ? Number(effect.value) : -Number(effect.value);
+        this.heroService.modifyStat(Stats.AROUSAL, amount);
+        break;
+      }
+      case 'npc-arousal': {
+        const [idString, valueString] = String(effect.value).split(':');
+        const npcId = parseInt(idString, 10) as CharacterID;
+        const amount = isPlus ? Number(valueString) : -Number(valueString);
+        this.npcService.modifyStat(npcId, Stats.AROUSAL, amount);
+        break;
+      }
     }
   }
 }

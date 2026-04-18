@@ -1,0 +1,7 @@
+{
+  "id": 10104,
+  "type": "item",
+  "target": "money",
+  "operator": "minus",
+  "value": 50
+}

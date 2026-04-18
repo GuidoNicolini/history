@@ -1,0 +1,7 @@
+{
+  "id": 10006,
+  "type": "item",
+  "target": "money",
+  "operator": "plus",
+  "value": 1000
+}

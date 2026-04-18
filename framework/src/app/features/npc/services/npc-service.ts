@@ -98,7 +98,7 @@ export class NpcService implements ISaveable {
   public generateRelationId(id1: CharacterID, id2: CharacterID): number {
     const minId = Math.min(id1, id2);
     const maxId = Math.max(id1, id2);
-    return parseInt(`${minId}${maxId}`, 10);
+    return minId * 10000 + maxId;
   }
 
   public getRelationByCharacters(id1: CharacterID, id2: CharacterID): RelationState | undefined {

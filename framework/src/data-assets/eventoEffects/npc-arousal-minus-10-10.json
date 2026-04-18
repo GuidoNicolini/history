@@ -1,0 +1,7 @@
+{
+  "id": 4010,
+  "type": "npc-arousal",
+  "target": "",
+  "operator": "minus",
+  "value": "10:10"
+}

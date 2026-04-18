@@ -1,0 +1,7 @@
+{
+  "id": 202,
+  "type": "stat-hero",
+  "target": "arousal",
+  "operator": ">=",
+  "value": 75
+}

@@ -1,0 +1,7 @@
+{
+  "id": 600,
+  "type": "stat-hero",
+  "target": "intelligence",
+  "operator": ">=",
+  "value": 5
+}

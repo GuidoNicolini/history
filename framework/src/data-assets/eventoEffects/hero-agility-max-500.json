@@ -1,0 +1,7 @@
+{
+  "id": 2029,
+  "type": "hero-stat",
+  "target": "agility",
+  "operator": "plus",
+  "value": 500
+}

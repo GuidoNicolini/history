@@ -1,0 +1,7 @@
+{
+  "id": 2011,
+  "type": "hero-stat",
+  "target": "corruption",
+  "operator": "plus",
+  "value": 50
+}
