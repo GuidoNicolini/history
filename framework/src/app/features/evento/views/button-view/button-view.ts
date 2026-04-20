@@ -2,6 +2,7 @@ import {Component, Input} from '@angular/core';
 import {ButtonCube} from '../../models/Cube/button-cube';
 import {CubeActionService} from '../../services/cube-action-service';
 import {ConditionEvaluator} from '../../../condition/services/condition-evaluator';
+import {ConditionService} from '../../../condition/services/condition-service';
 
 @Component({
   selector: 'app-button-view',
@@ -15,11 +16,14 @@ export class ButtonView {
 
   constructor(
     private cubeActionService: CubeActionService,
-    private conditionEvaluator: ConditionEvaluator
+    private conditionEvaluator: ConditionEvaluator,
+    private conditionService: ConditionService
   ) {}
 
   get isDisabled(): boolean {
-    return !this.conditionEvaluator.checkAll(this.cube.conditions);
+    if (!this.cube.conditions || this.cube.conditions.length === 0) return false;
+    const conditions = this.conditionService.findConditions(this.cube.conditions);
+    return !this.conditionEvaluator.checkAll(conditions);
   }
 
   protected action() {
