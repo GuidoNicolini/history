@@ -59,6 +59,7 @@ export class ConditionEvaluator {
       }
 
       case 'time':
+        console.log("mira lo que evaluo")
         currentValue = this.timeService.state().hour;
         break;
 
@@ -89,6 +90,11 @@ export class ConditionEvaluator {
         const cooldown = evento.cooldownDuration || 0;
 
         return (currentDay - evento.lastDayActivated) >= cooldown;
+      }
+
+      case 'random': {
+        const probability = (condition.value as number) || 0;
+        return (Math.random() * 100) < probability;
       }
 
     }

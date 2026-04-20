@@ -3,9 +3,11 @@ import {Router} from '@angular/router';
 import {Location} from '../models/location';
 import {LocationID} from '../../../shared/enums/location-id';
 import {ConditionEvaluator} from '../../condition/services/condition-evaluator';
+import {ConditionService} from '../../condition/services/condition-service';
 import {TimeService} from '../../time/services/time-service';
-import { ISaveable } from '../../../shared/interfaces/saveable.interface';
-import { SaveLoadService } from '../../../shared/services/save-load-service';
+import {ISaveable} from '../../../shared/interfaces/saveable.interface';
+import {SaveLoadService} from '../../../shared/services/save-load-service';
+import {TypeLocation} from '../../../shared/enums/type-location';
 
 @Injectable({
   providedIn: 'root',
@@ -17,6 +19,7 @@ export class LocationService implements ISaveable {
 
   constructor(
     private conditionEvaluator: ConditionEvaluator,
+    private conditionService: ConditionService,
     private timeService: TimeService,
     private router: Router,
     private saveLoadService: SaveLoadService
@@ -67,7 +70,14 @@ export class LocationService implements ISaveable {
   public updateAvailability(locationId: LocationID): void {
     const location = this.findLocationById(locationId);
     if (location) {
-      location.isAvailable = this.conditionEvaluator.checkAll(location.conditionsAvailable);
+      const conditions = this.conditionService.findConditions(location.conditionsAvailable || []);
+
+      if(location.type === TypeLocation.ACTIVITY){
+        location.isAvailable = this.conditionEvaluator.checkAll(conditions, location.backUrl);
+      } else {
+        location.isAvailable = this.conditionEvaluator.checkAll(conditions);
+      }
+
     }
   }
 
@@ -78,7 +88,14 @@ export class LocationService implements ISaveable {
   public updateVisibility(locationId: LocationID): void {
     const location = this.findLocationById(locationId);
     if (location) {
-      location.isVisible = this.conditionEvaluator.checkAll(location.conditionsVisible);
+      const conditions = this.conditionService.findConditions(location.conditionsVisible || []);
+
+      if(location.type === TypeLocation.ACTIVITY){
+        location.isVisible = this.conditionEvaluator.checkAll(conditions, location.backUrl);
+      } else {
+        location.isVisible = this.conditionEvaluator.checkAll(conditions);
+      }
+
     }
   }
 

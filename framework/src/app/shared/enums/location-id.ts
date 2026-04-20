@@ -17,6 +17,11 @@ export enum LocationID {
   KITCHEN = 1007,
   BACKYARD = 1008,
 
+  /****** Activities Home *****/
+
+
+  STRECHING_BACKYARD = 1021
+
 
 
 }
