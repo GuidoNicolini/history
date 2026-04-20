@@ -9,6 +9,7 @@ import {TextCube} from '../../models/Cube/text-cube';
 import {VideoCube} from '../../models/Cube/video-cube';
 import {ImageCube} from '../../models/Cube/image-cube';
 import {ButtonCube} from '../../models/Cube/button-cube';
+import {CodeCube} from '../../models/Cube/code-cube';
 
 @Component({
   selector: 'app-evento-view',
@@ -103,6 +104,10 @@ export class EventoView implements OnInit{
 
   isButton(cube:Cube): cube is ButtonCube {
     return cube.type === 'button';
+  }
+
+  isCode(cube:Cube) : cube is CodeCube {
+    return cube.type === 'code';
   }
 
 }
