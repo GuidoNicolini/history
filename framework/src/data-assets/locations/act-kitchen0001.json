@@ -1,0 +1,20 @@
+{
+  "id": 1025,
+  "name": "Meal",
+  "type": 100,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "/assets/img/locations/activities/meal.png"
+    }
+  ],
+  "url": "evento/kitchen0001",
+  "backUrl": "kitchen0001",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [5,1001000,2001],
+  "conditionsVisible": [],
+  "subLocations": []
+}

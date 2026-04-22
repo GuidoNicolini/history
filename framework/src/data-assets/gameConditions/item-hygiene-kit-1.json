@@ -1,0 +1,7 @@
+{
+  "id": 1001002,
+  "type": "item",
+  "target": "hygienekit",
+  "operator": ">=",
+  "value": 1
+}

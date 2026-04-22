@@ -59,7 +59,6 @@ export class ConditionEvaluator {
       }
 
       case 'time':
-        console.log("mira lo que evaluo")
         currentValue = this.timeService.state().hour;
         break;
 

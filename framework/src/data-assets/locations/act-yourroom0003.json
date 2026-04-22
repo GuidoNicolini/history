@@ -1,0 +1,20 @@
+{
+  "id": 1030,
+  "name": "Study",
+  "type": 100,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "/assets/img/locations/activities/study.png"
+    }
+  ],
+  "url": "evento/yourroom0003",
+  "backUrl": "yourroom0003",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [5,12],
+  "conditionsVisible": [],
+  "subLocations": []
+}

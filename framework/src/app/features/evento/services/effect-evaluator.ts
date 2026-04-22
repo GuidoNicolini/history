@@ -108,6 +108,13 @@ export class EffectEvaluator {
         this.npcService.modifyStat(npcId, Stats.AROUSAL, amount);
         break;
       }
+
+
+      case "hygiene": {
+        const amount = isPlus ? Number(effect.value) : -Number(effect.value);
+        this.heroService.modifyStat(Stats.HYGIENE, amount);
+        break;
+      }
     }
   }
 }

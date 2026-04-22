@@ -1,0 +1,100 @@
+{
+  "id": "yourroom0005",
+  "type": 2,
+  "location": 1000,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 1,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "You close your eyes and start touching yourself",
+      "character":500
+    },
+    {
+      "id": 2,
+      "type": "image",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "image": "assets/img/eventos/locations/yourroom/wank1.gif"
+    },
+    {
+      "id": 3,
+      "type": "image",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "image": "assets/img/eventos/locations/yourroom/wank2.gif"
+    },
+    {
+      "id": 4,
+      "type": "image",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "image": "assets/img/eventos/locations/yourroom/wank3.gif"
+    },
+    {
+      "id": 5,
+      "type": "image",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "image": "assets/img/eventos/locations/yourroom/wank4.gif"
+    },
+    {
+      "id": 6,
+      "type": "image",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "image": "assets/img/eventos/locations/yourroom/wank5.gif"
+    },
+    {
+      "id": 7,
+      "type": "image",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "image": "assets/img/eventos/locations/yourroom/wank6.gif"
+    },
+    {
+      "id": 8,
+      "type": "image",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "image": "assets/img/eventos/locations/yourroom/wank7.gif"
+    },
+    {
+      "id": 9,
+      "type": "image",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "image": "assets/img/eventos/locations/yourroom/wank8.webp"
+    },
+    {
+      "id": 10,
+      "type": "button",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "text": "End",
+      "conditions": [],
+      "cubeAction":{
+        "type": "redirection",
+        "value": "location/1000"
+      }
+    }
+
+  ],
+  "conditions": [],
+  "effects": [13,30,2010,2050,2005,2003]
+}

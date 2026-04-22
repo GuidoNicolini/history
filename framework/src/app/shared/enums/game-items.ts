@@ -3,7 +3,7 @@ export enum GameItems {
   MONEY = "money",
   SNACK = "snack",
   FOOD = "food",
-  HYGIENEKIT = "hygieneKit",
+  HYGIENEKIT = "hygienekit",
   SHOWERKIT = "showerkit"
 
 }

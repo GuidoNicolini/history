@@ -50,10 +50,10 @@
       "conditions": [],
       "cubeAction":{
         "type": "redirection",
-        "value": "location/100"
+        "value": "location/1008"
       }
     }
   ],
   "conditions": [],
-  "effects": [13,30,2026]
+  "effects": [13,30,2026,2050]
 }

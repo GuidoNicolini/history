@@ -1,0 +1,20 @@
+{
+  "id": 1026,
+  "name": "Snack",
+  "type": 100,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "/assets/img/locations/activities/snack.png"
+    }
+  ],
+  "url": "evento/kitchen0002",
+  "backUrl": "kitchen0002",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [5,1001001],
+  "conditionsVisible": [],
+  "subLocations": []
+}

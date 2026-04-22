@@ -1,8 +1,17 @@
 import {Cube} from './cube';
-import {CubeAction} from './cube-action';
 
 export interface ButtonCube extends Cube{
   text: string
   conditions: number[]
   cubeAction: CubeAction
+}
+
+
+
+export type ActionType = 'redirection' | 'save'
+
+export interface CubeAction {
+
+  type: ActionType;
+  value: any;
 }

@@ -1,0 +1,20 @@
+{
+  "id": 1024,
+  "name": "Wash hand",
+  "type": 100,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "/assets/img/locations/activities/wash-hand.png"
+    }
+  ],
+  "url": "evento/bathroom0003",
+  "backUrl": "bathroom0003",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [5,10],
+  "conditionsVisible": [],
+  "subLocations": []
+}
