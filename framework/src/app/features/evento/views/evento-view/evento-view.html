@@ -21,5 +21,8 @@
       <app-code-view [cube] = "cube"></app-code-view>
     }
 
+    @if(isForm(cube)){
+      <app-form-view [cube] = "cube" ></app-form-view>
+    }
   }
 </div>

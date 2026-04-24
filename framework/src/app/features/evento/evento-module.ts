@@ -6,6 +6,8 @@ import { ImageView } from './views/image-view/image-view';
 import { TextView } from './views/text-view/text-view';
 import { VideoView } from './views/video-view/video-view';
 import { CodeView } from './views/code-view/code-view';
+import { FormView } from './views/form-view/form-view';
+import {FormsModule} from "@angular/forms";
 
 
 
@@ -16,10 +18,12 @@ import { CodeView } from './views/code-view/code-view';
     ImageView,
     TextView,
     VideoView,
-    CodeView
+    CodeView,
+    FormView
   ],
-  imports: [
-    CommonModule
-  ]
+    imports: [
+        CommonModule,
+        FormsModule
+    ]
 })
 export class EventoModule { }

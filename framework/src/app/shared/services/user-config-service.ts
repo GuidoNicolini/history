@@ -13,8 +13,8 @@ export class UserConfigService implements ISaveable {
   }
 
   public names = signal<Record<string, string>>({
-    'momName': 'Landlady',
-    'dadName': 'Landlord',
+    'mom': 'Landlady',
+    'dad': 'Landlord',
     'youngSister': 'Roommate',
     'olderSister': 'Roommate',
     'brother': 'Roommate'
