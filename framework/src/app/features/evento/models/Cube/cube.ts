@@ -1,4 +1,4 @@
-export type CubeType = 'image' | 'text' | 'button' | 'video' | 'code';
+export type CubeType = 'image' | 'text' | 'button' | 'video' | 'code' | 'form';
 
 export interface Cube {
   id:number

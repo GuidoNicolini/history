@@ -28,6 +28,65 @@
         "type": "redirection",
         "value": "location/1000"
       }
+    },
+    {
+      "id": 3,
+      "type": "text",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Set relations. You live with",
+      "character": 500
+    },
+    {
+      "id": 4,
+      "type": "form",
+      "order": 4,
+      "probability": 100,
+      "styleClass": [],
+      "fuctionName": "npc-name",
+      "placeHolder": "Landlady",
+      "parameters" : ["mom"]
+    },
+    {
+      "id": 5,
+      "type": "form",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "fuctionName": "npc-name",
+      "placeHolder": "Landlord",
+      "parameters" : ["dad"]
+    },
+    {
+      "id": 6,
+      "type": "form",
+      "order": 6,
+      "probability": 100,
+      "styleClass": [],
+      "fuctionName": "npc-name",
+      "placeHolder": "Female Roommate",
+      "parameters" : ["youngSister"]
+    },
+    {
+      "id": 7,
+      "type": "form",
+      "order": 7,
+      "probability": 100,
+      "styleClass": [],
+      "fuctionName": "npc-name",
+      "placeHolder": "Female Roommate",
+      "parameters" : ["olderSister"]
+    },
+    {
+      "id": 8,
+      "type": "form",
+      "order": 8,
+      "probability": 100,
+      "styleClass": [],
+      "fuctionName": "npc-name",
+      "placeHolder": "Male Roommate",
+      "parameters" : ["brother"]
     }
   ],
   "conditions": [],
