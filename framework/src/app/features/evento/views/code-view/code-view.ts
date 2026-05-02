@@ -2,6 +2,7 @@ import {Component, Input, OnInit} from '@angular/core';
 import {CodeCube} from '../../models/Cube/code-cube';
 import {ConditionService} from '../../../condition/services/condition-service';
 import {ConditionEvaluator} from '../../../condition/services/condition-evaluator';
+import {Funciones} from './funciones';
 
 @Component({
   selector: 'app-code-view',
@@ -13,6 +14,8 @@ export class CodeView implements OnInit {
 
   @Input() cube!: CodeCube;
 
+  funciones = new Funciones()
+
   constructor(
     private conditionService: ConditionService,
     private conditionEvaluator: ConditionEvaluator
@@ -22,8 +25,22 @@ export class CodeView implements OnInit {
 
     if(this.checkConditions(this.cube.conditions)){
 
-      // Debajo de aqui iran los metodos que se llamaran utilizando el nombre
-      // crear una clase donde esten todos los metodos para no sobrecargar esta y hacerla mas mantenible
+      switch (this.cube.functionName) {
+        case 'meetMomSetTrue':
+          this.funciones.meetMomSetTrue();
+          break;
+        case 'meetLilSisSetTrue':
+         this.funciones.meetLilSisSetTrue();
+          break;
+          case 'meetOldSisSetTrue':
+          this.funciones.meetOldSisSetTrue();
+          break;
+        case 'meetDad':
+          this.funciones.meetDadSetTrue();
+          break;
+
+      }
+
 
     }
 

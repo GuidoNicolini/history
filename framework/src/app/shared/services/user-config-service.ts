@@ -25,11 +25,11 @@ export class UserConfigService implements ISaveable {
   }
 
   public getMomName(): string {
-    return this.names()['momName'];
+    return this.names()['mom'];
   }
 
   public getDadName(): string {
-    return this.names()['dadName'];
+    return this.names()['dad'];
   }
 
   public getYoungSisterName(): string {

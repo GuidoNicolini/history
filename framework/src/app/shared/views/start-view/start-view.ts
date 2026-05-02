@@ -25,8 +25,29 @@ export class StartView {
 
   }
 
-  protected loadGame() {
+  protected loadGame(event?: Event) {
+
+    // Si la función es llamada desde un botón estándar: <button (click)="loadGame()">, abrimos el selector de archivos
+    const input = document.createElement('input');
+    input.type = 'file';
+    input.accept = '.json'; // Ajusta la extensión de archivo si es necesario
+    input.onchange = (e: Event) => {
+      const target = e.target as HTMLInputElement;
+      if (target.files && target.files.length > 0) {
+        this.saveLoadService.loadStateFromFile(target.files[0]);
+        console.log("forma 2")
+        setTimeout(() => {
+          this.router.navigate(['/location/1000']);
+        }, 2000);
+      }
+    };
+    input.click();
+  }
+
+  protected continueGame() {
     this.saveLoadService.loadStateFromLocalStorage()
-    this.router.navigate(['/location/1000']);
+    setTimeout(() => {
+      this.router.navigate(['/location/1000']);
+    }, 2000);
   }
 }

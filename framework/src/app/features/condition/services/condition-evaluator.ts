@@ -37,6 +37,10 @@ export class ConditionEvaluator {
     switch (condition.type) {
       case 'flag':
         currentValue = this.storyState.getFlag(condition.target!);
+        // Si la bandera no está definida, por defecto es false
+        if (currentValue === undefined) {
+          currentValue = false;
+        }
         break;
       case 'stat-hero':
         currentValue = this.heroService.getStat(condition.target as unknown as Stats);
@@ -83,7 +87,7 @@ export class ConditionEvaluator {
         if (!evento) return false;
 
         // Si nunca se ha activado o no tiene lastDayActivated, permitimos activarlo (ya que no hay cooldown que comprobar)
-        if (evento.lastDayActivated === undefined || evento.lastDayActivated === null) return true;
+        if (evento.lastDayActivated === undefined || evento.lastDayActivated === null || evento.lastDayActivated === 0) return true;
 
         const currentDay = this.timeService.state().day;
         const cooldown = evento.cooldownDuration || 0;
@@ -104,19 +108,27 @@ export class ConditionEvaluator {
     // Si la condición de 'cd' hace return directamente, solo procesamos el operador para los otros casos
     if (!condition.operator) return true;
 
+    // Normalizar tipos para evitar que un string 'false' comparado con el booleano false devuelva false
+    let expectedValue = condition.value;
+    if (expectedValue === 'true') expectedValue = true;
+    if (expectedValue === 'false') expectedValue = false;
+
+    if (currentValue === 'true') currentValue = true;
+    if (currentValue === 'false') currentValue = false;
+
     // 2. Aplicar el operador matemático
     switch (condition.operator) {
-      case '==': return currentValue === condition.value;
-      case '!=': return currentValue !== condition.value;
-      case '>':  return currentValue > condition.value;
-      case '<':  return currentValue < condition.value;
-      case '>=': return currentValue >= condition.value;
-      case '<=': return currentValue <= condition.value;
+      case '==': return currentValue === expectedValue;
+      case '!=': return currentValue !== expectedValue;
+      case '>':  return currentValue > expectedValue;
+      case '<':  return currentValue < expectedValue;
+      case '>=': return currentValue >= expectedValue;
+      case '<=': return currentValue <= expectedValue;
 
 
       // si el operador utiliza between se debe poner el minimo primero y el maximo despues separado por ':'
       case 'between': {
-        const [minStr, maxStr] = String(condition.value).split(':');
+        const [minStr, maxStr] = String(expectedValue).split(':');
         return currentValue >= parseInt(minStr, 10) && currentValue <= parseInt(maxStr, 10);
       }
       default: return false;

@@ -47,6 +47,8 @@ export class EventoService implements ISaveable {
   }
 
   public launchLocationEvento(locationId: LocationID): void {
+
+
     // Usamos el Injector localmente para evitar una dependencia circular con ConditionEvaluator
     const evaluator = this.injector.get(ConditionEvaluator);
     const conditionService = this.injector.get(ConditionService);

@@ -43,6 +43,9 @@ export class LocationView implements OnInit {
         if (foundLocation) {
           this.location = foundLocation;
 
+          //lanzar evento de location si hay disponible
+          this.eventoService.launchLocationEvento(this.location.id)
+
           // 3- Setear las subLocations
           this.subLocations = this.locationService.findSubLocations(this.LocationId)
 

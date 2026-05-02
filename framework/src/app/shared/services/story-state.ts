@@ -14,8 +14,11 @@ export class StoryState implements ISaveable {
 
   // Aquí guardamos TOD0 el progreso de la historia
   public flags = signal<Record<string, any>>({
-    'juego_iniciado': true,
-    'capitulo_actual': 1,
+    'meet_mom': false,
+    'meet_lil_sis' :false,
+    'meet_old_sis' : false,
+    'meet_dad' : false,
+
   });
 
   setFlag(key: string, value: any) {
