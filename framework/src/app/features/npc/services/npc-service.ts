@@ -140,6 +140,14 @@ export class NpcService implements ISaveable {
     });
   }
 
+  public increaseAllArousal(): void {
+    const npcs = this.state();
+    for (const idStr of Object.keys(npcs)) {
+      const npcId = parseInt(idStr, 10) as CharacterID;
+      this.modifyStat(npcId, Stats.AROUSAL, 10);
+    }
+  }
+
   // MOTOR DE RUTINAS
 
   public updateRoutines(day: Day, time: number): void {

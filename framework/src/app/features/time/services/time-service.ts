@@ -93,6 +93,8 @@ export class TimeService implements ISaveable {
   private onDayChanged(): void {
 
     this.saveLoadService.saveStateToLocalStorage()
+    this.npcService.increaseAllArousal()
+
   }
 
   public exportState(): Time {
