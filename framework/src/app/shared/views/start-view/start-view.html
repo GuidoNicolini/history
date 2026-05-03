@@ -22,6 +22,15 @@
 </div>
 
 
+<br>
+
+<!-- Alerta de carga -->
+<div *ngIf="isLoading" class="alert-loading" style="background-color: #ffcc00; padding: 10px; margin-bottom: 15px; text-align: center; border-radius: 5px; font-weight: bold;">
+  Game's loading… just like something else in your pants. 5 seconds.
+</div>
+
+<br>
+
 
 <button type="button" class="btn btn-info btn-lg mx-2" (click)="newGame()">New Game</button>
 <button type="button" class="btn btn-info btn-lg mx-2" (click)="continueGame()">Continue Game</button>

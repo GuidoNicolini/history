@@ -14,14 +14,17 @@ export class StartView {
   }
   initilizer = new Initializer();
 
+  // Propiedad para controlar la visualización de la alerta de carga
+  isLoading = false;
+
   protected newGame() {
+    this.isLoading = true;
     this.initilizer.initializeAllData();
 
-
-    //this.router.navigate(['/location/100']);
     setTimeout(() => {
+      this.isLoading = false;
       this.router.navigate(['/evento/history0001']);
-    }, 2000);
+    }, 5000);
 
   }
 
@@ -34,20 +37,24 @@ export class StartView {
     input.onchange = (e: Event) => {
       const target = e.target as HTMLInputElement;
       if (target.files && target.files.length > 0) {
+        this.isLoading = true;
         this.saveLoadService.loadStateFromFile(target.files[0]);
         console.log("forma 2")
         setTimeout(() => {
+          this.isLoading = false;
           this.router.navigate(['/location/1000']);
-        }, 2000);
+        }, 5000);
       }
     };
     input.click();
   }
 
   protected continueGame() {
+    this.isLoading = true;
     this.saveLoadService.loadStateFromLocalStorage()
     setTimeout(() => {
+      this.isLoading = false;
       this.router.navigate(['/location/1000']);
-    }, 2000);
+    }, 5000);
   }
 }
