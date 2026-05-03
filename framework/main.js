@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow, shell } = require('electron');
 const path = require('path');
 const url = require('url');
 
@@ -22,6 +22,12 @@ function createWindow() {
       slashes: true
     })
   );
+
+  // Redirigir links con target="_blank" al navegador por defecto del usuario
+  win.webContents.setWindowOpenHandler(({ url }) => {
+    shell.openExternal(url);
+    return { action: 'deny' };
+  });
 
   // Abre las herramientas de desarrollo (opcional)
   // win.webContents.openDevTools();
