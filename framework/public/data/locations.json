@@ -1,0 +1,581 @@
+[
+  {
+    "id": 1021,
+    "name": "Stretch",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "/assets/img/locations/activities/stretching.jpg"
+      }
+    ],
+    "url": "evento/backyard0001",
+    "backUrl": "backyard0001",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      12,
+      5,
+      2000
+    ],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 1022,
+    "name": "Bath",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "/assets/img/locations/activities/bath.png"
+      }
+    ],
+    "url": "evento/bathroom0001",
+    "backUrl": "bathroom0001",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      2001,
+      1001002,
+      5
+    ],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 1023,
+    "name": "Shower",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "/assets/img/locations/activities/shower.png"
+      }
+    ],
+    "url": "evento/bathroom0002",
+    "backUrl": "bathroom0002",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      2001,
+      1001003,
+      5
+    ],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 1024,
+    "name": "Wash hand",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "/assets/img/locations/activities/wash-hand.png"
+      }
+    ],
+    "url": "evento/bathroom0003",
+    "backUrl": "bathroom0003",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      5,
+      10
+    ],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 1025,
+    "name": "Meal",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "/assets/img/locations/activities/meal.png"
+      }
+    ],
+    "url": "evento/kitchen0001",
+    "backUrl": "kitchen0001",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      5,
+      1001000,
+      2001
+    ],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 1026,
+    "name": "Snack",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "/assets/img/locations/activities/snack.png"
+      }
+    ],
+    "url": "evento/kitchen0002",
+    "backUrl": "kitchen0002",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      5,
+      1001001
+    ],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 1033,
+    "name": "Watch TV",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "/assets/img/locations/activities/watch-tv.png"
+      }
+    ],
+    "url": "evento/livingroom0001",
+    "backUrl": "livingroom0001",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 1027,
+    "name": "Rest",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "/assets/img/locations/activities/rest.png"
+      }
+    ],
+    "url": "evento/livingroom0002",
+    "backUrl": "livingroom0002",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      5
+    ],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 1028,
+    "name": "sleep",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "/assets/img/locations/activities/sleep.png"
+      }
+    ],
+    "url": "evento/yourroom0001",
+    "backUrl": "yourroom0001",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      5
+    ],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 1029,
+    "name": "Train",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "/assets/img/locations/activities/train.png"
+      }
+    ],
+    "url": "evento/yourroom0002",
+    "backUrl": "yourroom0002",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      5,
+      12
+    ],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 1030,
+    "name": "Study",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "/assets/img/locations/activities/study.png"
+      }
+    ],
+    "url": "evento/yourroom0003",
+    "backUrl": "yourroom0003",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      5,
+      12
+    ],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 1031,
+    "name": "Charisma",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "/assets/img/locations/activities/charisma.png"
+      }
+    ],
+    "url": "evento/yourroom0004",
+    "backUrl": "yourroom0004",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      5,
+      12
+    ],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 1032,
+    "name": "Jerk off",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "/assets/img/locations/activities/jerk.png"
+      }
+    ],
+    "url": "evento/yourroom0005",
+    "backUrl": "yourroom0005",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      5,
+      12,
+      201
+    ],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 1008,
+    "name": "Backyard",
+    "type": 40,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "/assets/img/locations/room/backyard.jpg"
+      }
+    ],
+    "url": "location/1008",
+    "backUrl": "location/100",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": [
+      1021
+    ]
+  },
+  {
+    "id": 1005,
+    "name": "Bathroom",
+    "type": 40,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "/assets/img/locations/room/bathroom.jpg"
+      }
+    ],
+    "url": "location/1005",
+    "backUrl": "location/100",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": [
+      1022,
+      1023,
+      1024
+    ]
+  },
+  {
+    "id": 1004,
+    "name": "Max's Room",
+    "type": 40,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "/assets/img/locations/room/brother-room.jpg"
+      }
+    ],
+    "url": "location/1004",
+    "backUrl": "location/100",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      1001004
+    ],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 1,
+    "name": "Happy City",
+    "type": 1,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "/assets/img/locations/world/city.jpg"
+      }
+    ],
+    "url": "location/1",
+    "backUrl": "location/1",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": [
+      10
+    ]
+  },
+  {
+    "id": 100,
+    "name": "Home",
+    "type": 20,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "/assets/img/locations/building/home.jpg"
+      }
+    ],
+    "url": "location/100",
+    "backUrl": "location/10",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": [
+      1000,
+      1001,
+      1002,
+      1003,
+      1004,
+      1005,
+      1006,
+      1007,
+      1008
+    ]
+  },
+  {
+    "id": 1007,
+    "name": "Kitchen",
+    "type": 40,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "/assets/img/locations/room/kitchen.jpeg"
+      }
+    ],
+    "url": "location/1007",
+    "backUrl": "location/100",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": [
+      1025,
+      1026
+    ]
+  },
+  {
+    "id": 1006,
+    "name": "Living Room",
+    "type": 40,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "/assets/img/locations/room/living-room.webp"
+      }
+    ],
+    "url": "location/1006",
+    "backUrl": "location/100",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": [
+      1027,
+      1033
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Neighborhood",
+    "type": 10,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "/assets/img/locations/distric/neighborhood.jpg"
+      }
+    ],
+    "url": "location/10",
+    "backUrl": "location/1",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": [
+      100
+    ]
+  },
+  {
+    "id": 1002,
+    "name": "Samantha's Room",
+    "type": 40,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "/assets/img/locations/room/older-sister-room.jpg"
+      }
+    ],
+    "url": "location/1002",
+    "backUrl": "location/100",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      1001006
+    ],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 1001,
+    "name": "Master Room",
+    "type": 40,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "/assets/img/locations/room/parent-room.jpg"
+      }
+    ],
+    "url": "location/1001",
+    "backUrl": "location/100",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      1001005
+    ],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 1003,
+    "name": "Suzy's Room",
+    "type": 40,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "/assets/img/locations/room/younger-sister-room.jpg"
+      }
+    ],
+    "url": "location/1003",
+    "backUrl": "location/100",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      1001007
+    ],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 1000,
+    "name": "Your Room",
+    "type": 40,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "/assets/img/locations/room/your-room.jpg"
+      }
+    ],
+    "url": "location/1000",
+    "backUrl": "location/100",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": [
+      1028,
+      1029,
+      1030,
+      1031,
+      1032
+    ]
+  }
+]

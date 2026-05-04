@@ -1,0 +1,856 @@
+[
+  {
+    "id": 1001004,
+    "type": "item",
+    "target": "roomKeyBrother",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 5,
+    "type": "cd",
+    "target": "",
+    "operator": "==",
+    "value": ""
+  },
+  {
+    "id": 10,
+    "type": "stat-hero",
+    "target": "energy",
+    "operator": ">=",
+    "value": 10
+  },
+  {
+    "id": 19,
+    "type": "stat-hero",
+    "target": "energy",
+    "operator": ">=",
+    "value": 100
+  },
+  {
+    "id": 29,
+    "type": "stat-hero",
+    "target": "energy",
+    "operator": ">=",
+    "value": 1000
+  },
+  {
+    "id": 38,
+    "type": "stat-hero",
+    "target": "energy",
+    "operator": ">=",
+    "value": 10000
+  },
+  {
+    "id": 39,
+    "type": "stat-hero",
+    "target": "energy",
+    "operator": ">=",
+    "value": 12000
+  },
+  {
+    "id": 20,
+    "type": "stat-hero",
+    "target": "energy",
+    "operator": ">=",
+    "value": 150
+  },
+  {
+    "id": 40,
+    "type": "stat-hero",
+    "target": "energy",
+    "operator": ">=",
+    "value": 15000
+  },
+  {
+    "id": 41,
+    "type": "stat-hero",
+    "target": "energy",
+    "operator": ">=",
+    "value": 17000
+  },
+  {
+    "id": 11,
+    "type": "stat-hero",
+    "target": "energy",
+    "operator": ">=",
+    "value": 20
+  },
+  {
+    "id": 21,
+    "type": "stat-hero",
+    "target": "energy",
+    "operator": ">=",
+    "value": 200
+  },
+  {
+    "id": 30,
+    "type": "stat-hero",
+    "target": "energy",
+    "operator": ">=",
+    "value": 2000
+  },
+  {
+    "id": 22,
+    "type": "stat-hero",
+    "target": "energy",
+    "operator": ">=",
+    "value": 250
+  },
+  {
+    "id": 12,
+    "type": "stat-hero",
+    "target": "energy",
+    "operator": ">=",
+    "value": 30
+  },
+  {
+    "id": 23,
+    "type": "stat-hero",
+    "target": "energy",
+    "operator": ">=",
+    "value": 300
+  },
+  {
+    "id": 31,
+    "type": "stat-hero",
+    "target": "energy",
+    "operator": ">=",
+    "value": 3000
+  },
+  {
+    "id": 24,
+    "type": "stat-hero",
+    "target": "energy",
+    "operator": ">=",
+    "value": 350
+  },
+  {
+    "id": 13,
+    "type": "stat-hero",
+    "target": "energy",
+    "operator": ">=",
+    "value": 40
+  },
+  {
+    "id": 25,
+    "type": "stat-hero",
+    "target": "energy",
+    "operator": ">=",
+    "value": 400
+  },
+  {
+    "id": 32,
+    "type": "stat-hero",
+    "target": "energy",
+    "operator": ">=",
+    "value": 4000
+  },
+  {
+    "id": 26,
+    "type": "stat-hero",
+    "target": "energy",
+    "operator": ">=",
+    "value": 450
+  },
+  {
+    "id": 14,
+    "type": "stat-hero",
+    "target": "energy",
+    "operator": ">=",
+    "value": 50
+  },
+  {
+    "id": 27,
+    "type": "stat-hero",
+    "target": "energy",
+    "operator": ">=",
+    "value": 500
+  },
+  {
+    "id": 33,
+    "type": "stat-hero",
+    "target": "energy",
+    "operator": ">=",
+    "value": 5000
+  },
+  {
+    "id": 15,
+    "type": "stat-hero",
+    "target": "energy",
+    "operator": ">=",
+    "value": 60
+  },
+  {
+    "id": 34,
+    "type": "stat-hero",
+    "target": "energy",
+    "operator": ">=",
+    "value": 6000
+  },
+  {
+    "id": 16,
+    "type": "stat-hero",
+    "target": "energy",
+    "operator": ">=",
+    "value": 70
+  },
+  {
+    "id": 35,
+    "type": "stat-hero",
+    "target": "energy",
+    "operator": ">=",
+    "value": 7000
+  },
+  {
+    "id": 28,
+    "type": "stat-hero",
+    "target": "energy",
+    "operator": ">=",
+    "value": 750
+  },
+  {
+    "id": 17,
+    "type": "stat-hero",
+    "target": "energy",
+    "operator": ">=",
+    "value": 80
+  },
+  {
+    "id": 36,
+    "type": "stat-hero",
+    "target": "energy",
+    "operator": ">=",
+    "value": 8000
+  },
+  {
+    "id": 18,
+    "type": "stat-hero",
+    "target": "energy",
+    "operator": ">=",
+    "value": 90
+  },
+  {
+    "id": 37,
+    "type": "stat-hero",
+    "target": "energy",
+    "operator": ">=",
+    "value": 9000
+  },
+  {
+    "id": 500,
+    "type": "stat-hero",
+    "target": "agility",
+    "operator": ">=",
+    "value": 5
+  },
+  {
+    "id": 203,
+    "type": "stat-hero",
+    "target": "arousal",
+    "operator": ">=",
+    "value": 100
+  },
+  {
+    "id": 200,
+    "type": "stat-hero",
+    "target": "arousal",
+    "operator": ">=",
+    "value": 25
+  },
+  {
+    "id": 201,
+    "type": "stat-hero",
+    "target": "arousal",
+    "operator": ">=",
+    "value": 50
+  },
+  {
+    "id": 202,
+    "type": "stat-hero",
+    "target": "arousal",
+    "operator": ">=",
+    "value": 75
+  },
+  {
+    "id": 700,
+    "type": "stat-hero",
+    "target": "charisma",
+    "operator": ">=",
+    "value": 5
+  },
+  {
+    "id": 301,
+    "type": "stat-hero",
+    "target": "corruption",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 302,
+    "type": "stat-hero",
+    "target": "corruption",
+    "operator": ">=",
+    "value": 2
+  },
+  {
+    "id": 303,
+    "type": "stat-hero",
+    "target": "corruption",
+    "operator": ">=",
+    "value": 3
+  },
+  {
+    "id": 800,
+    "type": "stat-hero",
+    "target": "hygiene",
+    "operator": ">=",
+    "value": 5
+  },
+  {
+    "id": 600,
+    "type": "stat-hero",
+    "target": "intelligence",
+    "operator": ">=",
+    "value": 5
+  },
+  {
+    "id": 101,
+    "type": "stat-hero",
+    "target": "level",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 102,
+    "type": "stat-hero",
+    "target": "level",
+    "operator": ">=",
+    "value": 2
+  },
+  {
+    "id": 103,
+    "type": "stat-hero",
+    "target": "level",
+    "operator": ">=",
+    "value": 3
+  },
+  {
+    "id": 400,
+    "type": "stat-hero",
+    "target": "strength",
+    "operator": ">=",
+    "value": 5
+  },
+  {
+    "id": 1001000,
+    "type": "item",
+    "target": "food",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 1001002,
+    "type": "item",
+    "target": "hygienekit",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 1000000,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 1000001,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 10
+  },
+  {
+    "id": 1000004,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 100
+  },
+  {
+    "id": 1000014,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 1000
+  },
+  {
+    "id": 1000027,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 10000
+  },
+  {
+    "id": 1000036,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 100000
+  },
+  {
+    "id": 1000038,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 1000000
+  },
+  {
+    "id": 1000042,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 10000000
+  },
+  {
+    "id": 1000046,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 100000000
+  },
+  {
+    "id": 1000047,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 1000000000
+  },
+  {
+    "id": 1000015,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 1250
+  },
+  {
+    "id": 1000005,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 150
+  },
+  {
+    "id": 1000016,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 1500
+  },
+  {
+    "id": 1000039,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 1500000
+  },
+  {
+    "id": 1000043,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 15000000
+  },
+  {
+    "id": 1000017,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 1750
+  },
+  {
+    "id": 1000006,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 200
+  },
+  {
+    "id": 1000018,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 2000
+  },
+  {
+    "id": 1000028,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 20000
+  },
+  {
+    "id": 1000040,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 2000000
+  },
+  {
+    "id": 1000002,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 25
+  },
+  {
+    "id": 1000019,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 2500
+  },
+  {
+    "id": 1000007,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 300
+  },
+  {
+    "id": 1000020,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 3000
+  },
+  {
+    "id": 1000029,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 30000
+  },
+  {
+    "id": 1000044,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 30000000
+  },
+  {
+    "id": 1000008,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 400
+  },
+  {
+    "id": 1000021,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 4000
+  },
+  {
+    "id": 1000030,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 40000
+  },
+  {
+    "id": 1000003,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 50
+  },
+  {
+    "id": 1000009,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 500
+  },
+  {
+    "id": 1000022,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 5000
+  },
+  {
+    "id": 1000031,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 50000
+  },
+  {
+    "id": 1000037,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 500000
+  },
+  {
+    "id": 1000041,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 5000000
+  },
+  {
+    "id": 1000045,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 50000000
+  },
+  {
+    "id": 1000010,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 600
+  },
+  {
+    "id": 1000023,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 6000
+  },
+  {
+    "id": 1000032,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 60000
+  },
+  {
+    "id": 1000011,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 700
+  },
+  {
+    "id": 1000024,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 7000
+  },
+  {
+    "id": 1000033,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 70000
+  },
+  {
+    "id": 1000012,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 800
+  },
+  {
+    "id": 1000025,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 8000
+  },
+  {
+    "id": 1000034,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 80000
+  },
+  {
+    "id": 1000013,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 900
+  },
+  {
+    "id": 1000026,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 9000
+  },
+  {
+    "id": 1000035,
+    "type": "item",
+    "target": "money",
+    "operator": ">=",
+    "value": 90000
+  },
+  {
+    "id": 1001003,
+    "type": "item",
+    "target": "showerkit",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 1001001,
+    "type": "item",
+    "target": "food",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 1001007,
+    "type": "item",
+    "target": "roomKeyLilSister",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 1001005,
+    "type": "item",
+    "target": "roomKeyMaster",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 10000001,
+    "type": "flag",
+    "target": "meet_lil_sis",
+    "operator": "==",
+    "value": "false"
+  },
+  {
+    "id": 10000000,
+    "type": "flag",
+    "target": "meet_mom",
+    "operator": "==",
+    "value": "false"
+  },
+  {
+    "id": 10000002,
+    "type": "flag",
+    "target": "meet_old_sis",
+    "operator": "==",
+    "value": "false"
+  },
+  {
+    "id": 10000003,
+    "type": "flag",
+    "target": "meet_dad",
+    "operator": "==",
+    "value": "false"
+  },
+  {
+    "id": 1001006,
+    "type": "item",
+    "target": "roomKeyOldSister",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 90,
+    "type": "random",
+    "target": "",
+    "operator": "==",
+    "value": 1
+  },
+  {
+    "id": 92,
+    "type": "random",
+    "target": "",
+    "operator": "==",
+    "value": 10
+  },
+  {
+    "id": 93,
+    "type": "random",
+    "target": "",
+    "operator": "==",
+    "value": 25
+  },
+  {
+    "id": 94,
+    "type": "random",
+    "target": "",
+    "operator": "==",
+    "value": 33
+  },
+  {
+    "id": 91,
+    "type": "random",
+    "target": "",
+    "operator": "==",
+    "value": 5
+  },
+  {
+    "id": 95,
+    "type": "random",
+    "target": "",
+    "operator": "==",
+    "value": 50
+  },
+  {
+    "id": 96,
+    "type": "random",
+    "target": "",
+    "operator": "==",
+    "value": 75
+  },
+  {
+    "id": 97,
+    "type": "random",
+    "target": "",
+    "operator": "==",
+    "value": 90
+  },
+  {
+    "id": 2001,
+    "type": "time",
+    "target": "",
+    "operator": "between",
+    "value": "7:22"
+  },
+  {
+    "id": 2000,
+    "type": "time",
+    "target": "",
+    "operator": "between",
+    "value": "8:19"
+  },
+  {
+    "id": 1,
+    "type": "vip",
+    "target": "",
+    "operator": "==",
+    "value": 1
+  },
+  {
+    "id": 2,
+    "type": "vip",
+    "target": "",
+    "operator": "==",
+    "value": 2
+  },
+  {
+    "id": 3,
+    "type": "vip",
+    "target": "",
+    "operator": "==",
+    "value": 3
+  },
+  {
+    "id": 4,
+    "type": "vip",
+    "target": "",
+    "operator": "==",
+    "value": 4
+  }
+]
