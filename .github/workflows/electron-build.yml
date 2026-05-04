@@ -15,6 +15,10 @@ jobs:
       matrix:
         os: [ubuntu-latest, windows-latest, macos-latest]
 
+    defaults:
+      run:
+        working-directory: ./framework
+
     steps:
       # 3. Descargar el código del repositorio
       - name: Check out Git repository
