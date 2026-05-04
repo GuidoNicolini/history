@@ -30,6 +30,7 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm' # Esto acelera futuras ejecuciones guardando las dependencias en caché
+          cache-dependency-path: framework/package-lock.json # Le indica dónde buscar el archivo
 
       # 5. Instalar las dependencias del proyecto
       - name: Install Dependencies
