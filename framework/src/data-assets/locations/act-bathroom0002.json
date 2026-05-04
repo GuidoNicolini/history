@@ -1,0 +1,20 @@
+{
+  "id": 1023,
+  "name": "Shower",
+  "type": 100,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "/assets/img/locations/activities/shower.png"
+    }
+  ],
+  "url": "evento/bathroom0002",
+  "backUrl": "bathroom0002",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [2001,1001003,5],
+  "conditionsVisible": [],
+  "subLocations": []
+}

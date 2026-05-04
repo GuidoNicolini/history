@@ -1,0 +1,7 @@
+{
+  "id": 2042,
+  "type": "hero-stat",
+  "target": "charisma",
+  "operator": "plus",
+  "value": 1000
+}

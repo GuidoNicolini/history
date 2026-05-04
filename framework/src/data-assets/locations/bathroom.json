@@ -1,0 +1,20 @@
+{
+  "id": 1005,
+  "name": "Bathroom",
+  "type": 40,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "/assets/img/locations/room/bathroom.jpg"
+    }
+  ],
+  "url": "location/1005",
+  "backUrl": "location/100",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [],
+  "conditionsVisible": [],
+  "subLocations": [1022,1023,1024]
+}

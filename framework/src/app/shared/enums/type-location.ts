@@ -1,7 +1,9 @@
 export enum TypeLocation {
-  WORLD = 100,
-  DISTRIC = 90,
-  BUILDING = 80,
-  APARTMENT = 70,
-  ROOM = 10,
+  VOID = 0,
+  WORLD = 1,
+  DISTRIC = 10,
+  BUILDING = 20,
+  APARTMENT = 30,
+  ROOM = 40,
+  ACTIVITY = 100
 }

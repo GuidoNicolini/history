@@ -1,0 +1,7 @@
+{
+  "id": 10200,
+  "type": "item",
+  "target": "snack",
+  "operator": "plus",
+  "value": 1
+}

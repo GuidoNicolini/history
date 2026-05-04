@@ -1,0 +1,7 @@
+{
+  "id": 2046,
+  "type": "hero-stat",
+  "target": "hygiene",
+  "operator": "plus",
+  "value": 100
+}

@@ -1,10 +1,12 @@
 export enum CharacterID {
-  HERO = 0,
-  MOM = 1,
-  DAD = 2,
-  OLDSISTER = 3,
-  YOUNGSISTER = 4,
-  BROTHER = 5,
+  HERO = 1,
+  MOM = 2, //Natasha Nice
+  DAD = 3,
+  OLDSISTER = 4, //  Annabel Redd
+  YOUNGSISTER = 5, // Penelope Kay
+  BROTHER = 6,
 
+  NARRATOR= 500,
   NONE = 99999
+
 }

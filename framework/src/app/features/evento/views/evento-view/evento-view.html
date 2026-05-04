@@ -17,5 +17,12 @@
       <app-button-view [cube] = "cube" ></app-button-view>
     }
 
+    @if(isCode(cube)){
+      <app-code-view [cube] = "cube"></app-code-view>
+    }
+
+    @if(isForm(cube)){
+      <app-form-view [cube] = "cube" ></app-form-view>
+    }
   }
 </div>

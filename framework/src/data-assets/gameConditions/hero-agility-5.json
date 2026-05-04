@@ -1,0 +1,7 @@
+{
+  "id": 500,
+  "type": "stat-hero",
+  "target": "agility",
+  "operator": ">=",
+  "value": 5
+}

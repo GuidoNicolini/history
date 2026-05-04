@@ -1,0 +1,20 @@
+{
+  "id": 1033,
+  "name": "Watch TV",
+  "type": 100,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "/assets/img/locations/activities/watch-tv.png"
+    }
+  ],
+  "url": "evento/livingroom0001",
+  "backUrl": "livingroom0001",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [],
+  "conditionsVisible": [],
+  "subLocations": []
+}

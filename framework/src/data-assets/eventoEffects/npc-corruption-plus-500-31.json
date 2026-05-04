@@ -1,0 +1,7 @@
+{
+  "id": 6031,
+  "type": "npc-stat",
+  "target": "corruption",
+  "operator": "plus",
+  "value": "31:500"
+}

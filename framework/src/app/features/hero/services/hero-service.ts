@@ -1,14 +1,20 @@
-import {computed, Injectable, signal} from '@angular/core';
+import {Injectable, signal, computed} from '@angular/core';
 import {HeroState} from '../models/hero-state';
-import {CharacterName} from '../../../shared/enums/character-name';
 import {Stats} from '../../../shared/enums/stats';
-import {GameItems} from '../../../shared/enums/game-items';
 import {Avatar} from '../../../shared/enums/avatar';
+import {GameItems} from '../../../shared/enums/game-items';
+import { ISaveable } from '../../../shared/interfaces/saveable.interface';
+import { SaveLoadService } from '../../../shared/services/save-load-service';
 
 @Injectable({
   providedIn: 'root',
 })
-export class HeroService {
+export class HeroService implements ISaveable {
+  public saveKey = 'hero';
+
+  constructor(private saveLoadService: SaveLoadService) {
+    this.saveLoadService.register(this);
+  }
 
   // 1. EL ESTADO CENTRAL (Signal)
   // Inicializamos el estado vacío, esperando ser inicializado por initializeHero
@@ -33,12 +39,9 @@ export class HeroService {
     return this.state().avatar;
   }
 
-  public getName(): CharacterName {
+  public getName(): string {
     return this.state().name;
   }
-
-
-
 
 
   // 3. MÉTODOS DE MODIFICACIÓN DE ESTADÍSTICAS
@@ -75,7 +78,7 @@ export class HeroService {
   public modifyRandomStat(stat: Stats, maxValue: number): void {
     const currentLevel = this.state().stats?.[stat] || 0;
 
-    let probability = 0.05;
+    let probability = 0.10;
     if (maxValue > currentLevel) {
       probability = (maxValue - currentLevel) / maxValue;
     }

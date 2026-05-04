@@ -1,0 +1,23 @@
+{
+  "id": 1,
+  "name": "Happy City",
+  "type": 1,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "/assets/img/locations/world/city.jpg"
+    }
+  ],
+  "url": "location/1",
+  "backUrl": "location/1",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [],
+  "conditionsVisible": [],
+  "subLocations": [
+    10
+  ]
+}
+

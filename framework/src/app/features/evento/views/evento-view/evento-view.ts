@@ -9,6 +9,8 @@ import {TextCube} from '../../models/Cube/text-cube';
 import {VideoCube} from '../../models/Cube/video-cube';
 import {ImageCube} from '../../models/Cube/image-cube';
 import {ButtonCube} from '../../models/Cube/button-cube';
+import {CodeCube} from '../../models/Cube/code-cube';
+import {FormCube} from '../../models/Cube/form-cube';
 
 @Component({
   selector: 'app-evento-view',
@@ -29,7 +31,8 @@ export class EventoView implements OnInit{
        this.idEvento = params.get('id')!;
        this.evento = this.eventoService.getEventoById(this.idEvento)!
        this.eventoService.modifyLastDayUsedAndNumberOfTimesActivated(this.idEvento,this.timeService.state().day)
-       this.effects.applyAll(this.evento.effects)
+       const eventEffects = this.eventoService.getEffectsForEvento(this.idEvento);
+       this.effects.applyAll(eventEffects)
 
        this.processCubes();
     })
@@ -102,6 +105,13 @@ export class EventoView implements OnInit{
 
   isButton(cube:Cube): cube is ButtonCube {
     return cube.type === 'button';
+  }
+
+  isCode(cube:Cube) : cube is CodeCube {
+    return cube.type === 'code';
+  }
+  isForm(cube:Cube) : cube is FormCube{
+    return cube.type === 'form';
   }
 
 }

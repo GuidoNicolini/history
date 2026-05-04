@@ -7,6 +7,10 @@ import {EventoState} from '../../features/evento/models/evento-state';
 import {LocationService} from '../../features/location';
 import {NpcService, NpcState} from '../../features/npc';
 import {TimeService} from '../../features/time';
+import {ConditionService} from '../../features/condition/services/condition-service';
+import {GameCondition} from '../../features/condition/models/game-condition';
+import {EventoEffectService} from '../../features/evento/services/evento-effect-service';
+import {EventoEffect} from '../../features/evento/models/evento-effect';
 
 export class Initializer {
 
@@ -15,7 +19,9 @@ export class Initializer {
   private eventoService = inject(EventoService)
   private locationService = inject(LocationService);
   private npcService = inject(NpcService);
-  private timeService = inject(TimeService)
+  private timeService = inject(TimeService);
+  private conditionService = inject(ConditionService);
+  private eventoEffectsService = inject(EventoEffectService)
 
   private loadData<T>(entity: string): Observable<T[]> {
     return this.http.get<T[]>(`data/${entity}.json`);
@@ -27,8 +33,10 @@ export class Initializer {
       eventos: this.loadData<EventoState>('eventos'),
       locations: this.loadData<any>('locations'),
       npcs: this.loadData<NpcState>('npcs'),
-      time: this.loadData<any>('time')
-    }).subscribe(({heroes, eventos, locations, npcs, time}) => {
+      time: this.loadData<any>('time'),
+      gameConditions: this.loadData<GameCondition>('gameConditions'),
+      effects: this.loadData<EventoEffect>('eventoEffects')
+    }).subscribe(({heroes, eventos, locations, npcs, time, gameConditions, effects}) => {
 
 
       if (heroes.length > 0) {
@@ -40,6 +48,8 @@ export class Initializer {
       if (time.length > 0) {
         this.timeService.initializeTime(time[0])
       }
+      this.conditionService.initializeConditions(gameConditions)
+      this.eventoEffectsService.initializeEffects(effects)
 
       console.log('¡Todos los datos iniciales han sido cargados!');
     });

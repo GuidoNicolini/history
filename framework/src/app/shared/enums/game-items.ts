@@ -3,7 +3,11 @@ export enum GameItems {
   MONEY = "money",
   SNACK = "snack",
   FOOD = "food",
-  HYGIENEKIT = "hygieneKit",
-  SHOWERKIT = "showerkit"
+  HYGIENEKIT = "hygienekit",
+  SHOWERKIT = "showerkit",
+  ROOM_KEY_BROTHER = "roomKeyBrother",
+  ROOM_KEY_MASTER = "roomKeyMaster",
+  ROOM_KEY_OLD_SISTER = "roomKeyOldSister",
+  ROOM_KEY_LIL_SISTER = "roomKeyLilSister",
 
 }

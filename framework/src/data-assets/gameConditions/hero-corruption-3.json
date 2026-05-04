@@ -1,0 +1,7 @@
+{
+  "id": 303,
+  "type": "stat-hero",
+  "target": "corruption",
+  "operator": ">=",
+  "value": 3
+}

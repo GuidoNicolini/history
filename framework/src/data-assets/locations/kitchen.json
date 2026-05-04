@@ -1,0 +1,20 @@
+{
+  "id": 1007,
+  "name": "Kitchen",
+  "type": 40,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "/assets/img/locations/room/kitchen.jpeg"
+    }
+  ],
+  "url": "location/1007",
+  "backUrl": "location/100",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [],
+  "conditionsVisible": [],
+  "subLocations": [1025,1026]
+}

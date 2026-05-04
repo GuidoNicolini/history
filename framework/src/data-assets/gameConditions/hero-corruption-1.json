@@ -1,0 +1,7 @@
+{
+  "id": 301,
+  "type": "stat-hero",
+  "target": "corruption",
+  "operator": ">=",
+  "value": 1
+}

@@ -10,12 +10,14 @@ import {EventoModule} from './features/evento';
 import {LocationModule} from './features/location';
 import { StartView } from './shared/views/start-view/start-view';
 import { DebugStart } from './shared/views/debug-start/debug-start';
+import { SideMenuVIew } from './shared/views/side-menu-view/side-menu-view';
 
 @NgModule({
   declarations: [
     App,
     StartView,
-    DebugStart
+    DebugStart,
+    SideMenuVIew
   ],
   imports: [
     BrowserModule,

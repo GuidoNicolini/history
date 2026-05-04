@@ -1,0 +1,55 @@
+name: Build Electron App
+
+# 1. Definimos cuándo se ejecutará el workflow
+on:
+  push:
+    branches: [ "dev" ] # Se ejecuta cuando hay un push a la rama 'dev'
+  pull_request:
+    branches: [ "dev" ] # Opcional: también cuando se hace un PR hacia 'dev'
+
+jobs:
+  build:
+    # 2. Definimos los sistemas operativos (la matriz)
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+
+    steps:
+      # 3. Descargar el código del repositorio
+      - name: Check out Git repository
+        uses: actions/checkout@v4
+
+      # 4. Configurar Node.js (asegúrate de poner la versión que usas en tu proyecto)
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm' # Esto acelera futuras ejecuciones guardando las dependencias en caché
+
+      # 5. Instalar las dependencias del proyecto
+      - name: Install Dependencies
+        run: npm ci # 'npm ci' es más seguro y rápido en CI que 'npm install'
+
+      # 6. Compilar el código fuente (ej. Angular, React, etc., si es necesario)
+      - name: Build Source
+        run: npm run build
+
+      # 7. Empaquetar Electron con electron-builder
+      - name: Make/Distribute Electron App
+        run: npm run dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Necesario si electron-builder publica en GitHub Releases
+
+      # 8. Subir los archivos generados como artefactos (para poder descargarlos desde GitHub)
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: electron-app-${{ matrix.os }}
+          # Usamos la carpeta configurada en package.json (release/)
+          path: |
+            release/*.exe
+            release/*.dmg
+            release/*.AppImage
+            release/*.zip
+            release/*.tar.gz

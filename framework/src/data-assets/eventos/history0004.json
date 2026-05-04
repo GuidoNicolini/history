@@ -1,0 +1,90 @@
+{
+  "id": "history0004",
+  "type": 3,
+  "location": 1005,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 999,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "What the fuck is your problem? Bustin' in here like a goddamn animal? Fucking moron!",
+      "character":4
+    },
+    {
+      "id": 2,
+      "type": "text",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Sorry, didn't know you were in here.",
+      "character":1
+    },
+    {
+      "id": 3,
+      "type": "text",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Doors have locks for a reason, dipshit! You're lucky I'm decent or I'd have my man rearrange your face.",
+      "character":4
+    },
+    {
+      "id": 4,
+      "type": "text",
+      "order": 4,
+      "probability": 100,
+      "styleClass": [],
+      "text": "I said it was an accident, for fuck's sake!",
+      "character":1
+    },
+    {
+      "id": 5,
+      "type": "text",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Then why're you still standing there? Get the fuck out, you little creep!",
+      "character":4
+    },
+    {
+      "id": 6,
+      "type": "image",
+      "order": 6,
+      "probability": 100,
+      "styleClass": [],
+      "image": "assets/img/eventos/npc/old-sis/bathroom-first-encounter.jpg"
+    },
+
+    {
+      "id": 7,
+      "type": "button",
+      "order": 7,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Leave",
+      "conditions": [],
+      "cubeAction":{
+        "type": "redirection",
+        "value": "location/100"
+      }
+    },
+    {
+      "id": 8,
+      "type": "code",
+      "order": 8,
+      "probability": 100,
+      "styleClass": [],
+      "functionName": "meetOldSisSetTrue",
+      "parameters": [],
+      "conditions": []
+    }
+  ],
+  "conditions": [10000002],
+  "effects": []
+}

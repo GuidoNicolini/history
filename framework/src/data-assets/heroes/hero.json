@@ -1,5 +1,5 @@
 {
-  "id": 0,
+  "id": 1,
   "name": "Mark",
   "stats": {
     "level": 1,
@@ -10,11 +10,11 @@
     "agility": 1,
     "intelligence": 1,
     "charisma": 1,
-    "hygiene": 100
+    "hygiene": 5
   },
   "inventory": {
     "money": 100,
     "snack": 5
   },
-  "avatar": "assets/img/avatar/heroe.gif"
+  "avatar": "assets/img/avatars/heroe.gif"
 }

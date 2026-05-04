@@ -3,16 +3,24 @@ import {Router} from '@angular/router';
 import {EventoState} from '../models/evento-state';
 import {EventoType} from '../../../shared/enums/evento-type';
 import {LocationID} from '../../../shared/enums/location-id';
-import {ConditionEvaluator} from '../../../shared/services/condition-evaluator';
+import {ConditionEvaluator} from '../../condition/services/condition-evaluator';
+import {ConditionService} from '../../condition/services/condition-service';
+import {EventoEffectService} from './evento-effect-service';
+import {EventoEffect} from '../models/evento-effect';
+import { ISaveable } from '../../../shared/interfaces/saveable.interface';
+import { SaveLoadService } from '../../../shared/services/save-load-service';
 
 @Injectable({
   providedIn: 'root',
 })
-export class EventoService {
+export class EventoService implements ISaveable {
+  public saveKey = 'eventos';
   //el primer string es para el id del evento
   public state = signal<Record<string, EventoState>>({})
 
-  constructor(private router: Router, private injector: Injector) {}
+  constructor(private router: Router, private injector: Injector, private eventoEffectService: EventoEffectService, private saveLoadService: SaveLoadService) {
+    this.saveLoadService.register(this);
+  }
 
   public initializeEventos(eventoData:EventoState[]): void {
     const eventosRecord = eventoData.reduce((acc, evento) => {
@@ -26,19 +34,33 @@ export class EventoService {
     return this.state()[id];
   }
 
-
   public getEventosByType(type: EventoType): EventoState[] {
     return Object.values(this.state()).filter(evento => evento.type === type);
   }
 
+  public getEffectsForEvento(eventoId: string): EventoEffect[] {
+    const evento = this.getEventoById(eventoId);
+    if (!evento || !evento.effects) {
+      return [];
+    }
+    return this.eventoEffectService.findEffects(evento.effects);
+  }
+
   public launchLocationEvento(locationId: LocationID): void {
+
+
     // Usamos el Injector localmente para evitar una dependencia circular con ConditionEvaluator
     const evaluator = this.injector.get(ConditionEvaluator);
-    const validEventos = Object.values(this.state()).filter(evento =>
-      evento.type === EventoType.LOCATION &&
-      evento.location === locationId &&
-      evaluator.checkAll(evento.conditions, evento.id)
-    );
+    const conditionService = this.injector.get(ConditionService);
+
+    const validEventos = Object.values(this.state()).filter(evento => {
+      if (evento.type !== EventoType.LOCATION || evento.location !== locationId) {
+        return false;
+      }
+
+      const conditions = conditionService.findConditions(evento.conditions || []);
+      return evaluator.checkAll(conditions, evento.id);
+    });
 
     if (validEventos.length === 0) {
       return;

@@ -1,0 +1,7 @@
+{
+  "id": 92,
+  "type": "random",
+  "target": "",
+  "operator": "==",
+  "value": 10
+}

@@ -1,0 +1,20 @@
+{
+  "id": 1001,
+  "name": "Master Room",
+  "type": 40,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "/assets/img/locations/room/parent-room.jpg"
+    }
+  ],
+  "url": "location/1001",
+  "backUrl": "location/100",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [1001005],
+  "conditionsVisible": [],
+  "subLocations": []
+}

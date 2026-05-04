@@ -1,9 +1,17 @@
 import {Cube} from './cube';
-import {CubeAction} from './cube-action';
-import {GameCondition} from '../../../../shared/Models/game-condition';
 
 export interface ButtonCube extends Cube{
   text: string
-  conditions: GameCondition[]
+  conditions: number[]
   cubeAction: CubeAction
+}
+
+
+
+export type ActionType = 'redirection' | 'save'
+
+export interface CubeAction {
+
+  type: ActionType;
+  value: any;
 }

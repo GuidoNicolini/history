@@ -1,6 +1,6 @@
 import {LocationID} from '../../../shared/enums/location-id';
 import {TypeLocation} from '../../../shared/enums/type-location';
-import {GameCondition} from '../../../shared/Models/game-condition';
+
 export type ImageType = 'thumbnail' | 'background';
 
 export interface Location {
@@ -10,13 +10,14 @@ export interface Location {
   type: TypeLocation
   images: Image[]
   url: string
+  backUrl: string
   isAvailable: boolean;
   isVisible: boolean
   lastTimeVisited: number
   styleClass: string[];
-  subLocations: Location[]
-  conditionsAvailable: GameCondition[]
-  conditionsVisible: GameCondition[]
+  subLocations: LocationID[]
+  conditionsAvailable: number[]
+  conditionsVisible: number[]
 
 }
 

@@ -1,0 +1,99 @@
+{
+  "id": "history0002",
+  "type": 3,
+  "location": 1007,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 999,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Hey {{mom}}, morning!",
+      "character":1
+    },
+    {
+      "id": 2,
+      "type": "text",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Morning, honey! Glad you're up—I need a little favor from my favorite guy.",
+      "character":2
+    },
+    {
+      "id": 3,
+      "type": "image",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "image": "assets/img/eventos/npc/mom/mom-kitchen.jpg"
+    },
+    {
+      "id": 4,
+      "type": "text",
+      "order": 4,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Anything for you, {{mom}}.",
+      "character":1
+    },
+    {
+      "id": 5,
+      "type": "text",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Think you could lend me a hand once a week? Dishes, bathroom, backyard… and a few other spots that could use some attention.",
+      "character":2
+    },
+    {
+      "id": 6,
+      "type": "text",
+      "order": 6,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Yeah, {{mom}}, no problem!",
+      "character":1
+    },
+    {
+      "id": 7,
+      "type": "text",
+      "order": 7,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Thanks, baby. You're my little angel… I just love having you around to help me out.",
+      "character":2
+    },
+
+    {
+      "id": 8,
+      "type": "button",
+      "order": 8,
+      "probability": 100,
+      "styleClass": [],
+      "text": "continue",
+      "conditions": [],
+      "cubeAction":{
+        "type": "redirection",
+        "value": "location/1007"
+      }
+    },
+    {
+      "id": 9,
+      "type": "code",
+      "order": 9,
+      "probability": 100,
+      "styleClass": [],
+      "functionName": "meetMomSetTrue",
+      "parameters": [],
+      "conditions": []
+    }
+  ],
+  "conditions": [10000000],
+  "effects": []
+}

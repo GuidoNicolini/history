@@ -1,0 +1,7 @@
+{
+  "id": 36,
+  "type": "hour",
+  "target": "",
+  "operator": "plus",
+  "value": 24
+}

@@ -1,5 +1,4 @@
 import {CharacterID} from '../../../shared/enums/character-id';
-import {CharacterName} from '../../../shared/enums/character-name';
 import {Stats} from '../../../shared/enums/stats';
 import {LocationID} from '../../../shared/enums/location-id';
 import {Routine} from './routine';
@@ -8,10 +7,9 @@ import {Avatar} from '../../../shared/enums/avatar';
 export interface NpcState {
 
   id: CharacterID;
-  name: CharacterName;
+  name: string;
   stats: Record<Stats, number>;
-  attractions: Record<CharacterID,number>
-  currentLocation: LocationID
-  routines: Routine[]
-  avatar: Avatar
+  currentLocation: LocationID;
+  routines: Routine[];
+  avatar: Avatar;
 }
