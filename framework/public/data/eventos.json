@@ -1,0 +1,1346 @@
+[
+  {
+    "id": "backyard0001",
+    "type": 2,
+    "location": 1008,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 1,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You do some stretching in the backyard",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/backyard/strech1.gif"
+      },
+      {
+        "id": 3,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/backyard/strech2.gif"
+      },
+      {
+        "id": 4,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/backyard/strech3.gif"
+      },
+      {
+        "id": 5,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Return to backyard",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1008"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      13,
+      30,
+      2026,
+      2050
+    ]
+  },
+  {
+    "id": "bathroom0001",
+    "type": 2,
+    "location": 1005,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 1,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You take a relaxing bath",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/bathroom/bath1.gif"
+      },
+      {
+        "id": 3,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/bathroom/bath2.gif"
+      },
+      {
+        "id": 4,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/bathroom/bath3.gif"
+      },
+      {
+        "id": 5,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Finish bath",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1005"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      8,
+      31,
+      10221,
+      2044,
+      2044,
+      2044,
+      2045,
+      2048
+    ]
+  },
+  {
+    "id": "bathroom0002",
+    "type": 2,
+    "location": 1005,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 1,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You take a quick shower",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/bathroom/shower1.gif"
+      },
+      {
+        "id": 3,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/bathroom/shower2.gif"
+      },
+      {
+        "id": 4,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/bathroom/shower3.webp"
+      },
+      {
+        "id": 5,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/bathroom/shower4.gif"
+      },
+      {
+        "id": 6,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Finish shower",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1005"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      5,
+      30,
+      10231,
+      10221,
+      2044,
+      2044,
+      2044
+    ]
+  },
+  {
+    "id": "bathroom0003",
+    "type": 2,
+    "location": 1005,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 1,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You wash your hands",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/bathroom/wash-hand1.gif"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Finish wash",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1005"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      42,
+      2044,
+      11
+    ]
+  },
+  {
+    "id": "history0001",
+    "type": 1,
+    "location": 0,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You wake up in your room",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "button",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Wake Up",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1000"
+        }
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Set relations. You live with",
+        "character": 500
+      },
+      {
+        "id": 4,
+        "type": "form",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "fuctionName": "npc-name",
+        "placeHolder": "Landlady",
+        "parameters": [
+          "mom"
+        ]
+      },
+      {
+        "id": 5,
+        "type": "form",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "fuctionName": "npc-name",
+        "placeHolder": "Landlord",
+        "parameters": [
+          "dad"
+        ]
+      },
+      {
+        "id": 6,
+        "type": "form",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "fuctionName": "npc-name",
+        "placeHolder": "Female Roommate",
+        "parameters": [
+          "youngSister"
+        ]
+      },
+      {
+        "id": 7,
+        "type": "form",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "fuctionName": "npc-name",
+        "placeHolder": "Female Roommate",
+        "parameters": [
+          "olderSister"
+        ]
+      },
+      {
+        "id": 8,
+        "type": "form",
+        "order": 8,
+        "probability": 100,
+        "styleClass": [],
+        "fuctionName": "npc-name",
+        "placeHolder": "Male Roommate",
+        "parameters": [
+          "brother"
+        ]
+      }
+    ],
+    "conditions": [],
+    "effects": []
+  },
+  {
+    "id": "history0002",
+    "type": 3,
+    "location": 1007,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 999,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Hey {{mom}}, morning!",
+        "character": 1
+      },
+      {
+        "id": 2,
+        "type": "text",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Morning, honey! Glad you're up—I need a little favor from my favorite guy.",
+        "character": 2
+      },
+      {
+        "id": 3,
+        "type": "image",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/mom/mom-kitchen.jpg"
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Anything for you, {{mom}}.",
+        "character": 1
+      },
+      {
+        "id": 5,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Think you could lend me a hand once a week? Dishes, bathroom, backyard… and a few other spots that could use some attention.",
+        "character": 2
+      },
+      {
+        "id": 6,
+        "type": "text",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Yeah, {{mom}}, no problem!",
+        "character": 1
+      },
+      {
+        "id": 7,
+        "type": "text",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Thanks, baby. You're my little angel… I just love having you around to help me out.",
+        "character": 2
+      },
+      {
+        "id": 8,
+        "type": "button",
+        "order": 8,
+        "probability": 100,
+        "styleClass": [],
+        "text": "continue",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1007"
+        }
+      },
+      {
+        "id": 9,
+        "type": "code",
+        "order": 9,
+        "probability": 100,
+        "styleClass": [],
+        "functionName": "meetMomSetTrue",
+        "parameters": [],
+        "conditions": []
+      }
+    ],
+    "conditions": [
+      10000000
+    ],
+    "effects": []
+  },
+  {
+    "id": "history0003",
+    "type": 3,
+    "location": 1006,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 999,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "No fucking way this level is impossible!",
+        "character": 5
+      },
+      {
+        "id": 2,
+        "type": "text",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Try hitting it from a different angle, dummy.",
+        "character": 6
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "I told you, that doesn't do shit!",
+        "character": 5
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Well, try again—maybe you're not pressing hard enough.",
+        "character": 6
+      },
+      {
+        "id": 5,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You just smirk, watching them get all worked up, and quietly enjoy the show.",
+        "character": 500
+      },
+      {
+        "id": 6,
+        "type": "image",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/lil-sis/sis-bro-playgame.webp"
+      },
+      {
+        "id": 7,
+        "type": "button",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "text": "continue",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1006"
+        }
+      },
+      {
+        "id": 8,
+        "type": "code",
+        "order": 8,
+        "probability": 100,
+        "styleClass": [],
+        "functionName": "meetLilSisSetTrue",
+        "parameters": [],
+        "conditions": []
+      }
+    ],
+    "conditions": [
+      10000001
+    ],
+    "effects": []
+  },
+  {
+    "id": "history0004",
+    "type": 3,
+    "location": 1005,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 999,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "What the fuck is your problem? Bustin' in here like a goddamn animal? Fucking moron!",
+        "character": 4
+      },
+      {
+        "id": 2,
+        "type": "text",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Sorry, didn't know you were in here.",
+        "character": 1
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Doors have locks for a reason, dipshit! You're lucky I'm decent or I'd have my man rearrange your face.",
+        "character": 4
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "I said it was an accident, for fuck's sake!",
+        "character": 1
+      },
+      {
+        "id": 5,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Then why're you still standing there? Get the fuck out, you little creep!",
+        "character": 4
+      },
+      {
+        "id": 6,
+        "type": "image",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/old-sis/bathroom-first-encounter.jpg"
+      },
+      {
+        "id": 7,
+        "type": "button",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Leave",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/100"
+        }
+      },
+      {
+        "id": 8,
+        "type": "code",
+        "order": 8,
+        "probability": 100,
+        "styleClass": [],
+        "functionName": "meetOldSisSetTrue",
+        "parameters": [],
+        "conditions": []
+      }
+    ],
+    "conditions": [
+      10000002
+    ],
+    "effects": []
+  },
+  {
+    "id": "history0005",
+    "type": 3,
+    "location": 1008,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 999,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Good morning, {{dad}}! Do you always have to make so much noise in the morning?",
+        "character": 1
+      },
+      {
+        "id": 2,
+        "type": "text",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Haha! Shit, boy—nothing beats the sound of productivity. Gets my blood pumpin'.",
+        "character": 3
+      },
+      {
+        "id": 3,
+        "type": "image",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/dad/dad_backyard.jpeg"
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Fine. Maybe I'll take over next week so you don't piss off the whole block with that lawnmower.",
+        "character": 1
+      },
+      {
+        "id": 5,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Hey, I'm not just cutting grass—I'm raising the standards! And I'm raising a good boy who knows how to handle a hard tool. Sure, you can mow—just don't get too attached to the handle, if you know what I mean. Heh. You're a good kid.",
+        "character": 3
+      },
+      {
+        "id": 6,
+        "type": "button",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Continue",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1008"
+        }
+      },
+      {
+        "id": 7,
+        "type": "code",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "functionName": "meetDad",
+        "parameters": [],
+        "conditions": []
+      }
+    ],
+    "conditions": [
+      10000003
+    ],
+    "effects": []
+  },
+  {
+    "id": "kitchen0001",
+    "type": 2,
+    "location": 1007,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 1,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You prepare and eat a good meal",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/kitchen/food1.gif"
+      },
+      {
+        "id": 3,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/kitchen/food2.gif"
+      },
+      {
+        "id": 4,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/kitchen/food3.gif"
+      },
+      {
+        "id": 5,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/kitchen/food4.gif"
+      },
+      {
+        "id": 6,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/kitchen/food5.webp"
+      },
+      {
+        "id": 7,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "End meal",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1007"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      3,
+      30,
+      10211
+    ]
+  },
+  {
+    "id": "kitchen0002",
+    "type": 2,
+    "location": 1007,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 1,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You eat a snack",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/kitchen/snack1.gif"
+      },
+      {
+        "id": 3,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/kitchen/snack2.gif"
+      },
+      {
+        "id": 4,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/kitchen/snack3.gif"
+      },
+      {
+        "id": 5,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "End snack",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1007"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      1,
+      41,
+      10200
+    ]
+  },
+  {
+    "id": "livingroom0001",
+    "type": 2,
+    "location": 1006,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 1,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You spend your time watching television",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/livingroom/tv-horror.gif"
+      },
+      {
+        "id": 3,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/livingroom/tv-humor.gif"
+      },
+      {
+        "id": 4,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/livingroom/tv-romantic.gif"
+      },
+      {
+        "id": 5,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Turn off TV",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1006"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      30
+    ]
+  },
+  {
+    "id": "livingroom0002",
+    "type": 2,
+    "location": 1006,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 1,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You take a break",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/livingroom/rest1.webp"
+      },
+      {
+        "id": 3,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/livingroom/rest2.gif"
+      },
+      {
+        "id": 4,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/livingroom/rest3.gif"
+      },
+      {
+        "id": 5,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "End Rest",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1006"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      31,
+      1
+    ]
+  },
+  {
+    "id": "yourroom0001",
+    "type": 2,
+    "location": 1000,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 1,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You sleep in your room",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/yourroom/sleeping1.gif"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Wake up",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1000"
+        }
+      },
+      {
+        "id": 4,
+        "type": "button",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Save game",
+        "conditions": [],
+        "cubeAction": {
+          "type": "save",
+          "value": "location/1000"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      8,
+      34
+    ]
+  },
+  {
+    "id": "yourroom0002",
+    "type": 2,
+    "location": 1000,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 1,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You train in your room",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/yourroom/training1.webp"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "End training",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1000"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      13,
+      30,
+      2020,
+      2050
+    ]
+  },
+  {
+    "id": "yourroom0003",
+    "type": 2,
+    "location": 1000,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 1,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You study in your room",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/yourroom/study1.gif"
+      },
+      {
+        "id": 3,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/yourroom/study2.gif"
+      },
+      {
+        "id": 4,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/yourroom/study3.gif"
+      },
+      {
+        "id": 5,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "End Study",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1000"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      13,
+      30,
+      2032,
+      2050
+    ]
+  },
+  {
+    "id": "yourroom0004",
+    "type": 2,
+    "location": 1000,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 1,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You improve your charisma",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/yourroom/charisma1.gif"
+      },
+      {
+        "id": 3,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/yourroom/charisma2.gif"
+      },
+      {
+        "id": 4,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/yourroom/charisma3.gif"
+      },
+      {
+        "id": 5,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/yourroom/charisma4.gif"
+      },
+      {
+        "id": 6,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/yourroom/charisma5.gif"
+      },
+      {
+        "id": 7,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "End Charm Workout",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1000"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      13,
+      30,
+      2038,
+      2050
+    ]
+  },
+  {
+    "id": "yourroom0005",
+    "type": 2,
+    "location": 1000,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 1,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You close your eyes and start touching yourself",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/yourroom/wank1.gif"
+      },
+      {
+        "id": 3,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/yourroom/wank2.gif"
+      },
+      {
+        "id": 4,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/yourroom/wank3.gif"
+      },
+      {
+        "id": 5,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/yourroom/wank4.gif"
+      },
+      {
+        "id": 6,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/yourroom/wank5.gif"
+      },
+      {
+        "id": 7,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/yourroom/wank6.gif"
+      },
+      {
+        "id": 8,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/yourroom/wank7.gif"
+      },
+      {
+        "id": 9,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/yourroom/wank8.webp"
+      },
+      {
+        "id": 10,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "End",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1000"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      13,
+      30,
+      2010,
+      2050,
+      2005,
+      2003
+    ]
+  }
+]

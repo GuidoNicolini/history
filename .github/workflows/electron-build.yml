@@ -36,6 +36,18 @@ jobs:
       - name: Install Dependencies
         run: npm install # 'npm ci' es más seguro y rápido en CI que 'npm install'
 
+      # NUEVO: 5.5 Descargar carpeta de assets pesados comprimidos
+      - name: Descargar Assets
+        # Usamos curl para descargar un archivo ZIP con todos tus assets y unzip para extraerlo en la carpeta correcta
+        # IMPORTANTE: Reemplaza "URL_AQUI" por el enlace de descarga directa de tu .zip
+        run: |
+          curl -L -o assets.zip "URL_AQUI"
+          # Crea el directorio si no existe y extrae el zip dentro
+          mkdir -p src/data-assets
+          unzip -o assets.zip -d src/data-assets
+          # Limpieza
+          rm assets.zip
+
       # 6. Compilar el código fuente (ej. Angular, React, etc., si es necesario)
       - name: Build Source
         run: npm run build
