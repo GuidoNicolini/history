@@ -38,15 +38,16 @@ jobs:
 
       # NUEVO: 5.5 Descargar carpeta de assets pesados comprimidos
       - name: Descargar Assets
-        # Usamos curl para descargar un archivo ZIP con todos tus assets y unzip para extraerlo en la carpeta correcta
-        # IMPORTANTE: Reemplaza "URL_AQUI" por el enlace de descarga directa de tu .zip
+        # Usamos curl para descargar un archivo ZIP llamado archivos.zip y unzip para extraerlo
+        # IMPORTANTE: Reemplaza "URL_AQUI" por el enlace de descarga directa de tu archivos.zip
         run: |
-          curl -L -o assets.zip "URL_AQUI"
-          # Crea el directorio si no existe y extrae el zip dentro
-          mkdir -p src/data-assets
-          unzip -o assets.zip -d src/data-assets
+          curl -L -o archivos.zip https://www.dropbox.com/scl/fi/cjd4ze665btznqcpydwhh/archivos.zip?rlkey=l9xxezanbdo33cjakksr66re3&st=9t8t5lqg&dl=1
+          # Crea el directorio public si no existe y extrae el zip dentro. 
+          # Al descomprimir se creará la carpeta public/assets porque está dentro del zip
+          mkdir -p public
+          unzip -o archivos.zip -d public
           # Limpieza
-          rm assets.zip
+          rm archivos.zip
 
       # 6. Compilar el código fuente (ej. Angular, React, etc., si es necesario)
       - name: Build Source
