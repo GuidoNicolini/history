@@ -34,7 +34,7 @@ jobs:
 
       # 5. Instalar las dependencias del proyecto
       - name: Install Dependencies
-        run: npm ci # 'npm ci' es más seguro y rápido en CI que 'npm install'
+        run: npm install # 'npm ci' es más seguro y rápido en CI que 'npm install'
 
       # 6. Compilar el código fuente (ej. Angular, React, etc., si es necesario)
       - name: Build Source
