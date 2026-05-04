@@ -53,8 +53,8 @@ jobs:
           name: electron-app-${{ matrix.os }}
           # Usamos la carpeta configurada en package.json (release/)
           path: |
-            release/*.exe
-            release/*.dmg
-            release/*.AppImage
-            release/*.zip
-            release/*.tar.gz
+            framework/release/*.exe
+            framework/release/*.dmg
+            framework/release/*.AppImage
+            framework/release/*.zip
+            framework/release/*.tar.gz
