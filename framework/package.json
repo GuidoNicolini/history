@@ -1,6 +1,9 @@
 {
   "name": "framework",
   "version": "0.0.0",
+  "description": "Descripción de tu aplicación",
+  "author": "Happy Dev",
+  "repository": "github:GuidoNicolini/history",
   "main": "main.js",
   "scripts": {
     "ng": "ng",
