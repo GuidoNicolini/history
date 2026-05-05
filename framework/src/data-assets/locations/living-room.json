@@ -5,7 +5,7 @@
   "images": [
     {
       "type": "thumbnail",
-      "url": "/assets/img/locations/room/living-room.webp"
+      "url": "assets/img/locations/room/living-room.webp"
     }
   ],
   "url": "location/1006",

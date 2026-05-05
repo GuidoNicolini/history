@@ -18,14 +18,15 @@
   },
   "build": {
     "appId": "com.framework.app",
-    "productName": "FrameworkApp",
+    "productName": "HappyCity",
     "directories": {
       "output": "release"
     },
     "files": [
       "dist/**/*",
       "main.js",
-      "package.json"
+      "package.json",
+      "public/**/*"
     ],
     "mac": {
       "target": [

@@ -5,7 +5,7 @@
   "images": [
     {
       "type": "thumbnail",
-      "url": "/assets/img/locations/room/kitchen.jpeg"
+      "url": "assets/img/locations/room/kitchen.jpeg"
     }
   ],
   "url": "location/1007",

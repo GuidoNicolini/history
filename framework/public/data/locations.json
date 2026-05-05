@@ -6,7 +6,7 @@
     "images": [
       {
         "type": "thumbnail",
-        "url": "/assets/img/locations/activities/stretching.jpg"
+        "url": "assets/img/locations/activities/stretching.jpg"
       }
     ],
     "url": "evento/backyard0001",
@@ -30,7 +30,7 @@
     "images": [
       {
         "type": "thumbnail",
-        "url": "/assets/img/locations/activities/bath.png"
+        "url": "assets/img/locations/activities/bath.png"
       }
     ],
     "url": "evento/bathroom0001",
@@ -54,7 +54,7 @@
     "images": [
       {
         "type": "thumbnail",
-        "url": "/assets/img/locations/activities/shower.png"
+        "url": "assets/img/locations/activities/shower.png"
       }
     ],
     "url": "evento/bathroom0002",
@@ -78,7 +78,7 @@
     "images": [
       {
         "type": "thumbnail",
-        "url": "/assets/img/locations/activities/wash-hand.png"
+        "url": "assets/img/locations/activities/wash-hand.png"
       }
     ],
     "url": "evento/bathroom0003",
@@ -101,7 +101,7 @@
     "images": [
       {
         "type": "thumbnail",
-        "url": "/assets/img/locations/activities/meal.png"
+        "url": "assets/img/locations/activities/meal.png"
       }
     ],
     "url": "evento/kitchen0001",
@@ -125,7 +125,7 @@
     "images": [
       {
         "type": "thumbnail",
-        "url": "/assets/img/locations/activities/snack.png"
+        "url": "assets/img/locations/activities/snack.png"
       }
     ],
     "url": "evento/kitchen0002",
@@ -148,7 +148,7 @@
     "images": [
       {
         "type": "thumbnail",
-        "url": "/assets/img/locations/activities/watch-tv.png"
+        "url": "assets/img/locations/activities/watch-tv.png"
       }
     ],
     "url": "evento/livingroom0001",
@@ -168,7 +168,7 @@
     "images": [
       {
         "type": "thumbnail",
-        "url": "/assets/img/locations/activities/rest.png"
+        "url": "assets/img/locations/activities/rest.png"
       }
     ],
     "url": "evento/livingroom0002",
@@ -190,7 +190,7 @@
     "images": [
       {
         "type": "thumbnail",
-        "url": "/assets/img/locations/activities/sleep.png"
+        "url": "assets/img/locations/activities/sleep.png"
       }
     ],
     "url": "evento/yourroom0001",
@@ -212,7 +212,7 @@
     "images": [
       {
         "type": "thumbnail",
-        "url": "/assets/img/locations/activities/train.png"
+        "url": "assets/img/locations/activities/train.png"
       }
     ],
     "url": "evento/yourroom0002",
@@ -235,7 +235,7 @@
     "images": [
       {
         "type": "thumbnail",
-        "url": "/assets/img/locations/activities/study.png"
+        "url": "assets/img/locations/activities/study.png"
       }
     ],
     "url": "evento/yourroom0003",
@@ -258,7 +258,7 @@
     "images": [
       {
         "type": "thumbnail",
-        "url": "/assets/img/locations/activities/charisma.png"
+        "url": "assets/img/locations/activities/charisma.png"
       }
     ],
     "url": "evento/yourroom0004",
@@ -281,7 +281,7 @@
     "images": [
       {
         "type": "thumbnail",
-        "url": "/assets/img/locations/activities/jerk.png"
+        "url": "assets/img/locations/activities/jerk.png"
       }
     ],
     "url": "evento/yourroom0005",
@@ -305,7 +305,7 @@
     "images": [
       {
         "type": "thumbnail",
-        "url": "/assets/img/locations/room/backyard.jpg"
+        "url": "assets/img/locations/room/backyard.jpg"
       }
     ],
     "url": "location/1008",
@@ -327,7 +327,7 @@
     "images": [
       {
         "type": "thumbnail",
-        "url": "/assets/img/locations/room/bathroom.jpg"
+        "url": "assets/img/locations/room/bathroom.jpg"
       }
     ],
     "url": "location/1005",
@@ -351,7 +351,7 @@
     "images": [
       {
         "type": "thumbnail",
-        "url": "/assets/img/locations/room/brother-room.jpg"
+        "url": "assets/img/locations/room/brother-room.jpg"
       }
     ],
     "url": "location/1004",
@@ -373,7 +373,7 @@
     "images": [
       {
         "type": "thumbnail",
-        "url": "/assets/img/locations/world/city.jpg"
+        "url": "assets/img/locations/world/city.jpg"
       }
     ],
     "url": "location/1",
@@ -395,7 +395,7 @@
     "images": [
       {
         "type": "thumbnail",
-        "url": "/assets/img/locations/building/home.jpg"
+        "url": "assets/img/locations/building/home.jpg"
       }
     ],
     "url": "location/100",
@@ -425,7 +425,7 @@
     "images": [
       {
         "type": "thumbnail",
-        "url": "/assets/img/locations/room/kitchen.jpeg"
+        "url": "assets/img/locations/room/kitchen.jpeg"
       }
     ],
     "url": "location/1007",
@@ -448,7 +448,7 @@
     "images": [
       {
         "type": "thumbnail",
-        "url": "/assets/img/locations/room/living-room.webp"
+        "url": "assets/img/locations/room/living-room.webp"
       }
     ],
     "url": "location/1006",
@@ -471,7 +471,7 @@
     "images": [
       {
         "type": "thumbnail",
-        "url": "/assets/img/locations/distric/neighborhood.jpg"
+        "url": "assets/img/locations/distric/neighborhood.jpg"
       }
     ],
     "url": "location/10",
@@ -493,7 +493,7 @@
     "images": [
       {
         "type": "thumbnail",
-        "url": "/assets/img/locations/room/older-sister-room.jpg"
+        "url": "assets/img/locations/room/older-sister-room.jpg"
       }
     ],
     "url": "location/1002",
@@ -515,7 +515,7 @@
     "images": [
       {
         "type": "thumbnail",
-        "url": "/assets/img/locations/room/parent-room.jpg"
+        "url": "assets/img/locations/room/parent-room.jpg"
       }
     ],
     "url": "location/1001",
@@ -537,7 +537,7 @@
     "images": [
       {
         "type": "thumbnail",
-        "url": "/assets/img/locations/room/younger-sister-room.jpg"
+        "url": "assets/img/locations/room/younger-sister-room.jpg"
       }
     ],
     "url": "location/1003",
@@ -559,7 +559,7 @@
     "images": [
       {
         "type": "thumbnail",
-        "url": "/assets/img/locations/room/your-room.jpg"
+        "url": "assets/img/locations/room/your-room.jpg"
       }
     ],
     "url": "location/1000",
