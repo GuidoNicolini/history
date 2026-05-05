@@ -14,6 +14,9 @@ function createWindow() {
     }
   });
 
+  win.setMenu(null);
+  app.commandLine.appendSwitch('no-sandbox');
+
   // Carga el archivo index.html generado por Angular
   win.loadURL(
     url.format({

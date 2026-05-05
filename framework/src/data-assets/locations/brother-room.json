@@ -5,7 +5,7 @@
   "images": [
     {
       "type": "thumbnail",
-      "url": "/assets/img/locations/room/brother-room.jpg"
+      "url": "assets/img/locations/room/brother-room.jpg"
     }
   ],
   "url": "location/1004",

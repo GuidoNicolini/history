@@ -5,7 +5,7 @@
   "images": [
     {
       "type": "thumbnail",
-      "url": "/assets/img/locations/activities/meal.png"
+      "url": "assets/img/locations/activities/meal.png"
     }
   ],
   "url": "evento/kitchen0001",

@@ -13,7 +13,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
+        os: [windows-latest, macos-latest]
 
     defaults:
       run:
@@ -67,6 +67,4 @@ jobs:
           path: |
             framework/release/*.exe
             framework/release/*.dmg
-            framework/release/*.AppImage
             framework/release/*.zip
-            framework/release/*.tar.gz
