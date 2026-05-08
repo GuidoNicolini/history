@@ -131,6 +131,22 @@ export class ConditionEvaluator {
         const [minStr, maxStr] = String(expectedValue).split(':');
         return currentValue >= parseInt(minStr, 10) && currentValue <= parseInt(maxStr, 10);
       }
+
+      // 'between-time' contempla rangos horarios que pueden cruzar la medianoche (ej: 22:06)
+      case 'between-time': {
+        const [minStr, maxStr] = String(expectedValue).split(':');
+        const min = parseInt(minStr, 10);
+        const max = parseInt(maxStr, 10);
+
+        if (min <= max) {
+          // Rango normal en el mismo día (ej: 07 a 22)
+          return currentValue >= min && currentValue <= max;
+        } else {
+          // Rango que cruza la medianoche (ej: 22 a 06)
+          return currentValue >= min || currentValue <= max;
+        }
+      }
+
       default: return false;
     }
   }

@@ -1,4 +1,4 @@
-export type Operator = '==' | '>' | '<' | '>=' | '<=' | '!=' | 'between';
+export type Operator = '==' | '>' | '<' | '>=' | '<=' | '!=' | 'between' | 'between-time';
 export type ConditionType = 'flag' | 'stat-hero' | 'item' | 'time' | 'day' | 'stat-npc' | 'cd' | 'relation' | 'vip' | 'random';
 
 export interface GameCondition {
