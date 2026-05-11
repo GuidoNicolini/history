@@ -1,20 +1,20 @@
 {
-  "id": 1007,
-  "name": "Kitchen",
+  "id": 2002,
+  "name": "Boss's office",
   "type": 40,
   "images": [
     {
       "type": "thumbnail",
-      "url": "assets/img/locations/room/kitchen.jpeg"
+      "url": "assets/img/locations/room/cafe-boss-office.jpg"
     }
   ],
-  "url": "location/1007",
-  "backUrl": "location/100",
+  "url": "location/2002",
+  "backUrl": "location/200",
   "isAvailable": true,
   "isVisible": true,
   "lastTimeVisited": 0,
   "styleClass": [],
   "conditionsAvailable": [],
   "conditionsVisible": [],
-  "subLocations": [1025,1026,1035]
+  "subLocations": []
 }

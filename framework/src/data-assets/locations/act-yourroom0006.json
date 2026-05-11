@@ -1,20 +1,20 @@
 {
-  "id": 1007,
-  "name": "Kitchen",
-  "type": 40,
+  "id": 1036,
+  "name": "Clean",
+  "type": 100,
   "images": [
     {
       "type": "thumbnail",
-      "url": "assets/img/locations/room/kitchen.jpeg"
+      "url": "assets/img/locations/activities/clean-your-room.webp"
     }
   ],
-  "url": "location/1007",
-  "backUrl": "location/100",
+  "url": "evento/yourroom0006",
+  "backUrl": "yourroom0006",
   "isAvailable": true,
   "isVisible": true,
   "lastTimeVisited": 0,
   "styleClass": [],
   "conditionsAvailable": [],
   "conditionsVisible": [],
-  "subLocations": [1025,1026,1035]
+  "subLocations": []
 }

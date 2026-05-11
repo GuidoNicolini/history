@@ -1,20 +1,20 @@
 {
-  "id": 1007,
-  "name": "Kitchen",
-  "type": 40,
+  "id": 200,
+  "name": "Cafe",
+  "type": 20,
   "images": [
     {
       "type": "thumbnail",
-      "url": "assets/img/locations/room/kitchen.jpeg"
+      "url": "assets/img/locations/building/cafe.jpg"
     }
   ],
-  "url": "location/1007",
-  "backUrl": "location/100",
+  "url": "location/200",
+  "backUrl": "location/20",
   "isAvailable": true,
   "isVisible": true,
   "lastTimeVisited": 0,
   "styleClass": [],
   "conditionsAvailable": [],
   "conditionsVisible": [],
-  "subLocations": [1025,1026,1035]
+  "subLocations": [2001,2002,2003,2030,2031,2032]
 }

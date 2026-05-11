@@ -1,14 +1,14 @@
 {
-  "id": 1007,
-  "name": "Kitchen",
+  "id": 1009,
+  "name": "Garage",
   "type": 40,
   "images": [
     {
       "type": "thumbnail",
-      "url": "assets/img/locations/room/kitchen.jpeg"
+      "url": "assets/img/locations/room/garage.webp"
     }
   ],
-  "url": "location/1007",
+  "url": "location/1009",
   "backUrl": "location/100",
   "isAvailable": true,
   "isVisible": true,
@@ -16,5 +16,5 @@
   "styleClass": [],
   "conditionsAvailable": [],
   "conditionsVisible": [],
-  "subLocations": [1025,1026,1035]
+  "subLocations": [1039]
 }
