@@ -1,0 +1,7 @@
+{
+  "id": 10000005,
+  "type": "flag",
+  "target": "meet_lil_sis",
+  "operator": "==",
+  "value": "true"
+}

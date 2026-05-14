@@ -277,8 +277,15 @@
     "isVisible": true,
     "lastTimeVisited": 0,
     "styleClass": [],
-    "conditionsAvailable": [],
-    "conditionsVisible": [],
+    "conditionsAvailable": [
+      12,
+      5,
+      2002
+    ],
+    "conditionsVisible": [
+      10000004,
+      3000
+    ],
     "subLocations": []
   },
   {
@@ -339,8 +346,15 @@
     "isVisible": true,
     "lastTimeVisited": 0,
     "styleClass": [],
-    "conditionsAvailable": [],
-    "conditionsVisible": [],
+    "conditionsAvailable": [
+      12,
+      5,
+      2003
+    ],
+    "conditionsVisible": [
+      10000004,
+      3000
+    ],
     "subLocations": []
   },
   {
@@ -474,8 +488,14 @@
     "isVisible": true,
     "lastTimeVisited": 0,
     "styleClass": [],
-    "conditionsAvailable": [],
-    "conditionsVisible": [],
+    "conditionsAvailable": [
+      12,
+      5
+    ],
+    "conditionsVisible": [
+      10000004,
+      3000
+    ],
     "subLocations": []
   },
   {

@@ -14,7 +14,7 @@
   "isVisible": true,
   "lastTimeVisited": 0,
   "styleClass": [],
-  "conditionsAvailable": [],
-  "conditionsVisible": [],
+  "conditionsAvailable": [12,5,2002],
+  "conditionsVisible": [10000004,3000],
   "subLocations": []
 }

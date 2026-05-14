@@ -14,6 +14,13 @@
     "value": ""
   },
   {
+    "id": 3000,
+    "type": "day",
+    "target": "",
+    "operator": ">=",
+    "value": 2
+  },
+  {
     "id": 10,
     "type": "stat-hero",
     "target": "energy",
@@ -721,6 +728,34 @@
     "value": 1
   },
   {
+    "id": 10000007,
+    "type": "flag",
+    "target": "meet_dad",
+    "operator": "==",
+    "value": "true"
+  },
+  {
+    "id": 10000008,
+    "type": "flag",
+    "target": "meet_family",
+    "operator": "==",
+    "value": "false"
+  },
+  {
+    "id": 10000009,
+    "type": "flag",
+    "target": "meet_family",
+    "operator": "==",
+    "value": "true"
+  },
+  {
+    "id": 10000005,
+    "type": "flag",
+    "target": "meet_lil_sis",
+    "operator": "==",
+    "value": "true"
+  },
+  {
     "id": 10000001,
     "type": "flag",
     "target": "meet_lil_sis",
@@ -728,11 +763,25 @@
     "value": "false"
   },
   {
+    "id": 10000004,
+    "type": "flag",
+    "target": "meet_mom",
+    "operator": "==",
+    "value": "true"
+  },
+  {
     "id": 10000000,
     "type": "flag",
     "target": "meet_mom",
     "operator": "==",
     "value": "false"
+  },
+  {
+    "id": 10000006,
+    "type": "flag",
+    "target": "meet_old_sis",
+    "operator": "==",
+    "value": "true"
   },
   {
     "id": 10000002,
@@ -812,11 +861,25 @@
     "value": 90
   },
   {
+    "id": 2003,
+    "type": "time",
+    "target": "",
+    "operator": "between-time",
+    "value": "10:18"
+  },
+  {
     "id": 2001,
     "type": "time",
     "target": "",
     "operator": "between-time",
     "value": "7:22"
+  },
+  {
+    "id": 2002,
+    "type": "time",
+    "target": "",
+    "operator": "between-time",
+    "value": "7:23"
   },
   {
     "id": 2000,
