@@ -38,7 +38,13 @@ export class StartView {
       const target = e.target as HTMLInputElement;
       if (target.files && target.files.length > 0) {
         this.isLoading = true;
+
+        // Inicializamos los datos por defecto primero para tener la estructura de las nuevas actualizaciones
+        this.initilizer.initializeAllData();
+
+        // Luego cargamos la partida, sobreescribiendo el estado inicial con el guardado del usuario
         this.saveLoadService.loadStateFromFile(target.files[0]);
+
         console.log("forma 2")
         setTimeout(() => {
           this.isLoading = false;
