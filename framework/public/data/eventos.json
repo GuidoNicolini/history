@@ -853,10 +853,22 @@
         "functionName": "meetFamilyTrue",
         "parameters": [],
         "conditions": []
+      },
+      {
+        "id": 2,
+        "type": "code",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "functionName": "redirection",
+        "parameters": [
+          "location",
+          "1"
+        ],
+        "conditions": []
       }
     ],
     "conditions": [
-      5,
       10000004,
       10000005,
       10000006,

@@ -1,6 +1,6 @@
 {
   "id": "history0006",
-  "type": 5,
+  "type": 3,
   "location": 1,
   "probability": 100,
   "numberOfTimesActivated": 0,
@@ -16,8 +16,18 @@
       "functionName": "meetFamilyTrue",
       "parameters": [],
       "conditions": []
+    },
+    {
+      "id": 2,
+      "type": "code",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "functionName": "redirection",
+      "parameters": ["location", "1"],
+      "conditions": []
     }
   ],
-  "conditions": [5,10000004,10000005,10000006,10000007,10000008],
+  "conditions": [10000004,10000005,10000006,10000007,10000008],
   "effects": []
 }
