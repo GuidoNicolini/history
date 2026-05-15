@@ -62,6 +62,12 @@ export class NpcService implements ISaveable {
     return npc ? npc.name : '';
   }
 
+  public getCurrentLocation(npcId: CharacterID): LocationID | undefined {
+    const npcs = this.state();
+    const npc = npcs[npcId];
+    return npc ? npc.currentLocation : undefined;
+  }
+
   public modifyStat(npcId: CharacterID, stat: Stats, amount: number): void {
     this.state.update(npcs => {
       const npc = npcs[npcId];

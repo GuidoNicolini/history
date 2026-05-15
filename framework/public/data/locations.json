@@ -39,8 +39,15 @@
     "isVisible": true,
     "lastTimeVisited": 0,
     "styleClass": [],
-    "conditionsAvailable": [],
-    "conditionsVisible": [],
+    "conditionsAvailable": [
+      12,
+      5,
+      2004
+    ],
+    "conditionsVisible": [
+      3000,
+      10000007
+    ],
     "subLocations": []
   },
   {
@@ -201,7 +208,7 @@
     "images": [
       {
         "type": "thumbnail",
-        "url": "assets/img/locations/activities/wash-car-.webp"
+        "url": "assets/img/locations/activities/wash-car.webp"
       }
     ],
     "url": "evento/garage0001",
@@ -210,8 +217,15 @@
     "isVisible": true,
     "lastTimeVisited": 0,
     "styleClass": [],
-    "conditionsAvailable": [],
-    "conditionsVisible": [],
+    "conditionsAvailable": [
+      12,
+      5,
+      2003
+    ],
+    "conditionsVisible": [
+      3000,
+      10000007
+    ],
     "subLocations": []
   },
   {
@@ -645,7 +659,9 @@
     "lastTimeVisited": 0,
     "styleClass": [],
     "conditionsAvailable": [],
-    "conditionsVisible": [],
+    "conditionsVisible": [
+      10000009
+    ],
     "subLocations": [
       2001,
       2002,
@@ -749,7 +765,8 @@
       1005,
       1006,
       1007,
-      1008
+      1008,
+      1009
     ]
   },
   {

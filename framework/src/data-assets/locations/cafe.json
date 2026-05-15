@@ -15,6 +15,6 @@
   "lastTimeVisited": 0,
   "styleClass": [],
   "conditionsAvailable": [],
-  "conditionsVisible": [],
+  "conditionsVisible": [10000009],
   "subLocations": [2001,2002,2003,2030,2031,2032]
 }

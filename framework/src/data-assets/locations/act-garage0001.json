@@ -5,7 +5,7 @@
   "images": [
     {
       "type": "thumbnail",
-      "url": "assets/img/locations/activities/wash-car-.webp"
+      "url": "assets/img/locations/activities/wash-car.webp"
     }
   ],
   "url": "evento/garage0001",
@@ -14,7 +14,7 @@
   "isVisible": true,
   "lastTimeVisited": 0,
   "styleClass": [],
-  "conditionsAvailable": [],
-  "conditionsVisible": [],
+  "conditionsAvailable": [12,5,2003],
+  "conditionsVisible": [3000,10000007],
   "subLocations": []
 }

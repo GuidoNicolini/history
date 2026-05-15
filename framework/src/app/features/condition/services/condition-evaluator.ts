@@ -8,6 +8,7 @@ import {NpcService} from '../../npc/services/npc-service';
 import {TimeService} from '../../time/services/time-service';
 import {EventoService} from '../../evento/services/evento-service';
 import {VipService} from '../../../shared/services/vip-service';
+import {CharacterID} from '../../../shared/enums/character-id';
 
 @Injectable({
   providedIn: 'root',
@@ -93,6 +94,21 @@ export class ConditionEvaluator {
         const cooldown = evento.cooldownDuration || 0;
 
         return (currentDay - evento.lastDayActivated) >= cooldown;
+      }
+
+      case 'imhere': {
+
+        if (!contextId) return false;
+
+        const npcId = parseInt(String(condition.value), 10) as any;
+        const eventLocation = this.eventoService.getEventoLocation(contextId);
+
+
+        if (eventLocation === undefined) return false;
+
+        const npcLocation = this.npcService.getCurrentLocation(npcId);
+
+        return npcLocation == eventLocation;
       }
 
       case 'random': {

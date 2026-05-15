@@ -38,6 +38,9 @@ export class CodeView implements OnInit {
         case 'meetDad':
           this.funciones.meetDadSetTrue();
           break;
+        case 'meetFamilyTrue':
+          this.funciones.meetFamilyTrue();
+        break;
 
       }
 

@@ -19,4 +19,7 @@ export class Funciones {
   meetDadSetTrue(){
     this.storyState.setFlag('meet_dad',true)
   }
+  meetFamilyTrue(){
+    this.storyState.setFlag('meet_family',true)
+  }
 }
