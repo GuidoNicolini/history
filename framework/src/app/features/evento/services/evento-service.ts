@@ -170,6 +170,8 @@ export class EventoService implements ISaveable {
     });
   }
 
+
+
   public exportState(): Record<string, EventoState> {
     return this.state();
   }
