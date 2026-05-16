@@ -1,0 +1,7 @@
+{
+  "id": 10000010,
+  "type": "flag",
+  "target": "job_cafe",
+  "operator": "==",
+  "value": "false"
+}

@@ -142,6 +142,29 @@
     "subLocations": []
   },
   {
+    "id": 2032,
+    "name": "Buy a coffee",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/buy-coffe.webp"
+      }
+    ],
+    "url": "evento/cafe0001",
+    "backUrl": "cafe0001",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      1000002,
+      5
+    ],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
     "id": 2030,
     "name": "Ask for a job",
     "type": 100,
@@ -158,27 +181,9 @@
     "lastTimeVisited": 0,
     "styleClass": [],
     "conditionsAvailable": [],
-    "conditionsVisible": [],
-    "subLocations": []
-  },
-  {
-    "id": 2032,
-    "name": "Buy a coffee",
-    "type": 100,
-    "images": [
-      {
-        "type": "thumbnail",
-        "url": "assets/img/locations/activities/buy-coffe.webp"
-      }
+    "conditionsVisible": [
+      10000010
     ],
-    "url": "evento/cafe0001",
-    "backUrl": "cafe0001",
-    "isAvailable": true,
-    "isVisible": true,
-    "lastTimeVisited": 0,
-    "styleClass": [],
-    "conditionsAvailable": [],
-    "conditionsVisible": [],
     "subLocations": []
   },
   {
