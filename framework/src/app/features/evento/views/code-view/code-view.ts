@@ -44,7 +44,9 @@ export class CodeView implements OnInit {
         case 'redirection':
           this.funciones.redirection(this.cube.parameters[0],this.cube.parameters[1]);
           break;
-
+        case 'cafeJobTrue':
+          this.funciones.cafeJobSetTrue()
+          break;
       }
 
 

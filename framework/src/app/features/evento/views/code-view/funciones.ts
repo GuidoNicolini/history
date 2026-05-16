@@ -22,7 +22,6 @@ export class Funciones {
     this.storyState.setFlag('meet_dad',true)
   }
   meetFamilyTrue(){
-    console.log("meet family")
     this.storyState.setFlag('meet_family',true)
   }
 
@@ -34,6 +33,10 @@ export class Funciones {
     } else if (type === 'evento') {
       this.router.navigate(['evento/' + url]);
     }
+  }
+
+  cafeJobSetTrue(){
+    this.storyState.setFlag('job_cafe', true)
   }
 
 }

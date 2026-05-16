@@ -784,6 +784,20 @@
     "value": 1
   },
   {
+    "id": 10000010,
+    "type": "flag",
+    "target": "job_cafe",
+    "operator": "==",
+    "value": "false"
+  },
+  {
+    "id": 10000011,
+    "type": "flag",
+    "target": "job_cafe",
+    "operator": "==",
+    "value": "true"
+  },
+  {
     "id": 10016,
     "type": "stat-npc",
     "target": "5:arousal",

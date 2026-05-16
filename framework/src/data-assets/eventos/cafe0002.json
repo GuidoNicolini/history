@@ -1,0 +1,153 @@
+{
+  "id": "cafe0002",
+  "type": 2,
+  "location": 200,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 1,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Hey! Saw your Help Wanted sign. You still hiring?",
+      "character":1
+    },
+    {
+      "id": 2,
+      "type": "image",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "image": "assets/img/eventos/locations/cafe/boss-ask-job.webp"
+    },
+    {
+      "id": 3,
+      "type": "text",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Indeed. Are you interested, young man?",
+      "character": 8
+    },
+    {
+      "id": 4,
+      "type": "text",
+      "order": 4,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Uh… yeah. Yeah, totally.",
+      "character": 1
+    },
+    {
+      "id": 5,
+      "type": "text",
+      "order":5 ,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Are you sure you want to work here?",
+      "character": 8
+    },
+    {
+      "id": 6,
+      "type": "text",
+      "order": 6,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Sorry, man—first time job hunting.",
+      "character": 1
+    },
+    {
+      "id": 7,
+      "type": "text",
+      "order": 7,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Hmm. Not exactly selling me, but hey, I'll give you a shot.",
+      "character": 8
+    },
+    {
+      "id": 8,
+      "type": "text",
+      "order": 8,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Thank you so much, I promise I'll make really good coffee.",
+      "character": 1
+    },
+    {
+      "id": 9,
+      "type": "text",
+      "order": 9,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Coffee? Hah! Kid, you couldn't make coffee if your life depended on it.",
+      "character": 8
+    },
+    {
+      "id": 10,
+      "type": "text",
+      "order": 10,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Then… what am I gonna do?",
+      "character": 1
+    },
+    {
+      "id": 11,
+      "type": "text",
+      "order": 11,
+      "probability": 100,
+      "styleClass": [],
+      "text": "You'll find out soon enough",
+      "character": 8
+    },
+    {
+      "id": 12,
+      "type": "text",
+      "order": 12,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Before leaving, you look to your side and see your future coworker",
+      "character":500
+    },
+    {
+      "id": 13,
+      "type": "video",
+      "order": 13,
+      "probability": 100,
+      "styleClass": [],
+      "video": "assets/videos/cassie/meet-cassie.mp4"
+    },
+    {
+      "id": 14,
+      "type": "code",
+      "order": 14,
+      "probability": 100,
+      "styleClass": [],
+      "functionName": "cafeJobTrue",
+      "parameters": [],
+      "conditions": []
+    },
+
+
+    {
+      "id": 15,
+      "type": "button",
+      "order": 15,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Go Home",
+      "conditions": [],
+      "cubeAction":{
+        "type": "redirection",
+        "value": "location/100"
+      }
+    }
+  ],
+  "conditions": [],
+  "effects": []
+}

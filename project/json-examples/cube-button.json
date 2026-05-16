@@ -1,0 +1,13 @@
+    {
+      "id": ,
+      "type": "button",
+      "order": ,
+      "probability": 100,
+      "styleClass": [],
+      "text": "",
+      "conditions": [],
+      "cubeAction":{
+        "type": "redirection",
+        "value": "location/"
+      }
+    }

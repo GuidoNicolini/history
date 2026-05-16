@@ -30,6 +30,36 @@
     "avatar": "assets/img/avatars/brother.png"
   },
   {
+    "id": 7,
+    "name": "Cassie",
+    "stats": {
+      "level": 1,
+      "arousal": 0,
+      "corruption": 0
+    },
+    "attractions": {},
+    "currentLocation": "0",
+    "routines": [
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 0,
+        "finalTime": 23,
+        "location": 0,
+        "routineConditions": [],
+        "weight": 1
+      }
+    ],
+    "avatar": "assets/img/avatars/cassie.webp"
+  },
+  {
     "id": 3,
     "name": "Carl",
     "stats": {
@@ -127,6 +157,36 @@
       }
     ],
     "avatar": "assets/img/avatars/old-sister.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Robert",
+    "stats": {
+      "level": 1,
+      "arousal": 0,
+      "corruption": 0
+    },
+    "attractions": {},
+    "currentLocation": "0",
+    "routines": [
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 0,
+        "finalTime": 23,
+        "location": 0,
+        "routineConditions": [],
+        "weight": 1
+      }
+    ],
+    "avatar": "assets/img/avatars/robert.webp"
   },
   {
     "id": 5,
