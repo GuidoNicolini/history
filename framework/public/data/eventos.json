@@ -315,6 +315,51 @@
     ]
   },
   {
+    "id": "bathroom0004",
+    "type": 2,
+    "location": 1005,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 1,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You clean the bathroom",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/bathroom/clean-bathroom1.gif"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Finish clean",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1005"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      13
+    ]
+  },
+  {
     "id": "cafe0001",
     "type": 2,
     "location": 200,
@@ -499,7 +544,7 @@
         "order": 13,
         "probability": 100,
         "styleClass": [],
-        "video": "assets/videos/cassie/meet-cassie.mp4"
+        "video": "assets/videos/cassie/meet-cassie.webm"
       },
       {
         "id": 14,
@@ -527,6 +572,62 @@
     ],
     "conditions": [],
     "effects": []
+  },
+  {
+    "id": "cafe0003",
+    "type": 2,
+    "location": 200,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 1,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You hand out some flyers",
+        "character": 1
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/cafe/flyer1.gif"
+      },
+      {
+        "id": 3,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/cafe/flyer2.gif"
+      },
+      {
+        "id": 4,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Finish",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/200"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      13,
+      10103,
+      10101,
+      31
+    ]
   },
   {
     "id": "garage0001",
