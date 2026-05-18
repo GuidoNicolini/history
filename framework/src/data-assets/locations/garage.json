@@ -1,0 +1,21 @@
+{
+  "id": 1009,
+  "name": "Garage",
+  "type": 40,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "assets/img/locations/room/garage.webp"
+
+    }
+  ],
+  "url": "location/1009",
+  "backUrl": "location/100",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [],
+  "conditionsVisible": [],
+  "subLocations": [1039]
+}

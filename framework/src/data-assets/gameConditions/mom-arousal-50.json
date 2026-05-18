@@ -1,0 +1,7 @@
+{
+  "id": 10001,
+  "type": "stat-npc",
+  "target": "2:arousal",
+  "operator": ">=",
+  "value": 50
+}

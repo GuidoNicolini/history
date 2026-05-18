@@ -8,6 +8,7 @@ import {NpcService} from '../../npc/services/npc-service';
 import {TimeService} from '../../time/services/time-service';
 import {EventoService} from '../../evento/services/evento-service';
 import {VipService} from '../../../shared/services/vip-service';
+import {CharacterID} from '../../../shared/enums/character-id';
 
 @Injectable({
   providedIn: 'root',
@@ -95,6 +96,21 @@ export class ConditionEvaluator {
         return (currentDay - evento.lastDayActivated) >= cooldown;
       }
 
+      case 'imhere': {
+
+        if (!contextId) return false;
+
+        const npcId = parseInt(String(condition.value), 10) as any;
+        const eventLocation = this.eventoService.getEventoLocation(contextId);
+
+
+        if (eventLocation === undefined) return false;
+
+        const npcLocation = this.npcService.getCurrentLocation(npcId);
+
+        return npcLocation == eventLocation;
+      }
+
       case 'random': {
         const probability = (condition.value as number) || 0;
         return (Math.random() * 100) < probability;
@@ -131,6 +147,22 @@ export class ConditionEvaluator {
         const [minStr, maxStr] = String(expectedValue).split(':');
         return currentValue >= parseInt(minStr, 10) && currentValue <= parseInt(maxStr, 10);
       }
+
+      // 'between-time' contempla rangos horarios que pueden cruzar la medianoche (ej: 22:06)
+      case 'between-time': {
+        const [minStr, maxStr] = String(expectedValue).split(':');
+        const min = parseInt(minStr, 10);
+        const max = parseInt(maxStr, 10);
+
+        if (min <= max) {
+          // Rango normal en el mismo día (ej: 07 a 22)
+          return currentValue >= min && currentValue <= max;
+        } else {
+          // Rango que cruza la medianoche (ej: 22 a 06)
+          return currentValue >= min || currentValue <= max;
+        }
+      }
+
       default: return false;
     }
   }

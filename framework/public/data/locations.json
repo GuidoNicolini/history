@@ -24,6 +24,33 @@
     "subLocations": []
   },
   {
+    "id": 1037,
+    "name": "Cut grass",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/cut-grass.webp"
+      }
+    ],
+    "url": "evento/backyard0002",
+    "backUrl": "backyard0002",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      12,
+      5,
+      2004
+    ],
+    "conditionsVisible": [
+      3000,
+      10000007
+    ],
+    "subLocations": []
+  },
+  {
     "id": 1022,
     "name": "Bath",
     "type": 100,
@@ -95,6 +122,130 @@
     "subLocations": []
   },
   {
+    "id": 1034,
+    "name": "Clean",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/clean-bathroom.webp"
+      }
+    ],
+    "url": "evento/bathroom0004",
+    "backUrl": "bathroom0004",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      12,
+      5,
+      2003
+    ],
+    "conditionsVisible": [
+      10000004,
+      3000
+    ],
+    "subLocations": []
+  },
+  {
+    "id": 2032,
+    "name": "Buy a coffee",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/buy-coffe.webp"
+      }
+    ],
+    "url": "evento/cafe0001",
+    "backUrl": "cafe0001",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      1000002,
+      5
+    ],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 2030,
+    "name": "Ask for a job",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/ask-job.webp"
+      }
+    ],
+    "url": "evento/cafe0002",
+    "backUrl": "cafe0002",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [
+      10000010
+    ],
+    "subLocations": []
+  },
+  {
+    "id": 2031,
+    "name": "Hand out flyers",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/hand-out-flyers.webp"
+      }
+    ],
+    "url": "evento/cafe0003",
+    "backUrl": "cafe0003",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      5,
+      12
+    ],
+    "conditionsVisible": [
+      10000011
+    ],
+    "subLocations": []
+  },
+  {
+    "id": 1039,
+    "name": "Wash car",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/wash-car.webp"
+      }
+    ],
+    "url": "evento/garage0001",
+    "backUrl": "garage0001",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      12,
+      5,
+      2003
+    ],
+    "conditionsVisible": [
+      3000,
+      10000007
+    ],
+    "subLocations": []
+  },
+  {
     "id": 1025,
     "name": "Meal",
     "type": 100,
@@ -142,6 +293,33 @@
     "subLocations": []
   },
   {
+    "id": 1035,
+    "name": "Clean",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/clean-dish.webp"
+      }
+    ],
+    "url": "evento/kitchen0003",
+    "backUrl": "kitchen0003",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      12,
+      5,
+      2002
+    ],
+    "conditionsVisible": [
+      10000004,
+      3000
+    ],
+    "subLocations": []
+  },
+  {
     "id": 1033,
     "name": "Watch TV",
     "type": 100,
@@ -181,6 +359,33 @@
       5
     ],
     "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 1038,
+    "name": "Clean",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/vacuum.webp"
+      }
+    ],
+    "url": "evento/livingroom0003",
+    "backUrl": "livingroom0003",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      12,
+      5,
+      2003
+    ],
+    "conditionsVisible": [
+      10000004,
+      3000
+    ],
     "subLocations": []
   },
   {
@@ -299,6 +504,32 @@
     "subLocations": []
   },
   {
+    "id": 1036,
+    "name": "Clean",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/clean-your-room.webp"
+      }
+    ],
+    "url": "evento/yourroom0006",
+    "backUrl": "yourroom0006",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      12,
+      5
+    ],
+    "conditionsVisible": [
+      10000004,
+      3000
+    ],
+    "subLocations": []
+  },
+  {
     "id": 1008,
     "name": "Backyard",
     "type": 40,
@@ -317,7 +548,8 @@
     "conditionsAvailable": [],
     "conditionsVisible": [],
     "subLocations": [
-      1021
+      1021,
+      1037
     ]
   },
   {
@@ -341,7 +573,8 @@
     "subLocations": [
       1022,
       1023,
-      1024
+      1024,
+      1034
     ]
   },
   {
@@ -367,6 +600,141 @@
     "subLocations": []
   },
   {
+    "id": 2001,
+    "name": "Bathroom",
+    "type": 40,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/room/cafe-bathroom.jpg"
+      }
+    ],
+    "url": "location/2001",
+    "backUrl": "location/200",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 2002,
+    "name": "Boss's office",
+    "type": 40,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/room/cafe-boss-office.jpg"
+      }
+    ],
+    "url": "location/2002",
+    "backUrl": "location/200",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 2003,
+    "name": "Tables",
+    "type": 40,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/room/cafe-tables.jpg"
+      }
+    ],
+    "url": "location/2003",
+    "backUrl": "location/200",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 200,
+    "name": "Cafe",
+    "type": 20,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/building/cafe.jpg"
+      }
+    ],
+    "url": "location/200",
+    "backUrl": "location/20",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      2000
+    ],
+    "conditionsVisible": [
+      10000009
+    ],
+    "subLocations": [
+      2001,
+      2002,
+      2003,
+      2030,
+      2031,
+      2032
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Downtown",
+    "type": 10,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/distric/downtown.webp"
+      }
+    ],
+    "url": "location/20",
+    "backUrl": "location/1",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": [
+      200
+    ]
+  },
+  {
+    "id": 1009,
+    "name": "Garage",
+    "type": 40,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/room/garage.webp"
+      }
+    ],
+    "url": "location/1009",
+    "backUrl": "location/100",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": [
+      1039
+    ]
+  },
+  {
     "id": 1,
     "name": "Happy City",
     "type": 1,
@@ -385,7 +753,8 @@
     "conditionsAvailable": [],
     "conditionsVisible": [],
     "subLocations": [
-      10
+      10,
+      20
     ]
   },
   {
@@ -415,7 +784,8 @@
       1005,
       1006,
       1007,
-      1008
+      1008,
+      1009
     ]
   },
   {
@@ -438,7 +808,8 @@
     "conditionsVisible": [],
     "subLocations": [
       1025,
-      1026
+      1026,
+      1035
     ]
   },
   {
@@ -461,7 +832,8 @@
     "conditionsVisible": [],
     "subLocations": [
       1027,
-      1033
+      1033,
+      1038
     ]
   },
   {
@@ -575,7 +947,8 @@
       1029,
       1030,
       1031,
-      1032
+      1032,
+      1036
     ]
   }
 ]

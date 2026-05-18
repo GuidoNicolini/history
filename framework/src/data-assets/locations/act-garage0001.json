@@ -1,0 +1,20 @@
+{
+  "id": 1039,
+  "name": "Wash car",
+  "type": 100,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "assets/img/locations/activities/wash-car.webp"
+    }
+  ],
+  "url": "evento/garage0001",
+  "backUrl": "garage0001",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [12,5,2003],
+  "conditionsVisible": [3000,10000007],
+  "subLocations": []
+}

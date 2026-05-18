@@ -1,0 +1,20 @@
+{
+  "id": 1037,
+  "name": "Cut grass",
+  "type": 100,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "assets/img/locations/activities/cut-grass.webp"
+    }
+  ],
+  "url": "evento/backyard0002",
+  "backUrl": "backyard0002",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [12,5,2004],
+  "conditionsVisible": [3000,10000007],
+  "subLocations": []
+}

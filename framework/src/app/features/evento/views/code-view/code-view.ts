@@ -38,7 +38,15 @@ export class CodeView implements OnInit {
         case 'meetDad':
           this.funciones.meetDadSetTrue();
           break;
-
+        case 'meetFamilyTrue':
+          this.funciones.meetFamilyTrue();
+        break;
+        case 'redirection':
+          this.funciones.redirection(this.cube.parameters[0],this.cube.parameters[1]);
+          break;
+        case 'cafeJobTrue':
+          this.funciones.cafeJobSetTrue()
+          break;
       }
 
 

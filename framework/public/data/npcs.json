@@ -30,15 +30,15 @@
     "avatar": "assets/img/avatars/brother.png"
   },
   {
-    "id": 3,
-    "name": "Carl",
+    "id": 7,
+    "name": "Cassie",
     "stats": {
       "level": 1,
       "arousal": 0,
       "corruption": 0
     },
     "attractions": {},
-    "currentLocation": "1",
+    "currentLocation": "0",
     "routines": [
       {
         "days": [
@@ -57,18 +57,18 @@
         "weight": 1
       }
     ],
-    "avatar": "assets/img/avatars/dad.png"
+    "avatar": "assets/img/avatars/cassie.webp"
   },
   {
-    "id": 2,
-    "name": "Mary",
+    "id": 3,
+    "name": "Carl",
     "stats": {
       "level": 1,
       "arousal": 0,
       "corruption": 0
     },
     "attractions": {},
-    "currentLocation": "1",
+    "currentLocation": "0",
     "routines": [
       {
         "days": [
@@ -85,6 +85,100 @@
         "location": 0,
         "routineConditions": [],
         "weight": 1
+      },
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 0,
+        "finalTime": 7,
+        "location": 1001,
+        "routineConditions": [],
+        "weight": 100
+      },
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 8,
+        "finalTime": 23,
+        "location": 1006,
+        "routineConditions": [],
+        "weight": 100
+      }
+    ],
+    "avatar": "assets/img/avatars/dad.png"
+  },
+  {
+    "id": 2,
+    "name": "Mary",
+    "stats": {
+      "level": 1,
+      "arousal": 0,
+      "corruption": 0
+    },
+    "attractions": {},
+    "currentLocation": "0",
+    "routines": [
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 0,
+        "finalTime": 23,
+        "location": 0,
+        "routineConditions": [],
+        "weight": 1
+      },
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 0,
+        "finalTime": 7,
+        "location": 1001,
+        "routineConditions": [],
+        "weight": 100
+      },
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 8,
+        "finalTime": 23,
+        "location": 1006,
+        "routineConditions": [],
+        "weight": 100
       }
     ],
     "avatar": "assets/img/avatars/mom.jpg"
@@ -127,6 +221,36 @@
       }
     ],
     "avatar": "assets/img/avatars/old-sister.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Robert",
+    "stats": {
+      "level": 1,
+      "arousal": 0,
+      "corruption": 0
+    },
+    "attractions": {},
+    "currentLocation": "0",
+    "routines": [
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 0,
+        "finalTime": 23,
+        "location": 0,
+        "routineConditions": [],
+        "weight": 1
+      }
+    ],
+    "avatar": "assets/img/avatars/robert.webp"
   },
   {
     "id": 5,

@@ -1,0 +1,20 @@
+{
+  "id": 2001,
+  "name": "Bathroom",
+  "type": 40,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "assets/img/locations/room/cafe-bathroom.jpg"
+    }
+  ],
+  "url": "location/2001",
+  "backUrl": "location/200",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [],
+  "conditionsVisible": [],
+  "subLocations": []
+}

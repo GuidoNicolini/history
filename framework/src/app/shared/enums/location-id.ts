@@ -6,6 +6,9 @@ export enum LocationID {
   /****** Neigborhood  *****/
 
   NEIGBORHOOD = 10,
+
+  /****** Home *****/
+
   HOME = 100,
   YOURROOM = 1000,
   PARENTS_ROOM= 1001,
@@ -16,6 +19,7 @@ export enum LocationID {
   LIVING_ROOM = 1006,
   KITCHEN = 1007,
   BACKYARD = 1008,
+  GARAGE = 1009,
 
   /****** Activities Home *****/
 
@@ -33,6 +37,32 @@ export enum LocationID {
   CHARISMA_YOURROOM = 1031,
   JERKOFF_YOURROOM = 1032,
   WATCHTV_LIVING_ROOM = 1033,
+  CLEAN_BATHROOM = 1034,
+  CLEAN_DISHES = 1035,
+  CLEAN_YOUR_ROOM = 1036,
+  CUT_GLASS = 1037,
+  VACUUM_LIVING_ROOM = 1038,
+  WASH_CAR_GARAGE = 1039,
+
+  /****** DOWNTOWN  *****/
+
+  DOWNTOWN = 20,
+
+  /****** Cafe  *****/
+
+  CAFE = 200,
+  CAFE_BATHROOM = 2001,
+  CAFE_BOSS_OFFICE = 2002,
+  CAFE_TABLES = 2003,
+
+
+  /****** Activities HOME  *****/
+
+  CAFE_ASK_JOB = 2030,
+  CAFE_HAND_OUT_FLYER = 2031,
+  CAFE_BUY_COFFEE = 2032,
+
+
 
 
 

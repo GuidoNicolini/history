@@ -1,0 +1,43 @@
+{
+  "id": "loclivingroom0001",
+  "type": 3,
+  "location": 1006,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 7,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "You walk into the living room and see your {{dad}} and {{mom}} kissing",
+      "character":500
+    },
+    {
+      "id": 2,
+      "type": "video",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "video": "assets/videos/mom-dad/kiss-lords.mp4"
+    },
+    {
+      "id": 3,
+      "type": "button",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Cough cough",
+      "conditions": [],
+      "cubeAction":{
+        "type": "redirection",
+        "value": "location/1006"
+      }
+    }
+  ],
+  "conditions": [10000,10004,11000001,11000002,5,10000004,10000007],
+  "effects": [3002,3002,3003,3003,2001,2000,2011,1002,1002001,5002,5003]
+}

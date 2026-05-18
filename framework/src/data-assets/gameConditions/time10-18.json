@@ -1,0 +1,7 @@
+{
+  "id": 2003,
+  "type": "time",
+  "target": "",
+  "operator": "between-time",
+  "value": "10:18"
+}

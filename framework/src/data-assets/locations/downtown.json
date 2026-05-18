@@ -1,0 +1,20 @@
+{
+  "id": 20,
+  "name": "Downtown",
+  "type": 10,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "assets/img/locations/distric/downtown.webp"
+    }
+  ],
+  "url": "location/20",
+  "backUrl": "location/1",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [],
+  "conditionsVisible": [],
+  "subLocations": [200]
+}

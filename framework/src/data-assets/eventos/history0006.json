@@ -1,0 +1,33 @@
+{
+  "id": "history0006",
+  "type": 3,
+  "location": 1,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 99999,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "code",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "functionName": "meetFamilyTrue",
+      "parameters": [],
+      "conditions": []
+    },
+    {
+      "id": 2,
+      "type": "code",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "functionName": "redirection",
+      "parameters": ["location", "1"],
+      "conditions": []
+    }
+  ],
+  "conditions": [10000004,10000005,10000006,10000007,10000008],
+  "effects": []
+}

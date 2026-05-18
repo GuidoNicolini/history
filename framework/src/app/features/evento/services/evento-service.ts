@@ -34,6 +34,11 @@ export class EventoService implements ISaveable {
     return this.state()[id];
   }
 
+  public getEventoLocation(id: string): LocationID | undefined {
+    const evento = this.getEventoById(id);
+    return evento ? evento.location : undefined;
+  }
+
   public getEventosByType(type: EventoType): EventoState[] {
     return Object.values(this.state()).filter(evento => evento.type === type);
   }
@@ -164,6 +169,8 @@ export class EventoService implements ISaveable {
       };
     });
   }
+
+
 
   public exportState(): Record<string, EventoState> {
     return this.state();

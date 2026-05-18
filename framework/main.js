@@ -2,6 +2,8 @@ const { app, BrowserWindow, shell } = require('electron');
 const path = require('path');
 const url = require('url');
 
+app.commandLine.appendSwitch('no-sandbox');
+
 let win;
 
 function createWindow() {
@@ -15,7 +17,7 @@ function createWindow() {
   });
 
   win.setMenu(null);
-  app.commandLine.appendSwitch('no-sandbox');
+
 
   // Carga el archivo index.html generado por Angular
   win.loadURL(

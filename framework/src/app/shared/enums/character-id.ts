@@ -6,6 +6,9 @@ export enum CharacterID {
   YOUNGSISTER = 5, // Penelope Kay
   BROTHER = 6,
 
+  CASSIE = 7, // Cassie del isla
+  ROBERT = 8,
+
   NARRATOR= 500,
   NONE = 99999
 
