@@ -1,0 +1,7 @@
+{
+  "id": 3001,
+  "type": "day",
+  "target": "",
+  "operator": ">=",
+  "value": 3
+}

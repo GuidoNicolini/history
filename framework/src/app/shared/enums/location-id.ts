@@ -43,6 +43,11 @@ export enum LocationID {
   CUT_GLASS = 1037,
   VACUUM_LIVING_ROOM = 1038,
   WASH_CAR_GARAGE = 1039,
+  PLAY_WITH_LIL_SIS = 1040,
+  CHAT_WITH_MOM_KITCHEN= 1041,
+  CHAT_WITH_DAD_LIVINGROOM= 1042,
+  PLAY_WITH_BRO_LIVINGROOM = 1043,
+  CHAT_WITH_OLD_SIS_LIVINGROOM = 1044,
 
   /****** DOWNTOWN  *****/
 
@@ -56,14 +61,26 @@ export enum LocationID {
   CAFE_TABLES = 2003,
 
 
-  /****** Activities HOME  *****/
+  /****** Activities cafe  *****/
 
   CAFE_ASK_JOB = 2030,
   CAFE_HAND_OUT_FLYER = 2031,
   CAFE_BUY_COFFEE = 2032,
 
 
+  /****** COMMERCIAL DISTRIC  *****/
 
+COMMERCIAL_DISTRIC = 30,
+
+
+
+  /****** SUPERMARKET *****/
+
+SUPERMARKET = 300,
+
+  /****** ACTIVITIES SUPERMARKET *****/
+
+  BUY = 3001,
 
 
 }

@@ -51,6 +51,32 @@
     "subLocations": []
   },
   {
+    "id": 1040,
+    "name": "Play",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/lil-sis-play-backyard.webp"
+      }
+    ],
+    "url": "evento/backyard0003",
+    "backUrl": "backyard0003",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      5
+    ],
+    "conditionsVisible": [
+      10000005,
+      11000005,
+      3001
+    ],
+    "subLocations": []
+  },
+  {
     "id": 1022,
     "name": "Bath",
     "type": 100,
@@ -320,6 +346,32 @@
     "subLocations": []
   },
   {
+    "id": 1041,
+    "name": "Chat",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/mom-chat-kitchen.webp"
+      }
+    ],
+    "url": "evento/kitchen0004",
+    "backUrl": "kitchen0004",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      5
+    ],
+    "conditionsVisible": [
+      10000004,
+      11000001,
+      3001
+    ],
+    "subLocations": []
+  },
+  {
     "id": 1033,
     "name": "Watch TV",
     "type": 100,
@@ -386,6 +438,104 @@
       10000004,
       3000
     ],
+    "subLocations": []
+  },
+  {
+    "id": 1042,
+    "name": "Chat",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/dad-chat-livingroom.webp"
+      }
+    ],
+    "url": "evento/livingroom0004",
+    "backUrl": "livingroom0004",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      5
+    ],
+    "conditionsVisible": [
+      11000002,
+      10000007,
+      3001
+    ],
+    "subLocations": []
+  },
+  {
+    "id": 1043,
+    "name": "Play",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/bro-play-livingroom.webp"
+      }
+    ],
+    "url": "evento/livingroom0005",
+    "backUrl": "livingroom0005",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      5
+    ],
+    "conditionsVisible": [
+      10000009,
+      11000003,
+      3001
+    ],
+    "subLocations": []
+  },
+  {
+    "id": 1044,
+    "name": "Chat",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/old-sis-chat-livingroom.webp"
+      }
+    ],
+    "url": "evento/livingroom0006",
+    "backUrl": "livingroom0006",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      5
+    ],
+    "conditionsVisible": [
+      11000004,
+      10000006,
+      3001
+    ],
+    "subLocations": []
+  },
+  {
+    "id": 3001,
+    "name": "Buy",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/buy-supermarket.webp"
+      }
+    ],
+    "url": "evento/supermarket0001",
+    "backUrl": "supermarket0001",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
     "subLocations": []
   },
   {
@@ -549,7 +699,8 @@
     "conditionsVisible": [],
     "subLocations": [
       1021,
-      1037
+      1037,
+      1040
     ]
   },
   {
@@ -691,6 +842,28 @@
     ]
   },
   {
+    "id": 30,
+    "name": "Commercial distric",
+    "type": 10,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/distric/commercial-district.webp"
+      }
+    ],
+    "url": "location/30",
+    "backUrl": "location/1",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": [
+      3001
+    ]
+  },
+  {
     "id": 20,
     "name": "Downtown",
     "type": 10,
@@ -754,7 +927,8 @@
     "conditionsVisible": [],
     "subLocations": [
       10,
-      20
+      20,
+      30
     ]
   },
   {
@@ -809,7 +983,8 @@
     "subLocations": [
       1025,
       1026,
-      1035
+      1035,
+      1041
     ]
   },
   {
@@ -833,7 +1008,10 @@
     "subLocations": [
       1027,
       1033,
-      1038
+      1038,
+      1042,
+      1043,
+      1044
     ]
   },
   {
@@ -901,6 +1079,28 @@
     ],
     "conditionsVisible": [],
     "subLocations": []
+  },
+  {
+    "id": 300,
+    "name": "Supermarket",
+    "type": 20,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/building/supermarket.webp"
+      }
+    ],
+    "url": "location/300",
+    "backUrl": "location/30",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": [
+      3001
+    ]
   },
   {
     "id": 1003,

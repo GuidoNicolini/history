@@ -77,6 +77,13 @@
     "value": 2
   },
   {
+    "id": 3001,
+    "type": "day",
+    "target": "",
+    "operator": ">=",
+    "value": 3
+  },
+  {
     "id": 10,
     "type": "stat-hero",
     "target": "energy",
@@ -406,6 +413,13 @@
     "value": 5
   },
   {
+    "id": 11000003,
+    "type": "imhere",
+    "target": "",
+    "operator": "==",
+    "value": 6
+  },
+  {
     "id": 11000002,
     "type": "imhere",
     "target": "",
@@ -413,11 +427,25 @@
     "value": 3
   },
   {
+    "id": 11000005,
+    "type": "imhere",
+    "target": "",
+    "operator": "==",
+    "value": 5
+  },
+  {
     "id": 11000001,
     "type": "imhere",
     "target": "",
     "operator": "==",
     "value": 2
+  },
+  {
+    "id": 11000004,
+    "type": "imhere",
+    "target": "",
+    "operator": "==",
+    "value": 4
   },
   {
     "id": 1001000,
