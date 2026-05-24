@@ -116,6 +116,17 @@ export class ConditionEvaluator {
         return (Math.random() * 100) < probability;
       }
 
+      case 'activation': {
+        const eventoId = condition.target;
+        if (!eventoId) {
+          currentValue = 0;
+        } else {
+          const evento = this.eventoService.getEventoById(eventoId);
+          currentValue = evento ? evento.numberOfTimesActivated : 0;
+        }
+        break;
+      }
+
     }
 
     // Para 'vip', si currentValue es boolean y no hay operador o el operador es '==', podemos retornar currentValue

@@ -9,8 +9,17 @@
   "cubes": [
     {
       "id": 1,
-      "type": "button",
+      "type": "text",
       "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Hi, how can I help you?",
+      "character":9
+    },
+    {
+      "id": 2,
+      "type": "button",
+      "order": 2,
       "probability": 100,
       "styleClass": [],
       "text": "Food - $100",
@@ -21,9 +30,9 @@
       }
     },
     {
-      "id": 2,
+      "id": 3,
       "type": "button",
-      "order": 2,
+      "order": 3,
       "probability": 100,
       "styleClass": [],
       "text": "Snack - $50",
@@ -34,9 +43,9 @@
       }
     },
     {
-      "id": 3,
+      "id": 4,
       "type": "button",
-      "order": 3,
+      "order": 4,
       "probability": 100,
       "styleClass": [],
       "text": "Hygiene kit - $100",
@@ -47,9 +56,9 @@
       }
     },
     {
-      "id": 4,
+      "id": 5,
       "type": "button",
-      "order": 4,
+      "order": 5,
       "probability": 100,
       "styleClass": [],
       "text": "Shower kit - $50",
@@ -60,9 +69,9 @@
       }
     },
     {
-      "id": 5,
+      "id": 6,
       "type": "button",
-      "order": 5,
+      "order": 6,
       "probability": 100,
       "styleClass": [],
       "text": "Finish",

@@ -1,0 +1,70 @@
+{
+  "id": "mom0001",
+  "type": 3,
+  "location": 1007,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 999999,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Oh, sweetheart, you're the best!",
+      "character": 2
+    },
+    {
+      "id": 2,
+      "type": "image",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "image": "assets/img/eventos/npc/mom/mom-first-hug.webp"
+    },
+    {
+      "id": 3,
+      "type": "text",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "text": "What's this for, {{mom}} ? Last I checked, my grades didn't go up any! Hahaha",
+      "character": 1
+    },
+    {
+      "id": 4,
+      "type": "text",
+      "order": 4,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Don't be a dummy. You've been helping me out around the house, and honestly… it means the world to me. Makes me feel… taken care of.",
+      "character":2
+    },
+    {
+      "id": 5,
+      "type": "text",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Heh, well… happy to be your little helper. Love you, {{mom}} .",
+      "character":1
+    },
+    {
+      "id": 6,
+      "type": "button",
+      "order": 6,
+      "probability": 100,
+      "styleClass": [],
+      "text": "You smile",
+      "conditions": [],
+      "cubeAction":{
+        "type": "redirection",
+        "value": "location/100"
+      }
+    }
+  ],
+  "conditions": [12000000,12000001,12000002,12000003,3002,5999,5],
+  "effects": [1002,1001001,2002,2011]
+}
