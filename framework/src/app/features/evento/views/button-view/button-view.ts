@@ -26,6 +26,14 @@ export class ButtonView {
     return !this.conditionEvaluator.checkAll(conditions);
   }
 
+  get buttonClasses(): string[] {
+    const defaultClasses = ['btn', 'btn-lg', 'btn-primary'];
+    if (this.cube && this.cube.styleClass && Array.isArray(this.cube.styleClass)) {
+      return [...defaultClasses, ...this.cube.styleClass];
+    }
+    return defaultClasses;
+  }
+
   protected action() {
     this.cubeActionService.applyAction(this.cube.cubeAction);
   }
