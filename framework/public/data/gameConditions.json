@@ -1,5 +1,33 @@
 [
   {
+    "id": 12000003,
+    "type": "activation",
+    "target": "bathroom0004",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000001,
+    "type": "activation",
+    "target": "kitchen0003",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000000,
+    "type": "activation",
+    "target": "livingroom0003",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000002,
+    "type": "activation",
+    "target": "yourroom0006",
+    "operator": ">=",
+    "value": 1
+  },
+  {
     "id": 10008,
     "type": "stat-npc",
     "target": "6:arousal",
@@ -75,6 +103,27 @@
     "target": "",
     "operator": ">=",
     "value": 2
+  },
+  {
+    "id": 3001,
+    "type": "day",
+    "target": "",
+    "operator": ">=",
+    "value": 3
+  },
+  {
+    "id": 3002,
+    "type": "day",
+    "target": "",
+    "operator": ">=",
+    "value": 5
+  },
+  {
+    "id": 5999,
+    "type": "day",
+    "target": "",
+    "operator": "<=",
+    "value": 100000
   },
   {
     "id": 10,
@@ -406,6 +455,13 @@
     "value": 5
   },
   {
+    "id": 11000003,
+    "type": "imhere",
+    "target": "",
+    "operator": "==",
+    "value": 6
+  },
+  {
     "id": 11000002,
     "type": "imhere",
     "target": "",
@@ -413,11 +469,25 @@
     "value": 3
   },
   {
+    "id": 11000005,
+    "type": "imhere",
+    "target": "",
+    "operator": "==",
+    "value": 5
+  },
+  {
     "id": 11000001,
     "type": "imhere",
     "target": "",
     "operator": "==",
     "value": 2
+  },
+  {
+    "id": 11000004,
+    "type": "imhere",
+    "target": "",
+    "operator": "==",
+    "value": 4
   },
   {
     "id": 1001000,
@@ -779,7 +849,7 @@
   {
     "id": 1001001,
     "type": "item",
-    "target": "food",
+    "target": "snack",
     "operator": ">=",
     "value": 1
   },

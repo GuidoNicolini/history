@@ -1,0 +1,87 @@
+{
+  "id": "supermarket0001",
+  "type": 2,
+  "location": 300,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 0,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Hi, how can I help you?",
+      "character":9
+    },
+    {
+      "id": 2,
+      "type": "button",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Food - $100",
+      "conditions": [1000004],
+      "cubeAction":{
+        "type": "buy",
+        "value": "food:100"
+      }
+    },
+    {
+      "id": 3,
+      "type": "button",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Snack - $50",
+      "conditions": [1000003],
+      "cubeAction":{
+        "type": "buy",
+        "value": "snack:50"
+      }
+    },
+    {
+      "id": 4,
+      "type": "button",
+      "order": 4,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Hygiene kit - $100",
+      "conditions": [1000004],
+      "cubeAction":{
+        "type": "buy",
+        "value": "hygienekit:100"
+      }
+    },
+    {
+      "id": 5,
+      "type": "button",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Shower kit - $50",
+      "conditions": [1000003],
+      "cubeAction":{
+        "type": "buy",
+        "value": "showerkit:50"
+      }
+    },
+    {
+      "id": 6,
+      "type": "button",
+      "order": 6,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Finish",
+      "conditions": [],
+      "cubeAction":{
+        "type": "redirection",
+        "value": "location/300"
+      }
+    }
+  ],
+  "conditions": [],
+  "effects": []
+}

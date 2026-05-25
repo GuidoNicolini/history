@@ -1,0 +1,20 @@
+{
+  "id": 1043,
+  "name": "Play",
+  "type": 100,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "assets/img/locations/activities/bro-play-livingroom.webp"
+    }
+  ],
+  "url": "evento/livingroom0005",
+  "backUrl": "livingroom0005",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [5],
+  "conditionsVisible": [10000009,11000003,3001],
+  "subLocations": []
+}

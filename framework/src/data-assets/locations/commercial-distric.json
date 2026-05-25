@@ -1,0 +1,22 @@
+{
+  "id": 30,
+  "name": "Commercial distric",
+  "type": 10,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "assets/img/locations/distric/commercial-district.webp"
+    }
+  ],
+  "url": "location/30",
+  "backUrl": "location/1",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [],
+  "conditionsVisible": [],
+  "subLocations": [
+    300
+  ]
+}

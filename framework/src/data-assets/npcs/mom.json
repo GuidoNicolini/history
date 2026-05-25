@@ -19,19 +19,51 @@
   },
     {
       "days": [1, 2, 3, 4, 5,6,7],
-      "initialTime": 0,
+      "initialTime": 6,
       "finalTime": 7,
-      "location": 1001,
+      "location": 1005,
       "routineConditions": [],
       "weight": 100
     },
     {
       "days": [1, 2, 3, 4, 5,6,7],
       "initialTime": 8,
-      "finalTime": 23,
+      "finalTime": 22,
       "location": 1006,
       "routineConditions": [],
       "weight": 100
+    },
+    {
+      "days": [1, 2, 3, 4, 5,6,7],
+      "initialTime": 7,
+      "finalTime": 11,
+      "location": 1007,
+      "routineConditions": [],
+      "weight": 100
+    },
+    {
+      "days": [1, 2, 3, 4, 5,6,7],
+      "initialTime": 16,
+      "finalTime": 21,
+      "location": 1007,
+      "routineConditions": [],
+      "weight": 100
+    },
+    {
+      "days": [1, 2, 3, 4, 5,6,7],
+      "initialTime": 10,
+      "finalTime": 18,
+      "location": 1008,
+      "routineConditions": [],
+      "weight": 40
+    },
+    {
+      "days": [1, 2, 3, 4, 5,6,7],
+      "initialTime": 9,
+      "finalTime": 20,
+      "location": 1009,
+      "routineConditions": [],
+      "weight": 25
     }
 
   ],

@@ -1,9 +1,14 @@
 <div class="row text-center">
   <div class="col margin-top-button">
 
-<button type="button" class="btn btn-lg btn-primary" [disabled]="isDisabled" (click)="action()">
-  {{ cube.text }}
-</button>
+    <button
+      type="button"
+      [ngClass]="buttonClasses"
+      [disabled]="isDisabled"
+      (click)="action()"
+    >
+      {{ cube.text }}
+    </button>
 
   </div>
 </div>

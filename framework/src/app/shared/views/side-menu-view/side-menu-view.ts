@@ -14,7 +14,7 @@ export class SideMenuVIew implements OnInit, OnDestroy {
   constructor(private cdr: ChangeDetectorRef) {}
 
   ngOnInit(): void {
-    const fifteenMinutes = 15 * 60 * 1000; // 15 minutos en milisegundos
+    const fifteenMinutes = 10 * 60 * 1000; // 10 minutos en milisegundos
     const thirtySeconds = 30 * 1000;       // 30 segundos en milisegundos
 
     // Configurar el intervalo para que se ejecute cada 15 minutos
@@ -24,7 +24,7 @@ export class SideMenuVIew implements OnInit, OnDestroy {
 
     // Opcional: Llama a la función aquí si quieres que también se muestre la primera vez
     // al cargar la aplicación sin tener que esperar los primeros 15 minutos.
-    // this.showPatreonBanner(thirtySeconds);
+     this.showPatreonBanner(thirtySeconds);
   }
 
   private showPatreonBanner(hideAfterMs: number) {
