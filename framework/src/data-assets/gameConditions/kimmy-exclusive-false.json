@@ -1,0 +1,7 @@
+{
+  "id": 10000014,
+  "type": "flag",
+  "target": "kimmy_exclusive",
+  "operator": "==",
+  "value": "false"
+}

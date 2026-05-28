@@ -127,6 +127,16 @@ export class ConditionEvaluator {
         break;
       }
 
+      case 'auto-activation': {
+        if (!contextId) {
+          return false
+        } else {
+          const evento = this.eventoService.getEventoById(contextId);
+          currentValue = evento ? evento.numberOfTimesActivated : 0;
+        }
+        break;
+      }
+
     }
 
     // Para 'vip', si currentValue es boolean y no hay operador o el operador es '==', podemos retornar currentValue

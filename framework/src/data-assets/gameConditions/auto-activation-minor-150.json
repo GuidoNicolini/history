@@ -1,0 +1,7 @@
+{
+  "id": 13000010,
+  "type": "auto-activation",
+  "target": "",
+  "operator": "<",
+  "value": 150
+}

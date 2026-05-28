@@ -394,7 +394,7 @@
     "location": 1005,
     "probability": 100,
     "numberOfTimesActivated": 0,
-    "cooldownDuration": 1,
+    "cooldownDuration": 7,
     "lastDayActivated": 0,
     "cubes": [
       {
@@ -2097,7 +2097,7 @@
     "location": 300,
     "probability": 100,
     "numberOfTimesActivated": 0,
-    "cooldownDuration": 0,
+    "cooldownDuration": 1,
     "lastDayActivated": 0,
     "cubes": [
       {
