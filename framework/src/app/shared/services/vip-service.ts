@@ -6,10 +6,10 @@ import { Injectable } from '@angular/core';
 export class VipService {
 
   vips: vip[] = [
-    { level: 1, value: false },
-    { level: 2, value: false },
-    { level: 3, value: false },
-    { level: 4, value: false }
+    { level: 1, value: true },
+    { level: 2, value: true },
+    { level: 3, value: true },
+    { level: 4, value: true }
   ];
 
   public getVipStatus(level: number): boolean {

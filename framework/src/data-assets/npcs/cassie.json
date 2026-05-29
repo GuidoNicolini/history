@@ -3,7 +3,7 @@
   "name": "Cassie",
   "stats": {
     "level": 1,
-    "arousal": 0,
+    "arousal": 50,
     "corruption": 0
   },
   "attractions": {},
