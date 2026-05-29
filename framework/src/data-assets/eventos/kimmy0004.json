@@ -1,7 +1,7 @@
 {
-  "id": "cassie0004",
+  "id": "kimmy0004",
   "type": 3,
-  "location": 200,
+  "location": 300,
   "probability": 400,
   "numberOfTimesActivated": 0,
   "cooldownDuration": 7,
@@ -13,7 +13,7 @@
       "order": 1,
       "probability": 100,
       "styleClass": [],
-      "text": "You step into the café, and that rich coffee smell hits you like a warm fucking blanket. Your eyes sweep the room until they land on Cassie. She's working the floor, but today \"taking care of customers\" means a whole lot more than just pouring coffee. You lean back and watch. She's a pro at what she does—and what she does is make sure every single person in here leaves satisfied.",
+      "text": "You step into the supermarket and catch Kimmy in action—giving the customers some real personal attention. And I mean real attention. Looks like \"first-class service\" here means something a little extra special. You watch as she makes sure every guy leaves with a smile on his face and a lot more than just groceries in his cart.",
       "character":500
     },
     {
@@ -22,7 +22,7 @@
       "order": 2,
       "probability": 100,
       "styleClass": [],
-      "video": "assets/videos/cassie/barista-vid-4.webm"
+      "video": "assets/videos/cassie/cajera-vid-4.webm"
     },
     {
       "id": 3,
@@ -34,10 +34,10 @@
       "conditions": [],
       "cubeAction":{
         "type": "redirection",
-        "value": "location/200"
+        "value": "location/300"
       }
     }
   ],
-  "conditions": [10000012,11102,94,10024,5,3],
-  "effects": [2000,3007,5007]
+  "conditions": [10000014,11122,94,10020,5,3],
+  "effects": [2000,3009,5009]
 }

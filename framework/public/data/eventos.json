@@ -653,7 +653,7 @@
     "location": 200,
     "probability": 100,
     "numberOfTimesActivated": 0,
-    "cooldownDuration": 1,
+    "cooldownDuration": 0,
     "lastDayActivated": 0,
     "cubes": [
       {
@@ -698,8 +698,8 @@
     "conditions": [],
     "effects": [
       13,
-      10103,
-      10101,
+      10003,
+      10001,
       31
     ]
   },
@@ -709,7 +709,7 @@
     "location": 200,
     "probability": 100,
     "numberOfTimesActivated": 0,
-    "cooldownDuration": 1,
+    "cooldownDuration": 7,
     "lastDayActivated": 0,
     "cubes": [
       {
@@ -760,9 +760,9 @@
     "id": "cassie0002",
     "type": 3,
     "location": 200,
-    "probability": 100,
+    "probability": 200,
     "numberOfTimesActivated": 0,
-    "cooldownDuration": 1,
+    "cooldownDuration": 7,
     "lastDayActivated": 0,
     "cubes": [
       {
@@ -814,9 +814,9 @@
     "id": "cassie0003",
     "type": 3,
     "location": 200,
-    "probability": 100,
+    "probability": 300,
     "numberOfTimesActivated": 0,
-    "cooldownDuration": 1,
+    "cooldownDuration": 7,
     "lastDayActivated": 0,
     "cubes": [
       {
@@ -868,9 +868,9 @@
     "id": "cassie0004",
     "type": 3,
     "location": 200,
-    "probability": 100,
+    "probability": 400,
     "numberOfTimesActivated": 0,
-    "cooldownDuration": 1,
+    "cooldownDuration": 7,
     "lastDayActivated": 0,
     "cubes": [
       {
@@ -922,9 +922,9 @@
     "id": "cassie0005",
     "type": 3,
     "location": 200,
-    "probability": 100,
+    "probability": 500,
     "numberOfTimesActivated": 0,
-    "cooldownDuration": 1,
+    "cooldownDuration": 7,
     "lastDayActivated": 0,
     "cubes": [
       {
@@ -1622,6 +1622,275 @@
       10000008
     ],
     "effects": []
+  },
+  {
+    "id": "kimmy0001",
+    "type": 3,
+    "location": 300,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 7,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You step into the supermarket and catch Kimmy in action—giving the customers some real personal attention. And I mean real attention. Looks like \"first-class service\" here means something a little extra special. You watch as she makes sure every guy leaves with a smile on his face and a lot more than just groceries in his cart.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/kimmy/cajera-vid-1.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Stop watching",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/300"
+        }
+      }
+    ],
+    "conditions": [
+      10000014,
+      12000005,
+      94,
+      10020,
+      5
+    ],
+    "effects": [
+      2000,
+      3009,
+      5009
+    ]
+  },
+  {
+    "id": "kimmy0002",
+    "type": 3,
+    "location": 300,
+    "probability": 200,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 7,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You step into the supermarket and catch Kimmy in action—giving the customers some real personal attention. And I mean real attention. Looks like \"first-class service\" here means something a little extra special. You watch as she makes sure every guy leaves with a smile on his face and a lot more than just groceries in his cart.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/cassie/cajera-vid-2.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Stop watching",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/300"
+        }
+      }
+    ],
+    "conditions": [
+      10000014,
+      11120,
+      94,
+      10020,
+      5,
+      1
+    ],
+    "effects": [
+      2000,
+      3009,
+      5009
+    ]
+  },
+  {
+    "id": "kimmy0003",
+    "type": 3,
+    "location": 300,
+    "probability": 300,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 7,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You step into the supermarket and catch Kimmy in action—giving the customers some real personal attention. And I mean real attention. Looks like \"first-class service\" here means something a little extra special. You watch as she makes sure every guy leaves with a smile on his face and a lot more than just groceries in his cart.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/cassie/cajera-vid-3.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Stop watching",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/300"
+        }
+      }
+    ],
+    "conditions": [
+      10000014,
+      11121,
+      94,
+      10020,
+      5,
+      2
+    ],
+    "effects": [
+      2000,
+      3009,
+      5009
+    ]
+  },
+  {
+    "id": "kimmy0004",
+    "type": 3,
+    "location": 300,
+    "probability": 400,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 7,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You step into the supermarket and catch Kimmy in action—giving the customers some real personal attention. And I mean real attention. Looks like \"first-class service\" here means something a little extra special. You watch as she makes sure every guy leaves with a smile on his face and a lot more than just groceries in his cart.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/cassie/cajera-vid-4.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Stop watching",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/300"
+        }
+      }
+    ],
+    "conditions": [
+      10000014,
+      11122,
+      94,
+      10020,
+      5,
+      3
+    ],
+    "effects": [
+      2000,
+      3009,
+      5009
+    ]
+  },
+  {
+    "id": "kimmy0005",
+    "type": 3,
+    "location": 300,
+    "probability": 500,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 7,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You step into the supermarket and catch Kimmy in action—giving the customers some real personal attention. And I mean real attention. Looks like \"first-class service\" here means something a little extra special. You watch as she makes sure every guy leaves with a smile on his face and a lot more than just groceries in his cart.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/cassie/cajera-vid-5.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Stop watching",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/300"
+        }
+      }
+    ],
+    "conditions": [
+      10000014,
+      11123,
+      94,
+      10020,
+      5,
+      4
+    ],
+    "effects": [
+      2000,
+      3009,
+      5009
+    ]
   },
   {
     "id": "kitchen0001",
