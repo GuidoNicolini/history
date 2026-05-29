@@ -77,6 +77,7 @@ export class ConditionEvaluator {
         // devolvemos directamente el estado (boolean) si no hay un operador para verificar.
         // Para mantener compatibilidad con la estructura actual:
         currentValue = this.vipService.getVipStatus(condition.value as number);
+        return currentValue
         break;
       }
 
@@ -139,8 +140,6 @@ export class ConditionEvaluator {
 
     }
 
-    // Para 'vip', si currentValue es boolean y no hay operador o el operador es '==', podemos retornar currentValue
-    if (condition.type === 'vip' && !condition.operator) return currentValue;
 
     // Si la condición de 'cd' hace return directamente, solo procesamos el operador para los otros casos
     if (!condition.operator) return true;
