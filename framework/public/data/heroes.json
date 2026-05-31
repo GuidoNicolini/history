@@ -14,8 +14,11 @@
       "hygiene": 5
     },
     "inventory": {
-      "money": 100,
-      "snack": 5
+      "money": 99999,
+      "snack": 1,
+      "hygienekit": 1,
+      "showerkit": 1,
+      "food": 1
     },
     "avatar": "assets/img/avatars/heroe.gif"
   }

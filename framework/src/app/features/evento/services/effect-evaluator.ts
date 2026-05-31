@@ -49,6 +49,7 @@ export class EffectEvaluator {
         } else {
           this.heroService.removeItem(effect.target as unknown as GameItems, amount);
         }
+
         break;
       }
       case 'relation': {
