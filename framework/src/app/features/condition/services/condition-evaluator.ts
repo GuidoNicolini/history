@@ -91,7 +91,7 @@ export class ConditionEvaluator {
         // Si nunca se ha activado o no tiene lastDayActivated, permitimos activarlo (ya que no hay cooldown que comprobar)
         if (evento.lastDayActivated === undefined || evento.lastDayActivated === null || evento.lastDayActivated === 0) return true;
 
-        const currentDay = this.timeService.state().day;
+        const currentDay = this.timeService.state().date;
         const cooldown = evento.cooldownDuration || 0;
 
         return (currentDay - evento.lastDayActivated) >= cooldown;
