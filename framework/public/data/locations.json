@@ -786,7 +786,9 @@
     "isVisible": true,
     "lastTimeVisited": 0,
     "styleClass": [],
-    "conditionsAvailable": [],
+    "conditionsAvailable": [
+      1001008
+    ],
     "conditionsVisible": [],
     "subLocations": []
   },
