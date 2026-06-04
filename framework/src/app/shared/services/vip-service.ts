@@ -9,13 +9,15 @@ export class VipService {
     { level: 1, value: false },
     { level: 2, value: false },
     { level: 3, value: false },
-    { level: 4, value: false }
+    { level: 4, value: false },
+    { level: 5, value: false },
   ];
 
   private clave1: string = 'rstve';
   private clave2: string = 'pemcgt';
   private clave3: string = 'awqvxfr';
   private clave4: string = 'bvcetese';
+  private clave5:string =  'arbsegky';
 
   public getVipStatus(level: number): boolean {
     const vip = this.vips.find(v => v.level === level);
@@ -53,6 +55,14 @@ export class VipService {
 
     if(code == this.clave4){
       for (let i = 1; i < 5; i++) {
+        this.updateVip(i)
+      }
+      counter++
+      alert("Code redeemed successfully.")
+    }
+
+    if(code == this.clave5){
+      for (let i = 1; i < 6; i++) {
         this.updateVip(i)
       }
       counter++
