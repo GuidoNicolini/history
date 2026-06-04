@@ -53,8 +53,7 @@ jobs:
       # 7. Empaquetar Electron con electron-builder
       - name: Make/Distribute Electron App
         run: npm run dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Necesario si electron-builder publica en GitHub Releases
+
 
       # 8. Subir los archivos generados como artefactos (para poder descargarlos desde GitHub)
       - name: Upload Artifacts
