@@ -39,7 +39,7 @@ jobs:
         # Usamos curl para descargar un archivo ZIP llamado archivos.zip y unzip para extraerlo
         # IMPORTANTE: Reemplaza "URL_AQUI" por el enlace de descarga directa de tu archivos.zip
         run: |
-          curl -L "https://www.dropbox.com/scl/fi/ekf2ca03ls55mnw5d9p2t/archivos.zip?rlkey=75vqlz8eti9lnedmsp1athuwn&st=kxef1rbb&dl=1" -o archivos.zip
+          curl -L "https://www.dropbox.com/scl/fi/b3odugh0dz4ukoy6wtdc5/archivos.zip?rlkey=v01zhgbrvqzpfpuqx46fldy9f&st=hwchiqhx&dl=1" -o archivos.zip
           # Crea el directorio public si no existe y extrae el zip dentro. 
           # Al descomprimir se creará la carpeta public/assets porque está dentro del zip
           unzip -o archivos.zip -d public
