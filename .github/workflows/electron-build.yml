@@ -4,8 +4,6 @@ name: Build Electron App
 on:
   push:
     branches: [ "dev" ] # Se ejecuta cuando hay un push a la rama 'dev'
-  pull_request:
-    branches: [ "dev" ] # Opcional: también cuando se hace un PR hacia 'dev'
 
 jobs:
   build:
