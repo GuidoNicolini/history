@@ -1,0 +1,43 @@
+{
+  "id": "cassie0002",
+  "type": 3,
+  "location": 200,
+  "probability": 200,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 7,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "You step into the café, and that rich coffee smell hits you like a warm fucking blanket. Your eyes sweep the room until they land on Cassie. She's working the floor, but today \"taking care of customers\" means a whole lot more than just pouring coffee. You lean back and watch. She's a pro at what she does—and what she does is make sure every single person in here leaves satisfied.",
+      "character":500
+    },
+    {
+      "id": 2,
+      "type": "video",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "video": "assets/videos/cassie/barista-vid-2.webm"
+    },
+    {
+      "id": 3,
+      "type": "button",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Stop watching",
+      "conditions": [],
+      "cubeAction":{
+        "type": "redirection",
+        "value": "location/200"
+      }
+    }
+  ],
+  "conditions": [10000012,11100,94,10024,5,1],
+  "effects": [2000,3007,5007]
+}

@@ -9,5 +9,6 @@ export enum GameItems {
   ROOM_KEY_MASTER = "roomKeyMaster",
   ROOM_KEY_OLD_SISTER = "roomKeyOldSister",
   ROOM_KEY_LIL_SISTER = "roomKeyLilSister",
+  ROOM_KEY_BOSS_OFFICE = "roomKeyBossOffice"
 
 }

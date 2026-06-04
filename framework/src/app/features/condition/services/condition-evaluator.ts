@@ -77,6 +77,7 @@ export class ConditionEvaluator {
         // devolvemos directamente el estado (boolean) si no hay un operador para verificar.
         // Para mantener compatibilidad con la estructura actual:
         currentValue = this.vipService.getVipStatus(condition.value as number);
+        return currentValue
         break;
       }
 
@@ -90,7 +91,7 @@ export class ConditionEvaluator {
         // Si nunca se ha activado o no tiene lastDayActivated, permitimos activarlo (ya que no hay cooldown que comprobar)
         if (evento.lastDayActivated === undefined || evento.lastDayActivated === null || evento.lastDayActivated === 0) return true;
 
-        const currentDay = this.timeService.state().day;
+        const currentDay = this.timeService.state().date;
         const cooldown = evento.cooldownDuration || 0;
 
         return (currentDay - evento.lastDayActivated) >= cooldown;
@@ -127,10 +128,18 @@ export class ConditionEvaluator {
         break;
       }
 
+      case 'auto-activation': {
+        if (!contextId) {
+          return false
+        } else {
+          const evento = this.eventoService.getEventoById(contextId);
+          currentValue = evento ? evento.numberOfTimesActivated : 0;
+        }
+        break;
+      }
+
     }
 
-    // Para 'vip', si currentValue es boolean y no hay operador o el operador es '==', podemos retornar currentValue
-    if (condition.type === 'vip' && !condition.operator) return currentValue;
 
     // Si la condición de 'cd' hace return directamente, solo procesamos el operador para los otros casos
     if (!condition.operator) return true;

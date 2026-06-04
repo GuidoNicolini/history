@@ -1,6 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {FormCube} from '../../models/Cube/form-cube';
 import {UserConfigService} from '../../../../shared/services/user-config-service';
+import {VipService} from '../../../../shared/services/vip-service';
 
 @Component({
   selector: 'app-form-view',
@@ -14,7 +15,7 @@ export class FormView implements OnInit{
   placeHolder !: string
   text !: string
 
-  constructor(private userConfigService: UserConfigService) {}
+  constructor(private userConfigService: UserConfigService, private vipService:VipService) {}
 
   //TODO: Hacer esta logica para que se llame a la funcion correspondiente
 
@@ -24,6 +25,7 @@ export class FormView implements OnInit{
   }
 
   protected fun() {
+
     if(this.cube.fuctionName === 'npc-name'){
       const key = this.cube.parameters[0];
       if (key && this.text) {
@@ -31,5 +33,14 @@ export class FormView implements OnInit{
         alert("Changes saved")
       }
     }
+
+    if(this.cube.fuctionName === 'vip'){
+      this.vipService.codePatreon(this.text)
+    }
+
+
   }
+
+
+
 }

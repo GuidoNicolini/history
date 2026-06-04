@@ -30,7 +30,7 @@ export class EventoView implements OnInit{
     this.route.paramMap.subscribe(params => {
        this.idEvento = params.get('id')!;
        this.evento = this.eventoService.getEventoById(this.idEvento)!
-       this.eventoService.modifyLastDayUsedAndNumberOfTimesActivated(this.idEvento,this.timeService.state().day)
+       this.eventoService.modifyLastDayUsedAndNumberOfTimesActivated(this.idEvento,this.timeService.state().date)
        const eventEffects = this.eventoService.getEffectsForEvento(this.idEvento);
        this.effects.applyAll(eventEffects)
 

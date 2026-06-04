@@ -1,8 +1,29 @@
 [
   {
+    "id": 12000006,
+    "type": "activation",
+    "target": "backyard0002",
+    "operator": ">=",
+    "value": 1
+  },
+  {
     "id": 12000003,
     "type": "activation",
     "target": "bathroom0004",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000007,
+    "type": "activation",
+    "target": "cafe0003",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000004,
+    "type": "activation",
+    "target": "garage0001",
     "operator": ">=",
     "value": 1
   },
@@ -21,9 +42,114 @@
     "value": 1
   },
   {
+    "id": 12000005,
+    "type": "activation",
+    "target": "supermarket0001",
+    "operator": ">=",
+    "value": 1
+  },
+  {
     "id": 12000002,
     "type": "activation",
     "target": "yourroom0006",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 13000000,
+    "type": "auto-activation",
+    "target": "",
+    "operator": "<",
+    "value": 1
+  },
+  {
+    "id": 13000004,
+    "type": "auto-activation",
+    "target": "",
+    "operator": "<",
+    "value": 10
+  },
+  {
+    "id": 13000009,
+    "type": "auto-activation",
+    "target": "",
+    "operator": "<",
+    "value": 100
+  },
+  {
+    "id": 13000005,
+    "type": "auto-activation",
+    "target": "",
+    "operator": "<",
+    "value": 15
+  },
+  {
+    "id": 13000010,
+    "type": "auto-activation",
+    "target": "",
+    "operator": "<",
+    "value": 150
+  },
+  {
+    "id": 13000001,
+    "type": "auto-activation",
+    "target": "",
+    "operator": "<",
+    "value": 2
+  },
+  {
+    "id": 13000006,
+    "type": "auto-activation",
+    "target": "",
+    "operator": "<",
+    "value": 20
+  },
+  {
+    "id": 13000011,
+    "type": "auto-activation",
+    "target": "",
+    "operator": "<",
+    "value": 200
+  },
+  {
+    "id": 13000007,
+    "type": "auto-activation",
+    "target": "",
+    "operator": "<",
+    "value": 25
+  },
+  {
+    "id": 13000002,
+    "type": "auto-activation",
+    "target": "",
+    "operator": "<",
+    "value": 3
+  },
+  {
+    "id": 13000003,
+    "type": "auto-activation",
+    "target": "",
+    "operator": "<",
+    "value": 5
+  },
+  {
+    "id": 13000008,
+    "type": "auto-activation",
+    "target": "",
+    "operator": "<",
+    "value": 50
+  },
+  {
+    "id": 13000012,
+    "type": "auto-activation",
+    "target": "",
+    "operator": "<",
+    "value": 500
+  },
+  {
+    "id": 1001008,
+    "type": "item",
+    "target": "roomKeyBossOffice",
     "operator": ">=",
     "value": 1
   },
@@ -56,11 +182,193 @@
     "value": 90
   },
   {
+    "id": 11084,
+    "type": "stat-npc",
+    "target": "6:corruption",
+    "operator": ">=",
+    "value": 10
+  },
+  {
+    "id": 11089,
+    "type": "stat-npc",
+    "target": "6:corruption",
+    "operator": ">=",
+    "value": 100
+  },
+  {
+    "id": 11080,
+    "type": "stat-npc",
+    "target": "6:corruption",
+    "operator": ">=",
+    "value": 2
+  },
+  {
+    "id": 11085,
+    "type": "stat-npc",
+    "target": "6:corruption",
+    "operator": ">=",
+    "value": 20
+  },
+  {
+    "id": 11081,
+    "type": "stat-npc",
+    "target": "6:corruption",
+    "operator": ">=",
+    "value": 4
+  },
+  {
+    "id": 11086,
+    "type": "stat-npc",
+    "target": "6:corruption",
+    "operator": ">=",
+    "value": 40
+  },
+  {
+    "id": 11082,
+    "type": "stat-npc",
+    "target": "6:corruption",
+    "operator": ">=",
+    "value": 6
+  },
+  {
+    "id": 11087,
+    "type": "stat-npc",
+    "target": "6:corruption",
+    "operator": ">=",
+    "value": 60
+  },
+  {
+    "id": 11083,
+    "type": "stat-npc",
+    "target": "6:corruption",
+    "operator": ">=",
+    "value": 8
+  },
+  {
+    "id": 11088,
+    "type": "stat-npc",
+    "target": "6:corruption",
+    "operator": ">=",
+    "value": 80
+  },
+  {
     "id": 1001004,
     "type": "item",
     "target": "roomKeyBrother",
     "operator": ">=",
     "value": 1
+  },
+  {
+    "id": 10024,
+    "type": "stat-npc",
+    "target": "7:arousal",
+    "operator": ">=",
+    "value": 25
+  },
+  {
+    "id": 10025,
+    "type": "stat-npc",
+    "target": "7:arousal",
+    "operator": ">=",
+    "value": 50
+  },
+  {
+    "id": 10026,
+    "type": "stat-npc",
+    "target": "7:arousal",
+    "operator": ">=",
+    "value": 75
+  },
+  {
+    "id": 10027,
+    "type": "stat-npc",
+    "target": "7:arousal",
+    "operator": ">=",
+    "value": 90
+  },
+  {
+    "id": 11104,
+    "type": "stat-npc",
+    "target": "7:corruption",
+    "operator": ">=",
+    "value": 10
+  },
+  {
+    "id": 11109,
+    "type": "stat-npc",
+    "target": "7:corruption",
+    "operator": ">=",
+    "value": 100
+  },
+  {
+    "id": 11100,
+    "type": "stat-npc",
+    "target": "7:corruption",
+    "operator": ">=",
+    "value": 2
+  },
+  {
+    "id": 11105,
+    "type": "stat-npc",
+    "target": "7:corruption",
+    "operator": ">=",
+    "value": 20
+  },
+  {
+    "id": 11101,
+    "type": "stat-npc",
+    "target": "7:corruption",
+    "operator": ">=",
+    "value": 4
+  },
+  {
+    "id": 11106,
+    "type": "stat-npc",
+    "target": "7:corruption",
+    "operator": ">=",
+    "value": 40
+  },
+  {
+    "id": 11102,
+    "type": "stat-npc",
+    "target": "7:corruption",
+    "operator": ">=",
+    "value": 6
+  },
+  {
+    "id": 11107,
+    "type": "stat-npc",
+    "target": "7:corruption",
+    "operator": ">=",
+    "value": 60
+  },
+  {
+    "id": 11103,
+    "type": "stat-npc",
+    "target": "7:corruption",
+    "operator": ">=",
+    "value": 8
+  },
+  {
+    "id": 11108,
+    "type": "stat-npc",
+    "target": "7:corruption",
+    "operator": ">=",
+    "value": 80
+  },
+  {
+    "id": 10000012,
+    "type": "flag",
+    "target": "cassie_exclusive",
+    "operator": "==",
+    "value": "false"
+  },
+  {
+    "id": 10000013,
+    "type": "flag",
+    "target": "cassie_exclusive",
+    "operator": "==",
+    "value": "true"
   },
   {
     "id": 5,
@@ -96,6 +404,76 @@
     "target": "3:arousal",
     "operator": ">=",
     "value": 90
+  },
+  {
+    "id": 11024,
+    "type": "stat-npc",
+    "target": "3:corruption",
+    "operator": ">=",
+    "value": 10
+  },
+  {
+    "id": 11029,
+    "type": "stat-npc",
+    "target": "3:corruption",
+    "operator": ">=",
+    "value": 100
+  },
+  {
+    "id": 11020,
+    "type": "stat-npc",
+    "target": "3:corruption",
+    "operator": ">=",
+    "value": 2
+  },
+  {
+    "id": 11025,
+    "type": "stat-npc",
+    "target": "3:corruption",
+    "operator": ">=",
+    "value": 20
+  },
+  {
+    "id": 11021,
+    "type": "stat-npc",
+    "target": "3:corruption",
+    "operator": ">=",
+    "value": 4
+  },
+  {
+    "id": 11026,
+    "type": "stat-npc",
+    "target": "3:corruption",
+    "operator": ">=",
+    "value": 40
+  },
+  {
+    "id": 11022,
+    "type": "stat-npc",
+    "target": "3:corruption",
+    "operator": ">=",
+    "value": 6
+  },
+  {
+    "id": 11027,
+    "type": "stat-npc",
+    "target": "3:corruption",
+    "operator": ">=",
+    "value": 60
+  },
+  {
+    "id": 11023,
+    "type": "stat-npc",
+    "target": "3:corruption",
+    "operator": ">=",
+    "value": 8
+  },
+  {
+    "id": 11028,
+    "type": "stat-npc",
+    "target": "3:corruption",
+    "operator": ">=",
+    "value": 80
   },
   {
     "id": 3000,
@@ -868,6 +1246,118 @@
     "value": "true"
   },
   {
+    "id": 10020,
+    "type": "stat-npc",
+    "target": "9:arousal",
+    "operator": ">=",
+    "value": 25
+  },
+  {
+    "id": 10021,
+    "type": "stat-npc",
+    "target": "9:arousal",
+    "operator": ">=",
+    "value": 50
+  },
+  {
+    "id": 10022,
+    "type": "stat-npc",
+    "target": "9:arousal",
+    "operator": ">=",
+    "value": 75
+  },
+  {
+    "id": 10023,
+    "type": "stat-npc",
+    "target": "9:arousal",
+    "operator": ">=",
+    "value": 90
+  },
+  {
+    "id": 11124,
+    "type": "stat-npc",
+    "target": "9:corruption",
+    "operator": ">=",
+    "value": 10
+  },
+  {
+    "id": 11129,
+    "type": "stat-npc",
+    "target": "9:corruption",
+    "operator": ">=",
+    "value": 100
+  },
+  {
+    "id": 11120,
+    "type": "stat-npc",
+    "target": "9:corruption",
+    "operator": ">=",
+    "value": 2
+  },
+  {
+    "id": 11125,
+    "type": "stat-npc",
+    "target": "9:corruption",
+    "operator": ">=",
+    "value": 20
+  },
+  {
+    "id": 11121,
+    "type": "stat-npc",
+    "target": "9:corruption",
+    "operator": ">=",
+    "value": 4
+  },
+  {
+    "id": 11126,
+    "type": "stat-npc",
+    "target": "9:corruption",
+    "operator": ">=",
+    "value": 40
+  },
+  {
+    "id": 11122,
+    "type": "stat-npc",
+    "target": "9:corruption",
+    "operator": ">=",
+    "value": 6
+  },
+  {
+    "id": 11127,
+    "type": "stat-npc",
+    "target": "9:corruption",
+    "operator": ">=",
+    "value": 60
+  },
+  {
+    "id": 11123,
+    "type": "stat-npc",
+    "target": "9:corruption",
+    "operator": ">=",
+    "value": 8
+  },
+  {
+    "id": 11128,
+    "type": "stat-npc",
+    "target": "9:corruption",
+    "operator": ">=",
+    "value": 80
+  },
+  {
+    "id": 10000014,
+    "type": "flag",
+    "target": "kimmy_exclusive",
+    "operator": "==",
+    "value": "false"
+  },
+  {
+    "id": 10000015,
+    "type": "flag",
+    "target": "kimmy_exclusive",
+    "operator": "==",
+    "value": "true"
+  },
+  {
     "id": 10016,
     "type": "stat-npc",
     "target": "5:arousal",
@@ -894,6 +1384,76 @@
     "target": "5:arousal",
     "operator": ">=",
     "value": 90
+  },
+  {
+    "id": 11064,
+    "type": "stat-npc",
+    "target": "5:corruption",
+    "operator": ">=",
+    "value": 10
+  },
+  {
+    "id": 11069,
+    "type": "stat-npc",
+    "target": "5:corruption",
+    "operator": ">=",
+    "value": 100
+  },
+  {
+    "id": 11060,
+    "type": "stat-npc",
+    "target": "5:corruption",
+    "operator": ">=",
+    "value": 2
+  },
+  {
+    "id": 11065,
+    "type": "stat-npc",
+    "target": "5:corruption",
+    "operator": ">=",
+    "value": 20
+  },
+  {
+    "id": 11061,
+    "type": "stat-npc",
+    "target": "5:corruption",
+    "operator": ">=",
+    "value": 4
+  },
+  {
+    "id": 11066,
+    "type": "stat-npc",
+    "target": "5:corruption",
+    "operator": ">=",
+    "value": 40
+  },
+  {
+    "id": 11062,
+    "type": "stat-npc",
+    "target": "5:corruption",
+    "operator": ">=",
+    "value": 6
+  },
+  {
+    "id": 11067,
+    "type": "stat-npc",
+    "target": "5:corruption",
+    "operator": ">=",
+    "value": 60
+  },
+  {
+    "id": 11063,
+    "type": "stat-npc",
+    "target": "5:corruption",
+    "operator": ">=",
+    "value": 8
+  },
+  {
+    "id": 11068,
+    "type": "stat-npc",
+    "target": "5:corruption",
+    "operator": ">=",
+    "value": 80
   },
   {
     "id": 1001007,
@@ -1008,6 +1568,76 @@
     "value": 90
   },
   {
+    "id": 11004,
+    "type": "stat-npc",
+    "target": "2:corruption",
+    "operator": ">=",
+    "value": 10
+  },
+  {
+    "id": 11009,
+    "type": "stat-npc",
+    "target": "2:corruption",
+    "operator": ">=",
+    "value": 100
+  },
+  {
+    "id": 11000,
+    "type": "stat-npc",
+    "target": "2:corruption",
+    "operator": ">=",
+    "value": 2
+  },
+  {
+    "id": 11005,
+    "type": "stat-npc",
+    "target": "2:corruption",
+    "operator": ">=",
+    "value": 20
+  },
+  {
+    "id": 11001,
+    "type": "stat-npc",
+    "target": "2:corruption",
+    "operator": ">=",
+    "value": 4
+  },
+  {
+    "id": 11006,
+    "type": "stat-npc",
+    "target": "2:corruption",
+    "operator": ">=",
+    "value": 40
+  },
+  {
+    "id": 11002,
+    "type": "stat-npc",
+    "target": "2:corruption",
+    "operator": ">=",
+    "value": 6
+  },
+  {
+    "id": 11007,
+    "type": "stat-npc",
+    "target": "2:corruption",
+    "operator": ">=",
+    "value": 60
+  },
+  {
+    "id": 11003,
+    "type": "stat-npc",
+    "target": "2:corruption",
+    "operator": ">=",
+    "value": 8
+  },
+  {
+    "id": 11008,
+    "type": "stat-npc",
+    "target": "2:corruption",
+    "operator": ">=",
+    "value": 80
+  },
+  {
     "id": 10012,
     "type": "stat-npc",
     "target": "4:arousal",
@@ -1034,6 +1664,76 @@
     "target": "4:arousal",
     "operator": ">=",
     "value": 90
+  },
+  {
+    "id": 11044,
+    "type": "stat-npc",
+    "target": "4:corruption",
+    "operator": ">=",
+    "value": 10
+  },
+  {
+    "id": 11049,
+    "type": "stat-npc",
+    "target": "4:corruption",
+    "operator": ">=",
+    "value": 100
+  },
+  {
+    "id": 11040,
+    "type": "stat-npc",
+    "target": "4:corruption",
+    "operator": ">=",
+    "value": 2
+  },
+  {
+    "id": 11045,
+    "type": "stat-npc",
+    "target": "4:corruption",
+    "operator": ">=",
+    "value": 20
+  },
+  {
+    "id": 11041,
+    "type": "stat-npc",
+    "target": "4:corruption",
+    "operator": ">=",
+    "value": 4
+  },
+  {
+    "id": 11046,
+    "type": "stat-npc",
+    "target": "4:corruption",
+    "operator": ">=",
+    "value": 40
+  },
+  {
+    "id": 11042,
+    "type": "stat-npc",
+    "target": "4:corruption",
+    "operator": ">=",
+    "value": 6
+  },
+  {
+    "id": 11047,
+    "type": "stat-npc",
+    "target": "4:corruption",
+    "operator": ">=",
+    "value": 60
+  },
+  {
+    "id": 11043,
+    "type": "stat-npc",
+    "target": "4:corruption",
+    "operator": ">=",
+    "value": 8
+  },
+  {
+    "id": 11048,
+    "type": "stat-npc",
+    "target": "4:corruption",
+    "operator": ">=",
+    "value": 80
   },
   {
     "id": 1001006,

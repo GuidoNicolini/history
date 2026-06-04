@@ -1,0 +1,7 @@
+{
+  "id": 1001008,
+  "type": "item",
+  "target": "roomKeyBossOffice",
+  "operator": ">=",
+  "value": 1
+}

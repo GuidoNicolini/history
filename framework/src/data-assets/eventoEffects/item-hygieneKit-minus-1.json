@@ -1,7 +1,7 @@
 {
   "id": 10221,
   "type": "item",
-  "target": "hygieneKit",
+  "target": "hygienekit",
   "operator": "minus",
   "value": 1
 }
