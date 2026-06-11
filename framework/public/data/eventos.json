@@ -709,7 +709,7 @@
     "location": 200,
     "probability": 100,
     "numberOfTimesActivated": 0,
-    "cooldownDuration": 7,
+    "cooldownDuration": 3,
     "lastDayActivated": 0,
     "cubes": [
       {
@@ -762,7 +762,7 @@
     "location": 200,
     "probability": 200,
     "numberOfTimesActivated": 0,
-    "cooldownDuration": 7,
+    "cooldownDuration": 3,
     "lastDayActivated": 0,
     "cubes": [
       {
@@ -816,7 +816,7 @@
     "location": 200,
     "probability": 300,
     "numberOfTimesActivated": 0,
-    "cooldownDuration": 7,
+    "cooldownDuration": 3,
     "lastDayActivated": 0,
     "cubes": [
       {
@@ -870,7 +870,7 @@
     "location": 200,
     "probability": 400,
     "numberOfTimesActivated": 0,
-    "cooldownDuration": 7,
+    "cooldownDuration": 3,
     "lastDayActivated": 0,
     "cubes": [
       {
@@ -924,7 +924,7 @@
     "location": 200,
     "probability": 500,
     "numberOfTimesActivated": 0,
-    "cooldownDuration": 7,
+    "cooldownDuration": 3,
     "lastDayActivated": 0,
     "cubes": [
       {
@@ -1117,7 +1117,7 @@
     "id": "hero0001",
     "type": 3,
     "location": 1009,
-    "probability": 100,
+    "probability": 10000,
     "numberOfTimesActivated": 0,
     "cooldownDuration": 0,
     "lastDayActivated": 0,
@@ -1227,7 +1227,6 @@
     ],
     "conditions": [
       400,
-      11000002,
       13000000
     ],
     "effects": [
@@ -1391,7 +1390,7 @@
         "order": 2,
         "probability": 100,
         "styleClass": [],
-        "text": "Big bro! Bet you can't catch me! Come get me, come on!",
+        "text": "Hey! Bet you can't catch me! Come get me, come on!",
         "character": 5
       },
       {
@@ -1996,7 +1995,7 @@
     "location": 300,
     "probability": 100,
     "numberOfTimesActivated": 0,
-    "cooldownDuration": 7,
+    "cooldownDuration": 3,
     "lastDayActivated": 0,
     "cubes": [
       {
@@ -2049,7 +2048,7 @@
     "location": 300,
     "probability": 200,
     "numberOfTimesActivated": 0,
-    "cooldownDuration": 7,
+    "cooldownDuration": 3,
     "lastDayActivated": 0,
     "cubes": [
       {
@@ -2103,7 +2102,7 @@
     "location": 300,
     "probability": 300,
     "numberOfTimesActivated": 0,
-    "cooldownDuration": 7,
+    "cooldownDuration": 3,
     "lastDayActivated": 0,
     "cubes": [
       {
@@ -2157,7 +2156,7 @@
     "location": 300,
     "probability": 400,
     "numberOfTimesActivated": 0,
-    "cooldownDuration": 7,
+    "cooldownDuration": 3,
     "lastDayActivated": 0,
     "cubes": [
       {
@@ -2211,7 +2210,7 @@
     "location": 300,
     "probability": 500,
     "numberOfTimesActivated": 0,
-    "cooldownDuration": 7,
+    "cooldownDuration": 3,
     "lastDayActivated": 0,
     "cubes": [
       {
