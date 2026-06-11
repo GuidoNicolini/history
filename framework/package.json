@@ -1,7 +1,7 @@
 {
   "name": "HappyCity",
-  "version": "1.3.0",
-  "description": "Descripción de tu aplicación",
+  "version": "1.4.0",
+  "description": "An adult visual novel game",
   "author": "Happy Dev",
   "main": "main.js",
   "scripts": {
@@ -38,7 +38,8 @@
       "target": [
         "nsis",
         "zip"
-      ]
+      ],
+      "publisherName": "Happy Dev"
     },
     "linux": {
       "target": [
@@ -77,8 +78,8 @@
     "@angular/build": "^21.0.0",
     "@angular/cli": "^21.0.0",
     "@angular/compiler-cli": "^21.0.0",
-    "electron": "^28.2.1",
-    "electron-builder": "^25.1.8",
+    "electron": "^42.4.0",
+    "electron-builder": "^26.15.2",
     "jsdom": "^27.1.0",
     "typescript": "~5.9.2",
     "vitest": "^4.0.8"
