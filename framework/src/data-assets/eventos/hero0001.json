@@ -2,7 +2,7 @@
   "id": "hero0001",
   "type": 3,
   "location": 1009,
-  "probability": 100,
+  "probability": 10000,
   "numberOfTimesActivated": 0,
   "cooldownDuration": 0,
   "lastDayActivated": 0,
@@ -110,6 +110,6 @@
       }
     }
   ],
-  "conditions": [400,11000002,13000000],
+  "conditions": [400,13000000],
   "effects": [1001002,10003]
 }
