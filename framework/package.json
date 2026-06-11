@@ -38,8 +38,7 @@
       "target": [
         "nsis",
         "zip"
-      ],
-      "publisherName": "Happy Dev"
+      ]
     },
     "linux": {
       "target": [
