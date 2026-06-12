@@ -28,6 +28,13 @@
     "value": 1
   },
   {
+    "id": 12000008,
+    "type": "activation",
+    "target": "hero0001",
+    "operator": ">=",
+    "value": 1
+  },
+  {
     "id": 12000001,
     "type": "activation",
     "target": "kitchen0003",
@@ -1860,5 +1867,12 @@
     "target": "",
     "operator": "==",
     "value": 4
+  },
+  {
+    "id": 6,
+    "type": "vip",
+    "target": "",
+    "operator": "==",
+    "value": 5
   }
 ]

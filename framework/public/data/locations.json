@@ -904,7 +904,8 @@
     "conditionsAvailable": [],
     "conditionsVisible": [],
     "subLocations": [
-      200
+      200,
+      210
     ]
   },
   {
@@ -928,6 +929,30 @@
     "subLocations": [
       1039
     ]
+  },
+  {
+    "id": 210,
+    "name": "Gym",
+    "type": 20,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/building/gym.png"
+      }
+    ],
+    "url": "location/210",
+    "backUrl": "location/20",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      2000
+    ],
+    "conditionsVisible": [
+      12000008
+    ],
+    "subLocations": []
   },
   {
     "id": 1,
