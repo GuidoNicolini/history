@@ -1,0 +1,124 @@
+.progress-container {
+  background: rgba(30, 30, 40, 0.65);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+.progress-container:hover {
+  border-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+}
+
+.progress-header {
+  cursor: pointer;
+  user-select: none;
+}
+
+.header-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #f8f9fa;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.overall-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+  border-radius: 20px;
+}
+
+.progress-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.progress-content.expanded {
+  max-height: 500px;
+}
+
+.overall-summary {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.custom-progress-main {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.custom-progress-main .progress-bar {
+  background: linear-gradient(90deg, #00f2fe 0%, #4facfe 100%) !important;
+}
+
+.tier-item {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  transition: background 0.2s ease;
+}
+
+.tier-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.tier-name {
+  color: #e9ecef;
+}
+
+.tier-ratio {
+  color: #adb5bd;
+}
+
+.custom-progress-tier {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+/* Custom Gradients for Tiers */
+.bar-general {
+  background: linear-gradient(90deg, #00f2fe 0%, #4facfe 100%) !important;
+}
+
+.bar-passerby {
+  background: linear-gradient(90deg, #6c757d 0%, #adb5bd 100%) !important;
+}
+
+.bar-resident {
+  background: linear-gradient(90deg, #0d6efd 0%, #0dcaf0 100%) !important;
+}
+
+.bar-active-citizen {
+  background: linear-gradient(90deg, #198754 0%, #20c997 100%) !important;
+}
+
+.bar-city-planner {
+  background: linear-gradient(90deg, #ffc107 0%, #fd7e14 100%) !important;
+}
+
+.bar-the-mayor {
+  background: linear-gradient(90deg, #dc3545 0%, #f43f5e 100%) !important;
+}
+
+/* Animations */
+.animate-bounce {
+  display: inline-block;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}

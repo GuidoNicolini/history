@@ -11,13 +11,15 @@ import {LocationModule} from './features/location';
 import { StartView } from './shared/views/start-view/start-view';
 import { DebugStart } from './shared/views/debug-start/debug-start';
 import { SideMenuVIew } from './shared/views/side-menu-view/side-menu-view';
+import { Progress } from './shared/views/progress/progress';
 
 @NgModule({
   declarations: [
     App,
     StartView,
     DebugStart,
-    SideMenuVIew
+    SideMenuVIew,
+    Progress
   ],
   imports: [
     BrowserModule,
