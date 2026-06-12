@@ -1,32 +1,36 @@
 
 
-<div class="row">
-  <h1 class="text-white text-center mt-3">Happy City</h1>
-</div>
-
-<div class="row text-center">
-  <app-clock></app-clock>
-</div>
-
-<div class="row text-center">
-  <app-hero-energy></app-hero-energy>
-</div>
-
-<div class="row text-center">
-  <app-hero-money></app-hero-money>
-</div>
-
-<div class="row px-2">
-  <app-progress></app-progress>
-</div>
-
-
-<div class="row text-center">
-  <div class="patreon-container" [class.show]="showPatreonImage">
-    <a href="https://www.patreon.com/HappyCityDev" target="_blank" rel="noopener noreferrer">
-      <img src="assets/img/others/patreon.jpeg"  class="patreon-image img-fluid">
-    </a>
-
+<div class="side-menu-container">
+  <!-- Game Title -->
+  <div class="side-menu-header">
+    <div class="game-title-wrapper" [ngClass]="'vip-' + vipLevel">
+      <h1 class="game-title">Happy City</h1>
+      @if (vipLevel > 0) {
+        <div class="vip-badge-container">
+          <span class="vip-badge">{{ vipName }}</span>
+        </div>
+      }
+    </div>
   </div>
 
+  <!-- Widgets Section (Clock, Energy, Money) -->
+  <div class="widgets-section">
+    <app-clock></app-clock>
+    <app-hero-energy></app-hero-energy>
+    <app-hero-money></app-hero-money>
+  </div>
+
+  <!-- Progress Section -->
+  <div class="progress-section">
+    <app-progress></app-progress>
+  </div>
+
+  <!-- Patreon Banner (Anchored at the bottom) -->
+  <div class="patreon-section" [class.show]="showPatreonImage">
+    <div class="patreon-container" [class.show]="showPatreonImage">
+      <a href="https://www.patreon.com/HappyCityDev" target="_blank" rel="noopener noreferrer">
+        <img src="assets/img/others/patreon.jpeg" class="patreon-image img-fluid">
+      </a>
+    </div>
+  </div>
 </div>

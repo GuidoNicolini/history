@@ -1,9 +1,12 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class VipService {
+
+  public vipChanges$ = new BehaviorSubject<void>(undefined);
 
   vips: vip[] = [
     { level: 1, value: false },
@@ -83,6 +86,7 @@ export class VipService {
     const vip = this.vips.find(v => v.level === level);
     if (vip) {
       vip.value = true;
+      this.vipChanges$.next();
     }
 
   }

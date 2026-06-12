@@ -12,6 +12,7 @@ import { StartView } from './shared/views/start-view/start-view';
 import { DebugStart } from './shared/views/debug-start/debug-start';
 import { SideMenuVIew } from './shared/views/side-menu-view/side-menu-view';
 import { Progress } from './shared/views/progress/progress';
+import { Title } from './shared/views/title/title';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { Progress } from './shared/views/progress/progress';
     StartView,
     DebugStart,
     SideMenuVIew,
-    Progress
+    Progress,
+    Title
   ],
   imports: [
     BrowserModule,
