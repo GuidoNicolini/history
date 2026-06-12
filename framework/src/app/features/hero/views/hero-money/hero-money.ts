@@ -14,9 +14,12 @@ export class HeroMoney {
 
   public money = computed(() => {
     const state = this.heroService.state();
-    const money = state.inventory?.[GameItems.MONEY] || 0;
+    return state.inventory?.[GameItems.MONEY] || 0;
+  });
 
-    return money;
+  public formattedMoney = computed(() => {
+    const value = this.money();
+    return new Intl.NumberFormat('en-US').format(value);
   });
 
 

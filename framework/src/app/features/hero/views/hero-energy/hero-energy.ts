@@ -13,10 +13,16 @@ export class HeroEnergy {
 
   public energy = computed(() => {
     const state = this.heroService.state();
-    const energy = state.stats?.[Stats.ENERGY] || 0;
+    return state.stats?.[Stats.ENERGY] || 0;
+  });
 
-    return energy;
+  public maxEnergy = this.heroService.maxEnergy;
 
-  })
+  public energyPercentage = computed(() => {
+    const energy = this.energy();
+    const max = this.maxEnergy();
+    if (max <= 0) return 0;
+    return Math.min(100, Math.max(0, (energy / max) * 100));
+  });
 
 }
