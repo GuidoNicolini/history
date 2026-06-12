@@ -113,20 +113,29 @@ export class SaveLoadService {
     }
   }
 
-  public loadStateFromFile(file: File): void {
-    const reader = new FileReader();
-    reader.onload = (event) => {
-      try {
-        const jsonState = event.target?.result as string;
-        if (jsonState) {
-          const gameState = JSON.parse(jsonState);
-          this.importState(gameState);
-          console.log('Game state loaded from file.');
+  public loadStateFromFile(file: File): Promise<void> {
+    return new Promise<void>((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        try {
+          const jsonState = event.target?.result as string;
+          if (jsonState) {
+            const gameState = JSON.parse(jsonState);
+            this.importState(gameState);
+            console.log('Game state loaded from file.');
+            resolve();
+          } else {
+            reject(new Error('Empty game state file.'));
+          }
+        } catch (error) {
+          console.error('Error loading game state from file:', error);
+          reject(error);
         }
-      } catch (error) {
-        console.error('Error loading game state from file:', error);
-      }
-    };
-    reader.readAsText(file);
+      };
+      reader.onerror = (error) => {
+        reject(error);
+      };
+      reader.readAsText(file);
+    });
   }
 }
