@@ -9,6 +9,6 @@ import {Initializer} from './shared/services/initializer';
 })
 export class App{
 
-  protected readonly title = signal('framework');
+  protected readonly title = signal('Happy City');
 
 }
