@@ -219,16 +219,41 @@ export class NpcService implements ISaveable {
   }
 
   // 6. GUARDADO Y CARGA
-  public exportState(): { npcs: Record<number, NpcState>, relations: Record<number, RelationState> } {
+  public exportState(): { npcs: Record<number, { stats: Record<Stats, number>, currentLocation: LocationID }>, relations: Record<number, RelationState> } {
+    const currentState = this.state();
+    const exportedNpcs: Record<number, { stats: Record<Stats, number>, currentLocation: LocationID }> = {};
+    Object.keys(currentState).forEach(idStr => {
+      const id = parseInt(idStr, 10);
+      exportedNpcs[id] = {
+        stats: currentState[id].stats,
+        currentLocation: currentState[id].currentLocation
+      };
+    });
     return {
-      npcs: this.state(),
+      npcs: exportedNpcs,
       relations: this.stateRelation()
     };
   }
 
-  public importState(savedState: { npcs: Record<number, NpcState>, relations: Record<number, RelationState> }): void {
+  public importState(savedState: { npcs: Record<number, { stats: Record<Stats, number>, currentLocation: LocationID }>, relations: Record<number, RelationState> }): void {
+    if (!savedState) return;
     if (savedState.npcs) {
-      this.state.set(savedState.npcs);
+      this.state.update(currentNpcs => {
+        const updatedNpcs = { ...currentNpcs };
+        Object.keys(savedState.npcs).forEach(idStr => {
+          const id = parseInt(idStr, 10);
+          const savedNpc = savedState.npcs[id];
+          const currentNpc = currentNpcs[id];
+          if (currentNpc && savedNpc) {
+            updatedNpcs[id] = {
+              ...currentNpc,
+              stats: savedNpc.stats,
+              currentLocation: savedNpc.currentLocation
+            };
+          }
+        });
+        return updatedNpcs;
+      });
     }
     if (savedState.relations) {
       this.stateRelation.set(savedState.relations);
