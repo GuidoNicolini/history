@@ -24,42 +24,10 @@ export class SaveLoadService {
 
   private importState(state: any): void {
     this.subscribers.forEach((service, key) => {
-      if (state[key]) {
-        // Obtenemos el estado actual (que ya tiene los datos inicializados por defecto con las actualizaciones)
-        const currentState = service.exportState();
-        // Mezclamos ambos estados
-        const mergedState = this.deepMerge(currentState, state[key]);
-        service.importState(mergedState);
+      if (state[key] !== undefined) {
+        service.importState(state[key]);
       }
     });
-  }
-
-  /**
-   * Realiza un "deep merge" para mezclar las propiedades de un estado fuente (el archivo guardado)
-   * sobre el estado objetivo (el inicializado por defecto).
-   * Así, las nuevas propiedades u objetos añadidos en actualizaciones se mantienen intactos,
-   * mientras que el progreso anterior sobreescribe los valores por defecto.
-   */
-  private deepMerge(target: any, source: any): any {
-    const isObject = (obj: any) => obj && typeof obj === 'object' && !Array.isArray(obj);
-
-    if (!isObject(target) || !isObject(source)) {
-      return source !== undefined ? source : target;
-    }
-
-    const output = { ...target };
-    Object.keys(source).forEach(key => {
-      if (isObject(source[key])) {
-        if (!(key in target)) {
-          Object.assign(output, { [key]: source[key] });
-        } else {
-          output[key] = this.deepMerge(target[key], source[key]);
-        }
-      } else {
-        Object.assign(output, { [key]: source[key] });
-      }
-    });
-    return output;
   }
 
   // --- Local Storage ---

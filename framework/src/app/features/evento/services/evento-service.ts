@@ -172,11 +172,35 @@ export class EventoService implements ISaveable {
 
 
 
-  public exportState(): Record<string, EventoState> {
-    return this.state();
+  public exportState(): Record<string, { numberOfTimesActivated: number; lastDayActivated: number }> {
+    const currentState = this.state();
+    const exported: Record<string, { numberOfTimesActivated: number; lastDayActivated: number }> = {};
+    Object.keys(currentState).forEach(id => {
+      exported[id] = {
+        numberOfTimesActivated: currentState[id].numberOfTimesActivated,
+        lastDayActivated: currentState[id].lastDayActivated
+      };
+    });
+    return exported;
   }
 
-  public importState(newState: Record<string, EventoState>): void {
-    this.state.set(newState);
+  public importState(savedState: Record<string, { numberOfTimesActivated: number; lastDayActivated: number }>): void {
+    if (savedState) {
+      this.state.update(currentState => {
+        const updatedState = { ...currentState };
+        Object.keys(savedState).forEach(id => {
+          const savedEvento = savedState[id];
+          const currentEvento = currentState[id];
+          if (currentEvento && savedEvento) {
+            updatedState[id] = {
+              ...currentEvento,
+              numberOfTimesActivated: savedEvento.numberOfTimesActivated,
+              lastDayActivated: savedEvento.lastDayActivated
+            };
+          }
+        });
+        return updatedState;
+      });
+    }
   }
 }
