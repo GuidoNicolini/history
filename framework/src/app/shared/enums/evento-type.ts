@@ -5,14 +5,5 @@ export enum EventoType {
   CHARACTER =4,  //EVENTOS QUE SE ACTIVAN CON EL NPC
   GLOBAL = 5,   //EVENTOS QUE SE ACTIVAN AL CUMPLISE LAS CONDICIONES
 
-
-  VIP1 = 10,
-  VIP2 = 20,
-  VIP3 = 30,
-  VIP4 = 40,
-
-
-
-  ERROR = 999,
   NONE = 0
 }
