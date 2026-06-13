@@ -931,6 +931,66 @@
     ]
   },
   {
+    "id": 2101,
+    "name": "Showers",
+    "type": 40,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/room/gym-shower.jpg"
+      }
+    ],
+    "url": "location/2101",
+    "backUrl": "location/210",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 2102,
+    "name": "Weight room",
+    "type": 40,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/room/gym-weight-room.jpg"
+      }
+    ],
+    "url": "location/2102",
+    "backUrl": "location/210",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 2103,
+    "name": "Zoom",
+    "type": 40,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/room/gym-zoom.jpg"
+      }
+    ],
+    "url": "location/2103",
+    "backUrl": "location/210",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
     "id": 210,
     "name": "Gym",
     "type": 20,
@@ -952,7 +1012,11 @@
     "conditionsVisible": [
       12000008
     ],
-    "subLocations": []
+    "subLocations": [
+      2101,
+      2102,
+      2103
+    ]
   },
   {
     "id": 1,
