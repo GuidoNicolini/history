@@ -746,7 +746,7 @@
     "conditions": [
       10000012,
       12000007,
-      94,
+      97,
       10024,
       5
     ],
@@ -762,7 +762,7 @@
     "location": 200,
     "probability": 200,
     "numberOfTimesActivated": 0,
-    "cooldownDuration": 3,
+    "cooldownDuration": 5,
     "lastDayActivated": 0,
     "cubes": [
       {
@@ -816,7 +816,7 @@
     "location": 200,
     "probability": 300,
     "numberOfTimesActivated": 0,
-    "cooldownDuration": 3,
+    "cooldownDuration": 7,
     "lastDayActivated": 0,
     "cubes": [
       {
@@ -853,7 +853,7 @@
     "conditions": [
       10000012,
       11101,
-      94,
+      92,
       10024,
       5,
       2
@@ -870,7 +870,7 @@
     "location": 200,
     "probability": 400,
     "numberOfTimesActivated": 0,
-    "cooldownDuration": 3,
+    "cooldownDuration": 10,
     "lastDayActivated": 0,
     "cubes": [
       {
@@ -907,7 +907,7 @@
     "conditions": [
       10000012,
       11102,
-      94,
+      92,
       10024,
       5,
       3
@@ -924,7 +924,7 @@
     "location": 200,
     "probability": 500,
     "numberOfTimesActivated": 0,
-    "cooldownDuration": 3,
+    "cooldownDuration": 10,
     "lastDayActivated": 0,
     "cubes": [
       {
@@ -961,7 +961,7 @@
     "conditions": [
       10000012,
       11103,
-      94,
+      92,
       10024,
       5,
       4
@@ -2032,7 +2032,7 @@
     "conditions": [
       10000014,
       12000005,
-      94,
+      97,
       10020,
       5
     ],
@@ -2048,7 +2048,7 @@
     "location": 300,
     "probability": 200,
     "numberOfTimesActivated": 0,
-    "cooldownDuration": 3,
+    "cooldownDuration": 5,
     "lastDayActivated": 0,
     "cubes": [
       {
@@ -2102,7 +2102,7 @@
     "location": 300,
     "probability": 300,
     "numberOfTimesActivated": 0,
-    "cooldownDuration": 3,
+    "cooldownDuration": 7,
     "lastDayActivated": 0,
     "cubes": [
       {
@@ -2139,7 +2139,7 @@
     "conditions": [
       10000014,
       11121,
-      94,
+      92,
       10020,
       5,
       2
@@ -2156,7 +2156,7 @@
     "location": 300,
     "probability": 400,
     "numberOfTimesActivated": 0,
-    "cooldownDuration": 3,
+    "cooldownDuration": 10,
     "lastDayActivated": 0,
     "cubes": [
       {
@@ -2193,7 +2193,7 @@
     "conditions": [
       10000014,
       11122,
-      94,
+      92,
       10020,
       5,
       3
@@ -2210,7 +2210,7 @@
     "location": 300,
     "probability": 500,
     "numberOfTimesActivated": 0,
-    "cooldownDuration": 3,
+    "cooldownDuration": 10,
     "lastDayActivated": 0,
     "cubes": [
       {
@@ -2247,7 +2247,7 @@
     "conditions": [
       10000014,
       11123,
-      94,
+      92,
       10020,
       5,
       4
