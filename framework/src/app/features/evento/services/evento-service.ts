@@ -102,11 +102,19 @@ export class EventoService implements ISaveable {
     if (!ids || ids.length === 0) return;
 
     const currentState = this.state();
+    const evaluator = this.injector.get(ConditionEvaluator);
+    const conditionService = this.injector.get(ConditionService);
 
-    // Filtrar los eventos que existen y tienen probabilidad válida
+    // Filtrar los eventos que existen, tienen probabilidad válida y cumplen todas las condiciones
     const eventos = ids
       .map(id => currentState[id])
-      .filter(evento => evento !== undefined && evento.probability > 0);
+      .filter(evento => {
+        if (evento === undefined || evento.probability <= 0) {
+          return false;
+        }
+        const conditions = conditionService.findConditions(evento.conditions || []);
+        return evaluator.checkAll(conditions, evento.id);
+      });
 
     if (eventos.length === 0) return;
 
