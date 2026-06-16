@@ -833,6 +833,27 @@
     "value": 3
   },
   {
+    "id": 401,
+    "type": "stat-hero",
+    "target": "strength",
+    "operator": ">=",
+    "value": 10
+  },
+  {
+    "id": 402,
+    "type": "stat-hero",
+    "target": "strength",
+    "operator": ">=",
+    "value": 15
+  },
+  {
+    "id": 403,
+    "type": "stat-hero",
+    "target": "strength",
+    "operator": ">=",
+    "value": 20
+  },
+  {
     "id": 400,
     "type": "stat-hero",
     "target": "strength",

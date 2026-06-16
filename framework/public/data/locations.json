@@ -292,6 +292,28 @@
     "subLocations": []
   },
   {
+    "id": 2121,
+    "name": "Bench press",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/gym-bench-press.webp"
+      }
+    ],
+    "url": "evento/gym0001",
+    "backUrl": "gym0001",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      14
+    ],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
     "id": 1025,
     "name": "Meal",
     "type": 100,
@@ -968,7 +990,9 @@
     "styleClass": [],
     "conditionsAvailable": [],
     "conditionsVisible": [],
-    "subLocations": []
+    "subLocations": [
+      2121
+    ]
   },
   {
     "id": 2103,

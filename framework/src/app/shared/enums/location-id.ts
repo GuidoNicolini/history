@@ -76,6 +76,13 @@ export enum LocationID {
   GYM_ZOOM = 2103,
 
 
+
+
+  /****** Activities GYM  *****/
+BENCH_PRESS = 2121,
+
+
+
   /****** COMMERCIAL DISTRIC  *****/
 
 COMMERCIAL_DISTRIC = 30,

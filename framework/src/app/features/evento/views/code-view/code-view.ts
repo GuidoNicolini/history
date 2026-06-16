@@ -47,6 +47,13 @@ export class CodeView implements OnInit {
         case 'cafeJobTrue':
           this.funciones.cafeJobSetTrue()
           break;
+        case 'launchEventoById':
+          this.funciones.launchEventoById(this.cube.parameters[0])
+          break;
+        case 'lauchEventoGroup': {
+           this.funciones.lauchEventoGroup(this.cube.parameters)
+          break;
+        }
       }
 
 

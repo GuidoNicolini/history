@@ -1,0 +1,43 @@
+{
+  "id": "gym0001",
+  "type": 2,
+  "location": 2102,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 1,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "code",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "functionName": "launchEventoById",
+      "parameters": [
+        "gym0003"
+      ],
+      "conditions": [
+        403
+      ]
+    },
+    {
+      "id": 2,
+      "type": "code",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "functionName": "launchEventoById",
+      "parameters": [
+        "gym0002"
+      ],
+      "conditions": []
+    }
+  ],
+  "conditions": [],
+  "effects": [
+    15,
+    30,
+    2050
+  ]
+}
