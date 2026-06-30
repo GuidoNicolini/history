@@ -1,4 +1,4 @@
-import { Component, computed, inject } from '@angular/core';
+import { Component, computed, inject, ChangeDetectionStrategy } from '@angular/core';
 import { EventoService } from '../../../features/evento/services/evento-service';
 import { ConditionService } from '../../../features/condition/services/condition-service';
 
@@ -6,6 +6,7 @@ import { ConditionService } from '../../../features/condition/services/condition
   selector: 'app-progress',
   standalone: false,
   templateUrl: './progress.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './progress.css',
 })
 export class Progress {

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import {Router} from '@angular/router';
 import {Initializer} from '../../services/initializer';
 import {SaveLoadService} from '../../services/save-load-service';
@@ -7,6 +7,7 @@ import {SaveLoadService} from '../../services/save-load-service';
   selector: 'app-start-view',
   standalone: false,
   templateUrl: './start-view.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './start-view.css',
 })
 export class StartView {

@@ -1,10 +1,11 @@
-import {Component, computed} from '@angular/core';
+import {Component, computed, ChangeDetectionStrategy} from '@angular/core';
 import {HeroService} from '../../services/hero-service';
 
 @Component({
   selector: 'app-hero-inventory',
   standalone: false,
   templateUrl: './hero-inventory.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './hero-inventory.css',
 })
 export class HeroInventory {

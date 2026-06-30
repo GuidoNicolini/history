@@ -1,4 +1,4 @@
-import {Component, computed, inject} from '@angular/core';
+import {Component, computed, inject, ChangeDetectionStrategy} from '@angular/core';
 import {HeroService} from '../../services/hero-service';
 import {Stats} from '../../../../shared/enums/stats';
 
@@ -6,6 +6,7 @@ import {Stats} from '../../../../shared/enums/stats';
   selector: 'app-hero-energy',
   standalone: false,
   templateUrl: './hero-energy.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './hero-energy.css',
 })
 export class HeroEnergy {

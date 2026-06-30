@@ -1,4 +1,4 @@
-import { Component, Input, computed, inject } from '@angular/core';
+import { Component, Input, computed, inject, ChangeDetectionStrategy } from '@angular/core';
 import { NpcService } from '../../services/npc-service';
 import { CharacterID } from '../../../../shared/enums/character-id';
 
@@ -6,6 +6,7 @@ import { CharacterID } from '../../../../shared/enums/character-id';
   selector: 'app-npc-stats',
   standalone: false,
   templateUrl: './npc-stats.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './npc-stats.css'
 })
 export class NpcStats {

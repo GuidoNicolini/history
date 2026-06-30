@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit, ChangeDetectionStrategy} from '@angular/core';
 import {CodeCube} from '../../models/Cube/code-cube';
 import {ConditionService} from '../../../condition/services/condition-service';
 import {ConditionEvaluator} from '../../../condition/services/condition-evaluator';
@@ -8,6 +8,7 @@ import {Funciones} from './funciones';
   selector: 'app-code-view',
   standalone: false,
   templateUrl: './code-view.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './code-view.css',
 })
 export class CodeView implements OnInit {

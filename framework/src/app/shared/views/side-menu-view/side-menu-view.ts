@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy, ChangeDetectorRef } from '@angular/core';
+import { Component, OnInit, OnDestroy, ChangeDetectorRef, ChangeDetectionStrategy } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { VipService } from '../../services/vip-service';
 
@@ -6,6 +6,7 @@ import { VipService } from '../../services/vip-service';
   selector: 'app-side-menu-view',
   standalone: false,
   templateUrl: './side-menu-view.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './side-menu-view.css',
 })
 export class SideMenuVIew implements OnInit, OnDestroy {
