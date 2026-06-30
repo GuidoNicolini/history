@@ -11,6 +11,11 @@ export enum CharacterID {
 
   KIMMY = 9, // Kimmy kim - empleada supermarket
 
+  KARYN = 10, // Karyn Bayres - duena gym
+  SONYA = 11, // SONYA SNAKE - gym girl
+
+  MORGAN = 12, // Morgan Rodríguez - Museo
+
   NARRATOR= 500,
   NONE = 99999
 

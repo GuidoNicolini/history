@@ -27,19 +27,19 @@ export class Progress {
       2: { seen: 0, total: 0 },
       3: { seen: 0, total: 0 },
       4: { seen: 0, total: 0 },
-      6: { seen: 0, total: 0 }
+      5: { seen: 0, total: 0 }
     };
 
     for (const event of events) {
       if (!event.conditions) continue;
-      
+
       // Encontrar si este evento tiene una condición VIP en los tiers definidos
       let eventVipValue: number | null = null;
       for (const condId of event.conditions) {
         const cond = conditions[condId];
         if (cond && cond.type === 'vip') {
           const val = Number(cond.value);
-          if (val === 1 || val === 2 || val === 3 || val === 4 || val === 6) {
+          if (val === 1 || val === 2 || val === 3 || val === 4 || val === 5) {
             eventVipValue = val;
             break;
           }
@@ -47,9 +47,9 @@ export class Progress {
       }
 
       if (eventVipValue !== null) {
-        tierStats[eventVipValue as 1 | 2 | 3 | 4 | 6].total++;
+        tierStats[eventVipValue as 1 | 2 | 3 | 4 | 5].total++;
         if ((event.numberOfTimesActivated || 0) >= 1) {
-          tierStats[eventVipValue as 1 | 2 | 3 | 4 | 6].seen++;
+          tierStats[eventVipValue as 1 | 2 | 3 | 4 | 5].seen++;
         }
       }
     }
@@ -59,11 +59,11 @@ export class Progress {
       { key: 2, name: 'Resident' },
       { key: 3, name: 'Active Citizen' },
       { key: 4, name: 'City Planner' },
-      { key: 6, name: 'The Mayor' }
+      { key: 5, name: 'The Mayor' }
     ];
 
     const mappedTiers = tiers.map(tier => {
-      const stats = tierStats[tier.key as 1 | 2 | 3 | 4 | 6];
+      const stats = tierStats[tier.key as 1 | 2 | 3 | 4 | 5];
       const percentage = stats.total > 0 ? Math.round((stats.seen / stats.total) * 100) : 0;
       return {
         name: tier.name,

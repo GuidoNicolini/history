@@ -90,10 +90,8 @@ export class EffectEvaluator {
         break;
       }
       case 'npc-lvl': {
-        const [idString, valueString] = String(effect.value).split(':');
-        const npcId = parseInt(idString, 10) as CharacterID;
-        const amount = isPlus ? Number(valueString) : -Number(valueString);
-        this.npcService.modifyStat(npcId, Stats.LEVEL, amount);
+        const npcId: number = effect.value
+        this.npcService.modifyStat(npcId, Stats.LEVEL, 1);
         break;
       }
 

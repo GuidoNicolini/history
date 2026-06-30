@@ -80,7 +80,20 @@ export enum LocationID {
 
   /****** Activities GYM  *****/
 BENCH_PRESS = 2121,
+STRETCH_GYM = 2122,
+  SHOWER_GYM =2123,
+  DRINK_PROTEIN = 2124,
 
+
+  /****** Museum  *****/
+  MUSEUM = 220,
+
+
+
+  /****** Activities Museum  *****/
+PLACA1 = 2230,
+  PLACA2 = 2231,
+  PLACA3 = 2232,
 
 
   /****** COMMERCIAL DISTRIC  *****/

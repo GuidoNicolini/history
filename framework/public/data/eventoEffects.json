@@ -378,6 +378,20 @@
     "value": 1
   },
   {
+    "id": 10241,
+    "type": "item",
+    "target": "gymcoin",
+    "operator": "minus",
+    "value": 1
+  },
+  {
+    "id": 10240,
+    "type": "item",
+    "target": "gymcoin",
+    "operator": "plus",
+    "value": 1
+  },
+  {
     "id": 10220,
     "type": "item",
     "target": "hygienekit",

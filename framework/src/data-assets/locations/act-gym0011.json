@@ -1,20 +1,20 @@
 {
-  "id": 2121,
-  "name": "Bench press",
+  "id": 2123,
+  "name": "Shower",
   "type": 100,
   "images": [
     {
       "type": "thumbnail",
-      "url": "assets/img/locations/activities/gym-bench-press.webp"
+      "url": "assets/img/locations/activities/shower.png"
     }
   ],
-  "url": "evento/gym0001",
-  "backUrl": "gym0001",
+  "url": "evento/gym0011",
+  "backUrl": "gym0011",
   "isAvailable": true,
   "isVisible": true,
   "lastTimeVisited": 0,
   "styleClass": [],
-  "conditionsAvailable": [5,14,1001009],
+  "conditionsAvailable": [5,10],
   "conditionsVisible": [],
   "subLocations": []
 }
