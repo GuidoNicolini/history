@@ -26,7 +26,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '26.4.0'
           cache: 'npm' # Esto acelera futuras ejecuciones guardando las dependencias en caché
           cache-dependency-path: framework/package-lock.json # Le indica dónde buscar el archivo
 
