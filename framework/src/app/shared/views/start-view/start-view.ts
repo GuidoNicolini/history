@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import {Router} from '@angular/router';
 import {Initializer} from '../../services/initializer';
 import {SaveLoadService} from '../../services/save-load-service';
@@ -7,6 +7,7 @@ import {SaveLoadService} from '../../services/save-load-service';
   selector: 'app-start-view',
   standalone: false,
   templateUrl: './start-view.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './start-view.css',
 })
 export class StartView {
@@ -19,37 +20,47 @@ export class StartView {
 
   protected newGame() {
     this.isLoading = true;
-    this.initilizer.initializeAllData();
-
-    setTimeout(() => {
-      this.isLoading = false;
-      this.router.navigate(['/evento/history0001']);
-    }, 5000);
-
+    this.initilizer.initializeAllData().subscribe({
+      next: () => {
+        this.isLoading = false;
+        this.router.navigate(['/evento/history0001']);
+      },
+      error: (err) => {
+        console.error('Error starting new game:', err);
+        this.isLoading = false;
+      }
+    });
   }
 
   protected loadGame(event?: Event) {
-
-    // Si la función es llamada desde un botón estándar: <button (click)="loadGame()">, abrimos el selector de archivos
     const input = document.createElement('input');
     input.type = 'file';
-    input.accept = '.json'; // Ajusta la extensión de archivo si es necesario
+    input.accept = '.json';
     input.onchange = (e: Event) => {
       const target = e.target as HTMLInputElement;
       if (target.files && target.files.length > 0) {
         this.isLoading = true;
+        const file = target.files[0];
 
         // Inicializamos los datos por defecto primero para tener la estructura de las nuevas actualizaciones
-        this.initilizer.initializeAllData();
-
-        // Luego cargamos la partida, sobreescribiendo el estado inicial con el guardado del usuario
-        this.saveLoadService.loadStateFromFile(target.files[0]);
-
-        console.log("forma 2")
-        setTimeout(() => {
-          this.isLoading = false;
-          this.router.navigate(['/location/1000']);
-        }, 5000);
+        this.initilizer.initializeAllData().subscribe({
+          next: () => {
+            // Luego cargamos la partida, sobreescribiendo el estado inicial con el guardado del usuario
+            this.saveLoadService.loadStateFromFile(file)
+              .then(() => {
+                this.isLoading = false;
+                this.router.navigate(['/location/1000']);
+              })
+              .catch((err) => {
+                console.error('Error loading game state from file:', err);
+                this.isLoading = false;
+              });
+          },
+          error: (err) => {
+            console.error('Error initializing data for loading game:', err);
+            this.isLoading = false;
+          }
+        });
       }
     };
     input.click();
@@ -57,10 +68,17 @@ export class StartView {
 
   protected continueGame() {
     this.isLoading = true;
-    this.saveLoadService.loadStateFromLocalStorage()
-    setTimeout(() => {
-      this.isLoading = false;
-      this.router.navigate(['/location/1000']);
-    }, 5000);
+    // Inicializamos primero para tener la estructura de datos actualizada
+    this.initilizer.initializeAllData().subscribe({
+      next: () => {
+        this.saveLoadService.loadStateFromLocalStorage();
+        this.isLoading = false;
+        this.router.navigate(['/location/1000']);
+      },
+      error: (err) => {
+        console.error('Error initializing data for continuing game:', err);
+        this.isLoading = false;
+      }
+    });
   }
 }

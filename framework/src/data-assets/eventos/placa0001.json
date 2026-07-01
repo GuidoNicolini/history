@@ -1,0 +1,35 @@
+{
+  "id": "placa0001",
+  "type": 2,
+  "location": 220,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 0,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Here stand the names that build this city, brick by brick, day by day. Their trust is our foundation, and our gratitude is endless.",
+      "character": 12
+    },
+    {
+      "id": 99999999,
+      "type": "button",
+      "order": 99999999,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Finish watching",
+      "conditions": [],
+      "cubeAction": {
+        "type": "redirection",
+        "value": "location/220"
+      }
+    }
+  ],
+  "conditions": [],
+  "effects": []
+}

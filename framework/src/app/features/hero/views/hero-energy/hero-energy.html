@@ -1,3 +1,19 @@
-<div>
-  <span><i class="bi bi-lightning"></i> {{ energy() }}</span>
+<div class="energy-card">
+  <div class="energy-header">
+    <div class="energy-title-group">
+      <div class="energy-icon-glow">
+        <i class="bi bi-lightning-charge-fill"></i>
+      </div>
+      <span class="energy-label">ENERGY</span>
+    </div>
+    <div class="energy-values">
+      <span class="energy-current">{{ energy() }}</span>
+      <span class="energy-slash">/</span>
+      <span class="energy-max">{{ maxEnergy() }}</span>
+    </div>
+  </div>
+  
+  <div class="energy-bar-container">
+    <div class="energy-bar" [style.width.%]="energyPercentage()"></div>
+  </div>
 </div>

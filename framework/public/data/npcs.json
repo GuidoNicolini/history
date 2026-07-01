@@ -147,7 +147,7 @@
     "stats": {
       "level": 1,
       "arousal": 0,
-      "corruption": 0
+      "corruption": 1
     },
     "attractions": {},
     "currentLocation": "0",
@@ -282,12 +282,42 @@
     "avatar": "assets/img/avatars/dad.png"
   },
   {
+    "id": 10,
+    "name": "Karyn",
+    "stats": {
+      "level": 1,
+      "arousal": 0,
+      "corruption": 0
+    },
+    "attractions": {},
+    "currentLocation": "0",
+    "routines": [
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 0,
+        "finalTime": 23,
+        "location": 0,
+        "routineConditions": [],
+        "weight": 1
+      }
+    ],
+    "avatar": "assets/img/avatars/karyn.webp"
+  },
+  {
     "id": 9,
     "name": "Kimmy",
     "stats": {
       "level": 1,
       "arousal": 0,
-      "corruption": 0
+      "corruption": 1
     },
     "attractions": {},
     "currentLocation": "0",
@@ -436,6 +466,36 @@
       }
     ],
     "avatar": "assets/img/avatars/mom.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Morgan",
+    "stats": {
+      "level": 1,
+      "arousal": 0,
+      "corruption": 0
+    },
+    "attractions": {},
+    "currentLocation": "0",
+    "routines": [
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 0,
+        "finalTime": 23,
+        "location": 0,
+        "routineConditions": [],
+        "weight": 1
+      }
+    ],
+    "avatar": "assets/img/avatars/morgan.webp"
   },
   {
     "id": 500,
@@ -601,6 +661,36 @@
       }
     ],
     "avatar": "assets/img/avatars/robert.webp"
+  },
+  {
+    "id": 11,
+    "name": "Sonya",
+    "stats": {
+      "level": 1,
+      "arousal": 0,
+      "corruption": 0
+    },
+    "attractions": {},
+    "currentLocation": "0",
+    "routines": [
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 0,
+        "finalTime": 23,
+        "location": 0,
+        "routineConditions": [],
+        "weight": 1
+      }
+    ],
+    "avatar": "assets/img/avatars/sonya.webp"
   },
   {
     "id": 5,

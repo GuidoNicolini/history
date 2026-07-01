@@ -292,6 +292,100 @@
     "subLocations": []
   },
   {
+    "id": 2121,
+    "name": "Bench press",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/gym-bench-press.webp"
+      }
+    ],
+    "url": "evento/gym0001",
+    "backUrl": "gym0001",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      5,
+      14,
+      1001009
+    ],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 2122,
+    "name": "Stretch",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/gym-stretch.webp"
+      }
+    ],
+    "url": "evento/gym0010",
+    "backUrl": "gym0010",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      14,
+      5,
+      1001009
+    ],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 2123,
+    "name": "Shower",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/shower.png"
+      }
+    ],
+    "url": "evento/gym0011",
+    "backUrl": "gym0011",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      5,
+      10
+    ],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 2124,
+    "name": "Drink Protein",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/drink-protein.webp"
+      }
+    ],
+    "url": "evento/gym0012",
+    "backUrl": "gym0012",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      5,
+      1001009
+    ],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
     "id": 1025,
     "name": "Meal",
     "type": 100,
@@ -536,6 +630,66 @@
       10000006,
       3001
     ],
+    "subLocations": []
+  },
+  {
+    "id": 2230,
+    "name": "Active Citizen",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/active-citizen-placa.webp"
+      }
+    ],
+    "url": "evento/placa0001",
+    "backUrl": "placa0001",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 2231,
+    "name": "City Planner",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/city-planner-placa.webp"
+      }
+    ],
+    "url": "evento/placa0002",
+    "backUrl": "placa0002",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 2232,
+    "name": "The Mayor",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/the-mayor-placa.webp"
+      }
+    ],
+    "url": "evento/placa0003",
+    "backUrl": "placa0003",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
     "subLocations": []
   },
   {
@@ -904,7 +1058,9 @@
     "conditionsAvailable": [],
     "conditionsVisible": [],
     "subLocations": [
-      200
+      200,
+      210,
+      220
     ]
   },
   {
@@ -927,6 +1083,101 @@
     "conditionsVisible": [],
     "subLocations": [
       1039
+    ]
+  },
+  {
+    "id": 2101,
+    "name": "Showers",
+    "type": 40,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/room/gym-shower.jpg"
+      }
+    ],
+    "url": "location/2101",
+    "backUrl": "location/210",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": [
+      2123
+    ]
+  },
+  {
+    "id": 2102,
+    "name": "Weight room",
+    "type": 40,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/room/gym-weight-room.jpg"
+      }
+    ],
+    "url": "location/2102",
+    "backUrl": "location/210",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": [
+      2121
+    ]
+  },
+  {
+    "id": 2103,
+    "name": "Zoom",
+    "type": 40,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/room/gym-zoom.jpg"
+      }
+    ],
+    "url": "location/2103",
+    "backUrl": "location/210",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": [
+      2122
+    ]
+  },
+  {
+    "id": 210,
+    "name": "Gym",
+    "type": 20,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/building/gym.png"
+      }
+    ],
+    "url": "location/210",
+    "backUrl": "location/20",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      2000
+    ],
+    "conditionsVisible": [
+      12000008
+    ],
+    "subLocations": [
+      2101,
+      2102,
+      2103,
+      2124
     ]
   },
   {
@@ -1034,6 +1285,32 @@
       1042,
       1043,
       1044
+    ]
+  },
+  {
+    "id": 220,
+    "name": "Museum",
+    "type": 20,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/building/museum.webp"
+      }
+    ],
+    "url": "location/220",
+    "backUrl": "location/20",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [
+      10000009
+    ],
+    "subLocations": [
+      2230,
+      2231,
+      2232
     ]
   },
   {

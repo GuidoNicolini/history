@@ -1,0 +1,20 @@
+{
+  "id": 2103,
+  "name": "Zoom",
+  "type": 40,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "assets/img/locations/room/gym-zoom.jpg"
+    }
+  ],
+  "url": "location/2103",
+  "backUrl": "location/210",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [],
+  "conditionsVisible": [],
+  "subLocations": [2122]
+}

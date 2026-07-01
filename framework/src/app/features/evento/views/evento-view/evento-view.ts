@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ChangeDetectionStrategy} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {EventoService} from '../../services/evento-service';
 import {EventoState} from '../../models/evento-state';
@@ -16,6 +16,7 @@ import {FormCube} from '../../models/Cube/form-cube';
   selector: 'app-evento-view',
   standalone: false,
   templateUrl: './evento-view.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './evento-view.css',
 })
 export class EventoView implements OnInit{

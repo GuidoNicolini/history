@@ -1,0 +1,7 @@
+{
+  "id": 480,
+  "type": "stat-hero",
+  "target": "strength",
+  "operator": "<",
+  "value": 20
+}

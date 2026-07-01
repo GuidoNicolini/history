@@ -102,11 +102,19 @@ export class EventoService implements ISaveable {
     if (!ids || ids.length === 0) return;
 
     const currentState = this.state();
+    const evaluator = this.injector.get(ConditionEvaluator);
+    const conditionService = this.injector.get(ConditionService);
 
-    // Filtrar los eventos que existen y tienen probabilidad válida
+    // Filtrar los eventos que existen, tienen probabilidad válida y cumplen todas las condiciones
     const eventos = ids
       .map(id => currentState[id])
-      .filter(evento => evento !== undefined && evento.probability > 0);
+      .filter(evento => {
+        if (evento === undefined || evento.probability <= 0) {
+          return false;
+        }
+        const conditions = conditionService.findConditions(evento.conditions || []);
+        return evaluator.checkAll(conditions, evento.id);
+      });
 
     if (eventos.length === 0) return;
 
@@ -172,11 +180,35 @@ export class EventoService implements ISaveable {
 
 
 
-  public exportState(): Record<string, EventoState> {
-    return this.state();
+  public exportState(): Record<string, { numberOfTimesActivated: number; lastDayActivated: number }> {
+    const currentState = this.state();
+    const exported: Record<string, { numberOfTimesActivated: number; lastDayActivated: number }> = {};
+    Object.keys(currentState).forEach(id => {
+      exported[id] = {
+        numberOfTimesActivated: currentState[id].numberOfTimesActivated,
+        lastDayActivated: currentState[id].lastDayActivated
+      };
+    });
+    return exported;
   }
 
-  public importState(newState: Record<string, EventoState>): void {
-    this.state.set(newState);
+  public importState(savedState: Record<string, { numberOfTimesActivated: number; lastDayActivated: number }>): void {
+    if (savedState) {
+      this.state.update(currentState => {
+        const updatedState = { ...currentState };
+        Object.keys(savedState).forEach(id => {
+          const savedEvento = savedState[id];
+          const currentEvento = currentState[id];
+          if (currentEvento && savedEvento) {
+            updatedState[id] = {
+              ...currentEvento,
+              numberOfTimesActivated: savedEvento.numberOfTimesActivated,
+              lastDayActivated: savedEvento.lastDayActivated
+            };
+          }
+        });
+        return updatedState;
+      });
+    }
   }
 }

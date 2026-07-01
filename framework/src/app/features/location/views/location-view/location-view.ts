@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ChangeDetectionStrategy} from '@angular/core';
 import {Location} from '../../models/location';
 import {LocationID} from '../../../../shared/enums/location-id';
 import {LocationService} from '../../services/location-service';
@@ -11,6 +11,7 @@ import {TypeLocation} from '../../../../shared/enums/type-location';
   selector: 'app-location-view',
   standalone: false,
   templateUrl: './location-view.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './location-view.css',
 })
 export class LocationView implements OnInit {

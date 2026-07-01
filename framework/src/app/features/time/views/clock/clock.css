@@ -1,0 +1,77 @@
+:host {
+  display: block;
+  width: 100%;
+}
+
+.clock-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(30, 41, 59, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  border-radius: 14px;
+  padding: 12px 18px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.clock-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(99, 102, 241, 0.35);
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.15);
+  background: rgba(30, 41, 59, 0.55);
+}
+
+.clock-icon-glow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background: rgba(99, 102, 241, 0.15);
+  border-radius: 50%;
+  color: #818cf8;
+  font-size: 1.3rem;
+  box-shadow: 0 0 12px rgba(99, 102, 241, 0.25);
+  animation: clock-pulse 2s infinite alternate;
+}
+
+.clock-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.clock-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #94a3b8;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.clock-value {
+  font-family: 'Outfit', 'Inter', monospace, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #f8fafc;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+@keyframes clock-pulse {
+  0% {
+    box-shadow: 0 0 8px rgba(99, 102, 241, 0.2);
+    transform: scale(1);
+  }
+  100% {
+    box-shadow: 0 0 16px rgba(99, 102, 241, 0.45);
+    transform: scale(1.03);
+  }
+}

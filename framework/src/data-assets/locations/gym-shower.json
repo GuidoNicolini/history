@@ -1,0 +1,20 @@
+{
+  "id": 2101,
+  "name": "Showers",
+  "type": 40,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "assets/img/locations/room/gym-shower.jpg"
+    }
+  ],
+  "url": "location/2101",
+  "backUrl": "location/210",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [],
+  "conditionsVisible": [],
+  "subLocations": [2123]
+}

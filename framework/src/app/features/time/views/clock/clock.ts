@@ -1,10 +1,11 @@
-import { Component, computed, inject } from '@angular/core';
+import { Component, computed, inject, ChangeDetectionStrategy } from '@angular/core';
 import { TimeService } from '../../services/time-service';
 
 @Component({
   selector: 'app-clock',
   standalone: false,
   templateUrl: './clock.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './clock.css',
 })
 export class Clock {

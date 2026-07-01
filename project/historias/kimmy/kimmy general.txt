@@ -1,0 +1,11 @@
+-kimmy es una chica asiatica que trabaja en el supermercado.
+-(relacion 0) charlas con ella cuando te toca pagar las cosas en el super.
+-(relacion 5) eres capaz de invitarla a salir.
+-(subir al nivel 1) tienes tu primera cita con ella.
+-(relacion 10) ella te puede invitar a su casa para coger.
+-(subir al nivel 2) primera cogida.
+-(subir al nivel 3) ser novios. (aqui se pregunta si seran exclusivos o seguiran cogiendo con otras personas)
+-(relacion 15) ella te envia videos cortos que va filmando en estilo selfie.
+-(subir al nivel 4) comienzan a vivir juntos.
+-(subir al nivel 5) ella quiere que conozcas a sus padres. (intercambio sino son exclusivos)
+-(final) casamiento. (orgia sino son exclusivos)

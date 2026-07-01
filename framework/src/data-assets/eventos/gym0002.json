@@ -1,0 +1,56 @@
+{
+  "id": "gym0002",
+  "type": 2,
+  "location": 2102,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 0,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "You lie back and push the bar off the rack like you own the place. A few reps in, the confidence fades—that iron feels heavier than shit, and now you're just struggling to keep it from crushing your chest. ",
+      "character": 500
+    },
+    {
+      "id": 2,
+      "type": "video",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "video": "assets/videos/gym/train-fail.webm"
+    },
+    {
+      "id": 3,
+      "type": "button",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Ask for help",
+      "conditions": [],
+      "cubeAction": {
+        "type": "launchevento",
+        "value": "gymproxy10002"
+      }
+    },
+    {
+      "id": 4,
+      "type": "button",
+      "order": 4,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Do it alone",
+      "conditions": [],
+      "cubeAction": {
+        "type": "launchevento",
+        "value": "gymproxy20002"
+      }
+    }
+  ],
+  "conditions": [],
+  "effects": [2021]
+}

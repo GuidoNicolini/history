@@ -1,10 +1,12 @@
 import { inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { StoryState } from '../../../../shared/services/story-state';
+import {EventoService} from '../../services/evento-service';
 
 export class Funciones {
   private storyState = inject(StoryState);
   private router = inject(Router);
+  private eventoService = inject(EventoService);
 
   meetMomSetTrue() {
     this.storyState.setFlag('meet_mom', true);
@@ -39,4 +41,11 @@ export class Funciones {
     this.storyState.setFlag('job_cafe', true)
   }
 
+  launchEventoById(id:string) {
+    this.eventoService.launchEventoById(id)
+  }
+
+  lauchEventoGroup(eventosId : string[]){
+    this.eventoService.launchEventoByGroup(eventosId)
+  }
 }

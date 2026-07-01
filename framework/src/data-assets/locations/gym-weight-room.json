@@ -1,0 +1,20 @@
+{
+  "id": 2102,
+  "name": "Weight room",
+  "type": 40,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "assets/img/locations/room/gym-weight-room.jpg"
+    }
+  ],
+  "url": "location/2102",
+  "backUrl": "location/210",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [],
+  "conditionsVisible": [],
+  "subLocations": [2121]
+}

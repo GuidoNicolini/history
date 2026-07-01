@@ -1,0 +1,7 @@
+{
+  "id": 6,
+  "type": "vip",
+  "target": "",
+  "operator": "==",
+  "value": 5
+}

@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit, ChangeDetectionStrategy} from '@angular/core';
 import {FormCube} from '../../models/Cube/form-cube';
 import {UserConfigService} from '../../../../shared/services/user-config-service';
 import {VipService} from '../../../../shared/services/vip-service';
@@ -7,6 +7,7 @@ import {VipService} from '../../../../shared/services/vip-service';
   selector: 'app-form-view',
   standalone: false,
   templateUrl: './form-view.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './form-view.css',
 })
 export class FormView implements OnInit{

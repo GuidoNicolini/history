@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, ChangeDetectionStrategy} from '@angular/core';
 import {ButtonCube} from '../../models/Cube/button-cube';
 import {CubeActionService} from '../../services/cube-action-service';
 import {ConditionEvaluator} from '../../../condition/services/condition-evaluator';
@@ -8,6 +8,7 @@ import {ConditionService} from '../../../condition/services/condition-service';
   selector: 'app-button-view',
   standalone: false,
   templateUrl: './button-view.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './button-view.css',
 })
 export class ButtonView {

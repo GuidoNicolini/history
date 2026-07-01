@@ -1,9 +1,12 @@
 import { Injectable } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class VipService {
+
+  public vipChanges$ = new BehaviorSubject<void>(undefined);
 
   vips: vip[] = [
     { level: 1, value: false },
@@ -13,11 +16,11 @@ export class VipService {
     { level: 5, value: false },
   ];
 
-  private clave1: string = 'rstve';
-  private clave2: string = 'pemcgt';
-  private clave3: string = 'awqvxfr';
-  private clave4: string = 'bvcetese';
-  private clave5:string =  'arbsegky';
+  private clave1: string = 'wbt';
+  private clave2: string = 'ikrz';
+  private clave3: string = 'twnsk';
+  private clave4: string = 'mqtsnx';
+  private clave5:string =  'xctgb';
 
   public getVipStatus(level: number): boolean {
     const vip = this.vips.find(v => v.level === level);
@@ -83,6 +86,7 @@ export class VipService {
     const vip = this.vips.find(v => v.level === level);
     if (vip) {
       vip.value = true;
+      this.vipChanges$.next();
     }
 
   }

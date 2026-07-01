@@ -4,13 +4,14 @@ import {CubeAction} from '../models/Cube/button-cube';
 import {SaveLoadService} from '../../../shared/services/save-load-service';
 import {HeroService} from '../../hero/services/hero-service';
 import {GameItems} from '../../../shared/enums/game-items';
+import {EventoService} from './evento-service';
 
 @Injectable({
   providedIn: 'root',
 })
 export class CubeActionService {
 
-  constructor(private router: Router, private saveLoadService: SaveLoadService, private heroService: HeroService) {}
+  constructor(private router: Router, private saveLoadService: SaveLoadService, private heroService: HeroService, private eventoService : EventoService) { }
 
   public applyAll(actions: CubeAction[]): void {
     if (!actions || actions.length === 0) return;
@@ -41,6 +42,10 @@ export class CubeActionService {
              this.heroService.addItem(item, 1);
           }
         }
+        break;
+      }
+      case 'launchevento' : {
+        this.eventoService.launchEventoById(action.value);
         break;
       }
     }

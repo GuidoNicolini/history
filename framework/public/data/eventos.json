@@ -746,7 +746,7 @@
     "conditions": [
       10000012,
       12000007,
-      94,
+      97,
       10024,
       5
     ],
@@ -762,7 +762,7 @@
     "location": 200,
     "probability": 200,
     "numberOfTimesActivated": 0,
-    "cooldownDuration": 3,
+    "cooldownDuration": 5,
     "lastDayActivated": 0,
     "cubes": [
       {
@@ -816,7 +816,7 @@
     "location": 200,
     "probability": 300,
     "numberOfTimesActivated": 0,
-    "cooldownDuration": 3,
+    "cooldownDuration": 7,
     "lastDayActivated": 0,
     "cubes": [
       {
@@ -853,7 +853,7 @@
     "conditions": [
       10000012,
       11101,
-      94,
+      92,
       10024,
       5,
       2
@@ -870,7 +870,7 @@
     "location": 200,
     "probability": 400,
     "numberOfTimesActivated": 0,
-    "cooldownDuration": 3,
+    "cooldownDuration": 10,
     "lastDayActivated": 0,
     "cubes": [
       {
@@ -907,7 +907,7 @@
     "conditions": [
       10000012,
       11102,
-      94,
+      92,
       10024,
       5,
       3
@@ -924,7 +924,7 @@
     "location": 200,
     "probability": 500,
     "numberOfTimesActivated": 0,
-    "cooldownDuration": 3,
+    "cooldownDuration": 10,
     "lastDayActivated": 0,
     "cubes": [
       {
@@ -961,10 +961,64 @@
     "conditions": [
       10000012,
       11103,
-      94,
+      92,
       10024,
       5,
       4
+    ],
+    "effects": [
+      2000,
+      3007,
+      5007
+    ]
+  },
+  {
+    "id": "cassie0006",
+    "type": 3,
+    "location": 200,
+    "probability": 500,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 10,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You step into the café, and that rich coffee smell hits you like a warm fucking blanket. Your eyes sweep the room until they land on Cassie. She's working the floor, but today \"taking care of customers\" means a whole lot more than just pouring coffee. You lean back and watch. She's a pro at what she does—and what she does is make sure every single person in here leaves satisfied.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/cassie/barista-vid-6.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Stop watching",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/200"
+        }
+      }
+    ],
+    "conditions": [
+      10000012,
+      11104,
+      92,
+      10024,
+      5,
+      6
     ],
     "effects": [
       2000,
@@ -1112,6 +1166,1070 @@
     "effects": [
       13
     ]
+  },
+  {
+    "id": "gym0001",
+    "type": 2,
+    "location": 2102,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 1,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "code",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "functionName": "launchEventoById",
+        "parameters": [
+          "gym0003"
+        ],
+        "conditions": [
+          403
+        ]
+      },
+      {
+        "id": 2,
+        "type": "code",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "functionName": "launchEventoById",
+        "parameters": [
+          "gym0002"
+        ],
+        "conditions": [
+          480
+        ]
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      15,
+      30,
+      2050,
+      10241
+    ]
+  },
+  {
+    "id": "gym0002",
+    "type": 2,
+    "location": 2102,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You lie back and push the bar off the rack like you own the place. A few reps in, the confidence fades—that iron feels heavier than shit, and now you're just struggling to keep it from crushing your chest. ",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/gym/train-fail.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Ask for help",
+        "conditions": [],
+        "cubeAction": {
+          "type": "launchevento",
+          "value": "gymproxy10002"
+        }
+      },
+      {
+        "id": 4,
+        "type": "button",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Do it alone",
+        "conditions": [],
+        "cubeAction": {
+          "type": "launchevento",
+          "value": "gymproxy20002"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      2021
+    ]
+  },
+  {
+    "id": "gym0003",
+    "type": 2,
+    "location": 2102,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You lie back on that bench like a fucking beast, grip the bar, and crush every rep with ease. By the end of the set, you rack it with a satisfied grunt—chest pumped, ego boosted. Who's the man? You are",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/gym/press-banca-success.gif"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You try to do one more",
+        "conditions": [],
+        "cubeAction": {
+          "type": "launchevento",
+          "value": "gymproxy10003"
+        }
+      },
+      {
+        "id": 4,
+        "type": "button",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Do some cardio",
+        "conditions": [],
+        "cubeAction": {
+          "type": "launchevento",
+          "value": "gym0009"
+        }
+      },
+      {
+        "id": 5,
+        "type": "button",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Finish",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/210"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      2021
+    ]
+  },
+  {
+    "id": "gym0004",
+    "type": 2,
+    "location": 2102,
+    "probability": 800,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "code",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "functionName": "lauchEventoGroup",
+        "parameters": [
+          "gymgirl0001",
+          "gymgirl0002",
+          "gymgirl0003",
+          "gymgirl0004",
+          "gymgirl0005",
+          "gymgirl0006"
+        ],
+        "conditions": []
+      }
+    ],
+    "conditions": [],
+    "effects": []
+  },
+  {
+    "id": "gym0005",
+    "type": 2,
+    "location": 2102,
+    "probability": 50,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You start calling for help, and after a while your shouts reach the ears of others in the gym, but before helping, they don't miss the chance to laugh at you for a while.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/gym/gymbros-lol.gif"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You thank them and lower your head",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/210"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      2050,
+      2005,
+      2005,
+      2005,
+      2005,
+      2005,
+      2005,
+      2005
+    ]
+  },
+  {
+    "id": "gym0006",
+    "type": 2,
+    "location": 2102,
+    "probability": 150,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You start screaming for help like a fucking idiot, and after a minute of nothing but your own echoing voice, it hits you: nobody's coming. So you bite down, tilt the bar, and let the plates crash to the floor. Please, sweet fucking Christ, don't let this be the end",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/gym/press-banca-fail.gif"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You breathe heavily and head home",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/100"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      2050,
+      2005,
+      2005,
+      2005
+    ]
+  },
+  {
+    "id": "gym0008",
+    "type": 2,
+    "location": 2102,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You grind out that extra rep like a fucking machine. Nothing can stop you now",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/gym/press-repe-succes.gif"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You puff out your chest proudly.",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/210"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      2022
+    ]
+  },
+  {
+    "id": "gym0009",
+    "type": 2,
+    "location": 2102,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "code",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "functionName": "lauchEventoGroup",
+        "parameters": [
+          "gymgirl0007",
+          "gymgirl0008",
+          "gymgirl0009"
+        ],
+        "conditions": []
+      }
+    ],
+    "conditions": [],
+    "effects": []
+  },
+  {
+    "id": "gym0010",
+    "type": 2,
+    "location": 2103,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 1,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You do some stretches to improve your agility",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/gym/gym-stretch-1.gif"
+      },
+      {
+        "id": 3,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/gym/gym-stretch-2.gif"
+      },
+      {
+        "id": 4,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Finish",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/210"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      15,
+      10241,
+      2050,
+      30,
+      2027
+    ]
+  },
+  {
+    "id": "gym0011",
+    "type": 2,
+    "location": 2101,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 1,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You take a shower",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/gym/gym-shower-1.webp"
+      },
+      {
+        "id": 3,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/gym/gym-shower-2.gif"
+      },
+      {
+        "id": 4,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/gym/gym-shower-3.gif"
+      },
+      {
+        "id": 5,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Finish",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/210"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      2048,
+      11,
+      45
+    ]
+  },
+  {
+    "id": "gym0012",
+    "type": 2,
+    "location": 210,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 1,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You drink a protein shake",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/gym/drink-protein-1.webp"
+      },
+      {
+        "id": 3,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/gym/drink-protein-2.gif"
+      },
+      {
+        "id": 4,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Finish",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/210"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      10241,
+      5
+    ]
+  },
+  {
+    "id": "gymgirl0001",
+    "type": 2,
+    "location": 2102,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You start calling for help, and after a while, your shouts reach the ears of a girl who was working out. She helps you out of the embarrassing situation you've gotten yourself into",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/gym/gym-girl-1.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You thank her and give her an embarrassed smile.",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/210"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      2002
+    ]
+  },
+  {
+    "id": "gymgirl0002",
+    "type": 2,
+    "location": 2102,
+    "probability": 200,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You start calling for help, and after a while, your shouts reach the ears of a girl who was working out. But instead of helping you, she apparently decided to do something else before getting you out of the situation you're in",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/gym/gym-girl-2.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You thank her as you watch her return to what she was doing",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/210"
+        }
+      }
+    ],
+    "conditions": [
+      1
+    ],
+    "effects": [
+      2005
+    ]
+  },
+  {
+    "id": "gymgirl0003",
+    "type": 2,
+    "location": 2102,
+    "probability": 300,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You start calling for help, and after a while, your shouts reach the ears of a girl who was working out. But instead of helping you, she apparently decided to do something else before getting you out of the situation you're in",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/gym/gym-girl-3.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You thank her as you watch her return to what she was doing",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/210"
+        }
+      }
+    ],
+    "conditions": [
+      2
+    ],
+    "effects": [
+      2005
+    ]
+  },
+  {
+    "id": "gymgirl0004",
+    "type": 2,
+    "location": 2102,
+    "probability": 400,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You start calling for help, and after a while, your shouts reach the ears of a girl who was working out. But instead of helping you, she apparently decided to do something else before getting you out of the situation you're in",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/gym/gym-girl-4.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You thank her as you watch her return to what she was doing",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/210"
+        }
+      }
+    ],
+    "conditions": [
+      3
+    ],
+    "effects": [
+      2005
+    ]
+  },
+  {
+    "id": "gymgirl0005",
+    "type": 2,
+    "location": 2102,
+    "probability": 500,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You start calling for help, and after a while, your shouts reach the ears of a girl who was working out. But instead of helping you, she apparently decided to do something else before getting you out of the situation you're in",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/gym/gym-girl-5.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You thank her as you watch her return to what she was doing",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/210"
+        }
+      }
+    ],
+    "conditions": [
+      4
+    ],
+    "effects": [
+      2005,
+      2005,
+      2005
+    ]
+  },
+  {
+    "id": "gymgirl0006",
+    "type": 2,
+    "location": 2102,
+    "probability": 600,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You start calling for help, and after a while, your shouts reach the ears of a girl who was working out. But instead of helping you, she apparently decided to do something else before getting you out of the situation you're in",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/gym/gym-girl-6.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You thank her as you watch her return to what she was doing",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/210"
+        }
+      }
+    ],
+    "conditions": [
+      6
+    ],
+    "effects": [
+      2005,
+      2005,
+      2005,
+      2005
+    ]
+  },
+  {
+    "id": "gymgirl0007",
+    "type": 2,
+    "location": 2102,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "After finishing your workout, you notice you still have some energy left for a little cardio",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/gym/gym-girl-exito-1.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Finish",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/210"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      2005,
+      2005,
+      2005
+    ]
+  },
+  {
+    "id": "gymgirl0008",
+    "type": 2,
+    "location": 2102,
+    "probability": 200,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "After finishing your workout, you notice you still have some energy left for a little cardio",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/gym/gym-girl-exito-2.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Finish",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/210"
+        }
+      }
+    ],
+    "conditions": [
+      1
+    ],
+    "effects": [
+      2005,
+      2005,
+      2005,
+      2005
+    ]
+  },
+  {
+    "id": "gymgirl0009",
+    "type": 2,
+    "location": 2102,
+    "probability": 300,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "After finishing your workout, you notice you still have some energy left for a little cardio",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/gym/gym-girl-exito-3.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Finish",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/210"
+        }
+      }
+    ],
+    "conditions": [
+      2
+    ],
+    "effects": [
+      2005,
+      2005,
+      2005,
+      2005,
+      2005,
+      2005
+    ]
+  },
+  {
+    "id": "gymproxy10002",
+    "type": 2,
+    "location": 2102,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "code",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "functionName": "lauchEventoGroup",
+        "parameters": [
+          "gym0004",
+          "gym0005",
+          "gym0006"
+        ],
+        "conditions": []
+      }
+    ],
+    "conditions": [],
+    "effects": []
+  },
+  {
+    "id": "gymproxy10003",
+    "type": 2,
+    "location": 2102,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "code",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "functionName": "lauchEventoGroup",
+        "parameters": [
+          "gymproxy10002",
+          "gym0008"
+        ],
+        "conditions": []
+      }
+    ],
+    "conditions": [],
+    "effects": []
+  },
+  {
+    "id": "gymproxy20002",
+    "type": 2,
+    "location": 2102,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "code",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "functionName": "lauchEventoGroup",
+        "parameters": [
+          "gym0003",
+          "gymproxy10002"
+        ],
+        "conditions": []
+      }
+    ],
+    "conditions": [],
+    "effects": []
   },
   {
     "id": "hero0001",
@@ -1990,6 +3108,150 @@
     "effects": []
   },
   {
+    "id": "karyn0001",
+    "type": 3,
+    "location": 210,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You step into the gym for the first time, totally fucking lost, eyes wandering over machines and jacked dudes grunting like animals.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/karyn/karyn-entrance.jpg"
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Well, shit. Look what the cat dragged in. Fresh meat, baby. That's what I'm seeing.",
+        "character": 10
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Uh… h-hi. First time here.",
+        "character": 1
+      },
+      {
+        "id": 5,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "No kidding, haha! I can smell newbie from a mile off.",
+        "character": 10
+      },
+      {
+        "id": 6,
+        "type": "text",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You flash a dumb, nervous grin. You're shook.",
+        "character": 500
+      },
+      {
+        "id": 7,
+        "type": "text",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Aw, relax, pup! Just yanking your chain. Name's Karyn—I own this little sweatbox. So here's the deal, real easy: we don't do memberships. We run on these coins—Gym Coins. Twenty-five dollars each. One coin equals one activity. Simple as that.",
+        "character": 10
+      },
+      {
+        "id": 8,
+        "type": "image",
+        "order": 8,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/gym/gym-coin.webp"
+      },
+      {
+        "id": 9,
+        "type": "text",
+        "order": 9,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Sounds kind of roundabout, no? Wouldn't it be easier to just pay per visit?",
+        "character": 1
+      },
+      {
+        "id": 10,
+        "type": "text",
+        "order": 10,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Suddenly, a pack of huge, ripped dudes quietly close in around you. Their stares are… heavy.",
+        "character": 500
+      },
+      {
+        "id": 11,
+        "type": "image",
+        "order": 11,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/gym/gym-gang.webp"
+      },
+      {
+        "id": 12,
+        "type": "text",
+        "order": 12,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You know what? Awesome system. I love it. Heh.",
+        "character": 1
+      },
+      {
+        "id": 13,
+        "type": "text",
+        "order": 13,
+        "probability": 100,
+        "styleClass": [],
+        "text": "That's what I thought. Whenever you're ready, you're welcome to pump those skinny arms into something worth touching.",
+        "character": 10
+      },
+      {
+        "id": 14,
+        "type": "button",
+        "order": 14,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You take the coin and thank her",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/210"
+        }
+      }
+    ],
+    "conditions": [
+      13000000
+    ],
+    "effects": [
+      10240
+    ]
+  },
+  {
     "id": "kimmy0001",
     "type": 3,
     "location": 300,
@@ -2032,7 +3294,7 @@
     "conditions": [
       10000014,
       12000005,
-      94,
+      97,
       10020,
       5
     ],
@@ -2048,7 +3310,7 @@
     "location": 300,
     "probability": 200,
     "numberOfTimesActivated": 0,
-    "cooldownDuration": 3,
+    "cooldownDuration": 5,
     "lastDayActivated": 0,
     "cubes": [
       {
@@ -2102,7 +3364,7 @@
     "location": 300,
     "probability": 300,
     "numberOfTimesActivated": 0,
-    "cooldownDuration": 3,
+    "cooldownDuration": 7,
     "lastDayActivated": 0,
     "cubes": [
       {
@@ -2139,7 +3401,7 @@
     "conditions": [
       10000014,
       11121,
-      94,
+      92,
       10020,
       5,
       2
@@ -2156,7 +3418,7 @@
     "location": 300,
     "probability": 400,
     "numberOfTimesActivated": 0,
-    "cooldownDuration": 3,
+    "cooldownDuration": 10,
     "lastDayActivated": 0,
     "cubes": [
       {
@@ -2193,7 +3455,7 @@
     "conditions": [
       10000014,
       11122,
-      94,
+      92,
       10020,
       5,
       3
@@ -2210,7 +3472,7 @@
     "location": 300,
     "probability": 500,
     "numberOfTimesActivated": 0,
-    "cooldownDuration": 3,
+    "cooldownDuration": 10,
     "lastDayActivated": 0,
     "cubes": [
       {
@@ -2247,10 +3509,64 @@
     "conditions": [
       10000014,
       11123,
-      94,
+      92,
       10020,
       5,
       4
+    ],
+    "effects": [
+      2000,
+      3009,
+      5009
+    ]
+  },
+  {
+    "id": "kimmy0006",
+    "type": 3,
+    "location": 300,
+    "probability": 500,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 10,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You step into the supermarket and catch Kimmy in action—giving the customers some real personal attention. And I mean real attention. Looks like \"first-class service\" here means something a little extra special. You watch as she makes sure every guy leaves with a smile on his face and a lot more than just groceries in his cart.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/kimmy/cajera-vid-6.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Stop watching",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/300"
+        }
+      }
+    ],
+    "conditions": [
+      10000014,
+      11124,
+      92,
+      10020,
+      5,
+      6
     ],
     "effects": [
       2000,
@@ -3410,6 +4726,111 @@
         "cubeAction": {
           "type": "redirection",
           "value": "location/1000"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": []
+  },
+  {
+    "id": "placa0001",
+    "type": 2,
+    "location": 220,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Here stand the names that build this city, brick by brick, day by day. Their trust is our foundation, and our gratitude is endless.",
+        "character": 12
+      },
+      {
+        "id": 99999999,
+        "type": "button",
+        "order": 99999999,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Finish watching",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/220"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": []
+  },
+  {
+    "id": "placa0002",
+    "type": 2,
+    "location": 220,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Here stand the names that build this city, brick by brick, day by day. Their trust is our foundation, and our gratitude is endless.",
+        "character": 12
+      },
+      {
+        "id": 99999999,
+        "type": "button",
+        "order": 99999999,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Finish watching",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/220"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": []
+  },
+  {
+    "id": "placa0003",
+    "type": 2,
+    "location": 220,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Here stand the names that build this city, brick by brick, day by day. Their trust is our foundation, and our gratitude is endless.",
+        "character": 12
+      },
+      {
+        "id": 99999999,
+        "type": "button",
+        "order": 99999999,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Finish watching",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/220"
         }
       }
     ],

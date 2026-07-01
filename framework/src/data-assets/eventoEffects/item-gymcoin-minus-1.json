@@ -1,0 +1,7 @@
+{
+  "id": 10241,
+  "type": "item",
+  "target": "gymcoin",
+  "operator": "minus",
+  "value": 1
+}

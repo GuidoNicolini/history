@@ -1,3 +1,14 @@
-<div>
-  <span><i class="bi bi-coin"></i> {{ money() }}</span>
+<div class="money-card">
+  <div class="money-header">
+    <div class="money-title-group">
+      <div class="money-icon-glow">
+        <i class="bi bi-coin"></i>
+      </div>
+      <span class="money-label">FUNDS</span>
+    </div>
+    <div class="money-value-wrapper">
+      <span class="money-symbol">$</span>
+      <span class="money-value">{{ formattedMoney() }}</span>
+    </div>
+  </div>
 </div>
