@@ -52,7 +52,7 @@ jobs:
 
       # 7. Empaquetar Electron con electron-builder
       - name: Make/Distribute Electron App
-        run: npx electron-builder --dir
+        run: npm run dist
 
 
       # 8. Subir los archivos generados como artefactos (para poder descargarlos desde GitHub)
