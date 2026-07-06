@@ -4,7 +4,7 @@
   "location": 1009,
   "probability": 100,
   "numberOfTimesActivated": 0,
-  "cooldownDuration": 3,
+  "cooldownDuration": 15,
   "lastDayActivated": 0,
   "cubes": [
     {
@@ -57,6 +57,6 @@
       }
     }
   ],
-  "conditions": [10000009,5,94,11000005,11000003],
+  "conditions": [10000009,5,94,3003],
   "effects": [1005001]
 }

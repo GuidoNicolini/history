@@ -1,5 +1,5 @@
 {
-  "id": "hero0003",
+  "id": "oldsis0001",
   "type": 3,
   "location": 1006,
   "probability": 100,
@@ -75,5 +75,5 @@
     }
   ],
   "conditions": [700,13000000,11000004],
-  "effects": [1001003,5004]
+  "effects": [1001003,5004,1004]
 }
