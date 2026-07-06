@@ -68,7 +68,7 @@ export class ConditionEvaluator {
         break;
 
       case 'day':
-        currentValue = this.timeService.state().day;
+        currentValue = this.timeService.state().date;
         break;
 
       case 'vip': {

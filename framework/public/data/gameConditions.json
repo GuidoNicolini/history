@@ -483,6 +483,13 @@
     "value": 80
   },
   {
+    "id": 3003,
+    "type": "day",
+    "target": "",
+    "operator": ">=",
+    "value": 10
+  },
+  {
     "id": 3000,
     "type": "day",
     "target": "",
@@ -1839,6 +1846,13 @@
     "target": "",
     "operator": "==",
     "value": 90
+  },
+  {
+    "id": 50000,
+    "type": "relation",
+    "target": "1:4",
+    "operator": "<=",
+    "value": 10
   },
   {
     "id": 2003,

@@ -39,7 +39,7 @@ jobs:
         # Usamos curl para descargar un archivo ZIP llamado archivos.zip y unzip para extraerlo
         # IMPORTANTE: Reemplaza "URL_AQUI" por el enlace de descarga directa de tu archivos.zip
         run: |
-          curl -L "https://www.dropbox.com/scl/fi/u9odf9702h60xmrveogm4/archivos.zip?rlkey=ggadv4insxjvk571lzd602pun&st=i9i88xjw&dl=1" -o archivos.zip
+          curl -L "https://www.dropbox.com/scl/fi/md31cqwiwgq6k36e5xvm9/archivos.zip?rlkey=5vtg4vimh9i3uuog6zkliguig&st=23b2z7zu&dl=1" -o archivos.zip
           # Crea el directorio public si no existe y extrae el zip dentro. 
           # Al descomprimir se creará la carpeta public/assets porque está dentro del zip
           unzip -o archivos.zip -d public
@@ -52,7 +52,7 @@ jobs:
 
       # 7. Empaquetar Electron con electron-builder
       - name: Make/Distribute Electron App
-        run: npm run dist
+        run: npx electron-builder --dir
 
 
       # 8. Subir los archivos generados como artefactos (para poder descargarlos desde GitHub)
@@ -62,6 +62,5 @@ jobs:
           name: electron-app-${{ matrix.os }}
           # Usamos la carpeta configurada en package.json (release/)
           path: |
-            framework/release/*.exe
-            framework/release/*.dmg
-            framework/release/*.zip
+            framework/release/win-unpacked/**
+            framework/release/mac/**

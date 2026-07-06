@@ -83,6 +83,6 @@
       }
     }
   ],
-  "conditions": [],
+  "conditions": [50000],
   "effects": [1001003,45]
 }
