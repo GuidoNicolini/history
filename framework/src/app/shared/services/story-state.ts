@@ -20,8 +20,10 @@ export class StoryState implements ISaveable {
     'meet_dad' : false,
     'meet_family' : false,
     'job_cafe' : false,
+    'work' : false,
     'cassie_exclusive' : false,
-    'kimmy_exclusive' : false
+    'kimmy_exclusive' : false,
+
 
   });
 

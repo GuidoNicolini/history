@@ -700,7 +700,8 @@
       13,
       10003,
       10001,
-      31
+      31,
+      2051
     ]
   },
   {
@@ -4010,6 +4011,18 @@
           "type": "redirection",
           "value": "location/1006"
         }
+      },
+      {
+        "id": 6,
+        "type": "code",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "functionName": "lauchEventoGroup",
+        "parameters": [
+          "livingroom0007"
+        ],
+        "conditions": []
       }
     ],
     "conditions": [],

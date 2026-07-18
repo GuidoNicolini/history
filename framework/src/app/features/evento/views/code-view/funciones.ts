@@ -39,6 +39,7 @@ export class Funciones {
 
   cafeJobSetTrue(){
     this.storyState.setFlag('job_cafe', true)
+    this.storyState.setFlag('work', true)
   }
 
   launchEventoById(id:string) {

@@ -259,6 +259,69 @@
     "value": 80
   },
   {
+    "id": 20088,
+    "type": "stat-npc",
+    "target": "6:level",
+    "operator": ">=",
+    "value": 10
+  },
+  {
+    "id": 20080,
+    "type": "stat-npc",
+    "target": "6:level",
+    "operator": ">=",
+    "value": 2
+  },
+  {
+    "id": 20081,
+    "type": "stat-npc",
+    "target": "6:level",
+    "operator": ">=",
+    "value": 3
+  },
+  {
+    "id": 20082,
+    "type": "stat-npc",
+    "target": "6:level",
+    "operator": ">=",
+    "value": 4
+  },
+  {
+    "id": 20083,
+    "type": "stat-npc",
+    "target": "6:level",
+    "operator": ">=",
+    "value": 5
+  },
+  {
+    "id": 20084,
+    "type": "stat-npc",
+    "target": "6:level",
+    "operator": ">=",
+    "value": 6
+  },
+  {
+    "id": 20085,
+    "type": "stat-npc",
+    "target": "6:level",
+    "operator": ">=",
+    "value": 7
+  },
+  {
+    "id": 20086,
+    "type": "stat-npc",
+    "target": "6:level",
+    "operator": ">=",
+    "value": 8
+  },
+  {
+    "id": 20087,
+    "type": "stat-npc",
+    "target": "6:level",
+    "operator": ">=",
+    "value": 9
+  },
+  {
     "id": 1001004,
     "type": "item",
     "target": "roomKeyBrother",
@@ -378,6 +441,34 @@
     "value": "true"
   },
   {
+    "id": 20100,
+    "type": "stat-npc",
+    "target": "7:level",
+    "operator": ">=",
+    "value": 2
+  },
+  {
+    "id": 20101,
+    "type": "stat-npc",
+    "target": "7:level",
+    "operator": ">=",
+    "value": 3
+  },
+  {
+    "id": 20102,
+    "type": "stat-npc",
+    "target": "7:level",
+    "operator": ">=",
+    "value": 4
+  },
+  {
+    "id": 20103,
+    "type": "stat-npc",
+    "target": "7:level",
+    "operator": ">=",
+    "value": 5
+  },
+  {
     "id": 5,
     "type": "cd",
     "target": "",
@@ -481,6 +572,69 @@
     "target": "3:corruption",
     "operator": ">=",
     "value": 80
+  },
+  {
+    "id": 20028,
+    "type": "stat-npc",
+    "target": "3:level",
+    "operator": ">=",
+    "value": 10
+  },
+  {
+    "id": 20020,
+    "type": "stat-npc",
+    "target": "3:level",
+    "operator": ">=",
+    "value": 2
+  },
+  {
+    "id": 20021,
+    "type": "stat-npc",
+    "target": "3:level",
+    "operator": ">=",
+    "value": 3
+  },
+  {
+    "id": 20022,
+    "type": "stat-npc",
+    "target": "3:level",
+    "operator": ">=",
+    "value": 4
+  },
+  {
+    "id": 20023,
+    "type": "stat-npc",
+    "target": "3:level",
+    "operator": ">=",
+    "value": 5
+  },
+  {
+    "id": 20024,
+    "type": "stat-npc",
+    "target": "3:level",
+    "operator": ">=",
+    "value": 6
+  },
+  {
+    "id": 20025,
+    "type": "stat-npc",
+    "target": "3:level",
+    "operator": ">=",
+    "value": 7
+  },
+  {
+    "id": 20026,
+    "type": "stat-npc",
+    "target": "3:level",
+    "operator": ">=",
+    "value": 8
+  },
+  {
+    "id": 20027,
+    "type": "stat-npc",
+    "target": "3:level",
+    "operator": ">=",
+    "value": 9
   },
   {
     "id": 3003,
@@ -1407,6 +1561,34 @@
     "value": "true"
   },
   {
+    "id": 20120,
+    "type": "stat-npc",
+    "target": "9:level",
+    "operator": ">=",
+    "value": 2
+  },
+  {
+    "id": 20121,
+    "type": "stat-npc",
+    "target": "9:level",
+    "operator": ">=",
+    "value": 3
+  },
+  {
+    "id": 20122,
+    "type": "stat-npc",
+    "target": "9:level",
+    "operator": ">=",
+    "value": 4
+  },
+  {
+    "id": 20123,
+    "type": "stat-npc",
+    "target": "9:level",
+    "operator": ">=",
+    "value": 5
+  },
+  {
     "id": 10016,
     "type": "stat-npc",
     "target": "5:arousal",
@@ -1510,6 +1692,69 @@
     "target": "roomKeyLilSister",
     "operator": ">=",
     "value": 1
+  },
+  {
+    "id": 20068,
+    "type": "stat-npc",
+    "target": "5:level",
+    "operator": ">=",
+    "value": 10
+  },
+  {
+    "id": 20060,
+    "type": "stat-npc",
+    "target": "5:level",
+    "operator": ">=",
+    "value": 2
+  },
+  {
+    "id": 20061,
+    "type": "stat-npc",
+    "target": "5:level",
+    "operator": ">=",
+    "value": 3
+  },
+  {
+    "id": 20062,
+    "type": "stat-npc",
+    "target": "5:level",
+    "operator": ">=",
+    "value": 4
+  },
+  {
+    "id": 20063,
+    "type": "stat-npc",
+    "target": "5:level",
+    "operator": ">=",
+    "value": 5
+  },
+  {
+    "id": 20064,
+    "type": "stat-npc",
+    "target": "5:level",
+    "operator": ">=",
+    "value": 6
+  },
+  {
+    "id": 20065,
+    "type": "stat-npc",
+    "target": "5:level",
+    "operator": ">=",
+    "value": 7
+  },
+  {
+    "id": 20066,
+    "type": "stat-npc",
+    "target": "5:level",
+    "operator": ">=",
+    "value": 8
+  },
+  {
+    "id": 20067,
+    "type": "stat-npc",
+    "target": "5:level",
+    "operator": ">=",
+    "value": 9
   },
   {
     "id": 1001005,
@@ -1687,6 +1932,69 @@
     "value": 80
   },
   {
+    "id": 20008,
+    "type": "stat-npc",
+    "target": "2:level",
+    "operator": ">=",
+    "value": 10
+  },
+  {
+    "id": 20000,
+    "type": "stat-npc",
+    "target": "2:level",
+    "operator": ">=",
+    "value": 2
+  },
+  {
+    "id": 20001,
+    "type": "stat-npc",
+    "target": "2:level",
+    "operator": ">=",
+    "value": 3
+  },
+  {
+    "id": 20002,
+    "type": "stat-npc",
+    "target": "2:level",
+    "operator": ">=",
+    "value": 4
+  },
+  {
+    "id": 20003,
+    "type": "stat-npc",
+    "target": "2:level",
+    "operator": ">=",
+    "value": 5
+  },
+  {
+    "id": 20004,
+    "type": "stat-npc",
+    "target": "2:level",
+    "operator": ">=",
+    "value": 6
+  },
+  {
+    "id": 20005,
+    "type": "stat-npc",
+    "target": "2:level",
+    "operator": ">=",
+    "value": 7
+  },
+  {
+    "id": 20006,
+    "type": "stat-npc",
+    "target": "2:level",
+    "operator": ">=",
+    "value": 8
+  },
+  {
+    "id": 20007,
+    "type": "stat-npc",
+    "target": "2:level",
+    "operator": ">=",
+    "value": 9
+  },
+  {
     "id": 10012,
     "type": "stat-npc",
     "target": "4:arousal",
@@ -1790,6 +2098,69 @@
     "target": "roomKeyOldSister",
     "operator": ">=",
     "value": 1
+  },
+  {
+    "id": 20048,
+    "type": "stat-npc",
+    "target": "4:level",
+    "operator": ">=",
+    "value": 10
+  },
+  {
+    "id": 20040,
+    "type": "stat-npc",
+    "target": "4:level",
+    "operator": ">=",
+    "value": 2
+  },
+  {
+    "id": 20041,
+    "type": "stat-npc",
+    "target": "4:level",
+    "operator": ">=",
+    "value": 3
+  },
+  {
+    "id": 20042,
+    "type": "stat-npc",
+    "target": "4:level",
+    "operator": ">=",
+    "value": 4
+  },
+  {
+    "id": 20043,
+    "type": "stat-npc",
+    "target": "4:level",
+    "operator": ">=",
+    "value": 5
+  },
+  {
+    "id": 20044,
+    "type": "stat-npc",
+    "target": "4:level",
+    "operator": ">=",
+    "value": 6
+  },
+  {
+    "id": 20045,
+    "type": "stat-npc",
+    "target": "4:level",
+    "operator": ">=",
+    "value": 7
+  },
+  {
+    "id": 20046,
+    "type": "stat-npc",
+    "target": "4:level",
+    "operator": ">=",
+    "value": 8
+  },
+  {
+    "id": 20047,
+    "type": "stat-npc",
+    "target": "4:level",
+    "operator": ">=",
+    "value": 9
   },
   {
     "id": 90,
@@ -1923,5 +2294,19 @@
     "target": "",
     "operator": "==",
     "value": 5
+  },
+  {
+    "id": 10000016,
+    "type": "flag",
+    "target": "work",
+    "operator": "==",
+    "value": "false"
+  },
+  {
+    "id": 10000017,
+    "type": "flag",
+    "target": "work",
+    "operator": "==",
+    "value": "true"
   }
 ]
