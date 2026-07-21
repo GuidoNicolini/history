@@ -21,6 +21,41 @@
     "value": 1
   },
   {
+    "id": 12000009,
+    "type": "activation",
+    "target": "dad0002",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000010,
+    "type": "activation",
+    "target": "dad0003",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000011,
+    "type": "activation",
+    "target": "dad0004",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000012,
+    "type": "activation",
+    "target": "dad0005",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000013,
+    "type": "activation",
+    "target": "dad0006",
+    "operator": ">=",
+    "value": 1
+  },
+  {
     "id": 12000004,
     "type": "activation",
     "target": "garage0001",
@@ -46,6 +81,76 @@
     "type": "activation",
     "target": "livingroom0003",
     "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000019,
+    "type": "activation",
+    "target": "mom0005",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000014,
+    "type": "activation",
+    "target": "mom0005",
+    "operator": "<",
+    "value": 1
+  },
+  {
+    "id": 12000020,
+    "type": "activation",
+    "target": "mom0006",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000015,
+    "type": "activation",
+    "target": "mom0006",
+    "operator": "<",
+    "value": 1
+  },
+  {
+    "id": 12000021,
+    "type": "activation",
+    "target": "mom0007",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000016,
+    "type": "activation",
+    "target": "mom0007",
+    "operator": "<",
+    "value": 1
+  },
+  {
+    "id": 12000022,
+    "type": "activation",
+    "target": "mom0008",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000017,
+    "type": "activation",
+    "target": "mom0008",
+    "operator": "<",
+    "value": 1
+  },
+  {
+    "id": 12000023,
+    "type": "activation",
+    "target": "mom0009",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000018,
+    "type": "activation",
+    "target": "mom0009",
+    "operator": "<",
     "value": 1
   },
   {
@@ -1694,6 +1799,13 @@
     "value": 1
   },
   {
+    "id": 11075,
+    "type": "stat-npc",
+    "target": "5:corruption",
+    "operator": "<=",
+    "value": 15
+  },
+  {
     "id": 20068,
     "type": "stat-npc",
     "target": "5:level",
@@ -1932,6 +2044,13 @@
     "value": 80
   },
   {
+    "id": 11015,
+    "type": "stat-npc",
+    "target": "2:corruption",
+    "operator": "<=",
+    "value": 15
+  },
+  {
     "id": 20008,
     "type": "stat-npc",
     "target": "2:level",
@@ -2100,6 +2219,13 @@
     "value": 1
   },
   {
+    "id": 11055,
+    "type": "stat-npc",
+    "target": "4:corruption",
+    "operator": "<=",
+    "value": 15
+  },
+  {
     "id": 20048,
     "type": "stat-npc",
     "target": "4:level",
@@ -2216,6 +2342,76 @@
     "type": "random",
     "target": "",
     "operator": "==",
+    "value": 90
+  },
+  {
+    "id": 50001,
+    "type": "relation",
+    "target": "1:2",
+    "operator": ">=",
+    "value": 10
+  },
+  {
+    "id": 50010,
+    "type": "relation",
+    "target": "1:2",
+    "operator": ">=",
+    "value": 100
+  },
+  {
+    "id": 50002,
+    "type": "relation",
+    "target": "1:2",
+    "operator": ">=",
+    "value": 20
+  },
+  {
+    "id": 50003,
+    "type": "relation",
+    "target": "1:2",
+    "operator": ">=",
+    "value": 30
+  },
+  {
+    "id": 50004,
+    "type": "relation",
+    "target": "1:2",
+    "operator": ">=",
+    "value": 40
+  },
+  {
+    "id": 50005,
+    "type": "relation",
+    "target": "1:2",
+    "operator": ">=",
+    "value": 50
+  },
+  {
+    "id": 50006,
+    "type": "relation",
+    "target": "1:2",
+    "operator": ">=",
+    "value": 60
+  },
+  {
+    "id": 50007,
+    "type": "relation",
+    "target": "1:2",
+    "operator": ">=",
+    "value": 70
+  },
+  {
+    "id": 50008,
+    "type": "relation",
+    "target": "1:2",
+    "operator": ">=",
+    "value": 80
+  },
+  {
+    "id": 50009,
+    "type": "relation",
+    "target": "1:2",
+    "operator": ">=",
     "value": 90
   },
   {

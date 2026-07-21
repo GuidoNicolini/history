@@ -1,0 +1,7 @@
+{
+  "id": 12000010,
+  "type": "activation",
+  "target": "dad0003",
+  "operator": ">=",
+  "value": 1
+}

@@ -427,6 +427,41 @@
     "value": 1
   },
   {
+    "id": 10246,
+    "type": "item",
+    "target": "roomKeyBossCafe",
+    "operator": "plus",
+    "value": 1
+  },
+  {
+    "id": 10242,
+    "type": "item",
+    "target": "roomKeyBrother",
+    "operator": "plus",
+    "value": 1
+  },
+  {
+    "id": 10245,
+    "type": "item",
+    "target": "roomKeyLilSister",
+    "operator": "plus",
+    "value": 1
+  },
+  {
+    "id": 10243,
+    "type": "item",
+    "target": "roomKeyMaster",
+    "operator": "plus",
+    "value": 1
+  },
+  {
+    "id": 10244,
+    "type": "item",
+    "target": "roomKeyOldSister",
+    "operator": "plus",
+    "value": 1
+  },
+  {
     "id": 10000,
     "type": "item",
     "target": "money",
