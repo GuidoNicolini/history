@@ -67,6 +67,7 @@ export enum LocationID {
   CAFE_ASK_JOB = 2030,
   CAFE_HAND_OUT_FLYER = 2031,
   CAFE_BUY_COFFEE = 2032,
+  CAFE_CHAT_CASSIE = 2033,
 
 
   /****** Gym  *****/
@@ -109,6 +110,7 @@ SUPERMARKET = 300,
   /****** ACTIVITIES SUPERMARKET *****/
 
   BUY = 3001,
+  CHAT_KIMMY = 3002,
 
 
 }

@@ -179,6 +179,11 @@ export class ConditionEvaluator {
           return currentValue >= min && currentValue <= max;
         } else {
           // Rango que cruza la medianoche (ej: 22 a 06)
+          console.log("estoy atravesando los horarios")
+          console.log("current value = " + currentValue);
+          console.log("min = " + min);
+          console.log("max = " + max);
+          console.log("resultado = " + (currentValue >= min || currentValue <= max))
           return currentValue >= min || currentValue <= max;
         }
       }

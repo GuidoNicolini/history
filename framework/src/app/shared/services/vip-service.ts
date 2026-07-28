@@ -16,11 +16,11 @@ export class VipService {
     { level: 5, value: false },
   ];
 
-  private clave1: string = 'wbt';
-  private clave2: string = 'ikrz';
-  private clave3: string = 'twnsk';
-  private clave4: string = 'mqtsnx';
-  private clave5:string =  'xctgb';
+  private clave1: string = 'ftp';
+  private clave2: string = 'yszv';
+  private clave3: string = 'mvlzi';
+  private clave4: string = 'wejx';
+  private clave5:string =  'lothfb';
 
   public getVipStatus(level: number): boolean {
     const vip = this.vips.find(v => v.level === level);
