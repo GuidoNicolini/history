@@ -17,6 +17,14 @@
       "character": 12
     },
     {
+      "id": 2,
+      "type": "image",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "image": "assets/img/others/placas-bronce/Bradster555.webp"
+    },
+    {
       "id": 99999999,
       "type": "button",
       "order": 99999999,
