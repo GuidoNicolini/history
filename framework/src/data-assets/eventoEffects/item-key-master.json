@@ -1,0 +1,7 @@
+{
+  "id": 10243,
+  "type": "item",
+  "target": "roomKeyMaster",
+  "operator": "plus",
+  "value": 1
+}

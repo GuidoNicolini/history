@@ -215,7 +215,8 @@
     "styleClass": [],
     "conditionsAvailable": [],
     "conditionsVisible": [
-      10000010
+      10000010,
+      10000016
     ],
     "subLocations": []
   },
@@ -240,6 +241,33 @@
       12
     ],
     "conditionsVisible": [
+      10000011
+    ],
+    "subLocations": []
+  },
+  {
+    "id": 2033,
+    "name": "Chat",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/cafe-chat-cassie.webp"
+      }
+    ],
+    "url": "evento/cafe0008",
+    "backUrl": "cafe0008",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      5
+    ],
+    "conditionsVisible": [
+      700,
+      1,
+      12000029,
       10000011
     ],
     "subLocations": []
@@ -1014,7 +1042,8 @@
       2003,
       2030,
       2031,
-      2032
+      2032,
+      2033
     ]
   },
   {

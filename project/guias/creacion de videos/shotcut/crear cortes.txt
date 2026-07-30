@@ -1,0 +1,4 @@
+* Hacer corte con 'S'
+* Seleccionar clip con 'ctrol + c'
+* Seleccionar 'fuente' para clip
+

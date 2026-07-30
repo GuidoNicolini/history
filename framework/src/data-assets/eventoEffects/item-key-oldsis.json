@@ -1,0 +1,7 @@
+{
+  "id": 10244,
+  "type": "item",
+  "target": "roomKeyOldSister",
+  "operator": "plus",
+  "value": 1
+}

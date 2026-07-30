@@ -1,0 +1,7 @@
+{
+  "id": 2053,
+  "type": "hero-stat",
+  "target": "gym-exp",
+  "operator": "plus",
+  "value": 999999
+}

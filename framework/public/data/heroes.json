@@ -11,7 +11,10 @@
       "agility": 3,
       "intelligence": 3,
       "charisma": 3,
-      "hygiene": 5
+      "hygiene": 5,
+      "cafe-exp": 0,
+      "market-exp": 0,
+      "gym-exp": 0
     },
     "inventory": {
       "money": 100,

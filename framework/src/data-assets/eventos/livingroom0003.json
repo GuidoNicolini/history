@@ -52,7 +52,18 @@
         "type": "redirection",
         "value": "location/1006"
       }
+    },
+    {
+      "id": 6,
+      "type": "code",
+      "order": 4,
+      "probability": 100,
+      "styleClass": [],
+      "functionName": "lauchEventoGroup",
+      "parameters": ["livingroom0007"],
+      "conditions": []
     }
+
   ],
   "conditions": [],
   "effects": [13]

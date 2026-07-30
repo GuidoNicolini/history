@@ -84,6 +84,13 @@
     "value": 5
   },
   {
+    "id": 2051,
+    "type": "hero-stat",
+    "target": "cafe-exp",
+    "operator": "plus",
+    "value": 999999
+  },
+  {
     "id": 2038,
     "type": "hero-stat",
     "target": "charisma",
@@ -273,6 +280,20 @@
     "value": ""
   },
   {
+    "id": 2053,
+    "type": "hero-stat",
+    "target": "gym-exp",
+    "operator": "plus",
+    "value": 999999
+  },
+  {
+    "id": 2052,
+    "type": "hero-stat",
+    "target": "market-exp",
+    "operator": "plus",
+    "value": 999999
+  },
+  {
     "id": 2020,
     "type": "hero-stat",
     "target": "strength",
@@ -403,6 +424,41 @@
     "type": "item",
     "target": "hygienekit",
     "operator": "minus",
+    "value": 1
+  },
+  {
+    "id": 10246,
+    "type": "item",
+    "target": "roomKeyBossCafe",
+    "operator": "plus",
+    "value": 1
+  },
+  {
+    "id": 10242,
+    "type": "item",
+    "target": "roomKeyBrother",
+    "operator": "plus",
+    "value": 1
+  },
+  {
+    "id": 10245,
+    "type": "item",
+    "target": "roomKeyLilSister",
+    "operator": "plus",
+    "value": 1
+  },
+  {
+    "id": 10243,
+    "type": "item",
+    "target": "roomKeyMaster",
+    "operator": "plus",
+    "value": 1
+  },
+  {
+    "id": 10244,
+    "type": "item",
+    "target": "roomKeyOldSister",
+    "operator": "plus",
     "value": 1
   },
   {

@@ -1,0 +1,7 @@
+{
+  "id": 20087,
+  "type": "stat-npc",
+  "target": "6:level",
+  "operator": ">=",
+  "value": 9
+}
