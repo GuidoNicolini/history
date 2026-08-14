@@ -89,12 +89,15 @@ STRETCH_GYM = 2122,
   /****** Museum  *****/
   MUSEUM = 220,
 
+  MUSEUM_CINEMA = 2201,
 
 
   /****** Activities Museum  *****/
-PLACA1 = 2230,
+  PLACA1 = 2230,
   PLACA2 = 2231,
   PLACA3 = 2232,
+  DONATIONS = 2234,
+
 
 
   /****** COMMERCIAL DISTRIC  *****/

@@ -23,6 +23,7 @@ export class StoryState implements ISaveable {
     'work' : false,
     'cassie_exclusive' : false,
     'kimmy_exclusive' : false,
+    'museum_donation' : 0,
 
 
   });
