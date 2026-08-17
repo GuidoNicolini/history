@@ -1,0 +1,97 @@
+{
+  "id": "supermarket0008",
+  "type": 2,
+  "location": 300,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 0,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 100,
+      "type": "button",
+      "order": 100,
+      "probability": 100,
+      "styleClass": [],
+      "text": "FInish chatting",
+      "conditions": [],
+      "cubeAction": {
+        "type": "redirection",
+        "value": "location/300"
+      }
+    },
+    {
+      "id": 50,
+      "type": "image",
+      "order": 50,
+      "probability": 100,
+      "styleClass": [],
+      "image": "assets/img/eventos/npc/kimmy/kimmy-chat-event.webp"
+    },
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Kim, you got a second?",
+      "character": 1
+    },
+    {
+      "id": 2,
+      "type": "text",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Wow hey, you’re pale as a ghost. ",
+      "character": 9
+    },
+    {
+      "id": 51,
+      "type": "text",
+      "order": 51,
+      "probability": 100,
+      "styleClass": [],
+      "text": "I’m okay, I swear. Just… listen, I was thinking. If there’s ever a day you’ve got no plans, maybe we could go somewhere quiet, grab a drink, nothing fancy. Just the two of us.",
+      "character": 1
+    },
+    {
+      "id": 52,
+      "type": "text",
+      "order": 52,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Wait… is this a date invitation?",
+      "character": 9
+    },
+    {
+      "id": 53,
+      "type": "text",
+      "order": 53,
+      "probability": 100,
+      "styleClass": [],
+      "text": "You could call it that.",
+      "character": 1
+    },
+    {
+      "id": 54,
+      "type": "text",
+      "order": 54,
+      "probability": 100,
+      "styleClass": [],
+      "text": "I’d love to. Here, take my address. Any weekend is good for me.",
+      "character": 9
+    }
+  ],
+  "conditions": [
+    13000000,
+    2,
+    11125,
+    705,
+    12000034
+  ],
+  "effects": [
+    1001008,
+    2040
+  ]
+}

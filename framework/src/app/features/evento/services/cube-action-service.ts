@@ -57,6 +57,7 @@ export class CubeActionService {
           if (!isNaN(amount)) {
             const currentValue = Number(this.storyState.getFlag(flagName)) || 0;
             this.storyState.setFlag(flagName, currentValue + amount);
+            this.heroService.removeItem(GameItems.MONEY, amount);
           }
         }
         break;

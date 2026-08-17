@@ -1,0 +1,56 @@
+{
+  "id": "supermarket0009",
+  "type": 2,
+  "location": 300,
+  "probability": 1,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 0,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Wow, Kimmy, it’s packed today.",
+      "character": 1
+    },
+    {
+      "id": 2,
+      "type": "text",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Ugh, tell me about it. Looks like I’ll never finish. Sorry, I can’t chat much right now, but here, a free snack.",
+      "character": 9
+    },
+    {
+      "id": 3,
+      "type": "text",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Don’t worry, it’s obvious you’re swamped. We’ll talk another day.",
+      "character": 1
+    },
+    {
+      "id": 4,
+      "type": "button",
+      "order": 4,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Finish chatting",
+      "conditions": [],
+      "cubeAction": {
+        "type": "redirection",
+        "value": "location/300"
+      }
+    }
+  ],
+  "conditions": [],
+  "effects": [
+    10200,
+    2040
+  ]
+}

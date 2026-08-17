@@ -1,0 +1,72 @@
+{
+  "id": "cafe0010",
+  "type": 2,
+  "location": 2001,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 3,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "The lock clicks, and the café noise sinks into a muffled hum behind you. Cassie giggles, already tugging at your zipper. The last stall becomes your private little booth.",
+      "character": 500
+    },
+    {
+      "id": 2,
+      "type": "text",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Ready for the one and only Cassie’s signature service? No waiting, no extra charge.",
+      "character": 7
+    },
+    {
+      "id": 3,
+      "type": "text",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Shit, I’ve been ready since you bit your lip at the counter. Stop teasing and show me, hehe.",
+      "character": 1
+    },
+    {
+      "id": 4,
+      "type": "video",
+      "order": 4,
+      "probability": 100,
+      "styleClass": [],
+      "video": "assets/videos/cassie/cassie-bathroom-bj.webm"
+    },
+    {
+      "id": 5,
+      "type": "button",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Finish",
+      "conditions": [],
+      "cubeAction": {
+        "type": "redirection",
+        "value": "location/2001"
+      }
+    }
+  ],
+  "conditions": [],
+  "effects": [
+    2050,
+    1001006,
+    2005,
+    2005,
+    2005,
+    2005,
+    2013,
+    6007,
+    3007,
+    45
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "id": "supermarket0006",
+  "type": 2,
+  "location": 300,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 0,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 100,
+      "type": "button",
+      "order": 100,
+      "probability": 100,
+      "styleClass": [],
+      "text": "FInish chatting",
+      "conditions": [],
+      "cubeAction": {
+        "type": "redirection",
+        "value": "location/300"
+      }
+    },
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Hey, Kim… can I ask you something real fast?",
+      "character": 1
+    },
+    {
+      "id": 2,
+      "type": "text",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Ooh, mysterious. Go for it.",
+      "character": 9
+    },
+    {
+      "id": 51,
+      "type": "text",
+      "order": 51,
+      "probability": 100,
+      "styleClass": [],
+      "text": "So, uh… you got a boyfriend? Like, currently?",
+      "character": 1
+    },
+    {
+      "id": 52,
+      "type": "text",
+      "order": 52,
+      "probability": 100,
+      "styleClass": [],
+      "text": "No boyfriend. Zero. But now I’m curious, since when do you care about my love life?",
+      "character": 9
+    },
+    {
+      "id": 53,
+      "type": "text",
+      "order": 53,
+      "probability": 100,
+      "styleClass": [],
+      "text": "I don’t! I mean, it’s just for… a school assignment. Sociology. Yeah. Hehe.",
+      "character": 1
+    },
+    {
+      "id": 54,
+      "type": "text",
+      "order": 54,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Riiiiight. You came in here all twitchy today. Weirdo. I like it.",
+      "character": 9
+    },
+    {
+      "id": 50,
+      "type": "image",
+      "order": 50,
+      "probability": 100,
+      "styleClass": [],
+      "image": "assets/img/eventos/npc/kimmy/kimmy-chat-event.webp"
+    }
+  ],
+  "conditions": [
+    13000000,
+    2,
+    11124,
+    703,
+    12000032
+  ],
+  "effects": [
+    1001008,
+    2040
+  ]
+}

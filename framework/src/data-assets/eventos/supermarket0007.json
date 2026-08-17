@@ -1,0 +1,97 @@
+{
+  "id": "supermarket0007",
+  "type": 2,
+  "location": 300,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 0,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 100,
+      "type": "button",
+      "order": 100,
+      "probability": 100,
+      "styleClass": [],
+      "text": "FInish chatting",
+      "conditions": [],
+      "cubeAction": {
+        "type": "redirection",
+        "value": "location/300"
+      }
+    },
+    {
+      "id": 50,
+      "type": "image",
+      "order": 50,
+      "probability": 100,
+      "styleClass": [],
+      "image": "assets/img/eventos/npc/kimmy/kimmy-chat-event.webp"
+    },
+    {
+      "id": 51,
+      "type": "text",
+      "order": 51,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Uh, Kimmy… I don’t wanna ruin your shift, but someone went full Picasso with the strawberry yogurt in the dairy aisle. It’s… not pretty.",
+      "character": 1
+    },
+    {
+      "id": 52,
+      "type": "text",
+      "order": 52,
+      "probability": 100,
+      "styleClass": [],
+      "text": "You have got to be kidding me! Those fucking animals! Is it so hard to just hold a damn cup?",
+      "character": 9
+    },
+    {
+      "id": 53,
+      "type": "text",
+      "order": 53,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Kimmy, wait",
+      "character": 1
+    },
+    {
+      "id": 54,
+      "type": "text",
+      "order": 54,
+      "probability": 100,
+      "styleClass": [],
+      "text": "But she’s already a blur of movement. She grabs the mop bucket from under the register and a rag, her knuckles white around the handle, and charges toward the dairy section without a backward glance. You’re left standing there, the sentence dying on your lips.",
+      "character": 500
+    },
+    {
+      "id": 55,
+      "type": "text",
+      "order": 55,
+      "probability": 100,
+      "styleClass": [],
+      "text": "…maybe we could go out sometime. Like, on a real date.",
+      "character": 1
+    },
+    {
+      "id": 56,
+      "type": "text",
+      "order": 56,
+      "probability": 100,
+      "styleClass": [],
+      "text": "You sigh, your voice swallowed by the supermarket hum. Maybe next time.",
+      "character": 500
+    }
+  ],
+  "conditions": [
+    13000000,
+    2,
+    11124,
+    704,
+    12000033
+  ],
+  "effects": [
+    1001008,
+    2040
+  ]
+}

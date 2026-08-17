@@ -273,6 +273,31 @@
     "subLocations": []
   },
   {
+    "id": 2034,
+    "name": "Blowjob",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/cassie-bj.webp"
+      }
+    ],
+    "url": "evento/cafe0010",
+    "backUrl": "cafe0010",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      5
+    ],
+    "conditionsVisible": [
+      12000028,
+      1
+    ],
+    "subLocations": []
+  },
+  {
     "id": 1045,
     "name": "Code Patreon",
     "type": 100,
@@ -661,6 +686,28 @@
     "subLocations": []
   },
   {
+    "id": 2234,
+    "name": "Donations",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/museum-donations.webp"
+      }
+    ],
+    "url": "evento/museo0062",
+    "backUrl": "museo0062",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [
+      12000037
+    ],
+    "subLocations": []
+  },
+  {
     "id": 2230,
     "name": "Active Citizen",
     "type": 100,
@@ -738,6 +785,33 @@
     "styleClass": [],
     "conditionsAvailable": [],
     "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 3002,
+    "name": "Chat",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/kimmy-chat-supermarket-activity.webp"
+      }
+    ],
+    "url": "evento/supermarket0002",
+    "backUrl": "supermarket0002",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      5
+    ],
+    "conditionsVisible": [
+      12000036,
+      2,
+      700,
+      3002
+    ],
     "subLocations": []
   },
   {
@@ -970,7 +1044,9 @@
     "styleClass": [],
     "conditionsAvailable": [],
     "conditionsVisible": [],
-    "subLocations": []
+    "subLocations": [
+      2034
+    ]
   },
   {
     "id": 2002,
@@ -1317,6 +1393,28 @@
     ]
   },
   {
+    "id": 2201,
+    "name": "Little Cinema",
+    "type": 40,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/room/museum-cinema.webp"
+      }
+    ],
+    "url": "location/2201",
+    "backUrl": "location/220",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [
+      12000038
+    ],
+    "subLocations": []
+  },
+  {
     "id": 220,
     "name": "Museum",
     "type": 20,
@@ -1339,7 +1437,9 @@
     "subLocations": [
       2230,
       2231,
-      2232
+      2232,
+      2234,
+      2201
     ]
   },
   {
@@ -1429,7 +1529,8 @@
     ],
     "conditionsVisible": [],
     "subLocations": [
-      3001
+      3001,
+      3002
     ]
   },
   {
