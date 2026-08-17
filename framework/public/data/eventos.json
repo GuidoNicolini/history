@@ -1166,6 +1166,78 @@
     ]
   },
   {
+    "id": "cafe0010",
+    "type": 2,
+    "location": 2001,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 3,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "The lock clicks, and the café noise sinks into a muffled hum behind you. Cassie giggles, already tugging at your zipper. The last stall becomes your private little booth.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "text",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Ready for the one and only Cassie’s signature service? No waiting, no extra charge.",
+        "character": 7
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Shit, I’ve been ready since you bit your lip at the counter. Stop teasing and show me, hehe.",
+        "character": 1
+      },
+      {
+        "id": 4,
+        "type": "video",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/cassie/cassie-bathroom-bj.webm"
+      },
+      {
+        "id": 5,
+        "type": "button",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Finish",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/2001"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      2050,
+      1001006,
+      2005,
+      2005,
+      2005,
+      2005,
+      2013,
+      6007,
+      3007,
+      45
+    ]
+  },
+  {
     "id": "cassie0001",
     "type": 3,
     "location": 200,
@@ -1631,6 +1703,587 @@
       1003,
       1001002,
       10004
+    ]
+  },
+  {
+    "id": "dad0002",
+    "type": 3,
+    "location": 1000,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "image",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/dad/dad-chat-snap.webp"
+      },
+      {
+        "id": 2,
+        "type": "text",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Hey, champ. Your {{mom}} told me what you did today.",
+        "character": 3
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "I’m really sorry. I don’t know what came over me… I just… saw her there and…",
+        "character": 1
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Hey, look at me. I get it. When I was your age, I was a total ass-man. Once got slapped so hard for staring at my friend’s mom’s rear that my cheek had a handprint for a week. But you, my boy, can’t be smacking your own {{mom}} . That’s a line.",
+        "character": 3
+      },
+      {
+        "id": 5,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "I promise it won’t happen again.",
+        "character": 1
+      },
+      {
+        "id": 6,
+        "type": "text",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "text": "That’s my boy. I already smoothed things over with your {{mom}} — I’m basically a thermos of calm for that woman. Just… use this head, not that one next time, okay? He taps his temple.",
+        "character": 3
+      },
+      {
+        "id": 7,
+        "type": "text",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "text": "I will, {{dad}} . Thanks.",
+        "character": 1
+      },
+      {
+        "id": 8,
+        "type": "button",
+        "order": 8,
+        "probability": 100,
+        "styleClass": [],
+        "text": "End chat",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1000"
+        }
+      }
+    ],
+    "conditions": [
+      12000019,
+      13000000
+    ],
+    "effects": [
+      1001002,
+      7003,
+      1003
+    ]
+  },
+  {
+    "id": "dad0003",
+    "type": 3,
+    "location": 1000,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "image",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/dad/dad-chat-snap.webp"
+      },
+      {
+        "id": 2,
+        "type": "text",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "I think you know why I'm here, right?",
+        "character": 3
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Yeah, I said I wouldn't, but I lost it again. Sorry.",
+        "character": 1
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Look, I talked to your {{mom}} . She's not stupid—she knows you're dealing with hormones and weird shit. You're not evil, just horny and dumb.",
+        "character": 3
+      },
+      {
+        "id": 5,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Does she hate me?",
+        "character": 1
+      },
+      {
+        "id": 6,
+        "type": "text",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "text": "No. She loves you no matter what. You could be the worst criminal on earth and she'd still love you. She's just worried about you.",
+        "character": 3
+      },
+      {
+        "id": 7,
+        "type": "text",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "text": "I'll be better. I promise. From now on, I'll stop and think before my hands do something stupid.",
+        "character": 1
+      },
+      {
+        "id": 9,
+        "type": "text",
+        "order": 9,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Your {{dad}} gives you a few pats on the back, a warm smile on his face, and walks out of your room.",
+        "character": 500
+      },
+      {
+        "id": 10,
+        "type": "button",
+        "order": 10,
+        "probability": 100,
+        "styleClass": [],
+        "text": "End chat",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1000"
+        }
+      }
+    ],
+    "conditions": [
+      12000020,
+      13000000
+    ],
+    "effects": [
+      1001002,
+      7003,
+      1003
+    ]
+  },
+  {
+    "id": "dad0004",
+    "type": 3,
+    "location": 1000,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "image",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/dad/dad-chat-snap.webp"
+      },
+      {
+        "id": 2,
+        "type": "text",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Hey, champ. Sit down.",
+        "character": 3
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Don’t even start. I know. I’m a piece of shit. A monster who can’t stop touching his own {{mom}} .",
+        "character": 1
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You’re not a monster. You have enough testosterone to fuel a rocket. I’d be more worried if you didn’t have these impulses. But the smacking... that’s where we need a solution.",
+        "character": 3
+      },
+      {
+        "id": 5,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": " I promised you, twice, and I broke it. I don’t even recognize myself.",
+        "character": 1
+      },
+      {
+        "id": 6,
+        "type": "text",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Hey. Look at me. Nobody’s keeping a tally. Your {{mom}} isn’t furious anymore. She’s... confused, but she understands. We talked. She said, and I quote, “He’s not mean, he’s just got too much fire.” So, knowing that, I’m going to help you blow off some steam without getting handsy. Here.",
+        "character": 3
+      },
+      {
+        "id": 7,
+        "type": "text",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You take what looks like a piece of paper from your {{dad}} ’s hand. When you flip it over, you realize it’s a photo.",
+        "character": 500
+      },
+      {
+        "id": 8,
+        "type": "image",
+        "order": 8,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/dad/mom-dadgif-pic.webp"
+      },
+      {
+        "id": 9,
+        "type": "text",
+        "order": 9,
+        "probability": 100,
+        "styleClass": [],
+        "text": "{{dad}} ... I... I can’t take this. It feels like I’m betraying both of you. {{mom}} would hate me.",
+        "character": 1
+      },
+      {
+        "id": 10,
+        "type": "text",
+        "order": 10,
+        "probability": 100,
+        "styleClass": [],
+        "text": "She’ll never know. This is between us. I’d rather you jerk off to a picture than keep smacking her real ass in the kitchen. Trust me, this is the safer play. But if she ever finds that photo, I’m dead. So hide it well.",
+        "character": 3
+      },
+      {
+        "id": 11,
+        "type": "button",
+        "order": 11,
+        "probability": 100,
+        "styleClass": [],
+        "text": "End chat",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1000"
+        }
+      }
+    ],
+    "conditions": [
+      12000021,
+      13000000
+    ],
+    "effects": [
+      1001002,
+      7003,
+      1003
+    ]
+  },
+  {
+    "id": "dad0005",
+    "type": 3,
+    "location": 1000,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "image",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/dad/dad-chat-snap.webp"
+      },
+      {
+        "id": 2,
+        "type": "text",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Kid, we gotta chat.",
+        "character": 3
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "{{dad}} , I'm sorry, I just...",
+        "character": 1
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Easy, I’m not here to scold. Your {{mom}} and I both understand what you’re going through. Actually, I brought something that might work better than a photo.",
+        "character": 3
+      },
+      {
+        "id": 5,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "He retrieves a small, plain USB stick from his pocket. The way he holds it — deliberate, almost ceremonial — tells you this is more than just a file. He places it in your palm and closes your fingers around it.",
+        "character": 500
+      },
+      {
+        "id": 6,
+        "type": "text",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "text": "What am I supposed to do with this?",
+        "character": 1
+      },
+      {
+        "id": 7,
+        "type": "text",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "text": "It’s a home video. Your {{mom}} and me.When your hand starts wandering where it shouldn’t, you watch this. It’s your pressure valve.",
+        "character": 3
+      },
+      {
+        "id": 8,
+        "type": "text",
+        "order": 8,
+        "probability": 100,
+        "styleClass": [],
+        "text": "But taking this... doesn’t it make me... worse?",
+        "character": 1
+      },
+      {
+        "id": 9,
+        "type": "text",
+        "order": 9,
+        "probability": 100,
+        "styleClass": [],
+        "text": "It makes you a kid with a {{dad}} who’s got your back. Just remember: your {{mom}} can never, ever know this exists.",
+        "character": 3
+      },
+      {
+        "id": 10,
+        "type": "text",
+        "order": 10,
+        "probability": 100,
+        "styleClass": [],
+        "text": "...Okay. Our secret.",
+        "character": 1
+      },
+      {
+        "id": 11,
+        "type": "text",
+        "order": 11,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Your {{dad}} nods once, the conspiratorial spark back in his eyes, and walks out, closing the door with deliberate quiet. The USB feels heavier than it should.",
+        "character": 500
+      },
+      {
+        "id": 12,
+        "type": "video",
+        "order": 12,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/dad/dad-vidmom-gif.webm"
+      },
+      {
+        "id": 13,
+        "type": "button",
+        "order": 13,
+        "probability": 100,
+        "styleClass": [],
+        "text": "End chat",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1000"
+        }
+      }
+    ],
+    "conditions": [
+      12000022,
+      13000000
+    ],
+    "effects": [
+      1001002,
+      7003,
+      1003
+    ]
+  },
+  {
+    "id": "dad0006",
+    "type": 3,
+    "location": 1000,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "image",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/dad/dad-chat-snap.webp"
+      },
+      {
+        "id": 2,
+        "type": "text",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Kid. We’re having another talk. Yeah, I know…",
+        "character": 3
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "I’m sorry, I’m so fucking sorry, I don’t know why I can’t just—",
+        "character": 1
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Stop. I’m not here to bust your balls. Your face screams guilt already. And I know more than you think. The photo, that USB stick… all it did was pour gasoline on the fire, didn’t it?",
+        "character": 3
+      },
+      {
+        "id": 5,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Every time I close my eyes, every time I see her walk by… I just… I want to…",
+        "character": 1
+      },
+      {
+        "id": 6,
+        "type": "text",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "text": "To fuck her brains out. Say it.",
+        "character": 3
+      },
+      {
+        "id": 7,
+        "type": "text",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "text": "The word hangs in the air like a forbidden bell you’re too terrified to ring. Your stomach knots, but deep down, your father isn’t wrong. You nod once, almost imperceptibly.",
+        "character": 500
+      },
+      {
+        "id": 8,
+        "type": "text",
+        "order": 8,
+        "probability": 100,
+        "styleClass": [],
+        "text": " I talked to your {{mom}} last night. A long talk. And before you freak out, she’s not mad. She’s… confused, but she understands this is bigger than just a horny phase. She suggested something totally batshit, but after what’s been happening, nothing’s off the table. Here’s how it works: when that pressure builds up, you walk to our bedroom, you knock, and you ask her to show you. No touching. No words unless she starts them. You sit in that damn chair by the dresser and you watch. Her body, her moves, whatever she decides to do. Just watch, and let your brain melt as it needs to.",
+        "character": 3
+      },
+      {
+        "id": 9,
+        "type": "text",
+        "order": 9,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Isn’t that… disgusting? I mean, that’s my {{mom}} , and I’m getting off to it. But I’m vibrating like I just snorted a line of pure adrenaline. Is this really okay?",
+        "character": 1
+      },
+      {
+        "id": 10,
+        "type": "text",
+        "order": 10,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Kid, none of this is normal. But neither is a {{dad}} handing his own homemade porn to you. We crossed that bridge already. Your {{mom}} wants to help, and honestly, I’d rather you be in that chair than sneaking around and feeling like a criminal in your own house. It’s weird. It’s twisted. But we’re a team. And everything’s going to be fine. Trust me.",
+        "character": 3
+      },
+      {
+        "id": 11,
+        "type": "button",
+        "order": 11,
+        "probability": 100,
+        "styleClass": [],
+        "text": "End chat",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1000"
+        }
+      }
+    ],
+    "conditions": [
+      12000023,
+      13000000
+    ],
+    "effects": [
+      1001002,
+      7003,
+      1003
     ]
   },
   {
@@ -4157,6 +4810,18 @@
           "type": "redirection",
           "value": "location/1007"
         }
+      },
+      {
+        "id": 8,
+        "type": "code",
+        "order": 8,
+        "probability": 100,
+        "styleClass": [],
+        "functionName": "lauchEventoGroup",
+        "parameters": [
+          "mom0004"
+        ],
+        "conditions": []
       }
     ],
     "conditions": [],
@@ -5504,6 +6169,433 @@
     ]
   },
   {
+    "id": "mom0004",
+    "type": 2,
+    "location": 1007,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 5,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You finish eating and as you take the plates to the sink, your gaze locks onto your {{mom}} ’s ass.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/mom/mom-ass-kitchen.webp"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Look away",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/100"
+        }
+      },
+      {
+        "id": 4,
+        "type": "button",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Slap it",
+        "conditions": [
+          20000,
+          12000014
+        ],
+        "cubeAction": {
+          "type": "launchevento",
+          "value": "mom0005"
+        }
+      },
+      {
+        "id": 5,
+        "type": "button",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Slap it",
+        "conditions": [
+          50001,
+          11002,
+          20001,
+          12000009,
+          12000015
+        ],
+        "cubeAction": {
+          "type": "launchevento",
+          "value": "mom0006"
+        }
+      },
+      {
+        "id": 6,
+        "type": "button",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Slap it",
+        "conditions": [
+          50002,
+          11005,
+          20002,
+          12000010,
+          12000016
+        ],
+        "cubeAction": {
+          "type": "launchevento",
+          "value": "mom0007"
+        }
+      },
+      {
+        "id": 7,
+        "type": "button",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Slap it",
+        "conditions": [
+          50003,
+          11006,
+          20003,
+          12000011,
+          12000017
+        ],
+        "cubeAction": {
+          "type": "launchevento",
+          "value": "mom0008"
+        }
+      },
+      {
+        "id": 8,
+        "type": "button",
+        "order": 8,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Slap it",
+        "conditions": [
+          50005,
+          11007,
+          20004,
+          12000012,
+          12000018
+        ],
+        "cubeAction": {
+          "type": "launchevento",
+          "value": "mom0009"
+        }
+      }
+    ],
+    "conditions": [
+      20000,
+      5,
+      12000018
+    ],
+    "effects": [
+      7002,
+      2015,
+      1001001
+    ]
+  },
+  {
+    "id": "mom0005",
+    "type": 2,
+    "location": 1007,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "image",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/mom/mom-anger.webp"
+      },
+      {
+        "id": 2,
+        "type": "text",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "What the fuck is wrong with you? Why the hell did you smack my ass?",
+        "character": 2
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You stand there scared shitless, staring at your {{mom}} who’s absolutely pissed off.",
+        "character": 500
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Get your ass to your room and think about what you just did. If I see your face before I’ve cooled down, you’ll regret it.",
+        "character": 2
+      },
+      {
+        "id": 5,
+        "type": "button",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Run",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/100"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      1002,
+      7002
+    ]
+  },
+  {
+    "id": "mom0006",
+    "type": 2,
+    "location": 1007,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Your palm connects, and the sound echoes in the kitchen. You tense every muscle, waiting for the explosion. But {{mom}} doesn’t flinch. Her body stays bent over the dishwasher, her face hidden. Seconds stretch like taffy — no shouting, no slap back, not even a sigh.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/mom/mom-back-kitchen.webp"
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Not knowing how to interpret this situation, you leave the dirty dishes in the sink and retreat slowly, in silence.",
+        "character": 500
+      },
+      {
+        "id": 4,
+        "type": "button",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Leave",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/100"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      1002,
+      7002
+    ]
+  },
+  {
+    "id": "mom0007",
+    "type": 2,
+    "location": 1007,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "After the spank, you wait to see your {{mom}} ’s reaction, but once more she says nothing and doesn’t even turn her face.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/mom/mom-back-kitchen.webp"
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Not knowing how to interpret this situation, you leave the dirty dishes in the sink, but this time you sneak a sidelong glance at her face and catch what looks like a tiny smile.",
+        "character": 500
+      },
+      {
+        "id": 4,
+        "type": "button",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Leave",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/100"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      1002,
+      7002
+    ]
+  },
+  {
+    "id": "mom0008",
+    "type": 2,
+    "location": 1007,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Your hand connects with her backside, the sound almost routine by now. She remains still, but this time the silence isn’t empty. You hear it — a soft, shaky exhale that tips into a quiet moan, barely louder than a heartbeat. It’s gone before you can trap it in your ears, leaving you paralyzed, half-convinced you imagined it.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/mom/mom-back-kitchen.webp"
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Heart racing, you shove the plates next to the sink, too flustered to stack them. As you retreat, you risk a sideways glance, expecting the usual blank mask. Instead, you’re met with a smile — not timid, not hidden, but a slow, satisfied curve that creeps from the corner of her mouth all the way to her eyes. She doesn’t say a word, but that smile speaks volumes.",
+        "character": 500
+      },
+      {
+        "id": 4,
+        "type": "button",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Leave",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/100"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      1002,
+      7002
+    ]
+  },
+  {
+    "id": "mom0009",
+    "type": 2,
+    "location": 1007,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "After the spank, your {{mom}} doesn’t turn around but this time there is no doubt and you hear a moan and a small, soft but unmistakable “oh fuck.”",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/mom/mom-back-kitchen.webp"
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You leave the dirty dishes in the sink and look sideways at your {{mom}} ’s face and you see her biting her lower lip.",
+        "character": 500
+      },
+      {
+        "id": 4,
+        "type": "button",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Leave",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/100"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      1002,
+      7002
+    ]
+  },
+  {
     "id": "mom0010",
     "type": 3,
     "location": 1001,
@@ -5794,6 +6886,648 @@
     ]
   },
   {
+    "id": "morgan0001",
+    "type": 3,
+    "location": 220,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "As you enter the old museum, the echo of your footsteps bounces among dusty display cases. Near the front desk, you hear a woman’s agitated voice. It’s Morgan, the manager, talking on the phone with her back to you.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/morgan/morgan-telephone.webp"
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": " ...No, I can’t accept that. The deadline is coming and we barely cover the electricity. The city government is squeezing us with new taxes every week. If we don’t find a way out, they’ll close the museum before the end of the month. ... I know, I know. I just took this position thinking I could save something, but it’s not that simple.",
+        "character": 12
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Morgan hangs up with a long sigh. She hasn’t seen you. You approach cautiously, clearing your throat.",
+        "character": 500
+      },
+      {
+        "id": 5,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Excuse me... I couldn’t help overhearing. Are you okay?",
+        "character": 1
+      },
+      {
+        "id": 6,
+        "type": "text",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Oh, sorry. I didn’t mean to dump that in the hallway. It’s just that this place is falling apart and the city administration won’t stop tightening the screws. Two months ago they gave me this job like it was a prize, but it’s a trap full of debt.",
+        "character": 12
+      },
+      {
+        "id": 7,
+        "type": "text",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Have you thought about asking for donations? At least to buy time. The museum has its charm, I’m sure neighbors would want to help.",
+        "character": 1
+      },
+      {
+        "id": 8,
+        "type": "text",
+        "order": 8,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Donations... I’d never seriously considered it. Maybe you’re right. At least we’d keep the lights on another month. Hey, thanks... Not everyone stops to ask.",
+        "character": 12
+      },
+      {
+        "id": 9,
+        "type": "text",
+        "order": 9,
+        "probability": 100,
+        "styleClass": [],
+        "text": "She holds your gaze a moment longer than necessary, then clicks her pen twice against the counter, considering. A new idea takes root behind her tired eyes.",
+        "character": 500
+      },
+      {
+        "id": 10,
+        "type": "button",
+        "order": 10,
+        "probability": 100,
+        "styleClass": [],
+        "text": "First donation ($100)",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/220"
+        }
+      }
+    ],
+    "conditions": [
+      13000000,
+      700,
+      1000004
+    ],
+    "effects": [
+      2040,
+      10105,
+      2000002
+    ]
+  },
+  {
+    "id": "morgan0002",
+    "type": 3,
+    "location": 220,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "image",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/morgan/morgan-cine.webp"
+      },
+      {
+        "id": 2,
+        "type": "text",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Morgan waves you over from the front desk. On the counter there’s a freshly printed sign with the new mini cinema schedule.",
+        "character": 500
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Hey, come here a second. Thanks to everything we raised, we finally fixed that old projector and fixed up a small room in the back. The museum now has its own little cinema.",
+        "character": 12
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Really? I thought that corner was just for boxes and dust.",
+        "character": 1
+      },
+      {
+        "id": 5,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "It was, yeah. We cleaned it up, added some comfy seats and a screen. Now we’ll show educational films during the week. Tickets will be cheap and every penny goes straight to the museum’s funds",
+        "character": 12
+      },
+      {
+        "id": 6,
+        "type": "text",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Sounds great. Do you already have showtimes?",
+        "character": 1
+      },
+      {
+        "id": 7,
+        "type": "text",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "text": "We open this very afternoon. Stop by if you want.",
+        "character": 12
+      },
+      {
+        "id": 8,
+        "type": "text",
+        "order": 8,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Morgan smiles and adjusts the sign, revealing a fresh spark in her eyes.",
+        "character": 500
+      },
+      {
+        "id": 9,
+        "type": "button",
+        "order": 9,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You keep wandering around the museum",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/220"
+        }
+      }
+    ],
+    "conditions": [
+      10000018,
+      13000000
+    ],
+    "effects": [
+      2040
+    ]
+  },
+  {
+    "id": "museo0001",
+    "type": 3,
+    "location": 2201,
+    "probability": 1,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You find a spot right in the middle of the museum’s modest screening room. The cushion hugs you way better than you’d have guessed, so you lean back, let your shoulders drop, and surrender to a first-rate educational feature.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/museum/mus-1.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Stop watching",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/220"
+        }
+      }
+    ],
+    "conditions": [
+      1000007,
+      10000018
+    ],
+    "effects": [
+      2001,
+      30,
+      10105,
+      10105,
+      10105,
+      2000003
+    ]
+  },
+  {
+    "id": "museo0002",
+    "type": 3,
+    "location": 2201,
+    "probability": 1,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You find a spot right in the middle of the museum’s modest screening room. The cushion hugs you way better than you’d have guessed, so you lean back, let your shoulders drop, and surrender to a first-rate educational feature.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/museum/mus-2.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Stop watching",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/220"
+        }
+      }
+    ],
+    "conditions": [
+      1000007,
+      10000018,
+      1
+    ],
+    "effects": [
+      2001,
+      30,
+      10105,
+      10105,
+      10105,
+      2000003
+    ]
+  },
+  {
+    "id": "museo0003",
+    "type": 3,
+    "location": 2201,
+    "probability": 1,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You find a spot right in the middle of the museum’s modest screening room. The cushion hugs you way better than you’d have guessed, so you lean back, let your shoulders drop, and surrender to a first-rate educational feature.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/museum/mus-3.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Stop watching",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/220"
+        }
+      }
+    ],
+    "conditions": [
+      1000007,
+      10000018,
+      2
+    ],
+    "effects": [
+      2001,
+      30,
+      10105,
+      10105,
+      10105,
+      2000003
+    ]
+  },
+  {
+    "id": "museo0004",
+    "type": 3,
+    "location": 2201,
+    "probability": 1,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You find a spot right in the middle of the museum’s modest screening room. The cushion hugs you way better than you’d have guessed, so you lean back, let your shoulders drop, and surrender to a first-rate educational feature.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/museum/mus-4.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Stop watching",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/220"
+        }
+      }
+    ],
+    "conditions": [
+      1000007,
+      10000018,
+      3
+    ],
+    "effects": [
+      2001,
+      30,
+      10105,
+      10105,
+      10105,
+      2000003
+    ]
+  },
+  {
+    "id": "museo0005",
+    "type": 3,
+    "location": 2201,
+    "probability": 1,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You find a spot right in the middle of the museum’s modest screening room. The cushion hugs you way better than you’d have guessed, so you lean back, let your shoulders drop, and surrender to a first-rate educational feature.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/museum/mus-5.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Stop watching",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/220"
+        }
+      }
+    ],
+    "conditions": [
+      1000007,
+      10000018,
+      4
+    ],
+    "effects": [
+      2001,
+      30,
+      10105,
+      10105,
+      10105,
+      2000003
+    ]
+  },
+  {
+    "id": "museo0006",
+    "type": 3,
+    "location": 2201,
+    "probability": 1,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You find a spot right in the middle of the museum’s modest screening room. The cushion hugs you way better than you’d have guessed, so you lean back, let your shoulders drop, and surrender to a first-rate educational feature.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/museum/mus-6.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Stop watching",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/220"
+        }
+      }
+    ],
+    "conditions": [
+      1000007,
+      10000018,
+      6
+    ],
+    "effects": [
+      2001,
+      30,
+      10105,
+      10105,
+      10105,
+      2000003
+    ]
+  },
+  {
+    "id": "museo0062",
+    "type": 2,
+    "location": 220,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You have no idea how much this helps. Every little bit gives this place one more day before the lights go out. The museum and me won’t forget it.",
+        "character": 12
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/morgan/morgan-donation.webp"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "$10",
+        "conditions": [
+          1000001
+        ],
+        "cubeAction": {
+          "type": "flag",
+          "value": "museum_donation:10"
+        }
+      },
+      {
+        "id": 4,
+        "type": "button",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "$100",
+        "conditions": [
+          1000004
+        ],
+        "cubeAction": {
+          "type": "flag",
+          "value": "museum_donation:100"
+        }
+      },
+      {
+        "id": 5,
+        "type": "button",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "$1000",
+        "conditions": [
+          1000014
+        ],
+        "cubeAction": {
+          "type": "flag",
+          "value": "museum_donation:1000"
+        }
+      },
+      {
+        "id": 6,
+        "type": "button",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "text": "$10.000",
+        "conditions": [
+          1000027
+        ],
+        "cubeAction": {
+          "type": "flag",
+          "value": "museum_donation:10000"
+        }
+      },
+      {
+        "id": 7,
+        "type": "button",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Exit",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/220"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": []
+  },
+  {
     "id": "oldbro0001",
     "type": 3,
     "location": 1008,
@@ -6081,6 +7815,22 @@
         "image": "assets/img/others/placas-bronce/Bradster555.webp"
       },
       {
+        "id": 3,
+        "type": "image",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/others/placas-bronce/hornyman69.webp"
+      },
+      {
+        "id": 4,
+        "type": "image",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/others/placas-bronce/mimiiiko.webp"
+      },
+      {
         "id": 99999999,
         "type": "button",
         "order": 99999999,
@@ -6149,6 +7899,14 @@
         "styleClass": [],
         "text": "Here stand the names that build this city, brick by brick, day by day. Their trust is our foundation, and our gratitude is endless.",
         "character": 12
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/others/placas-oro/Bradster555.webp"
       },
       {
         "id": 99999999,
@@ -6261,6 +8019,620 @@
     ],
     "conditions": [],
     "effects": []
+  },
+  {
+    "id": "supermarket0002",
+    "type": 2,
+    "location": 300,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 10,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "code",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "functionName": "lauchEventoGroup",
+        "parameters": [
+          "supermarket0003",
+          "supermarket0004",
+          "supermarket0005",
+          "supermarket0006",
+          "supermarket0007",
+          "supermarket0008",
+          "supermarket0009"
+        ],
+        "conditions": []
+      }
+    ],
+    "conditions": [],
+    "effects": []
+  },
+  {
+    "id": "supermarket0003",
+    "type": 2,
+    "location": 300,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 100,
+        "type": "button",
+        "order": 100,
+        "probability": 100,
+        "styleClass": [],
+        "text": "FInish chatting",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/300"
+        }
+      },
+      {
+        "id": 50,
+        "type": "image",
+        "order": 50,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/kimmy/kimmy-chat-event.webp"
+      },
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Uh, h-hi... you doing okay today?",
+        "character": 1
+      },
+      {
+        "id": 2,
+        "type": "text",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Hey there! Everything's awesome. Need something, or just passing through?",
+        "character": 9
+      },
+      {
+        "id": 51,
+        "type": "text",
+        "order": 51,
+        "probability": 100,
+        "styleClass": [],
+        "text": "It's just... I've seen you here a bunch, and I finally got the guts to say more than \"paper or plastic,\" so... yeah, wanted to know your name or something, hehe.",
+        "character": 1
+      },
+      {
+        "id": 52,
+        "type": "text",
+        "order": 52,
+        "probability": 100,
+        "styleClass": [],
+        "text": "That's honestly the sweetest thing I've heard all week. I'm Kimmy. And you are...?",
+        "character": 9
+      }
+    ],
+    "conditions": [
+      13000000,
+      2,
+      11121,
+      700
+    ],
+    "effects": [
+      1001008,
+      2040
+    ]
+  },
+  {
+    "id": "supermarket0004",
+    "type": 2,
+    "location": 300,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 100,
+        "type": "button",
+        "order": 100,
+        "probability": 100,
+        "styleClass": [],
+        "text": "FInish chatting",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/300"
+        }
+      },
+      {
+        "id": 50,
+        "type": "image",
+        "order": 50,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/kimmy/kimmy-chat-event.webp"
+      },
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Hey, Kimmy. Day treating you right or throwing punches?",
+        "character": 1
+      },
+      {
+        "id": 2,
+        "type": "text",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Hiiii, sweetie! I’m practically glowing. So tell me — you pushing a cart full of groceries or just pushing your luck to see my smile?",
+        "character": 9
+      },
+      {
+        "id": 53,
+        "type": "text",
+        "order": 53,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Is it a crime to tick both boxes? I’m a multitasker",
+        "character": 1
+      },
+      {
+        "id": 54,
+        "type": "text",
+        "order": 54,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Uh-uh. Next time I serve up a question that juicy, your only answer better be, “I came to see you and only you.” Or else.",
+        "character": 9
+      }
+    ],
+    "conditions": [
+      13000000,
+      2,
+      11122,
+      701,
+      12000030
+    ],
+    "effects": [
+      1001008,
+      2040
+    ]
+  },
+  {
+    "id": "supermarket0005",
+    "type": 2,
+    "location": 300,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 100,
+        "type": "button",
+        "order": 100,
+        "probability": 100,
+        "styleClass": [],
+        "text": "FInish chatting",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/300"
+        }
+      },
+      {
+        "id": 50,
+        "type": "image",
+        "order": 50,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/kimmy/kimmy-chat-event.webp"
+      },
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Kimmy… you’re practically glowing today. Again.",
+        "character": 1
+      },
+      {
+        "id": 2,
+        "type": "text",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You noticed! It’s all about my secret tricks, sweetie. Gotta maintain that sparkle somehow.",
+        "character": 9
+      },
+      {
+        "id": 51,
+        "type": "text",
+        "order": 51,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Oh, I bet I’ve got a pretty clear mental picture of those tricks. Maybe even caught a glimpse once or twice.",
+        "character": 1
+      },
+      {
+        "id": 52,
+        "type": "text",
+        "order": 52,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Kimmy doesn’t flinch. She just bites her bottom lip, shoots you a slow, deliberate wink, and lets her smile do the rest of the talking.",
+        "character": 500
+      }
+    ],
+    "conditions": [
+      13000000,
+      2,
+      11123,
+      702,
+      12000031
+    ],
+    "effects": [
+      1001008,
+      2040
+    ]
+  },
+  {
+    "id": "supermarket0006",
+    "type": 2,
+    "location": 300,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 100,
+        "type": "button",
+        "order": 100,
+        "probability": 100,
+        "styleClass": [],
+        "text": "FInish chatting",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/300"
+        }
+      },
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Hey, Kim… can I ask you something real fast?",
+        "character": 1
+      },
+      {
+        "id": 2,
+        "type": "text",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Ooh, mysterious. Go for it.",
+        "character": 9
+      },
+      {
+        "id": 51,
+        "type": "text",
+        "order": 51,
+        "probability": 100,
+        "styleClass": [],
+        "text": "So, uh… you got a boyfriend? Like, currently?",
+        "character": 1
+      },
+      {
+        "id": 52,
+        "type": "text",
+        "order": 52,
+        "probability": 100,
+        "styleClass": [],
+        "text": "No boyfriend. Zero. But now I’m curious, since when do you care about my love life?",
+        "character": 9
+      },
+      {
+        "id": 53,
+        "type": "text",
+        "order": 53,
+        "probability": 100,
+        "styleClass": [],
+        "text": "I don’t! I mean, it’s just for… a school assignment. Sociology. Yeah. Hehe.",
+        "character": 1
+      },
+      {
+        "id": 54,
+        "type": "text",
+        "order": 54,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Riiiiight. You came in here all twitchy today. Weirdo. I like it.",
+        "character": 9
+      },
+      {
+        "id": 50,
+        "type": "image",
+        "order": 50,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/kimmy/kimmy-chat-event.webp"
+      }
+    ],
+    "conditions": [
+      13000000,
+      2,
+      11124,
+      703,
+      12000032
+    ],
+    "effects": [
+      1001008,
+      2040
+    ]
+  },
+  {
+    "id": "supermarket0007",
+    "type": 2,
+    "location": 300,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 100,
+        "type": "button",
+        "order": 100,
+        "probability": 100,
+        "styleClass": [],
+        "text": "FInish chatting",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/300"
+        }
+      },
+      {
+        "id": 50,
+        "type": "image",
+        "order": 50,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/kimmy/kimmy-chat-event.webp"
+      },
+      {
+        "id": 51,
+        "type": "text",
+        "order": 51,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Uh, Kimmy… I don’t wanna ruin your shift, but someone went full Picasso with the strawberry yogurt in the dairy aisle. It’s… not pretty.",
+        "character": 1
+      },
+      {
+        "id": 52,
+        "type": "text",
+        "order": 52,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You have got to be kidding me! Those fucking animals! Is it so hard to just hold a damn cup?",
+        "character": 9
+      },
+      {
+        "id": 53,
+        "type": "text",
+        "order": 53,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Kimmy, wait",
+        "character": 1
+      },
+      {
+        "id": 54,
+        "type": "text",
+        "order": 54,
+        "probability": 100,
+        "styleClass": [],
+        "text": "But she’s already a blur of movement. She grabs the mop bucket from under the register and a rag, her knuckles white around the handle, and charges toward the dairy section without a backward glance. You’re left standing there, the sentence dying on your lips.",
+        "character": 500
+      },
+      {
+        "id": 55,
+        "type": "text",
+        "order": 55,
+        "probability": 100,
+        "styleClass": [],
+        "text": "…maybe we could go out sometime. Like, on a real date.",
+        "character": 1
+      },
+      {
+        "id": 56,
+        "type": "text",
+        "order": 56,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You sigh, your voice swallowed by the supermarket hum. Maybe next time.",
+        "character": 500
+      }
+    ],
+    "conditions": [
+      13000000,
+      2,
+      11124,
+      704,
+      12000033
+    ],
+    "effects": [
+      1001008,
+      2040
+    ]
+  },
+  {
+    "id": "supermarket0008",
+    "type": 2,
+    "location": 300,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 100,
+        "type": "button",
+        "order": 100,
+        "probability": 100,
+        "styleClass": [],
+        "text": "FInish chatting",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/300"
+        }
+      },
+      {
+        "id": 50,
+        "type": "image",
+        "order": 50,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/kimmy/kimmy-chat-event.webp"
+      },
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Kim, you got a second?",
+        "character": 1
+      },
+      {
+        "id": 2,
+        "type": "text",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Wow hey, you’re pale as a ghost. ",
+        "character": 9
+      },
+      {
+        "id": 51,
+        "type": "text",
+        "order": 51,
+        "probability": 100,
+        "styleClass": [],
+        "text": "I’m okay, I swear. Just… listen, I was thinking. If there’s ever a day you’ve got no plans, maybe we could go somewhere quiet, grab a drink, nothing fancy. Just the two of us.",
+        "character": 1
+      },
+      {
+        "id": 52,
+        "type": "text",
+        "order": 52,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Wait… is this a date invitation?",
+        "character": 9
+      },
+      {
+        "id": 53,
+        "type": "text",
+        "order": 53,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You could call it that.",
+        "character": 1
+      },
+      {
+        "id": 54,
+        "type": "text",
+        "order": 54,
+        "probability": 100,
+        "styleClass": [],
+        "text": "I’d love to. Here, take my address. Any weekend is good for me.",
+        "character": 9
+      }
+    ],
+    "conditions": [
+      13000000,
+      2,
+      11125,
+      705,
+      12000034
+    ],
+    "effects": [
+      1001008,
+      2040
+    ]
+  },
+  {
+    "id": "supermarket0009",
+    "type": 2,
+    "location": 300,
+    "probability": 1,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Wow, Kimmy, it’s packed today.",
+        "character": 1
+      },
+      {
+        "id": 2,
+        "type": "text",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Ugh, tell me about it. Looks like I’ll never finish. Sorry, I can’t chat much right now, but here, a free snack.",
+        "character": 9
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Don’t worry, it’s obvious you’re swamped. We’ll talk another day.",
+        "character": 1
+      },
+      {
+        "id": 4,
+        "type": "button",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Finish chatting",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/300"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      10200,
+      2040
+    ]
   },
   {
     "id": "yourroom0001",

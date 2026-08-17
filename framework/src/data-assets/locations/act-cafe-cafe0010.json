@@ -1,0 +1,20 @@
+{
+  "id": 2034,
+  "name": "Blowjob",
+  "type": 100,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "assets/img/locations/activities/cassie-bj.webp"
+    }
+  ],
+  "url": "evento/cafe0010",
+  "backUrl": "cafe0010",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [5],
+  "conditionsVisible": [12000028,1],
+  "subLocations": []
+}

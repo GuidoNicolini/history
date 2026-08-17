@@ -196,6 +196,20 @@
     "value": 1
   },
   {
+    "id": 12000037,
+    "type": "activation",
+    "target": "morgan0001",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000038,
+    "type": "activation",
+    "target": "morgan0002",
+    "operator": ">=",
+    "value": 1
+  },
+  {
     "id": 12000005,
     "type": "activation",
     "target": "supermarket0001",
@@ -2245,6 +2259,76 @@
     "target": "2:level",
     "operator": "<",
     "value": 7
+  },
+  {
+    "id": 10000018,
+    "type": "flag",
+    "target": "museum_donation",
+    "operator": ">=",
+    "value": "1000"
+  },
+  {
+    "id": 10000024,
+    "type": "flag",
+    "target": "museum_donation",
+    "operator": ">=",
+    "value": "100000"
+  },
+  {
+    "id": 10000021,
+    "type": "flag",
+    "target": "museum_donation",
+    "operator": ">=",
+    "value": "10000"
+  },
+  {
+    "id": 10000026,
+    "type": "flag",
+    "target": "museum_donation",
+    "operator": ">=",
+    "value": "1000000"
+  },
+  {
+    "id": 10000022,
+    "type": "flag",
+    "target": "museum_donation",
+    "operator": ">=",
+    "value": "20000"
+  },
+  {
+    "id": 10000019,
+    "type": "flag",
+    "target": "museum_donation",
+    "operator": ">=",
+    "value": "2500"
+  },
+  {
+    "id": 10000027,
+    "type": "flag",
+    "target": "museum_donation",
+    "operator": ">=",
+    "value": "2000000"
+  },
+  {
+    "id": 10000020,
+    "type": "flag",
+    "target": "museum_donation",
+    "operator": ">=",
+    "value": "5000"
+  },
+  {
+    "id": 10000025,
+    "type": "flag",
+    "target": "museum_donation",
+    "operator": ">=",
+    "value": "500000"
+  },
+  {
+    "id": 10000023,
+    "type": "flag",
+    "target": "museum_donation",
+    "operator": ">=",
+    "value": "50000"
   },
   {
     "id": 10012,

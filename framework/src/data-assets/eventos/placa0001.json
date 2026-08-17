@@ -25,6 +25,22 @@
       "image": "assets/img/others/placas-bronce/Bradster555.webp"
     },
     {
+      "id": 3,
+      "type": "image",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "image": "assets/img/others/placas-bronce/hornyman69.webp"
+    },
+    {
+      "id": 4,
+      "type": "image",
+      "order": 4,
+      "probability": 100,
+      "styleClass": [],
+      "image": "assets/img/others/placas-bronce/mimiiiko.webp"
+    },
+    {
       "id": 99999999,
       "type": "button",
       "order": 99999999,

@@ -1,0 +1,20 @@
+{
+  "id": 3002,
+  "name": "Chat",
+  "type": 100,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "assets/img/locations/activities/kimmy-chat-supermarket-activity.webp"
+    }
+  ],
+  "url": "evento/supermarket0002",
+  "backUrl": "supermarket0002",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [5],
+  "conditionsVisible": [12000036,2,700,3002],
+  "subLocations": []
+}

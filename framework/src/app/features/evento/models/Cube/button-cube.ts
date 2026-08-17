@@ -8,7 +8,7 @@ export interface ButtonCube extends Cube{
 
 
 
-export type ActionType = 'redirection' | 'save' | 'buy' | 'launchevento'
+export type ActionType = 'redirection' | 'save' | 'buy' | 'launchevento' | 'flag'
 
 export interface CubeAction {
 

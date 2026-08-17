@@ -1,0 +1,79 @@
+{
+  "id": "supermarket0004",
+  "type": 2,
+  "location": 300,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 0,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 100,
+      "type": "button",
+      "order": 100,
+      "probability": 100,
+      "styleClass": [],
+      "text": "FInish chatting",
+      "conditions": [],
+      "cubeAction": {
+        "type": "redirection",
+        "value": "location/300"
+      }
+    },
+    {
+      "id": 50,
+      "type": "image",
+      "order": 50,
+      "probability": 100,
+      "styleClass": [],
+      "image": "assets/img/eventos/npc/kimmy/kimmy-chat-event.webp"
+    },
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Hey, Kimmy. Day treating you right or throwing punches?",
+      "character": 1
+    },
+    {
+      "id": 2,
+      "type": "text",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Hiiii, sweetie! I’m practically glowing. So tell me — you pushing a cart full of groceries or just pushing your luck to see my smile?",
+      "character": 9
+    },
+    {
+      "id": 53,
+      "type": "text",
+      "order": 53,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Is it a crime to tick both boxes? I’m a multitasker",
+      "character": 1
+    },
+    {
+      "id": 54,
+      "type": "text",
+      "order": 54,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Uh-uh. Next time I serve up a question that juicy, your only answer better be, “I came to see you and only you.” Or else.",
+      "character": 9
+    }
+  ],
+  "conditions": [
+    13000000,
+    2,
+    11122,
+    701,
+    12000030
+  ],
+  "effects": [
+    1001008,
+    2040
+  ]
+}
