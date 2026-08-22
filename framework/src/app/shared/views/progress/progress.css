@@ -69,12 +69,20 @@
   background: rgba(255, 255, 255, 0.05);
 }
 
+.overall-label {
+  color: #e0f2fe; /* Light cyan/blue tint */
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
 .tier-name {
-  color: #e9ecef;
+  color: #ffffff;
+  font-weight: 600;
 }
 
 .tier-ratio {
-  color: #adb5bd;
+  color: #bae6fd; /* Light blue, very legible */
+  font-weight: 600;
 }
 
 .custom-progress-tier {
