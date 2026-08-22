@@ -92,8 +92,8 @@
 }
 
 /* Custom Gradients for Tiers */
-.bar-general {
-  background: linear-gradient(90deg, #00f2fe 0%, #4facfe 100%) !important;
+.bar-visitors {
+  background: linear-gradient(90deg, #a855f7 0%, #c084fc 100%) !important;
 }
 
 .bar-passerby {
