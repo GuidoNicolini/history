@@ -23,7 +23,8 @@ export class Progress {
     const events = Object.values(this.eventoService.state());
     const conditions = this.conditionService.state();
 
-    const tierStats = {
+    const tierStats: Record<number, {seen: number, total: number}> = {
+      0: { seen: 0, total: 0 },
       1: { seen: 0, total: 0 },
       2: { seen: 0, total: 0 },
       3: { seen: 0, total: 0 },
@@ -32,30 +33,29 @@ export class Progress {
     };
 
     for (const event of events) {
-      if (!event.conditions) continue;
+      let eventVipValue: number = 0; // Default to Visitors
 
-      // Encontrar si este evento tiene una condición VIP en los tiers definidos
-      let eventVipValue: number | null = null;
-      for (const condId of event.conditions) {
-        const cond = conditions[condId];
-        if (cond && cond.type === 'vip') {
-          const val = Number(cond.value);
-          if (val === 1 || val === 2 || val === 3 || val === 4 || val === 5) {
-            eventVipValue = val;
-            break;
+      if (event.conditions) {
+        for (const condId of event.conditions) {
+          const cond = conditions[condId];
+          if (cond && cond.type === 'vip') {
+            const val = Number(cond.value);
+            if (val >= 1 && val <= 5) {
+              eventVipValue = val;
+              break;
+            }
           }
         }
       }
 
-      if (eventVipValue !== null) {
-        tierStats[eventVipValue as 1 | 2 | 3 | 4 | 5].total++;
-        if ((event.numberOfTimesActivated || 0) >= 1) {
-          tierStats[eventVipValue as 1 | 2 | 3 | 4 | 5].seen++;
-        }
+      tierStats[eventVipValue].total++;
+      if ((event.numberOfTimesActivated || 0) >= 1) {
+        tierStats[eventVipValue].seen++;
       }
     }
 
     const tiers = [
+      { key: 0, name: 'Visitors' },
       { key: 1, name: 'Passerby' },
       { key: 2, name: 'Resident' },
       { key: 3, name: 'Active Citizen' },
@@ -63,8 +63,8 @@ export class Progress {
       { key: 5, name: 'The Mayor' }
     ];
 
-    const mappedTiers = tiers.map(tier => {
-      const stats = tierStats[tier.key as 1 | 2 | 3 | 4 | 5];
+    return tiers.map(tier => {
+      const stats = tierStats[tier.key];
       const percentage = stats.total > 0 ? Math.round((stats.seen / stats.total) * 100) : 0;
       return {
         name: tier.name,
@@ -73,16 +73,6 @@ export class Progress {
         percentage
       };
     });
-
-    const overall = this.overallProgress();
-    const general = {
-      name: 'General',
-      seen: overall.seen,
-      total: overall.total,
-      percentage: overall.percentage
-    };
-
-    return [general, ...mappedTiers];
   });
 
   public overallProgress = computed(() => {
@@ -99,7 +89,7 @@ export class Progress {
 
   public getTierBarClass(name: string): string {
     switch (name) {
-      case 'General': return 'bar-general';
+      case 'Visitors': return 'bar-visitors';
       case 'Passerby': return 'bar-passerby';
       case 'Resident': return 'bar-resident';
       case 'Active Citizen': return 'bar-active-citizen';

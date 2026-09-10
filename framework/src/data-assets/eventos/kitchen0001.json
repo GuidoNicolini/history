@@ -76,7 +76,7 @@
       "probability": 100,
       "styleClass": [],
       "functionName": "lauchEventoGroup",
-      "parameters": ["mom0004"],
+      "parameters": ["mom0004","oldsis0003"],
       "conditions": []
     }
   ],

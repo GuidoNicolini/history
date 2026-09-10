@@ -487,7 +487,7 @@
     ],
     "conditions": [
       13000000,
-      93,
+      97,
       3003
     ],
     "effects": [
@@ -1238,6 +1238,583 @@
     ]
   },
   {
+    "id": "cafe0011",
+    "type": 3,
+    "location": 200,
+    "probability": 9999,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Hey there, kid! Come here a sec.",
+        "character": 8
+      },
+      {
+        "id": 2,
+        "type": "text",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "What’s up, boss?",
+        "character": 1
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Big news! You’ve finally shown me you’re more than just a leaflet dispenser. I’m promoting you.",
+        "character": 8
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "So I get to work the espresso machine?",
+        "character": 1
+      },
+      {
+        "id": 5,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Even better! You’ll wipe down tables, scrub the restroom, and, since I trust your elbow grease, you’ll also clean my office. Naturally, I’ll bump your pay.",
+        "character": 8
+      },
+      {
+        "id": 6,
+        "type": "image",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/cafe/boss-bucket.webp"
+      },
+      {
+        "id": 8,
+        "type": "text",
+        "order": 8,
+        "probability": 100,
+        "styleClass": [],
+        "text": "He lets out a booming, good-natured laugh. It’s not the promotion you’d dreamed of, but extra cash never hurts, so you force a grin, take the bucket and mop from his hands, and give an exaggerated bow before heading off to your new kingdom of grime.",
+        "character": 500
+      },
+      {
+        "id": 9,
+        "type": "button",
+        "order": 9,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Take the bucket",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/200"
+        }
+      }
+    ],
+    "conditions": [
+      13000000,
+      10000011,
+      850
+    ],
+    "effects": [
+      10246
+    ]
+  },
+  {
+    "id": "cafe0012",
+    "type": 3,
+    "location": 200,
+    "probability": 9999,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Hey, champ! Quick word.",
+        "character": 8
+      },
+      {
+        "id": 2,
+        "type": "text",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "What is it, boss?",
+        "character": 1
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Big day today. You're moving up again.",
+        "character": 8
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Let me guess: I get to wash your car, or even better—I'll earn the honor of scrubbing your underwear.",
+        "character": 1
+      },
+      {
+        "id": 5,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "The boss throws his head back and laughs like you just told the funniest joke of the year.",
+        "character": 500
+      },
+      {
+        "id": 6,
+        "type": "text",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "text": "That's why I like you. But no, you've shown you're more than a mop. You'll be making coffee for customers now.",
+        "character": 8
+      },
+      {
+        "id": 7,
+        "type": "image",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/cafe/boss-filter.webp"
+      },
+      {
+        "id": 8,
+        "type": "text",
+        "order": 8,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Wait, you're serious? Not a prank?",
+        "character": 1
+      },
+      {
+        "id": 9,
+        "type": "text",
+        "order": 9,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Dead serious. And your paycheck gets a little fatter too, hehe.",
+        "character": 8
+      },
+      {
+        "id": 10,
+        "type": "text",
+        "order": 10,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Thanks, boss. I won't let you down.",
+        "character": 1
+      },
+      {
+        "id": 11,
+        "type": "text",
+        "order": 11,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Cassie! I finally get to make coffee!",
+        "character": 1
+      },
+      {
+        "id": 12,
+        "type": "text",
+        "order": 12,
+        "probability": 100,
+        "styleClass": [],
+        "text": "That's great. I'm really happy for you.",
+        "character": 7
+      },
+      {
+        "id": 13,
+        "type": "image",
+        "order": 13,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/cafe/cassie-congrats.webp"
+      },
+      {
+        "id": 14,
+        "type": "button",
+        "order": 14,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Take the portafilter",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/200"
+        }
+      }
+    ],
+    "conditions": [
+      13000000,
+      10000011,
+      851
+    ],
+    "effects": []
+  },
+  {
+    "id": "cafe0013",
+    "type": 3,
+    "location": 200,
+    "probability": 9999,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Kid, I need to ask you a favor.",
+        "character": 8
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/cafe/boss-favor.webp"
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Yes, tell me.",
+        "character": 1
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Luckily, business is better than ever, but Cassie can't keep up anymore. Would you mind helping out by waiting tables too?",
+        "character": 8
+      },
+      {
+        "id": 5,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Sure, boss, no problem.",
+        "character": 1
+      },
+      {
+        "id": 6,
+        "type": "text",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "text": "What a relief, thanks. I owe you one.",
+        "character": 8
+      },
+      {
+        "id": 7,
+        "type": "button",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Continue working",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/200"
+        }
+      }
+    ],
+    "conditions": [
+      13000000,
+      10000011,
+      852
+    ],
+    "effects": []
+  },
+  {
+    "id": "cafe0014",
+    "type": 2,
+    "location": 2003,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 1,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You clean the cafe tables.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/cafe/cafe-clean-tables.webp"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Finish",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/2003"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      14,
+      2050,
+      30,
+      10005,
+      2051
+    ]
+  },
+  {
+    "id": "cafe0015",
+    "type": 2,
+    "location": 2001,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 1,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You clean the cafe bathroom.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/cafe/cafe-clean-bathroom.gif"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Finish",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/2001"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      14,
+      2050,
+      30,
+      10005,
+      2051
+    ]
+  },
+  {
+    "id": "cafe0016",
+    "type": 2,
+    "location": 2002,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 1,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You clean the boss's office",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/cafe/cafe-clean-office.gif"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Finish",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/2002"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      14,
+      2050,
+      30,
+      10005,
+      2051
+    ]
+  },
+  {
+    "id": "cafe0017",
+    "type": 2,
+    "location": 200,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 1,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You make coffee for the customers",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/cafe/cafe-make-coffee.gif"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Finish",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/200"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      18,
+      2050,
+      31,
+      10005,
+      10005,
+      10005,
+      2051,
+      2051,
+      2051
+    ]
+  },
+  {
+    "id": "cafe0018",
+    "type": 2,
+    "location": 2003,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 1,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You wait tables.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/cafe/cafe-wait-tables.gif"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Finish",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/2003"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      20,
+      15,
+      2050,
+      31,
+      10006,
+      10006,
+      2051,
+      2051,
+      2051,
+      2051,
+      2051
+    ]
+  },
+  {
     "id": "cassie0001",
     "type": 3,
     "location": 200,
@@ -1606,6 +2183,122 @@
       92,
       10024,
       5
+    ],
+    "effects": [
+      2000,
+      4007,
+      4007,
+      4007,
+      4007,
+      4007,
+      5007
+    ]
+  },
+  {
+    "id": "cassie0008",
+    "type": 3,
+    "location": 200,
+    "probability": 600,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 50,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You step into the café, and that rich coffee smell hits you like a warm fucking blanket. Your eyes sweep the room until they land on Cassie. She's working the floor, but today \"taking care of customers\" means a whole lot more than just pouring coffee. You lean back and watch. She's a pro at what she does—and what she does is make sure every single person in here leaves satisfied.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/cassie/barista-vid-8.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Stop watching",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/200"
+        }
+      }
+    ],
+    "conditions": [
+      10000014,
+      92,
+      10026,
+      5,
+      11104,
+      1
+    ],
+    "effects": [
+      2000,
+      4007,
+      4007,
+      4007,
+      4007,
+      4007,
+      5007
+    ]
+  },
+  {
+    "id": "cassie0009",
+    "type": 3,
+    "location": 200,
+    "probability": 700,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 50,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You step into the café, and that rich coffee smell hits you like a warm fucking blanket. Your eyes sweep the room until they land on Cassie. She's working the floor, but today \"taking care of customers\" means a whole lot more than just pouring coffee. You lean back and watch. She's a pro at what she does—and what she does is make sure every single person in here leaves satisfied.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/cassie/barista-vid-9.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Stop watching",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/200"
+        }
+      }
+    ],
+    "conditions": [
+      10000014,
+      92,
+      10026,
+      5,
+      11104,
+      2
     ],
     "effects": [
       2000,
@@ -2480,6 +3173,73 @@
     ]
   },
   {
+    "id": "dadlil0001",
+    "type": 0,
+    "location": 1006,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 2,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "The warmth of the sofa clings to you as you surface from a deep nap. Your eyelids flutter open, struggling against the flickering glow of the television. Slowly, the room comes into focus, revealing your {{dad}} with your little {{youngSister}} curled against him, both absorbed in the screen.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/dadxlil/dad-lil-couch-1.webp"
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "For a while, you don't move. You simply watch them from the corner of your half-shut eyes, feeling like an intruder in a peaceful moment. Then, careful not to disturb anything, you rise, pad quietly across the floor, and leave the living room without a word, letting the soft murmur of the TV continue undisturbed.",
+        "character": 500
+      },
+      {
+        "id": 4,
+        "type": "button",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Leave",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/100"
+        }
+      }
+    ],
+    "conditions": [
+      5,
+      92,
+      2006,
+      13000003,
+      3004
+    ],
+    "effects": [
+      1003002,
+      7003,
+      7005,
+      3003,
+      3003,
+      3005,
+      3005,
+      2002
+    ]
+  },
+  {
     "id": "garage0001",
     "type": 2,
     "location": 1009,
@@ -3082,6 +3842,56 @@
       10241,
       5
     ]
+  },
+  {
+    "id": "gym0013",
+    "type": 2,
+    "location": 210,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "How many Gym Coins will you buy today?",
+        "character": 10
+      },
+      {
+        "id": 2,
+        "type": "button",
+        "order": 99999,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Exit",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/210"
+        }
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "GymCoin - $25",
+        "conditions": [
+          1000002
+        ],
+        "cubeAction": {
+          "type": "buy",
+          "value": "gymcoin:25"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": []
   },
   {
     "id": "gymgirl0001",
@@ -4741,6 +5551,131 @@
     ]
   },
   {
+    "id": "kimmy0007",
+    "type": 3,
+    "location": 300,
+    "probability": 600,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 50,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You step into the supermarket and catch Kimmy in action—giving the customers some real personal attention. And I mean real attention. Looks like \"first-class service\" here means something a little extra special. You watch as she makes sure every guy leaves with a smile on his face and a lot more than just groceries in his cart.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/kimmy/cajera-vid-7.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Stop watching",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/300"
+        }
+      }
+    ],
+    "conditions": [
+      10000014,
+      92,
+      5,
+      10022,
+      11124
+    ],
+    "effects": [
+      2000,
+      5009,
+      4009,
+      4009,
+      4009,
+      4009,
+      4009,
+      4009,
+      4009,
+      4009,
+      4009,
+      4009
+    ]
+  },
+  {
+    "id": "kimmy0008",
+    "type": 3,
+    "location": 300,
+    "probability": 700,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 50,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You step into the supermarket and catch Kimmy in action—giving the customers some real personal attention. And I mean real attention. Looks like \"first-class service\" here means something a little extra special. You watch as she makes sure every guy leaves with a smile on his face and a lot more than just groceries in his cart.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/kimmy/cajera-vid-8.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Stop watching",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/300"
+        }
+      }
+    ],
+    "conditions": [
+      10000014,
+      92,
+      5,
+      10022,
+      11124,
+      1
+    ],
+    "effects": [
+      2000,
+      5009,
+      4009,
+      4009,
+      4009,
+      4009,
+      4009,
+      4009,
+      4009,
+      4009,
+      4009,
+      4009
+    ]
+  },
+  {
     "id": "kitchen0001",
     "type": 2,
     "location": 1007,
@@ -4819,7 +5754,8 @@
         "styleClass": [],
         "functionName": "lauchEventoGroup",
         "parameters": [
-          "mom0004"
+          "mom0004",
+          "oldsis0003"
         ],
         "conditions": []
       }
@@ -5554,6 +6490,18 @@
           "type": "redirection",
           "value": "location/1006"
         }
+      },
+      {
+        "id": 8,
+        "type": "code",
+        "order": 8,
+        "probability": 100,
+        "styleClass": [],
+        "functionName": "lauchEventoGroup",
+        "parameters": [
+          "dadlil0001"
+        ],
+        "conditions": []
       }
     ],
     "conditions": [],
@@ -5901,6 +6849,68 @@
     ],
     "effects": [
       10005
+    ]
+  },
+  {
+    "id": "livingroom0008",
+    "type": 2,
+    "location": 1006,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 5,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You enjoy a happy dinner filled with laughter and casual chatter.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/livingroom/family-dinner.webp"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Finish dinner",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/100"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      8,
+      30,
+      2042,
+      1001001,
+      1001002,
+      1001003,
+      1001004,
+      1001005,
+      1002001,
+      1002002,
+      1002003,
+      1002004,
+      1003001,
+      1003002,
+      1003003,
+      1004001,
+      1004002,
+      1005001
     ]
   },
   {
@@ -6682,6 +7692,100 @@
     ]
   },
   {
+    "id": "mom0011",
+    "type": 3,
+    "location": 1005,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 3,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Your fingers are inches from the doorknob when it clicks and turns on its own. The bathroom door creaks open, and time seems to stretch like warm taffy. Your {{mom}} steps out, steam curling behind her, her body hugged by a single damp towel that barely reaches her thighs. Droplets still shine on her shoulders.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/mom/mom-towel.webp"
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Oh... {{mom}} ... I was just—uhh...",
+        "character": 1
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Need the bathroom?",
+        "character": 2
+      },
+      {
+        "id": 5,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Yeah, yes. I mean, I—yeah, I really do.",
+        "character": 1
+      },
+      {
+        "id": 6,
+        "type": "text",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "text": "She smiles, unbothered, and you force yourself to walk past her without staring too hard. The second you’re inside, you push the door shut and lean against it like it’s the only thing holding you up. The bulge in your shorts throbs. You’re hard, and there’s no hiding it.",
+        "character": 500
+      },
+      {
+        "id": 7,
+        "type": "button",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Continue",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1005"
+        }
+      }
+    ],
+    "conditions": [
+      20015,
+      20001,
+      2007,
+      92,
+      5
+    ],
+    "effects": [
+      1001001,
+      2015,
+      7002,
+      3002,
+      3002,
+      3002,
+      2002,
+      2002
+    ]
+  },
+  {
     "id": "mombro0001",
     "type": 3,
     "location": 1007,
@@ -7102,6 +8206,91 @@
     ]
   },
   {
+    "id": "morgan0003",
+    "type": 3,
+    "location": 220,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "The museum’s cool air wraps around you as you step inside, and almost immediately a familiar figure hurries toward you with a bright, eager smile.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/morgan/morgan-new-movies-2500.webp"
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "There you are! I was hoping you’d stop by. I wanted to thank you properly—for the donations and especially for the idea of accepting them in the first place. It’s working. Donations keep growing, and the mini cinema has become a steady stream of income. People have been donating old film collections from their attics, and we’ve even bought a few new ones at bargain prices.",
+        "character": 12
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Honestly, you’re the one who did all the work. I just threw an idea into the air. I’m glad my small contributions help the place get better. And, well… seeing you smile like that is a pretty good bonus.",
+        "character": 1
+      },
+      {
+        "id": 5,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Okay, now you’re definitely making me blush, hehe. But thank you. Really. I have to get back to the pile of paperwork waiting for me. Come by more often—we’ve got some new films you might like.",
+        "character": 12
+      },
+      {
+        "id": 6,
+        "type": "text",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "text": "She returns to her station behind a cluttered desk and laptop, pausing once more to give you a soft, warm smile before her attention shifts to the screen, and she’s back to work.",
+        "character": 500
+      },
+      {
+        "id": 7,
+        "type": "button",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Continue",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/220"
+        }
+      }
+    ],
+    "conditions": [
+      10000019,
+      13000000
+    ],
+    "effects": [
+      1001011,
+      2042
+    ]
+  },
+  {
     "id": "museo0001",
     "type": 3,
     "location": 2201,
@@ -7414,6 +8603,170 @@
       1000007,
       10000018,
       6
+    ],
+    "effects": [
+      2001,
+      30,
+      10105,
+      10105,
+      10105,
+      2000003
+    ]
+  },
+  {
+    "id": "museo0007",
+    "type": 3,
+    "location": 2201,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 5,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You find a spot right in the middle of the museum’s modest screening room. The cushion hugs you way better than you’d have guessed, so you lean back, let your shoulders drop, and surrender to a first-rate educational feature.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/museum/mus-7.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Stop watching",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/220"
+        }
+      }
+    ],
+    "conditions": [
+      1000007,
+      10000019,
+      5
+    ],
+    "effects": [
+      2001,
+      30,
+      10105,
+      10105,
+      10105,
+      2000003
+    ]
+  },
+  {
+    "id": "museo0008",
+    "type": 3,
+    "location": 2201,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 5,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You find a spot right in the middle of the museum’s modest screening room. The cushion hugs you way better than you’d have guessed, so you lean back, let your shoulders drop, and surrender to a first-rate educational feature.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/museum/mus-8.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Stop watching",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/220"
+        }
+      }
+    ],
+    "conditions": [
+      1000007,
+      10000019,
+      1,
+      5
+    ],
+    "effects": [
+      2001,
+      30,
+      10105,
+      10105,
+      10105,
+      2000003
+    ]
+  },
+  {
+    "id": "museo0009",
+    "type": 3,
+    "location": 2201,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 5,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You find a spot right in the middle of the museum’s modest screening room. The cushion hugs you way better than you’d have guessed, so you lean back, let your shoulders drop, and surrender to a first-rate educational feature.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/museum/mus-9.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Stop watching",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/220"
+        }
+      }
+    ],
+    "conditions": [
+      1000007,
+      10000019,
+      2,
+      5
     ],
     "effects": [
       2001,
@@ -7741,6 +9094,89 @@
       3004,
       3004,
       3004
+    ]
+  },
+  {
+    "id": "oldsis0003",
+    "type": 0,
+    "location": 1007,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 7,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "The kitchen is quiet, just you and a plate of food. You lift a fry to your mouth, savoring the crisp saltiness, when a flicker of movement crosses your vision. Before your brain can signal your hand to guard the plate, a smaller hand darts in like a snake.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/old-sis/old-fries.webp"
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "God, I love fries, hehe.",
+        "character": 4
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Hey! Make your own if you’re that hungry!",
+        "character": 1
+      },
+      {
+        "id": 5,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "And miss the thrill of stealing from you? Nah. It’s a whole experience, hahaha.",
+        "character": 4
+      },
+      {
+        "id": 6,
+        "type": "text",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "text": "She’s already halfway out the door, her laughter bouncing off the walls. You’re left staring at your plate, one fry short, wondering how she always moves like a ninja when food is involved.",
+        "character": 500
+      },
+      {
+        "id": 7,
+        "type": "button",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Continue eating",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1007"
+        }
+      }
+    ],
+    "conditions": [
+      5
+    ],
+    "effects": [
+      1001003
     ]
   },
   {
