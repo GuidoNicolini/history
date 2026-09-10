@@ -9,18 +9,18 @@ export class VipService {
   public vipChanges$ = new BehaviorSubject<void>(undefined);
 
   vips: vip[] = [
-    { level: 1, value: true },
-    { level: 2, value: true },
-    { level: 3, value: true },
-    { level: 4, value: true },
-    { level: 5, value: true },
+    { level: 1, value: false },
+    { level: 2, value: false },
+    { level: 3, value: false },
+    { level: 4, value: false },
+    { level: 5, value: false },
   ];
 
-  private clave1: string = 'rtx';
-  private clave2: string = 'gbc';
-  private clave3: string = 'ls';
-  private clave4: string = 'mht';
-  private clave5:string =  'dado';
+  private clave1: string = 'ms';
+  private clave2: string = 'ybc';
+  private clave3: string = 'rum';
+  private clave4: string = 'ftp';
+  private clave5:string =  'yiyo';
 
   public getVipStatus(level: number): boolean {
     const vip = this.vips.find(v => v.level === level);
