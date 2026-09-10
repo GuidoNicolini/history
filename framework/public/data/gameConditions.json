@@ -366,7 +366,7 @@
   {
     "id": 1001008,
     "type": "item",
-    "target": "roomKeyBossOffice",
+    "target": "roomKeyBossCafe",
     "operator": ">=",
     "value": 1
   },
@@ -2728,6 +2728,13 @@
     "target": "",
     "operator": "between-time",
     "value": "11:19"
+  },
+  {
+    "id": 2008,
+    "type": "time",
+    "target": "",
+    "operator": "between-time",
+    "value": "18:22"
   },
   {
     "id": 2005,

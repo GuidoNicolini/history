@@ -1,0 +1,83 @@
+{
+  "id": "cafe0013",
+  "type": 3,
+  "location": 200,
+  "probability": 9999,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 0,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Kid, I need to ask you a favor.",
+      "character": 8
+    },
+    {
+      "id": 2,
+      "type": "image",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "image": "assets/img/eventos/locations/cafe/boss-favor.webp"
+    },
+    {
+      "id": 3,
+      "type": "text",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Yes, tell me.",
+      "character": 1
+    },
+    {
+      "id": 4,
+      "type": "text",
+      "order": 4,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Luckily, business is better than ever, but Cassie can't keep up anymore. Would you mind helping out by waiting tables too?",
+      "character": 8
+    },
+    {
+      "id": 5,
+      "type": "text",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Sure, boss, no problem.",
+      "character": 1
+    },
+    {
+      "id": 6,
+      "type": "text",
+      "order": 6,
+      "probability": 100,
+      "styleClass": [],
+      "text": "What a relief, thanks. I owe you one.",
+      "character": 8
+    },
+    {
+      "id": 7,
+      "type": "button",
+      "order": 7,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Continue working",
+      "conditions": [],
+      "cubeAction": {
+        "type": "redirection",
+        "value": "location/200"
+      }
+    }
+  ],
+  "conditions": [
+    13000000,
+    10000011,
+    852
+  ],
+  "effects": []
+}

@@ -298,6 +298,136 @@
     "subLocations": []
   },
   {
+    "id": 2035,
+    "name": "Clean",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/cafe-limpiar-mesas.webp"
+      }
+    ],
+    "url": "evento/cafe0014",
+    "backUrl": "cafe0014",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      5
+    ],
+    "conditionsVisible": [
+      13,
+      10000011,
+      850
+    ],
+    "subLocations": []
+  },
+  {
+    "id": 2036,
+    "name": "Clean",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/cafe-limpiar-bathroom.webp"
+      }
+    ],
+    "url": "evento/cafe0015",
+    "backUrl": "cafe0015",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      5
+    ],
+    "conditionsVisible": [
+      13,
+      10000011,
+      850
+    ],
+    "subLocations": []
+  },
+  {
+    "id": 2037,
+    "name": "Clean",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/cafe-clean-boss-office.webp"
+      }
+    ],
+    "url": "evento/cafe0016",
+    "backUrl": "cafe0016",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      5
+    ],
+    "conditionsVisible": [
+      13,
+      10000011,
+      850
+    ],
+    "subLocations": []
+  },
+  {
+    "id": 2038,
+    "name": "Make coffee",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/cafe-make-coffee.webp"
+      }
+    ],
+    "url": "evento/cafe0017",
+    "backUrl": "cafe0017",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      5
+    ],
+    "conditionsVisible": [
+      17,
+      10000011,
+      851
+    ],
+    "subLocations": []
+  },
+  {
+    "id": 2039,
+    "name": "Wait tables",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/cafe-wait-tables.webp"
+      }
+    ],
+    "url": "evento/cafe0018",
+    "backUrl": "cafe0018",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      5
+    ],
+    "conditionsVisible": [
+      20,
+      10000011,
+      852
+    ],
+    "subLocations": []
+  },
+  {
     "id": 1045,
     "name": "Code Patreon",
     "type": 100,
@@ -435,6 +565,26 @@
       5,
       1001009
     ],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 2125,
+    "name": "Shop",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/gym-buy.webp"
+      }
+    ],
+    "url": "evento/gym0013",
+    "backUrl": "gym0013",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
     "conditionsVisible": [],
     "subLocations": []
   },
@@ -682,6 +832,30 @@
       11000004,
       10000006,
       3001
+    ],
+    "subLocations": []
+  },
+  {
+    "id": 1046,
+    "name": "Dinner",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/family-dinner.webp"
+      }
+    ],
+    "url": "evento/livingroom0008",
+    "backUrl": "livingroom0008",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [
+      5,
+      2008,
+      3004
     ],
     "subLocations": []
   },
@@ -1045,7 +1219,8 @@
     "conditionsAvailable": [],
     "conditionsVisible": [],
     "subLocations": [
-      2034
+      2034,
+      2036
     ]
   },
   {
@@ -1068,7 +1243,9 @@
       1001008
     ],
     "conditionsVisible": [],
-    "subLocations": []
+    "subLocations": [
+      2037
+    ]
   },
   {
     "id": 2003,
@@ -1088,7 +1265,10 @@
     "styleClass": [],
     "conditionsAvailable": [],
     "conditionsVisible": [],
-    "subLocations": []
+    "subLocations": [
+      2035,
+      2039
+    ]
   },
   {
     "id": 200,
@@ -1119,7 +1299,8 @@
       2030,
       2031,
       2032,
-      2033
+      2033,
+      2038
     ]
   },
   {
@@ -1282,7 +1463,8 @@
       2101,
       2102,
       2103,
-      2124
+      2124,
+      2125
     ]
   },
   {
@@ -1389,7 +1571,8 @@
       1038,
       1042,
       1043,
-      1044
+      1044,
+      1046
     ]
   },
   {
@@ -1430,7 +1613,9 @@
     "isVisible": true,
     "lastTimeVisited": 0,
     "styleClass": [],
-    "conditionsAvailable": [],
+    "conditionsAvailable": [
+      2001
+    ],
     "conditionsVisible": [
       10000009
     ],

@@ -1,0 +1,20 @@
+{
+  "id": 1046,
+  "name": "Dinner",
+  "type": 100,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "assets/img/locations/activities/family-dinner.webp"
+    }
+  ],
+  "url": "evento/livingroom0008",
+  "backUrl": "livingroom0008",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [],
+  "conditionsVisible": [5,2008,3004],
+  "subLocations": []
+}

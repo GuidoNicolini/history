@@ -16,7 +16,7 @@
     "gym-exp" : 0
   },
   "inventory": {
-    "money": 100,
+    "money": 2000,
     "snack": 5,
     "hygienekit": 3,
     "showerkit" : 3,
