@@ -30,7 +30,7 @@
     ],
     "mac": {
       "target": [
-        "dir"
+        "zip"
 
       ]
     },
