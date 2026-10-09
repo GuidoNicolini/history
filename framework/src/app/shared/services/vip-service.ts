@@ -9,19 +9,29 @@ export class VipService {
   public vipChanges$ = new BehaviorSubject<void>(undefined);
 
   vips: vip[] = [
-    { level: 1, value: true },
-    { level: 2, value: true },
-    { level: 3, value: true },
-    { level: 4, value: true },
-    { level: 5, value: true },
+    { level: 1, value: false },
+    { level: 2, value: false },
+    { level: 3, value: false },
+    { level: 4, value: false },
+    { level: 5, value: false },
   ];
 
-  private clave1: string = 'rtx';
-  private clave2: string = 'gbc';
-  private clave3: string = 'ls';
-  private clave4: string = 'mht';
-  private clave5:string =  'dado';
+  private clave1Hash: number = -1065125741;
+  private clave2Hash: number = -1381059737;
+  private clave3Hash: number = 1549538167;
+  private clave4Hash: number = -536430001;
+  private clave5Hash: number = -1600010989;
 
+
+  private hashString(str: string): number {
+    let hash = 0;
+    for (let i = 0; i < str.length; i++) {
+      const char = str.charCodeAt(i);
+      hash = ((hash << 5) - hash) + char;
+      hash |= 0;
+    }
+    return hash;
+  }
   public getVipStatus(level: number): boolean {
     const vip = this.vips.find(v => v.level === level);
     return vip ? vip.value : false;
@@ -32,7 +42,10 @@ export class VipService {
 
     let counter:number = 0;
 
-    if(code == this.clave1){
+    const salt = 'code';
+    const codeHash = this.hashString(code + salt);
+
+    if(codeHash == this.clave1Hash){
       for (let i = 1; i < 2; i++) {
         this.updateVip(i)
       }
@@ -40,7 +53,7 @@ export class VipService {
       alert("Code redeemed successfully.")
     }
 
-    if(code == this.clave2){
+    if(codeHash == this.clave2Hash){
       for (let i = 1; i < 3; i++) {
         this.updateVip(i)
       }
@@ -48,7 +61,7 @@ export class VipService {
       alert("Code redeemed successfully.")
     }
 
-    if(code == this.clave3){
+    if(codeHash == this.clave3Hash){
       for (let i = 1; i < 4; i++) {
         this.updateVip(i)
       }
@@ -56,7 +69,7 @@ export class VipService {
       alert("Code redeemed successfully.")
     }
 
-    if(code == this.clave4){
+    if(codeHash == this.clave4Hash){
       for (let i = 1; i < 5; i++) {
         this.updateVip(i)
       }
@@ -64,7 +77,7 @@ export class VipService {
       alert("Code redeemed successfully.")
     }
 
-    if(code == this.clave5){
+    if(codeHash == this.clave5Hash){
       for (let i = 1; i < 6; i++) {
         this.updateVip(i)
       }

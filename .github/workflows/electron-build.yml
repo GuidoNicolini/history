@@ -11,7 +11,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [windows-latest, macos-latest]
+        os: [windows-latest, macos-latest, ubuntu-latest]
 
     defaults:
       run:
@@ -39,7 +39,7 @@ jobs:
         # Usamos curl para descargar un archivo ZIP llamado archivos.zip y unzip para extraerlo
         # IMPORTANTE: Reemplaza "URL_AQUI" por el enlace de descarga directa de tu archivos.zip
         run: |
-          curl -L "https://www.dropbox.com/scl/fi/jnfpysjlonmjge8m3klpc/archivos.zip?rlkey=61med2yl7yuobjw7hugv0jdri&st=2xzzvlyf&dl=1" -o archivos.zip
+          curl -L "https://www.dropbox.com/scl/fi/k5shnb1vb2if0nctux23c/archivos.zip?rlkey=wbfnix3yxilbax5e4aomf89ml&st=e16mu8su&dl=1" -o archivos.zip
           # Crea el directorio public si no existe y extrae el zip dentro. 
           # Al descomprimir se creará la carpeta public/assets porque está dentro del zip
           unzip -o archivos.zip -d public
@@ -63,3 +63,4 @@ jobs:
           # Usamos la carpeta configurada en package.json (release/)
           path: |
             framework/release/*.zip
+            framework/release/linux-unpacked/

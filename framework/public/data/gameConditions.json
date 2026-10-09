@@ -112,9 +112,9 @@
     "value": 1
   },
   {
-    "id": 12000001,
+    "id": 12000039,
     "type": "activation",
-    "target": "kitchen0003",
+    "target": "dad0008",
     "operator": ">=",
     "value": 1
   },
@@ -2735,6 +2735,13 @@
     "target": "",
     "operator": "between-time",
     "value": "18:22"
+  },
+  {
+    "id": 2009,
+    "type": "time",
+    "target": "",
+    "operator": "between-time",
+    "value": "20:1"
   },
   {
     "id": 2005,

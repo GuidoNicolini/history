@@ -17,6 +17,10 @@ function createWindow() {
     }
   });
 
+  win.webContents.on('devtools-opened', () => {
+    win.webContents.closeDevTools();
+  });
+
   win.setMenu(null);
 
 

@@ -77,6 +77,28 @@
     "subLocations": []
   },
   {
+    "id": 1049,
+    "name": "Sunbathing",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/sunbathing.webp"
+      }
+    ],
+    "url": "evento/backyard0004",
+    "backUrl": "backyard0004",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      5
+    ],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
     "id": 1022,
     "name": "Bath",
     "type": 100,
@@ -1130,6 +1152,28 @@
     "subLocations": []
   },
   {
+    "id": 1048,
+    "name": "Nap",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/nap.webp"
+      }
+    ],
+    "url": "evento/yourroom0007",
+    "backUrl": "yourroom0007",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      5
+    ],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
     "id": 1008,
     "name": "Backyard",
     "type": 40,
@@ -1150,7 +1194,8 @@
     "subLocations": [
       1021,
       1037,
-      1040
+      1040,
+      1049
     ]
   },
   {
@@ -1765,7 +1810,32 @@
       1031,
       1032,
       1036,
-      1045
+      1045,
+      1010,
+      1048
     ]
+  },
+  {
+    "id": 1010,
+    "name": "Fuck doll",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/doll-act-fuck.webp"
+      }
+    ],
+    "url": "location/1010",
+    "backUrl": "location/100",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [
+      201,
+      12000039
+    ],
+    "subLocations": []
   }
 ]

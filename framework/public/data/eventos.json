@@ -199,6 +199,52 @@
     ]
   },
   {
+    "id": "backyard0004",
+    "type": 2,
+    "location": 1049,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 1,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You relax and soak up some sun for a while.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/backyard/hero-sunbathing.gif"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Finish",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1008"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      2,
+      30
+    ]
+  },
+  {
     "id": "bathroom0001",
     "type": 2,
     "location": 1005,
@@ -754,6 +800,18 @@
           "type": "redirection",
           "value": "location/200"
         }
+      },
+      {
+        "id": 5,
+        "type": "code",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "functionName": "lauchEventoGroup",
+        "parameters": [
+          "mom0015"
+        ],
+        "conditions": []
       }
     ],
     "conditions": [],
@@ -2311,6 +2369,180 @@
     ]
   },
   {
+    "id": "cassie0010",
+    "type": 3,
+    "location": 200,
+    "probability": 800,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 50,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You step into the café, and that rich coffee smell hits you like a warm fucking blanket. Your eyes sweep the room until they land on Cassie. She's working the floor, but today \"taking care of customers\" means a whole lot more than just pouring coffee. You lean back and watch. She's a pro at what she does—and what she does is make sure every single person in here leaves satisfied.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/cassie/barista-vid-10.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Stop watching",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/200"
+        }
+      }
+    ],
+    "conditions": [
+      10000014,
+      92,
+      10026,
+      5,
+      11104,
+      3
+    ],
+    "effects": [
+      2000,
+      4007,
+      4007,
+      4007,
+      4007,
+      4007,
+      5007
+    ]
+  },
+  {
+    "id": "cassie0011",
+    "type": 3,
+    "location": 200,
+    "probability": 900,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 50,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You step into the café, and that rich coffee smell hits you like a warm fucking blanket. Your eyes sweep the room until they land on Cassie. She's working the floor, but today \"taking care of customers\" means a whole lot more than just pouring coffee. You lean back and watch. She's a pro at what she does—and what she does is make sure every single person in here leaves satisfied.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/cassie/barista-vid-11.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Stop watching",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/200"
+        }
+      }
+    ],
+    "conditions": [
+      10000014,
+      92,
+      10026,
+      5,
+      11104,
+      4
+    ],
+    "effects": [
+      2000,
+      4007,
+      4007,
+      4007,
+      4007,
+      4007,
+      5007
+    ]
+  },
+  {
+    "id": "cassie0012",
+    "type": 3,
+    "location": 200,
+    "probability": 1000,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 50,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You step into the café, and that rich coffee smell hits you like a warm fucking blanket. Your eyes sweep the room until they land on Cassie. She's working the floor, but today \"taking care of customers\" means a whole lot more than just pouring coffee. You lean back and watch. She's a pro at what she does—and what she does is make sure every single person in here leaves satisfied.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/cassie/barista-vid-12.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Stop watching",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/200"
+        }
+      }
+    ],
+    "conditions": [
+      10000014,
+      92,
+      10026,
+      5,
+      11104,
+      6
+    ],
+    "effects": [
+      2000,
+      4007,
+      4007,
+      4007,
+      4007,
+      4007,
+      5007
+    ]
+  },
+  {
     "id": "dad0001",
     "type": 3,
     "location": 1009,
@@ -3173,6 +3405,275 @@
     ]
   },
   {
+    "id": "dad0009",
+    "type": 0,
+    "location": 1006,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "The living room is quiet except for the low murmur of the television. Your {{dad}} lowers himself onto the couch beside you with a familiar grunt.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "text",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "What the hell is this crap you're watching?",
+        "character": 3
+      },
+      {
+        "id": 3,
+        "type": "image",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/dad/dad-taking-tv-1.webp"
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "I don't even know. I was bored, so I turned the TV on.",
+        "character": 1
+      },
+      {
+        "id": 5,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Bored? You kids don't know boredom. When I was your age, only two channels, and let me tell ya, they showed dust and test patterns half the time, hahaha.",
+        "character": 3
+      },
+      {
+        "id": 6,
+        "type": "text",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Here it comes. -The when I was a boy- saga.",
+        "character": 1
+      },
+      {
+        "id": 7,
+        "type": "text",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "text": "I won't punish you with all that. But I'll say this: bad TV was the best thing that happened to me. It pushed me outside, where I could meet girls and actually have fun.",
+        "character": 3
+      },
+      {
+        "id": 8,
+        "type": "text",
+        "order": 8,
+        "probability": 100,
+        "styleClass": [],
+        "text": "{{dad}} , I already know about the birds and the bees. No need for the talk.",
+        "character": 1
+      },
+      {
+        "id": 9,
+        "type": "text",
+        "order": 9,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Relax, I'm not launching into the talk. I'm just saying the world's more interesting than that glowing box. That's all. Just advice.",
+        "character": 3
+      },
+      {
+        "id": 10,
+        "type": "text",
+        "order": 10,
+        "probability": 100,
+        "styleClass": [],
+        "text": "The two of you sit in comfortable silence for a beat, the TV still mumbling to itself. Then your father grins, the kind of grin that always comes before something incredibly stupid.",
+        "character": 500
+      },
+      {
+        "id": 11,
+        "type": "text",
+        "order": 11,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You know, back in my day, we didn't have remote controls. But I never needed batteries to turn a woman on.",
+        "character": 3
+      },
+      {
+        "id": 12,
+        "type": "text",
+        "order": 12,
+        "probability": 100,
+        "styleClass": [],
+        "text": "He winks, then pats your knee like he just delivered the punchline of the century.",
+        "character": 500
+      },
+      {
+        "id": 13,
+        "type": "button",
+        "order": 13,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Continue",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1006"
+        }
+      }
+    ],
+    "conditions": [
+      13000000,
+      3004,
+      2001
+    ],
+    "effects": [
+      30,
+      2042,
+      1001002,
+      7003,
+      7002
+    ]
+  },
+  {
+    "id": "dad0010",
+    "type": 0,
+    "location": 1006,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "The couch shifts as your {{dad}} sits beside you, eyes on the TV.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/dad/dad-taking-tv-2.webp"
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "So, everything okay with you these days?",
+        "character": 3
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Yeah, fine. Nothing much.",
+        "character": 1
+      },
+      {
+        "id": 5,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Just then, your {{mom}} crosses in front of the screen, heading into the kitchen. Your {{dad}} watches her go, then turns to you with a smirk.",
+        "character": 500
+      },
+      {
+        "id": 6,
+        "type": "image",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/dad/dad-mom-tv-taking.webp"
+      },
+      {
+        "id": 7,
+        "type": "text",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You know, she’s still as hot as the day I met her.",
+        "character": 3
+      },
+      {
+        "id": 8,
+        "type": "text",
+        "order": 8,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Heat crawls up your neck, but you keep your face straight and your eyes on the television.",
+        "character": 500
+      },
+      {
+        "id": 9,
+        "type": "text",
+        "order": 9,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Is she? I barely noticed.",
+        "character": 1
+      },
+      {
+        "id": 10,
+        "type": "text",
+        "order": 10,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Your {{dad}} laughs, low and knowing, like you two just shared a secret.",
+        "character": 500
+      },
+      {
+        "id": 11,
+        "type": "button",
+        "order": 11,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Continue",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1006"
+        }
+      }
+    ],
+    "conditions": [
+      13000000,
+      2001,
+      20022
+    ],
+    "effects": [
+      30,
+      2042,
+      1001002,
+      7003,
+      7003,
+      7002,
+      7002
+    ]
+  },
+  {
     "id": "dadlil0001",
     "type": 0,
     "location": 1006,
@@ -3237,6 +3738,459 @@
       3005,
       3005,
       2002
+    ]
+  },
+  {
+    "id": "doll0001",
+    "type": 3,
+    "location": 1010,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "The box opens with a soft tear. You lift the doll out, her smooth skin cool against your hands. You squirt a generous amount of gel onto your fingers and rub it over the important zones, making everything slick. Then you turn her over, adjusting her limbs until she’s exactly how you want. Your pulse picks up as you settle into position.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/doll/doll-1.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Finish",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1000"
+        }
+      }
+    ],
+    "conditions": [
+      12000039,
+      201
+    ],
+    "effects": [
+      2005,
+      2005,
+      45,
+      2050,
+      2020,
+      2026,
+      2038,
+      2032,
+      2015
+    ]
+  },
+  {
+    "id": "doll0002",
+    "type": 3,
+    "location": 1010,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "The box opens with a soft tear. You lift the doll out, her smooth skin cool against your hands. You squirt a generous amount of gel onto your fingers and rub it over the important zones, making everything slick. Then you turn her over, adjusting her limbs until she’s exactly how you want. Your pulse picks up as you settle into position.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/doll/doll-2.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Finish",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1000"
+        }
+      }
+    ],
+    "conditions": [
+      12000039,
+      201
+    ],
+    "effects": [
+      2005,
+      2005,
+      45,
+      2050,
+      2020,
+      2026,
+      2038,
+      2032,
+      2015
+    ]
+  },
+  {
+    "id": "doll0003",
+    "type": 3,
+    "location": 1010,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "The box opens with a soft tear. You lift the doll out, her smooth skin cool against your hands. You squirt a generous amount of gel onto your fingers and rub it over the important zones, making everything slick. Then you turn her over, adjusting her limbs until she’s exactly how you want. Your pulse picks up as you settle into position.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/doll/doll-3.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Finish",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1000"
+        }
+      }
+    ],
+    "conditions": [
+      12000039,
+      201
+    ],
+    "effects": [
+      2005,
+      2005,
+      45,
+      2050,
+      2020,
+      2026,
+      2038,
+      2032,
+      2015
+    ]
+  },
+  {
+    "id": "doll0004",
+    "type": 3,
+    "location": 1010,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "The box opens with a soft tear. You lift the doll out, her smooth skin cool against your hands. You squirt a generous amount of gel onto your fingers and rub it over the important zones, making everything slick. Then you turn her over, adjusting her limbs until she’s exactly how you want. Your pulse picks up as you settle into position.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/doll/doll-4.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Finish",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1000"
+        }
+      }
+    ],
+    "conditions": [
+      12000039,
+      201,
+      1
+    ],
+    "effects": [
+      2005,
+      2005,
+      45,
+      2050,
+      2020,
+      2026,
+      2038,
+      2032,
+      2015
+    ]
+  },
+  {
+    "id": "doll0005",
+    "type": 3,
+    "location": 1010,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "The box opens with a soft tear. You lift the doll out, her smooth skin cool against your hands. You squirt a generous amount of gel onto your fingers and rub it over the important zones, making everything slick. Then you turn her over, adjusting her limbs until she’s exactly how you want. Your pulse picks up as you settle into position.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/doll/doll-5.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Finish",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1000"
+        }
+      }
+    ],
+    "conditions": [
+      12000039,
+      201,
+      1
+    ],
+    "effects": [
+      2005,
+      2005,
+      45,
+      2050,
+      2020,
+      2026,
+      2038,
+      2032,
+      2015
+    ]
+  },
+  {
+    "id": "doll0006",
+    "type": 3,
+    "location": 1010,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "The box opens with a soft tear. You lift the doll out, her smooth skin cool against your hands. You squirt a generous amount of gel onto your fingers and rub it over the important zones, making everything slick. Then you turn her over, adjusting her limbs until she’s exactly how you want. Your pulse picks up as you settle into position.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/doll/doll-6.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Finish",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1000"
+        }
+      }
+    ],
+    "conditions": [
+      12000039,
+      201,
+      1
+    ],
+    "effects": [
+      2005,
+      2005,
+      45,
+      2050,
+      2020,
+      2026,
+      2038,
+      2032,
+      2015
+    ]
+  },
+  {
+    "id": "doll0007",
+    "type": 3,
+    "location": 1010,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "The box opens with a soft tear. You lift the doll out, her smooth skin cool against your hands. You squirt a generous amount of gel onto your fingers and rub it over the important zones, making everything slick. Then you turn her over, adjusting her limbs until she’s exactly how you want. Your pulse picks up as you settle into position.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/doll/doll-7.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Finish",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1000"
+        }
+      }
+    ],
+    "conditions": [
+      12000039,
+      201,
+      1
+    ],
+    "effects": [
+      2005,
+      2005,
+      45,
+      2050,
+      2020,
+      2026,
+      2038,
+      2032,
+      2015
+    ]
+  },
+  {
+    "id": "doll0008",
+    "type": 3,
+    "location": 1010,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "The box opens with a soft tear. You lift the doll out, her smooth skin cool against your hands. You squirt a generous amount of gel onto your fingers and rub it over the important zones, making everything slick. Then you turn her over, adjusting her limbs until she’s exactly how you want. Your pulse picks up as you settle into position.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/doll/doll-8.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Finish",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1000"
+        }
+      }
+    ],
+    "conditions": [
+      12000039,
+      201,
+      2
+    ],
+    "effects": [
+      2005,
+      2005,
+      45,
+      2050,
+      2020,
+      2026,
+      2038,
+      2032,
+      2015
     ]
   },
   {
@@ -5676,6 +6630,195 @@
     ]
   },
   {
+    "id": "kimmy0009",
+    "type": 3,
+    "location": 300,
+    "probability": 800,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 50,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You step into the supermarket and catch Kimmy in action—giving the customers some real personal attention. And I mean real attention. Looks like \"first-class service\" here means something a little extra special. You watch as she makes sure every guy leaves with a smile on his face and a lot more than just groceries in his cart.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/kimmy/cajera-vid-9.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Stop watching",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/300"
+        }
+      }
+    ],
+    "conditions": [
+      10000014,
+      92,
+      5,
+      10022,
+      11124,
+      2
+    ],
+    "effects": [
+      2000,
+      5009,
+      4009,
+      4009,
+      4009,
+      4009,
+      4009,
+      4009,
+      4009,
+      4009,
+      4009,
+      4009
+    ]
+  },
+  {
+    "id": "kimmy0010",
+    "type": 3,
+    "location": 300,
+    "probability": 900,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 50,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You step into the supermarket and catch Kimmy in action—giving the customers some real personal attention. And I mean real attention. Looks like \"first-class service\" here means something a little extra special. You watch as she makes sure every guy leaves with a smile on his face and a lot more than just groceries in his cart.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/kimmy/cajera-vid-10.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Stop watching",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/300"
+        }
+      }
+    ],
+    "conditions": [
+      10000014,
+      92,
+      5,
+      10022,
+      11124,
+      3
+    ],
+    "effects": [
+      2000,
+      5009,
+      4009,
+      4009,
+      4009,
+      4009,
+      4009,
+      4009,
+      4009,
+      4009,
+      4009,
+      4009
+    ]
+  },
+  {
+    "id": "kimmy0011",
+    "type": 3,
+    "location": 300,
+    "probability": 1000,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 50,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You step into the supermarket and catch Kimmy in action—giving the customers some real personal attention. And I mean real attention. Looks like \"first-class service\" here means something a little extra special. You watch as she makes sure every guy leaves with a smile on his face and a lot more than just groceries in his cart.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/kimmy/cajera-vid-11.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Stop watching",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/300"
+        }
+      }
+    ],
+    "conditions": [
+      10000014,
+      92,
+      5,
+      10022,
+      11124,
+      4
+    ],
+    "effects": [
+      2000,
+      5009,
+      4009,
+      4009,
+      4009,
+      4009,
+      4009,
+      4009,
+      4009,
+      4009,
+      4009,
+      4009
+    ]
+  },
+  {
     "id": "kitchen0001",
     "type": 2,
     "location": 1007,
@@ -6426,7 +7569,12 @@
         "styleClass": [],
         "functionName": "lauchEventoGroup",
         "parameters": [
-          "mom0002"
+          "mom0002",
+          "dad0009",
+          "dad0010",
+          "mom0013",
+          "mom0014",
+          "momdad0002"
         ],
         "conditions": []
       }
@@ -7786,6 +8934,474 @@
     ]
   },
   {
+    "id": "mom0012",
+    "type": 0,
+    "location": 1000,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "The hallway outside your door was quiet, too quiet. Your eyes were closed, your breathing uneven, the whole world reduced to the rhythm of your own hand. Then the door opened.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/mom/mom-view-jerk.webp"
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Oh, shit, sorry!",
+        "character": 2
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Your eyes fly open. Reality crashes in like cold water. Your {{mom}} is standing at the threshold, one hand on the handle, her expression frozen somewhere between surprise and panic. Your own hand is still exactly where it shouldn't be.",
+        "character": 500
+      },
+      {
+        "id": 5,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "I'll pick up your laundry later.",
+        "character": 2
+      },
+      {
+        "id": 6,
+        "type": "text",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "text": "The door closes again, softer than it opened. You lie there, heart hammering, staring at the ceiling, your arousal rapidly dying under the weight of pure embarrassment.",
+        "character": 500
+      },
+      {
+        "id": 7,
+        "type": "button",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Finish",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1000"
+        }
+      }
+    ],
+    "conditions": [
+      13000000,
+      20000,
+      3004,
+      2000
+    ],
+    "effects": [
+      45,
+      2050,
+      2005,
+      2005,
+      1001001,
+      1001001,
+      1001001,
+      7002,
+      7002,
+      7002,
+      7002,
+      7002
+    ]
+  },
+  {
+    "id": "mom0013",
+    "type": 0,
+    "location": 1006,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "The TV flickers in the dark living room, casting soft shadows. You’re sprawled on the couch, half-watching some sappy movie, when {{mom}} appears in the doorway, a blanket bundled in her arms.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "text",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Mind if I sit with you for a while?",
+        "character": 2
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Of course not, {{mom}}.",
+        "character": 1
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You scoot toward the armrest, making room. She curls up beside you, close enough that her warmth settles against your side. A quiet twenty minutes pass, the movie’s music swelling in all the predictable places.",
+        "character": 500
+      },
+      {
+        "id": 5,
+        "type": "image",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/mom/mom-tv-1.webp"
+      },
+      {
+        "id": 6,
+        "type": "text",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "text": "God, I miss being young.",
+        "character": 2
+      },
+      {
+        "id": 7,
+        "type": "text",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You okay, {{mom}}?",
+        "character": 1
+      },
+      {
+        "id": 8,
+        "type": "text",
+        "order": 8,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Yeah. These movies get to me. They bring back that feeling of falling in love—the first dates, the nervous kisses, all that spark. Please don't get me wrong, I love your {{dad}} . But knowing I'll never feel that particular rush again… it makes me a little wistful.",
+        "character": 2
+      },
+      {
+        "id": 9,
+        "type": "text",
+        "order": 9,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You don’t know what to say, so you do the only thing that feels right: you wrap an arm around her and pull her close. The words slip out before you can second-guess them.",
+        "character": 500
+      },
+      {
+        "id": 10,
+        "type": "text",
+        "order": 10,
+        "probability": 100,
+        "styleClass": [],
+        "text": "I love you {{mom}}.",
+        "character": 1
+      },
+      {
+        "id": 11,
+        "type": "text",
+        "order": 11,
+        "probability": 100,
+        "styleClass": [],
+        "text": "And I love you.",
+        "character": 2
+      },
+      {
+        "id": 12,
+        "type": "text",
+        "order": 12,
+        "probability": 100,
+        "styleClass": [],
+        "text": " Neither of you speaks after that. The movie plays on, forgotten. You stay like that—your arm around her, her hand lightly on your knee—until the credits roll and the screen dims. Then, with a soft pat on your chest, she stands, smooths the blanket, and heads to her room. You follow a few minutes later, the scent of her shampoo still in the air.",
+        "character": 500
+      },
+      {
+        "id": 13,
+        "type": "button",
+        "order": 13,
+        "probability": 100,
+        "styleClass": [],
+        "text": "End movie",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1000"
+        }
+      }
+    ],
+    "conditions": [
+      13000000,
+      20000,
+      2009
+    ],
+    "effects": [
+      31,
+      7002,
+      7002,
+      7002,
+      1001001,
+      1001001,
+      1001001
+    ]
+  },
+  {
+    "id": "mom0014",
+    "type": 0,
+    "location": 1006,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "The TV glows in the dark, and you’re sprawled across the couch when she appears, arms crossed under her chest, her robe loose.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "text",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Can I sit with you a little?",
+        "character": 2
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Always. They’re showing one of those romantic movies you like.",
+        "character": 1
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Good. I couldn’t sleep. Kept tossing, so I figured I’d come keep you company instead.",
+        "character": 2
+      },
+      {
+        "id": 5,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "I’m sorry if it’s because of me.",
+        "character": 1
+      },
+      {
+        "id": 6,
+        "type": "text",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "text": "No, darling. It’s not your fault. You’ve been going through so much, and sometimes I don’t know what to do or how to react. But I know one thing: I love you, and that won’t change. Ever.",
+        "character": 2
+      },
+      {
+        "id": 7,
+        "type": "image",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/mom/mom-tv-2.webp"
+      },
+      {
+        "id": 8,
+        "type": "text",
+        "order": 8,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Her top has slipped lower than it usually sits, exposing a soft shadow of cleavage. You try to be respectful, but your eyes wander. She doesn’t pull the fabric up or call you out.",
+        "character": 500
+      },
+      {
+        "id": 9,
+        "type": "text",
+        "order": 9,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Thanks, {{mom}} . I need you to know I’m not doing this on purpose. You’re the most important person in my life.",
+        "character": 1
+      },
+      {
+        "id": 10,
+        "type": "text",
+        "order": 10,
+        "probability": 100,
+        "styleClass": [],
+        "text": "She leans into you, and you both face the television, her head against your shoulder. The movie hums on, but your focus drifts between the actors and the warm curve of her chest rising and falling with each breath. She’s caught you—more than once—yet she stays quiet, letting you look, letting the silence say what neither of you dares to voice.",
+        "character": 500
+      },
+      {
+        "id": 11,
+        "type": "button",
+        "order": 11,
+        "probability": 100,
+        "styleClass": [],
+        "text": "End movie",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1000"
+        }
+      }
+    ],
+    "conditions": [
+      13000000,
+      20002,
+      2009
+    ],
+    "effects": [
+      31,
+      7002,
+      7002,
+      7002,
+      1001001,
+      1001001,
+      1001001,
+      7002,
+      7002,
+      1001001,
+      1001001
+    ]
+  },
+  {
+    "id": "mom0015",
+    "type": 0,
+    "location": 200,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 10,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "I brought you something to eat. You can't work all day on an empty stomach.",
+        "character": 2
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/mom/mom-work-visit-1.webp"
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "{{mom}} , what are you doing here?",
+        "character": 1
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "I wanted to see how my favorite person was doing at his first job. I'm so proud of you.",
+        "character": 2
+      },
+      {
+        "id": 5,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Come on, you didn't have to...",
+        "character": 1
+      },
+      {
+        "id": 6,
+        "type": "text",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Of course I did. Here, eat a little and keep being responsible.",
+        "character": 2
+      },
+      {
+        "id": 7,
+        "type": "text",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You take the food from her hands. The bag is still warm, and the smell makes your mouth water instantly.",
+        "character": 500
+      },
+      {
+        "id": 8,
+        "type": "button",
+        "order": 8,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Continue working",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/200"
+        }
+      }
+    ],
+    "conditions": [
+      13000003,
+      5
+    ],
+    "effects": [
+      1001001,
+      7002,
+      5
+    ]
+  },
+  {
     "id": "mombro0001",
     "type": 3,
     "location": 1007,
@@ -7987,6 +9603,173 @@
       1002001,
       5002,
       5003
+    ]
+  },
+  {
+    "id": "momdad0002",
+    "type": 0,
+    "location": 1006,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 10,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You're sprawled on the couch, flipping channels without much conviction. The cushion beside you sinks: your {{dad}} drops down with a sigh. A few seconds later your {{mom}} appears with two cups of coffee.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/momxdad/mom-dad-living-two.webp"
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "What are you two watching?",
+        "character": 2
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Nothing important. I was just letting the TV decide for me.",
+        "character": 1
+      },
+      {
+        "id": 5,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Perfect for a quiet moment.",
+        "character": 3
+      },
+      {
+        "id": 6,
+        "type": "text",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "text": "The movie playing shows a couple embracing in a parking lot under light rain. Your {{dad}} lets out a low laugh, the kind that carries memories.",
+        "character": 500
+      },
+      {
+        "id": 7,
+        "type": "text",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Do you remember, honey, that night in the movie theater parking lot? With the storm and your soaked dress... We didn't even see half of the movie.",
+        "character": 3
+      },
+      {
+        "id": 8,
+        "type": "text",
+        "order": 8,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Your {{mom}} tenses her shoulders, her gaze darting from the screen to your {{dad}} , a mix of laughter and panic.",
+        "character": 500
+      },
+      {
+        "id": 9,
+        "type": "text",
+        "order": 9,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Hey! Don't talk about that here, we're not alone.",
+        "character": 2
+      },
+      {
+        "id": 10,
+        "type": "text",
+        "order": 10,
+        "probability": 100,
+        "styleClass": [],
+        "text": "She gives his arm a playful slap. Your {{dad}} raises his hands, pretending to surrender, but the smile doesn't leave his face for a second.",
+        "character": 500
+      },
+      {
+        "id": 11,
+        "type": "text",
+        "order": 11,
+        "probability": 100,
+        "styleClass": [],
+        "text": "I'm just saying that night you gave me your best smile... and something else I won't mention. Oh no, just kidding, just kidding.",
+        "character": 3
+      },
+      {
+        "id": 12,
+        "type": "text",
+        "order": 12,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Oh, shut up. You have no shame, do you?",
+        "character": 2
+      },
+      {
+        "id": 13,
+        "type": "text",
+        "order": 13,
+        "probability": 100,
+        "styleClass": [],
+        "text": "...I think I'll go get some water.",
+        "character": 1
+      },
+      {
+        "id": 14,
+        "type": "text",
+        "order": 14,
+        "probability": 100,
+        "styleClass": [],
+        "text": "But you don't move. You stay there, eyes fixed on the TV, ears burning, while your {{dad}} wraps his arm around your {{mom}} 's shoulders and whispers something you can't hear. She lets out a soft giggle and leans into him, still blushing. The movie continues, but your mind is already racing with mental images.",
+        "character": 500
+      },
+      {
+        "id": 15,
+        "type": "button",
+        "order": 15,
+        "probability": 100,
+        "styleClass": [],
+        "text": "End movie",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1000"
+        }
+      }
+    ],
+    "conditions": [
+      13000003,
+      5,
+      2003
+    ],
+    "effects": [
+      1001001,
+      1001001,
+      1001002,
+      1001002,
+      1002001,
+      1002001,
+      7002,
+      7002,
+      7003,
+      7003,
+      31
     ]
   },
   {
@@ -8283,6 +10066,137 @@
     ],
     "conditions": [
       10000019,
+      13000000
+    ],
+    "effects": [
+      1001011,
+      2042
+    ]
+  },
+  {
+    "id": "morgan0004",
+    "type": 3,
+    "location": 220,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Well, well. Look who finally decided to become a permanent exhibit. You’re here more often than some employees.",
+        "character": 12
+      },
+      {
+        "id": 2,
+        "type": "text",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "What can I say? I’ve developed a deep, meaningful connection with dusty halls and old projectors. Total culture lover, hehe.",
+        "character": 1
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You’re adorable. But seriously, this place feels brighter when you’re around. You know you’re always welcome, right?",
+        "character": 12
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "After a welcome like that, how could I stay away? So, how’s funding? Still drowning or finally floating?",
+        "character": 1
+      },
+      {
+        "id": 5,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Floating. Actually, more than floating—we’re cruising. No more panic attacks over the power bill. I even slept through the night.",
+        "character": 12
+      },
+      {
+        "id": 6,
+        "type": "text",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "text": "That’s honestly great. You deserve the calm.",
+        "character": 1
+      },
+      {
+        "id": 7,
+        "type": "text",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Out of the corner of your eye, you notice a visitor hovering near the reception, glancing at Morgan with the impatience of someone who wants help.",
+        "character": 500
+      },
+      {
+        "id": 8,
+        "type": "text",
+        "order": 8,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Ugh, duty calls. Before I go,new films arrived for the mini cinema. Go see one, on the house if you want. And next slow day, I want that longer chat. No interruptions.",
+        "character": 12
+      },
+      {
+        "id": 9,
+        "type": "text",
+        "order": 9,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Deal. I’ll hold you to that.",
+        "character": 1
+      },
+      {
+        "id": 10,
+        "type": "text",
+        "order": 10,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You better. Later, culture lover.",
+        "character": 12
+      },
+      {
+        "id": 11,
+        "type": "text",
+        "order": 11,
+        "probability": 100,
+        "styleClass": [],
+        "text": "She gives you a quick smile, then walks toward the waiting visitor, already shifting into professional mode.",
+        "character": 500
+      },
+      {
+        "id": 12,
+        "type": "button",
+        "order": 12,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Finish",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/220"
+        }
+      }
+    ],
+    "conditions": [
+      10000020,
       13000000
     ],
     "effects": [
@@ -8766,6 +10680,280 @@
       1000007,
       10000019,
       2,
+      5
+    ],
+    "effects": [
+      2001,
+      30,
+      10105,
+      10105,
+      10105,
+      2000003
+    ]
+  },
+  {
+    "id": "museo0010",
+    "type": 3,
+    "location": 2201,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 5,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You find a spot right in the middle of the museum’s modest screening room. The cushion hugs you way better than you’d have guessed, so you lean back, let your shoulders drop, and surrender to a first-rate educational feature.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/museum/mus-10.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Stop watching",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/220"
+        }
+      }
+    ],
+    "conditions": [
+      1000007,
+      10000019,
+      3,
+      5
+    ],
+    "effects": [
+      2001,
+      30,
+      10105,
+      10105,
+      10105,
+      2000003
+    ]
+  },
+  {
+    "id": "museo0011",
+    "type": 3,
+    "location": 2201,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 5,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You find a spot right in the middle of the museum’s modest screening room. The cushion hugs you way better than you’d have guessed, so you lean back, let your shoulders drop, and surrender to a first-rate educational feature.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/museum/mus-11.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Stop watching",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/220"
+        }
+      }
+    ],
+    "conditions": [
+      1000007,
+      10000019,
+      4,
+      5
+    ],
+    "effects": [
+      2001,
+      30,
+      10105,
+      10105,
+      10105,
+      2000003
+    ]
+  },
+  {
+    "id": "museo0012",
+    "type": 3,
+    "location": 2201,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 5,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You find a spot right in the middle of the museum’s modest screening room. The cushion hugs you way better than you’d have guessed, so you lean back, let your shoulders drop, and surrender to a first-rate educational feature.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/museum/mus-12.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Stop watching",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/220"
+        }
+      }
+    ],
+    "conditions": [
+      1000007,
+      10000019,
+      6,
+      5
+    ],
+    "effects": [
+      2001,
+      30,
+      10105,
+      10105,
+      10105,
+      2000003
+    ]
+  },
+  {
+    "id": "museo0013",
+    "type": 3,
+    "location": 2201,
+    "probability": 300,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 8,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You find a spot right in the middle of the museum’s modest screening room. The cushion hugs you way better than you’d have guessed, so you lean back, let your shoulders drop, and surrender to a first-rate educational feature.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/museum/mus-13.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Stop watching",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/220"
+        }
+      }
+    ],
+    "conditions": [
+      1000007,
+      10000020,
+      5
+    ],
+    "effects": [
+      2001,
+      30,
+      10105,
+      10105,
+      10105,
+      2000003
+    ]
+  },
+  {
+    "id": "museo0014",
+    "type": 3,
+    "location": 2201,
+    "probability": 300,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 8,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You find a spot right in the middle of the museum’s modest screening room. The cushion hugs you way better than you’d have guessed, so you lean back, let your shoulders drop, and surrender to a first-rate educational feature.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "video",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/museum/mus-14.webm"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Stop watching",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/220"
+        }
+      }
+    ],
+    "conditions": [
+      1000007,
+      10000020,
+      1,
       5
     ],
     "effects": [
@@ -10454,6 +12642,18 @@
           "type": "redirection",
           "value": "location/1000"
         }
+      },
+      {
+        "id": 11,
+        "type": "code",
+        "order": 11,
+        "probability": 100,
+        "styleClass": [],
+        "functionName": "lauchEventoGroup",
+        "parameters": [
+          "mom0012"
+        ],
+        "conditions": []
       }
     ],
     "conditions": [],
@@ -10517,6 +12717,52 @@
     "conditions": [],
     "effects": [
       13
+    ]
+  },
+  {
+    "id": "yourroom0007",
+    "type": 2,
+    "location": 1048,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 1,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You take a nap.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/yourroom/hero-nap.gif"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Wake up",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1000"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      4,
+      31
     ]
   }
 ]

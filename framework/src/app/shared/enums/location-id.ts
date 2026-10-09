@@ -21,6 +21,8 @@ export enum LocationID {
   BACKYARD = 1008,
   GARAGE = 1009,
 
+  FUCK_DOLL = 1010,
+
   /****** Activities Home *****/
 
 
@@ -50,6 +52,8 @@ export enum LocationID {
   CHAT_WITH_OLD_SIS_LIVINGROOM = 1044,
   CODE_PATREON = 1045,
   FAMILY_DINNER = 1046,
+  NAP = 1048,
+  SUNBATHING= 1049,
 
   /****** DOWNTOWN  *****/
 
