@@ -62,5 +62,5 @@ jobs:
           name: electron-app-${{ matrix.os }}
           # Usamos la carpeta configurada en package.json (release/)
           path: |
-            framework/release/*.zip
-            framework/release/linux-unpacked/
+            framework/release/*-unpacked/
+
