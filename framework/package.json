@@ -30,20 +30,18 @@
     ],
     "mac": {
       "target": [
-        "dmg",
-        "zip"
+        "dir"
+
       ]
     },
     "win": {
       "target": [
-        "nsis",
-        "zip"
+        "dir"
       ]
     },
     "linux": {
       "target": [
-        "AppImage",
-        "tar.gz"
+        "dir"
       ]
     }
   },
