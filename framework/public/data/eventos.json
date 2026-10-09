@@ -800,6 +800,18 @@
           "type": "redirection",
           "value": "location/200"
         }
+      },
+      {
+        "id": 5,
+        "type": "code",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "functionName": "lauchEventoGroup",
+        "parameters": [
+          "mom0015"
+        ],
+        "conditions": []
       }
     ],
     "conditions": [],
@@ -3390,6 +3402,275 @@
       1001002,
       7003,
       2015
+    ]
+  },
+  {
+    "id": "dad0009",
+    "type": 0,
+    "location": 1006,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "The living room is quiet except for the low murmur of the television. Your {{dad}} lowers himself onto the couch beside you with a familiar grunt.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "text",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "What the hell is this crap you're watching?",
+        "character": 3
+      },
+      {
+        "id": 3,
+        "type": "image",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/dad/dad-taking-tv-1.webp"
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "I don't even know. I was bored, so I turned the TV on.",
+        "character": 1
+      },
+      {
+        "id": 5,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Bored? You kids don't know boredom. When I was your age, only two channels, and let me tell ya, they showed dust and test patterns half the time, hahaha.",
+        "character": 3
+      },
+      {
+        "id": 6,
+        "type": "text",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Here it comes. -The when I was a boy- saga.",
+        "character": 1
+      },
+      {
+        "id": 7,
+        "type": "text",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "text": "I won't punish you with all that. But I'll say this: bad TV was the best thing that happened to me. It pushed me outside, where I could meet girls and actually have fun.",
+        "character": 3
+      },
+      {
+        "id": 8,
+        "type": "text",
+        "order": 8,
+        "probability": 100,
+        "styleClass": [],
+        "text": "{{dad}} , I already know about the birds and the bees. No need for the talk.",
+        "character": 1
+      },
+      {
+        "id": 9,
+        "type": "text",
+        "order": 9,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Relax, I'm not launching into the talk. I'm just saying the world's more interesting than that glowing box. That's all. Just advice.",
+        "character": 3
+      },
+      {
+        "id": 10,
+        "type": "text",
+        "order": 10,
+        "probability": 100,
+        "styleClass": [],
+        "text": "The two of you sit in comfortable silence for a beat, the TV still mumbling to itself. Then your father grins, the kind of grin that always comes before something incredibly stupid.",
+        "character": 500
+      },
+      {
+        "id": 11,
+        "type": "text",
+        "order": 11,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You know, back in my day, we didn't have remote controls. But I never needed batteries to turn a woman on.",
+        "character": 3
+      },
+      {
+        "id": 12,
+        "type": "text",
+        "order": 12,
+        "probability": 100,
+        "styleClass": [],
+        "text": "He winks, then pats your knee like he just delivered the punchline of the century.",
+        "character": 500
+      },
+      {
+        "id": 13,
+        "type": "button",
+        "order": 13,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Continue",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1006"
+        }
+      }
+    ],
+    "conditions": [
+      13000000,
+      3004,
+      2001
+    ],
+    "effects": [
+      30,
+      2042,
+      1001002,
+      7003,
+      7002
+    ]
+  },
+  {
+    "id": "dad0010",
+    "type": 0,
+    "location": 1006,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "The couch shifts as your {{dad}} sits beside you, eyes on the TV.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/dad/dad-taking-tv-2.webp"
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "So, everything okay with you these days?",
+        "character": 3
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Yeah, fine. Nothing much.",
+        "character": 1
+      },
+      {
+        "id": 5,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Just then, your {{mom}} crosses in front of the screen, heading into the kitchen. Your {{dad}} watches her go, then turns to you with a smirk.",
+        "character": 500
+      },
+      {
+        "id": 6,
+        "type": "image",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/dad/dad-mom-tv-taking.webp"
+      },
+      {
+        "id": 7,
+        "type": "text",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You know, she’s still as hot as the day I met her.",
+        "character": 3
+      },
+      {
+        "id": 8,
+        "type": "text",
+        "order": 8,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Heat crawls up your neck, but you keep your face straight and your eyes on the television.",
+        "character": 500
+      },
+      {
+        "id": 9,
+        "type": "text",
+        "order": 9,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Is she? I barely noticed.",
+        "character": 1
+      },
+      {
+        "id": 10,
+        "type": "text",
+        "order": 10,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Your {{dad}} laughs, low and knowing, like you two just shared a secret.",
+        "character": 500
+      },
+      {
+        "id": 11,
+        "type": "button",
+        "order": 11,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Continue",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1006"
+        }
+      }
+    ],
+    "conditions": [
+      13000000,
+      2001,
+      20022
+    ],
+    "effects": [
+      30,
+      2042,
+      1001002,
+      7003,
+      7003,
+      7002,
+      7002
     ]
   },
   {
@@ -7288,7 +7569,12 @@
         "styleClass": [],
         "functionName": "lauchEventoGroup",
         "parameters": [
-          "mom0002"
+          "mom0002",
+          "dad0009",
+          "dad0010",
+          "mom0013",
+          "mom0014",
+          "momdad0002"
         ],
         "conditions": []
       }
@@ -8745,6 +9031,377 @@
     ]
   },
   {
+    "id": "mom0013",
+    "type": 0,
+    "location": 1006,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "The TV flickers in the dark living room, casting soft shadows. You’re sprawled on the couch, half-watching some sappy movie, when {{mom}} appears in the doorway, a blanket bundled in her arms.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "text",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Mind if I sit with you for a while?",
+        "character": 2
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Of course not, {{mom}}.",
+        "character": 1
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You scoot toward the armrest, making room. She curls up beside you, close enough that her warmth settles against your side. A quiet twenty minutes pass, the movie’s music swelling in all the predictable places.",
+        "character": 500
+      },
+      {
+        "id": 5,
+        "type": "image",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/mom/mom-tv-1.webp"
+      },
+      {
+        "id": 6,
+        "type": "text",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "text": "God, I miss being young.",
+        "character": 2
+      },
+      {
+        "id": 7,
+        "type": "text",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You okay, {{mom}}?",
+        "character": 1
+      },
+      {
+        "id": 8,
+        "type": "text",
+        "order": 8,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Yeah. These movies get to me. They bring back that feeling of falling in love—the first dates, the nervous kisses, all that spark. Please don't get me wrong, I love your {{dad}} . But knowing I'll never feel that particular rush again… it makes me a little wistful.",
+        "character": 2
+      },
+      {
+        "id": 9,
+        "type": "text",
+        "order": 9,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You don’t know what to say, so you do the only thing that feels right: you wrap an arm around her and pull her close. The words slip out before you can second-guess them.",
+        "character": 500
+      },
+      {
+        "id": 10,
+        "type": "text",
+        "order": 10,
+        "probability": 100,
+        "styleClass": [],
+        "text": "I love you {{mom}}.",
+        "character": 1
+      },
+      {
+        "id": 11,
+        "type": "text",
+        "order": 11,
+        "probability": 100,
+        "styleClass": [],
+        "text": "And I love you.",
+        "character": 2
+      },
+      {
+        "id": 12,
+        "type": "text",
+        "order": 12,
+        "probability": 100,
+        "styleClass": [],
+        "text": " Neither of you speaks after that. The movie plays on, forgotten. You stay like that—your arm around her, her hand lightly on your knee—until the credits roll and the screen dims. Then, with a soft pat on your chest, she stands, smooths the blanket, and heads to her room. You follow a few minutes later, the scent of her shampoo still in the air.",
+        "character": 500
+      },
+      {
+        "id": 13,
+        "type": "button",
+        "order": 13,
+        "probability": 100,
+        "styleClass": [],
+        "text": "End movie",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1000"
+        }
+      }
+    ],
+    "conditions": [
+      13000000,
+      20000,
+      2009
+    ],
+    "effects": [
+      31,
+      7002,
+      7002,
+      7002,
+      1001001,
+      1001001,
+      1001001
+    ]
+  },
+  {
+    "id": "mom0014",
+    "type": 0,
+    "location": 1006,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "The TV glows in the dark, and you’re sprawled across the couch when she appears, arms crossed under her chest, her robe loose.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "text",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Can I sit with you a little?",
+        "character": 2
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Always. They’re showing one of those romantic movies you like.",
+        "character": 1
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Good. I couldn’t sleep. Kept tossing, so I figured I’d come keep you company instead.",
+        "character": 2
+      },
+      {
+        "id": 5,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "I’m sorry if it’s because of me.",
+        "character": 1
+      },
+      {
+        "id": 6,
+        "type": "text",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "text": "No, darling. It’s not your fault. You’ve been going through so much, and sometimes I don’t know what to do or how to react. But I know one thing: I love you, and that won’t change. Ever.",
+        "character": 2
+      },
+      {
+        "id": 7,
+        "type": "image",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/mom/mom-tv-2.webp"
+      },
+      {
+        "id": 8,
+        "type": "text",
+        "order": 8,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Her top has slipped lower than it usually sits, exposing a soft shadow of cleavage. You try to be respectful, but your eyes wander. She doesn’t pull the fabric up or call you out.",
+        "character": 500
+      },
+      {
+        "id": 9,
+        "type": "text",
+        "order": 9,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Thanks, {{mom}} . I need you to know I’m not doing this on purpose. You’re the most important person in my life.",
+        "character": 1
+      },
+      {
+        "id": 10,
+        "type": "text",
+        "order": 10,
+        "probability": 100,
+        "styleClass": [],
+        "text": "She leans into you, and you both face the television, her head against your shoulder. The movie hums on, but your focus drifts between the actors and the warm curve of her chest rising and falling with each breath. She’s caught you—more than once—yet she stays quiet, letting you look, letting the silence say what neither of you dares to voice.",
+        "character": 500
+      },
+      {
+        "id": 11,
+        "type": "button",
+        "order": 11,
+        "probability": 100,
+        "styleClass": [],
+        "text": "End movie",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1000"
+        }
+      }
+    ],
+    "conditions": [
+      13000000,
+      20002,
+      2009
+    ],
+    "effects": [
+      31,
+      7002,
+      7002,
+      7002,
+      1001001,
+      1001001,
+      1001001,
+      7002,
+      7002,
+      1001001,
+      1001001
+    ]
+  },
+  {
+    "id": "mom0015",
+    "type": 0,
+    "location": 200,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 10,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "I brought you something to eat. You can't work all day on an empty stomach.",
+        "character": 2
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/mom/mom-work-visit-1.webp"
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "{{mom}} , what are you doing here?",
+        "character": 1
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "I wanted to see how my favorite person was doing at his first job. I'm so proud of you.",
+        "character": 2
+      },
+      {
+        "id": 5,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Come on, you didn't have to...",
+        "character": 1
+      },
+      {
+        "id": 6,
+        "type": "text",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Of course I did. Here, eat a little and keep being responsible.",
+        "character": 2
+      },
+      {
+        "id": 7,
+        "type": "text",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You take the food from her hands. The bag is still warm, and the smell makes your mouth water instantly.",
+        "character": 500
+      },
+      {
+        "id": 8,
+        "type": "button",
+        "order": 8,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Continue working",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/200"
+        }
+      }
+    ],
+    "conditions": [
+      13000003,
+      5
+    ],
+    "effects": [
+      1001001,
+      7002,
+      5
+    ]
+  },
+  {
     "id": "mombro0001",
     "type": 3,
     "location": 1007,
@@ -8946,6 +9603,173 @@
       1002001,
       5002,
       5003
+    ]
+  },
+  {
+    "id": "momdad0002",
+    "type": 0,
+    "location": 1006,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 10,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You're sprawled on the couch, flipping channels without much conviction. The cushion beside you sinks: your {{dad}} drops down with a sigh. A few seconds later your {{mom}} appears with two cups of coffee.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/momxdad/mom-dad-living-two.webp"
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "What are you two watching?",
+        "character": 2
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Nothing important. I was just letting the TV decide for me.",
+        "character": 1
+      },
+      {
+        "id": 5,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Perfect for a quiet moment.",
+        "character": 3
+      },
+      {
+        "id": 6,
+        "type": "text",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "text": "The movie playing shows a couple embracing in a parking lot under light rain. Your {{dad}} lets out a low laugh, the kind that carries memories.",
+        "character": 500
+      },
+      {
+        "id": 7,
+        "type": "text",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Do you remember, honey, that night in the movie theater parking lot? With the storm and your soaked dress... We didn't even see half of the movie.",
+        "character": 3
+      },
+      {
+        "id": 8,
+        "type": "text",
+        "order": 8,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Your {{mom}} tenses her shoulders, her gaze darting from the screen to your {{dad}} , a mix of laughter and panic.",
+        "character": 500
+      },
+      {
+        "id": 9,
+        "type": "text",
+        "order": 9,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Hey! Don't talk about that here, we're not alone.",
+        "character": 2
+      },
+      {
+        "id": 10,
+        "type": "text",
+        "order": 10,
+        "probability": 100,
+        "styleClass": [],
+        "text": "She gives his arm a playful slap. Your {{dad}} raises his hands, pretending to surrender, but the smile doesn't leave his face for a second.",
+        "character": 500
+      },
+      {
+        "id": 11,
+        "type": "text",
+        "order": 11,
+        "probability": 100,
+        "styleClass": [],
+        "text": "I'm just saying that night you gave me your best smile... and something else I won't mention. Oh no, just kidding, just kidding.",
+        "character": 3
+      },
+      {
+        "id": 12,
+        "type": "text",
+        "order": 12,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Oh, shut up. You have no shame, do you?",
+        "character": 2
+      },
+      {
+        "id": 13,
+        "type": "text",
+        "order": 13,
+        "probability": 100,
+        "styleClass": [],
+        "text": "...I think I'll go get some water.",
+        "character": 1
+      },
+      {
+        "id": 14,
+        "type": "text",
+        "order": 14,
+        "probability": 100,
+        "styleClass": [],
+        "text": "But you don't move. You stay there, eyes fixed on the TV, ears burning, while your {{dad}} wraps his arm around your {{mom}} 's shoulders and whispers something you can't hear. She lets out a soft giggle and leans into him, still blushing. The movie continues, but your mind is already racing with mental images.",
+        "character": 500
+      },
+      {
+        "id": 15,
+        "type": "button",
+        "order": 15,
+        "probability": 100,
+        "styleClass": [],
+        "text": "End movie",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1000"
+        }
+      }
+    ],
+    "conditions": [
+      13000003,
+      5,
+      2003
+    ],
+    "effects": [
+      1001001,
+      1001001,
+      1001002,
+      1001002,
+      1002001,
+      1002001,
+      7002,
+      7002,
+      7003,
+      7003,
+      31
     ]
   },
   {

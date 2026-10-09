@@ -60,7 +60,7 @@
       "probability": 100,
       "styleClass": [],
       "functionName": "lauchEventoGroup",
-      "parameters": ["mom0002"],
+      "parameters": ["mom0002","dad0009","dad0010","mom0013","mom0014","momdad0002"],
       "conditions": []
     }
   ],
