@@ -466,7 +466,9 @@
     "lastTimeVisited": 0,
     "styleClass": [],
     "conditionsAvailable": [],
-    "conditionsVisible": [],
+    "conditionsVisible": [
+      8
+    ],
     "subLocations": []
   },
   {
