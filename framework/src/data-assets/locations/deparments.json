@@ -1,0 +1,20 @@
+{
+  "id": 240,
+  "name": "Departments",
+  "type": 20,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "assets/img/locations/building/departments.webp"
+    }
+  ],
+  "url": "location/240",
+  "backUrl": "location/20",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [],
+  "conditionsVisible": [3005,10000009],
+  "subLocations": []
+}

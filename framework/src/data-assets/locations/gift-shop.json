@@ -1,0 +1,20 @@
+{
+  "id": 310,
+  "name": "Gift Shop",
+  "type": 20,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "assets/img/locations/building/gift-shop.webp"
+    }
+  ],
+  "url": "location/310",
+  "backUrl": "location/30",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [2000],
+  "conditionsVisible": [],
+  "subLocations": [3101]
+}

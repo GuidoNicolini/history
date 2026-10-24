@@ -1,0 +1,20 @@
+{
+  "id": 2331,
+  "name": "Running",
+  "type": 100,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "assets/img/locations/activities/park-running.jpg"
+    }
+  ],
+  "url": "evento/park0001",
+  "backUrl": "park0001",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [14],
+  "conditionsVisible": [],
+  "subLocations": []
+}

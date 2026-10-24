@@ -1,0 +1,20 @@
+{
+  "id": 230,
+  "name": "Park",
+  "type": 20,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "assets/img/locations/building/park.jpg"
+    }
+  ],
+  "url": "location/230",
+  "backUrl": "location/20",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [],
+  "conditionsVisible": [10000009],
+  "subLocations": [2301,2302,2303,2331]
+}

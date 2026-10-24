@@ -679,6 +679,13 @@
     "value": 5
   },
   {
+    "id": 10000028,
+    "type": "flag",
+    "target": "cheat_on",
+    "operator": "==",
+    "value": "true"
+  },
+  {
     "id": 5,
     "type": "cd",
     "target": "",
@@ -1753,6 +1760,20 @@
     "id": 1001001,
     "type": "item",
     "target": "snack",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 1001011,
+    "type": "item",
+    "target": "willAccess",
+    "operator": "<",
+    "value": 1
+  },
+  {
+    "id": 1001010,
+    "type": "item",
+    "target": "willAccess",
     "operator": ">=",
     "value": 1
   },
