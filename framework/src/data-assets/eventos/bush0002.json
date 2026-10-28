@@ -1,0 +1,46 @@
+{
+  "id": "bush0002",
+  "type": 3,
+  "location": 2302,
+  "probability": 99999,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 0,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "You find a white rabbit behind the bushes",
+      "character": 500
+    },
+    {
+      "id": 2,
+      "type": "image",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "image": "assets/img/eventos/locations/park/bush-rabbit.webp"
+    },
+    {
+      "id": 3,
+      "type": "button",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Follow it",
+      "conditions": [],
+      "cubeAction": {
+        "type": "redirection",
+        "value": "location/1000"
+      }
+    }
+  ],
+  "conditions": [
+    10000028,
+    13000000
+  ],
+  "effects": []
+}

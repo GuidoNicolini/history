@@ -16,6 +16,15 @@ export enum CharacterID {
 
   MORGAN = 12, // Morgan Rodríguez - Museo
 
+  MICAELA = 13, // Lady Dee - EMPLEADA gift shop
+
+  MONIQUE = 14, // Codi bryant - williams mom
+  NAOMI = 15,  // Ania ivy - williams hija
+  JAMES = 400, // padre williams
+
+
+
+
   NARRATOR= 500,
   NONE = 99999
 

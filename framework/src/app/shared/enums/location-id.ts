@@ -3,7 +3,7 @@ export enum LocationID {
 
   HAPPYCITY = 1,
 
-  /****** Neigborhood  *****/
+  /************************* Neigborhood  *****/
 
   NEIGBORHOOD = 10,
 
@@ -55,7 +55,22 @@ export enum LocationID {
   NAP = 1048,
   SUNBATHING= 1049,
 
-  /****** DOWNTOWN  *****/
+  /****** williams *****/
+
+
+  WILLIAMS = 110,
+  WILLIAMS_FRONT_DOOR = 1101,
+  WILLIAMS_BACKYARD = 1102,
+  WILLIAMS_LIVINGROOM = 1103,
+  WILLIAMS_KITCHEN = 1104,
+  WILLIAMS_BATHROOM = 1105,
+  WILLIAMS_MASTERROOM = 1106,
+  WILLIAMS_DAUGHTER_ROOM= 1107,
+
+
+  /****** ACTIVITIES williams *****/
+
+  /************************** DOWNTOWN  *****/
 
   DOWNTOWN = 20,
 
@@ -65,7 +80,6 @@ export enum LocationID {
   CAFE_BATHROOM = 2001,
   CAFE_BOSS_OFFICE = 2002,
   CAFE_TABLES = 2003,
-
 
   /****** Activities cafe  *****/
 
@@ -91,8 +105,8 @@ export enum LocationID {
 
 
   /****** Activities GYM  *****/
-BENCH_PRESS = 2121,
-STRETCH_GYM = 2122,
+  BENCH_PRESS = 2121,
+  STRETCH_GYM = 2122,
   SHOWER_GYM =2123,
   DRINK_PROTEIN = 2124,
   BUY_GYM_COIN = 2125,
@@ -111,8 +125,27 @@ STRETCH_GYM = 2122,
   DONATIONS = 2234,
 
 
+  /****** Park *****/
 
-  /****** COMMERCIAL DISTRIC  *****/
+  PARK = 230,
+  PARK_BENCH = 2301,
+  PARK_BUSHES = 2302,
+  PARK_FOUNTAIN = 2303,
+
+  /****** Activities Park *****/
+
+  PARK_BENCH_REST = 2330,
+  PARK_RUNNING = 2331,
+
+
+  /****** Departments *****/
+
+  DEPARMENTS = 240,
+
+  /****** activities Departments *****/
+
+
+  /********************************** COMMERCIAL DISTRIC  *****/
 
 COMMERCIAL_DISTRIC = 30,
 
@@ -120,12 +153,19 @@ COMMERCIAL_DISTRIC = 30,
 
   /****** SUPERMARKET *****/
 
-SUPERMARKET = 300,
+  SUPERMARKET = 300,
+
+  /****** GIFT SHOP *****/
+
+  GIFT_SHOP = 310,
 
   /****** ACTIVITIES SUPERMARKET *****/
 
-  BUY = 3001,
+  BUY_SUPER = 3001,
   CHAT_KIMMY = 3002,
 
 
+  /****** ACTIVITIES GIFT SHOP *****/
+
+  BUY_GIFT = 3101,
 }

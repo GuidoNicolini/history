@@ -66,13 +66,13 @@
     "isVisible": true,
     "lastTimeVisited": 0,
     "styleClass": [],
-    "conditionsAvailable": [
-      5
-    ],
+    "conditionsAvailable": [],
     "conditionsVisible": [
       10000005,
       11000005,
-      3001
+      3001,
+      5,
+      13000002
     ],
     "subLocations": []
   },
@@ -93,9 +93,11 @@
     "lastTimeVisited": 0,
     "styleClass": [],
     "conditionsAvailable": [
+      2007
+    ],
+    "conditionsVisible": [
       5
     ],
-    "conditionsVisible": [],
     "subLocations": []
   },
   {
@@ -187,13 +189,33 @@
     "styleClass": [],
     "conditionsAvailable": [
       12,
-      5,
       2003
     ],
     "conditionsVisible": [
       10000004,
-      3000
+      3000,
+      5
     ],
+    "subLocations": []
+  },
+  {
+    "id": 3101,
+    "name": "Buy",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/buy-gift-shop.webp"
+      }
+    ],
+    "url": "evento/giftshop0001",
+    "backUrl": "giftshop0001",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
     "subLocations": []
   },
   {
@@ -464,9 +486,13 @@
     "isAvailable": true,
     "isVisible": true,
     "lastTimeVisited": 0,
-    "styleClass": [],
+    "styleClass": [
+      "brilliant"
+    ],
     "conditionsAvailable": [],
-    "conditionsVisible": [],
+    "conditionsVisible": [
+      8
+    ],
     "subLocations": []
   },
   {
@@ -675,12 +701,12 @@
     "styleClass": [],
     "conditionsAvailable": [
       12,
-      5,
       2002
     ],
     "conditionsVisible": [
       10000004,
-      3000
+      3000,
+      5
     ],
     "subLocations": []
   },
@@ -700,13 +726,13 @@
     "isVisible": true,
     "lastTimeVisited": 0,
     "styleClass": [],
-    "conditionsAvailable": [
-      5
-    ],
+    "conditionsAvailable": [],
     "conditionsVisible": [
       10000004,
       11000001,
-      3001
+      3001,
+      5,
+      13000002
     ],
     "subLocations": []
   },
@@ -770,12 +796,12 @@
     "styleClass": [],
     "conditionsAvailable": [
       12,
-      5,
       2003
     ],
     "conditionsVisible": [
       10000004,
-      3000
+      3000,
+      5
     ],
     "subLocations": []
   },
@@ -795,13 +821,13 @@
     "isVisible": true,
     "lastTimeVisited": 0,
     "styleClass": [],
-    "conditionsAvailable": [
-      5
-    ],
+    "conditionsAvailable": [],
     "conditionsVisible": [
       11000002,
       10000007,
-      3001
+      3001,
+      5,
+      13000002
     ],
     "subLocations": []
   },
@@ -821,13 +847,13 @@
     "isVisible": true,
     "lastTimeVisited": 0,
     "styleClass": [],
-    "conditionsAvailable": [
-      5
-    ],
+    "conditionsAvailable": [],
     "conditionsVisible": [
       10000009,
       11000003,
-      3001
+      3001,
+      5,
+      13000002
     ],
     "subLocations": []
   },
@@ -847,13 +873,13 @@
     "isVisible": true,
     "lastTimeVisited": 0,
     "styleClass": [],
-    "conditionsAvailable": [
-      5
-    ],
+    "conditionsAvailable": [],
     "conditionsVisible": [
       11000004,
       10000006,
-      3001
+      3001,
+      5,
+      13000002
     ],
     "subLocations": []
   },
@@ -901,6 +927,50 @@
     "conditionsVisible": [
       12000037
     ],
+    "subLocations": []
+  },
+  {
+    "id": 2330,
+    "name": "Rest",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/park-act-rest.webp"
+      }
+    ],
+    "url": "evento/bench0001",
+    "backUrl": "bench0001",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      5
+    ],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 2331,
+    "name": "Running",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/park-running.jpg"
+      }
+    ],
+    "url": "evento/park0001",
+    "backUrl": "park0001",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      14
+    ],
+    "conditionsVisible": [],
     "subLocations": []
   },
   {
@@ -1142,12 +1212,12 @@
     "lastTimeVisited": 0,
     "styleClass": [],
     "conditionsAvailable": [
-      12,
-      5
+      12
     ],
     "conditionsVisible": [
       10000004,
-      3000
+      3000,
+      5
     ],
     "subLocations": []
   },
@@ -1367,8 +1437,32 @@
     "conditionsAvailable": [],
     "conditionsVisible": [],
     "subLocations": [
-      300
+      300,
+      310
     ]
+  },
+  {
+    "id": 240,
+    "name": "Departments",
+    "type": 20,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/building/departments.webp"
+      }
+    ],
+    "url": "location/240",
+    "backUrl": "location/20",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [
+      3005,
+      10000009
+    ],
+    "subLocations": []
   },
   {
     "id": 20,
@@ -1391,7 +1485,9 @@
     "subLocations": [
       200,
       210,
-      220
+      220,
+      230,
+      240
     ]
   },
   {
@@ -1414,6 +1510,30 @@
     "conditionsVisible": [],
     "subLocations": [
       1039
+    ]
+  },
+  {
+    "id": 310,
+    "name": "Gift Shop",
+    "type": 20,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/building/gift-shop.webp"
+      }
+    ],
+    "url": "location/310",
+    "backUrl": "location/30",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      2000
+    ],
+    "conditionsVisible": [],
+    "subLocations": [
+      3101
     ]
   },
   {
@@ -1691,7 +1811,8 @@
     "conditionsAvailable": [],
     "conditionsVisible": [],
     "subLocations": [
-      100
+      100,
+      110
     ]
   },
   {
@@ -1739,6 +1860,95 @@
     "subLocations": []
   },
   {
+    "id": 2301,
+    "name": "Bench",
+    "type": 40,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/room/park-bench.jpg"
+      }
+    ],
+    "url": "location/2301",
+    "backUrl": "location/230",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": [
+      2330
+    ]
+  },
+  {
+    "id": 2302,
+    "name": "Bushes",
+    "type": 40,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/room/park-bushes.jpg"
+      }
+    ],
+    "url": "location/2302",
+    "backUrl": "location/230",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 2303,
+    "name": "Fountain",
+    "type": 40,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/room/park-fountain.jpg"
+      }
+    ],
+    "url": "location/2303",
+    "backUrl": "location/230",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 230,
+    "name": "Park",
+    "type": 20,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/building/park.jpg"
+      }
+    ],
+    "url": "location/230",
+    "backUrl": "location/20",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [
+      10000009
+    ],
+    "subLocations": [
+      2301,
+      2302,
+      2303,
+      2331
+    ]
+  },
+  {
     "id": 300,
     "name": "Supermarket",
     "type": 20,
@@ -1761,6 +1971,177 @@
     "subLocations": [
       3001,
       3002
+    ]
+  },
+  {
+    "id": 1102,
+    "name": "Backyard",
+    "type": 40,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/room/williams-backyard.jpg"
+      }
+    ],
+    "url": "location/1102",
+    "backUrl": "location/110",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 1105,
+    "name": "Bathroom",
+    "type": 40,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/room/williams-bathroom.jpg"
+      }
+    ],
+    "url": "location/1105",
+    "backUrl": "location/1101",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 1107,
+    "name": "Naomi's Room",
+    "type": 40,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/room/williams-daughter-room.jpg"
+      }
+    ],
+    "url": "location/1107",
+    "backUrl": "location/1101",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 1101,
+    "name": "House",
+    "type": 40,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/room/williams-front-door.webp"
+      }
+    ],
+    "url": "location/1101",
+    "backUrl": "location/110",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": [
+      1103,
+      1104,
+      1105,
+      1106,
+      1107
+    ]
+  },
+  {
+    "id": 1104,
+    "name": "Kitchen",
+    "type": 40,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/room/williams-kitchen.jpg"
+      }
+    ],
+    "url": "location/1104",
+    "backUrl": "location/1101",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 1103,
+    "name": "Living Room",
+    "type": 40,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/room/williams-living-room.jpeg"
+      }
+    ],
+    "url": "location/1103",
+    "backUrl": "location/1101",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 1106,
+    "name": "Master Room",
+    "type": 40,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/room/williams-main-room.jpeg"
+      }
+    ],
+    "url": "location/1106",
+    "backUrl": "location/1101",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 110,
+    "name": "Williams",
+    "type": 20,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/building/williams.png"
+      }
+    ],
+    "url": "location/110",
+    "backUrl": "location/10",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [
+      3005
+    ],
+    "subLocations": [
+      1101,
+      1102
     ]
   },
   {

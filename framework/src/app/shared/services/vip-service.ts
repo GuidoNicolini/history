@@ -9,18 +9,18 @@ export class VipService {
   public vipChanges$ = new BehaviorSubject<void>(undefined);
 
   vips: vip[] = [
-    { level: 1, value: true },
-    { level: 2, value: true },
-    { level: 3, value: true },
-    { level: 4, value: true },
-    { level: 5, value: true },
+    { level: 1, value: false },
+    { level: 2, value: false },
+    { level: 3, value: false },
+    { level: 4, value: false },
+    { level: 5, value: false },
   ];
 
-  private clave1Hash: number = -1065125741;
-  private clave2Hash: number = -1381059737;
-  private clave3Hash: number = 1549538167;
-  private clave4Hash: number = -536430001;
-  private clave5Hash: number = -1600010989;
+  private clave1Hash: number = -1321864579;
+  private clave2Hash: number = -1322941018;
+  private clave3Hash: number = 960069353;
+  private clave4Hash: number = -1553857978;
+  private clave5Hash: number = 1669421157;
 
 
   private hashString(str: string): number {

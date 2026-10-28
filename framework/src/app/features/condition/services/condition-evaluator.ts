@@ -81,6 +81,11 @@ export class ConditionEvaluator {
         break;
       }
 
+      case 'vip-off': {
+        const level = condition.value ? Number(condition.value) : 1;
+        return !this.vipService.getVipStatus(level);
+      }
+
       case 'cd': {
         const eventoId = condition.target || contextId;
         if (!eventoId) return false;
@@ -137,6 +142,8 @@ export class ConditionEvaluator {
         }
         break;
       }
+
+
 
     }
 
