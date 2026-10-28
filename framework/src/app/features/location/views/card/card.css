@@ -3,3 +3,77 @@
   filter: grayscale(100%);
 }
 
+/* ─── Generic card wrapper ─────────────────────────────────────── */
+.card-wrapper {
+  position: relative;
+  border-radius: 12px;
+}
+
+/* ─── .brilliant ─ Animated light-particle glow effect ─────────── */
+
+/*
+ * Rotating conic-gradient halo behind the card.
+ * Works via a ::before layer that spins and blurs,
+ * creating the illusion of shifting colored light particles.
+ */
+.card-wrapper.brilliant {
+  padding: 4px;
+  border-radius: 14px;
+  isolation: isolate; /* keeps z-index stacking local */
+}
+
+.card-wrapper.brilliant .card {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+/* Main spinning halo */
+.card-wrapper.brilliant::before {
+  content: '';
+  position: absolute;
+  inset: -6px;
+  border-radius: 18px;
+  background: conic-gradient(
+    from 0deg,
+    hsl(0,   100%, 65%),
+    hsl(45,  100%, 65%),
+    hsl(90,  100%, 65%),
+    hsl(135, 100%, 65%),
+    hsl(180, 100%, 65%),
+    hsl(225, 100%, 65%),
+    hsl(270, 100%, 65%),
+    hsl(315, 100%, 65%),
+    hsl(360, 100%, 65%)
+  );
+  animation: brilliant-spin 4s linear infinite;
+  z-index: 0;
+  filter: blur(6px);
+  opacity: 0.85;
+}
+
+/* Second layer: slower counter-rotation for depth */
+.card-wrapper.brilliant::after {
+  content: '';
+  position: absolute;
+  inset: -10px;
+  border-radius: 22px;
+  background: conic-gradient(
+    from 180deg,
+    hsl(60,  100%, 70%) 0%,
+    hsl(200, 100%, 70%) 25%,
+    hsl(280, 100%, 70%) 50%,
+    hsl(340, 100%, 70%) 75%,
+    hsl(60,  100%, 70%) 100%
+  );
+  animation: brilliant-spin 6s linear infinite reverse;
+  z-index: 0;
+  filter: blur(14px);
+  opacity: 0.5;
+}
+
+@keyframes brilliant-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
