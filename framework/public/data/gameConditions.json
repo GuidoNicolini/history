@@ -105,6 +105,13 @@
     "value": 1
   },
   {
+    "id": 12000040,
+    "type": "activation",
+    "target": "gym0015",
+    "operator": ">=",
+    "value": 1
+  },
+  {
     "id": 12000008,
     "type": "activation",
     "target": "hero0001",
@@ -122,6 +129,34 @@
     "id": 12000000,
     "type": "activation",
     "target": "livingroom0003",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000043,
+    "type": "activation",
+    "target": "matx0001",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000044,
+    "type": "activation",
+    "target": "matx0002",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000045,
+    "type": "activation",
+    "target": "matx0003",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000046,
+    "type": "activation",
+    "target": "matx0005",
     "operator": ">=",
     "value": 1
   },
@@ -210,6 +245,13 @@
     "value": 1
   },
   {
+    "id": 12000041,
+    "type": "activation",
+    "target": "park0003",
+    "operator": ">=",
+    "value": 1
+  },
+  {
     "id": 12000005,
     "type": "activation",
     "target": "supermarket0001",
@@ -262,6 +304,13 @@
     "id": 12000035,
     "type": "activation",
     "target": "supermarket0008",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000042,
+    "type": "activation",
+    "target": "table0002",
     "operator": ">=",
     "value": 1
   },
@@ -677,6 +726,13 @@
     "target": "7:level",
     "operator": ">=",
     "value": 5
+  },
+  {
+    "id": 10000029,
+    "type": "flag",
+    "target": "cheat_on",
+    "operator": "==",
+    "value": "false"
   },
   {
     "id": 10000028,
@@ -2763,6 +2819,20 @@
     "target": "",
     "operator": "between-time",
     "value": "20:1"
+  },
+  {
+    "id": 2011,
+    "type": "time",
+    "target": "",
+    "operator": "between-time",
+    "value": "20:5"
+  },
+  {
+    "id": 2010,
+    "type": "time",
+    "target": "",
+    "operator": "between-time",
+    "value": "20:6"
   },
   {
     "id": 2005,

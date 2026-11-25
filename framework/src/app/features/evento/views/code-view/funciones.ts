@@ -49,4 +49,6 @@ export class Funciones {
   lauchEventoGroup(eventosId : string[]){
     this.eventoService.launchEventoByGroup(eventosId)
   }
+
+
 }

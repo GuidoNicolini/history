@@ -1,0 +1,20 @@
+{
+  "id": 2040,
+  "name": "Lucien",
+  "type": 100,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "assets/img/locations/activities/cheat-char.webp"
+    }
+  ],
+  "url": "evento/table0001",
+  "backUrl": "table0001",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [],
+  "conditionsVisible": [5],
+  "subLocations": []
+}

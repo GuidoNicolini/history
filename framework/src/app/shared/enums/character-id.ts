@@ -20,7 +20,17 @@ export enum CharacterID {
 
   MONIQUE = 14, // Codi bryant - williams mom
   NAOMI = 15,  // Ania ivy - williams hija
+
+  SUKI = 16, //  Sumire Matsu - ninja
+
+  LUCIEN = 17, // Lucien - hombre ingles
+
+  FUCKITY = 18, // Fuckity - Callie Cyprus
+
+  MOANPHEUS = 19, // Moanpheus - Tia Maria
+
   JAMES = 400, // padre williams
+  MIKE = 401, // Gym bro who sells
 
 
 

@@ -6,6 +6,7 @@ import {HeroService} from '../../hero/services/hero-service';
 import {GameItems} from '../../../shared/enums/game-items';
 import {EventoService} from './evento-service';
 import { StoryState } from '../../../shared/services/story-state';
+import {Stats} from '../../../shared/enums/stats';
 
 @Injectable({
   providedIn: 'root',
@@ -62,6 +63,32 @@ export class CubeActionService {
         }
         break;
       }
+
+      case 'cheats': {
+        this.storyState.setFlag('cheat_on', true);
+        break;
+      }
+
+      case "str": {
+        this.heroService.modifyStat(Stats.STRENGTH,1)
+        break;
+      }
+
+      case "agy": {
+        this.heroService.modifyStat(Stats.AGILITY,1)
+        break;
+      }
+
+      case "int": {
+        this.heroService.modifyStat(Stats.INTELLIGENCE,1)
+        break;
+      }
+
+      case "cha": {
+        this.heroService.modifyStat(Stats.CHARISMA,1)
+        break;
+      }
+
     }
   }
 }

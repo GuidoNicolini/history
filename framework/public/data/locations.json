@@ -472,6 +472,29 @@
     "subLocations": []
   },
   {
+    "id": 2332,
+    "name": "...",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/cheat-agy.webp"
+      }
+    ],
+    "url": "evento/park0002",
+    "backUrl": "park0002",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [
+      5,
+      2010
+    ],
+    "subLocations": []
+  },
+  {
     "id": 1045,
     "name": "Code Patreon",
     "type": 100,
@@ -519,6 +542,29 @@
     "conditionsVisible": [
       3000,
       10000007
+    ],
+    "subLocations": []
+  },
+  {
+    "id": 1050,
+    "name": "Cheats",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/cheats.webp"
+      }
+    ],
+    "url": "evento/garage0002",
+    "backUrl": "garage0002",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [
+      2,
+      10000029
     ],
     "subLocations": []
   },
@@ -634,6 +680,28 @@
     "styleClass": [],
     "conditionsAvailable": [],
     "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 2126,
+    "name": "Chat",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/steroids.webp"
+      }
+    ],
+    "url": "evento/gym0014",
+    "backUrl": "gym0014",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [
+      5
+    ],
     "subLocations": []
   },
   {
@@ -1081,6 +1149,28 @@
     "subLocations": []
   },
   {
+    "id": 2040,
+    "name": "Lucien",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/cheat-char.webp"
+      }
+    ],
+    "url": "evento/table0001",
+    "backUrl": "table0001",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [
+      5
+    ],
+    "subLocations": []
+  },
+  {
     "id": 1028,
     "name": "sleep",
     "type": 100,
@@ -1382,7 +1472,8 @@
     "conditionsVisible": [],
     "subLocations": [
       2035,
-      2039
+      2039,
+      2040
     ]
   },
   {
@@ -1509,7 +1600,8 @@
     "conditionsAvailable": [],
     "conditionsVisible": [],
     "subLocations": [
-      1039
+      1039,
+      1050
     ]
   },
   {
@@ -1555,7 +1647,8 @@
     "conditionsAvailable": [],
     "conditionsVisible": [],
     "subLocations": [
-      2123
+      2123,
+      2126
     ]
   },
   {
@@ -1945,7 +2038,8 @@
       2301,
       2302,
       2303,
-      2331
+      2331,
+      2332
     ]
   },
   {
