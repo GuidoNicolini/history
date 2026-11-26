@@ -1,0 +1,22 @@
+{
+  "id": 40,
+  "name": "Reality...?",
+  "type": 10,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "assets/img/locations/distric/matrix.webp"
+    }
+  ],
+  "url": "location/40",
+  "backUrl": "location/1",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [],
+  "conditionsVisible": [12000046],
+  "subLocations": [
+    400
+  ]
+}

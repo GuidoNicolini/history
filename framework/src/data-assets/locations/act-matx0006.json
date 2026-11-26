@@ -1,0 +1,20 @@
+{
+  "id": 4004,
+  "name": "Localhost Moanpheus",
+  "type": 100,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "assets/img/locations/activities/nave-local-moanp.webp"
+    }
+  ],
+  "url": "evento/matx0006",
+  "backUrl": "matx0006",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [5,3],
+  "conditionsVisible": [203],
+  "subLocations": []
+}

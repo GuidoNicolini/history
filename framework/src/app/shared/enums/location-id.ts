@@ -172,4 +172,23 @@ COMMERCIAL_DISTRIC = 30,
   /****** ACTIVITIES GIFT SHOP *****/
 
   BUY_GIFT = 3101,
+
+
+  /********************************** MATRIX DISTRIC  *****/
+
+  MATRIX = 40,
+
+  /********************** NAVE *******************/
+  SHIP = 400,
+
+
+
+  /************************* ACTIVITIES NAVE *************/
+
+  SHIP_ITEMS= 4001, //matx0007
+  SHIP_RELATIONS = 4002, //matx0008
+  SHIP_TIME = 4003,    //matx0009
+  SHIP_LOCAL_MOANPHEUS = 4004,  //matx0006
+
+
 }

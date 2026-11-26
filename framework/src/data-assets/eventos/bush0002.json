@@ -33,14 +33,15 @@
       "text": "Follow it",
       "conditions": [],
       "cubeAction": {
-        "type": "redirection",
-        "value": "location/1000"
+        "type": "launchevento",
+        "value": "matx0001"
       }
     }
   ],
   "conditions": [
     10000028,
-    13000000
+    13000000,
+    3
   ],
   "effects": []
 }

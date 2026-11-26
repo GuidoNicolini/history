@@ -976,6 +976,91 @@
     "subLocations": []
   },
   {
+    "id": 4004,
+    "name": "Localhost Moanpheus",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/nave-local-moanp.webp"
+      }
+    ],
+    "url": "evento/matx0006",
+    "backUrl": "matx0006",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      5,
+      3
+    ],
+    "conditionsVisible": [
+      203
+    ],
+    "subLocations": []
+  },
+  {
+    "id": 4001,
+    "name": "Items",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/nave-item.webp"
+      }
+    ],
+    "url": "evento/matx0007",
+    "backUrl": "matx0007",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 4002,
+    "name": "Relations",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/nave-rel.webp"
+      }
+    ],
+    "url": "evento/matx0008",
+    "backUrl": "matx0008",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 4003,
+    "name": "Time",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/nave-time.webp"
+      }
+    ],
+    "url": "evento/matx0009",
+    "backUrl": "matx0009",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
     "id": 2234,
     "name": "Donations",
     "type": 100,
@@ -1834,6 +1919,30 @@
     ]
   },
   {
+    "id": 40,
+    "name": "Reality...?",
+    "type": 10,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/distric/matrix.webp"
+      }
+    ],
+    "url": "location/40",
+    "backUrl": "location/1",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [
+      12000046
+    ],
+    "subLocations": [
+      400
+    ]
+  },
+  {
     "id": 2201,
     "name": "Little Cinema",
     "type": 40,
@@ -2040,6 +2149,31 @@
       2303,
       2331,
       2332
+    ]
+  },
+  {
+    "id": 400,
+    "name": "Ship",
+    "type": 20,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/building/ship.webp"
+      }
+    ],
+    "url": "location/400",
+    "backUrl": "location/40",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": [
+      4001,
+      4002,
+      4003,
+      4004
     ]
   },
   {
