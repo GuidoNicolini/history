@@ -54,6 +54,7 @@ export enum LocationID {
   FAMILY_DINNER = 1046,
   NAP = 1048,
   SUNBATHING= 1049,
+  GARAGE_CHEATS = 1050,
 
   /****** williams *****/
 
@@ -93,6 +94,7 @@ export enum LocationID {
   CAFE_LIMPIAR_OFFICINA_JEFE = 2037,
   CAFE_MAKE_COFFEE = 2038,
   CAFE_WAIT_TABLES = 2039,
+  CAFE_LUCIEN_CHEAT = 2040,
 
 
   /****** Gym  *****/
@@ -110,6 +112,7 @@ export enum LocationID {
   SHOWER_GYM =2123,
   DRINK_PROTEIN = 2124,
   BUY_GYM_COIN = 2125,
+  STEROIDS = 2126,
 
 
   /****** Museum  *****/
@@ -136,6 +139,7 @@ export enum LocationID {
 
   PARK_BENCH_REST = 2330,
   PARK_RUNNING = 2331,
+  PARK_NINJA = 2332,
 
 
   /****** Departments *****/
@@ -168,4 +172,23 @@ COMMERCIAL_DISTRIC = 30,
   /****** ACTIVITIES GIFT SHOP *****/
 
   BUY_GIFT = 3101,
+
+
+  /********************************** MATRIX DISTRIC  *****/
+
+  MATRIX = 40,
+
+  /********************** NAVE *******************/
+  SHIP = 400,
+
+
+
+  /************************* ACTIVITIES NAVE *************/
+
+  SHIP_ITEMS= 4001, //matx0007
+  SHIP_RELATIONS = 4002, //matx0008
+  SHIP_TIME = 4003,    //matx0009
+  SHIP_LOCAL_MOANPHEUS = 4004,  //matx0006
+
+
 }

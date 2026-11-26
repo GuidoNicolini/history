@@ -1,0 +1,48 @@
+{
+  "id": "garage0002",
+  "type": 2,
+  "location": 1009,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 0,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Do you want to enable cheats?",
+      "character": 500
+    },
+    {
+      "id": 2,
+      "type": "button",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "text": "YES",
+      "conditions": [10000029],
+      "cubeAction": {
+        "type": "cheats",
+        "value": ""
+      }
+    },
+    {
+      "id": 3,
+      "type": "button",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Back",
+      "conditions": [],
+      "cubeAction": {
+        "type": "redirection",
+        "value": "location/1009"
+      }
+    }
+  ],
+  "conditions": [],
+  "effects": []
+}

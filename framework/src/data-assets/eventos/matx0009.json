@@ -1,0 +1,74 @@
+{
+  "id": "matx0009",
+  "type": 2,
+  "location": 4003,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 0,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Sometimes waiting can be frustrating.",
+      "character": 18
+    },
+    {
+      "id": 2,
+      "type": "button",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Advance 1 hour",
+      "conditions": [],
+      "cubeAction": {
+        "type": "time",
+        "value": "1"
+      }
+    },
+    {
+      "id": 3,
+      "type": "button",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Advance 6 hours",
+      "conditions": [],
+      "cubeAction": {
+        "type": "time",
+        "value": "6"
+      }
+    },
+    {
+      "id": 4,
+      "type": "button",
+      "order": 4,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Advance 23 hours",
+      "conditions": [],
+      "cubeAction": {
+        "type": "time",
+        "value": "23"
+      }
+    },
+    {
+      "id": 5,
+      "type": "button",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Exit",
+      "conditions": [],
+      "cubeAction": {
+        "type": "redirection",
+        "value": "location/400"
+      }
+    }
+  ],
+  "conditions": [],
+  "effects": []
+}

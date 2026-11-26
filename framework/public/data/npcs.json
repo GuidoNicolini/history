@@ -282,6 +282,36 @@
     "avatar": "assets/img/avatars/dad.png"
   },
   {
+    "id": 18,
+    "name": "Fuckity",
+    "stats": {
+      "level": 1,
+      "arousal": 0,
+      "corruption": 0
+    },
+    "attractions": {},
+    "currentLocation": "0",
+    "routines": [
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 0,
+        "finalTime": 23,
+        "location": 0,
+        "routineConditions": [],
+        "weight": 1
+      }
+    ],
+    "avatar": "assets/img/avatars/fuckity.webp"
+  },
+  {
     "id": 400,
     "name": "James",
     "stats": {
@@ -372,6 +402,36 @@
     "avatar": "assets/img/avatars/kimmy-kim.webp"
   },
   {
+    "id": 17,
+    "name": "Lucien",
+    "stats": {
+      "level": 1,
+      "arousal": 0,
+      "corruption": 0
+    },
+    "attractions": {},
+    "currentLocation": "0",
+    "routines": [
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 0,
+        "finalTime": 23,
+        "location": 0,
+        "routineConditions": [],
+        "weight": 1
+      }
+    ],
+    "avatar": "assets/img/avatars/lucien.webp"
+  },
+  {
     "id": 13,
     "name": "Micaela",
     "stats": {
@@ -400,6 +460,66 @@
       }
     ],
     "avatar": "assets/img/avatars/micaela.webp"
+  },
+  {
+    "id": 401,
+    "name": "Mike",
+    "stats": {
+      "level": 1,
+      "arousal": 0,
+      "corruption": 0
+    },
+    "attractions": {},
+    "currentLocation": "0",
+    "routines": [
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 0,
+        "finalTime": 23,
+        "location": 0,
+        "routineConditions": [],
+        "weight": 1
+      }
+    ],
+    "avatar": "assets/img/avatars/mike.webp"
+  },
+  {
+    "id": 19,
+    "name": "Moanpheus",
+    "stats": {
+      "level": 1,
+      "arousal": 0,
+      "corruption": 0
+    },
+    "attractions": {},
+    "currentLocation": "0",
+    "routines": [
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 0,
+        "finalTime": 23,
+        "location": 0,
+        "routineConditions": [],
+        "weight": 1
+      }
+    ],
+    "avatar": "assets/img/avatars/moanpheus.webp"
   },
   {
     "id": 2,
@@ -811,6 +931,36 @@
       }
     ],
     "avatar": "assets/img/avatars/sonya.webp"
+  },
+  {
+    "id": 16,
+    "name": "suki",
+    "stats": {
+      "level": 1,
+      "arousal": 0,
+      "corruption": 0
+    },
+    "attractions": {},
+    "currentLocation": "0",
+    "routines": [
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 0,
+        "finalTime": 23,
+        "location": 0,
+        "routineConditions": [],
+        "weight": 1
+      }
+    ],
+    "avatar": "assets/img/avatars/suki.webp"
   },
   {
     "id": 5,

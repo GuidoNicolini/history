@@ -1,0 +1,126 @@
+{
+  "id": "matx0005",
+  "type": 0,
+  "location": 0,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 0,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "video",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "video": "assets/videos/others/wakeupmat.mp4"
+    },
+    {
+      "id": 2,
+      "type": "text",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "text": "WHAT THE FUUUUUUUUUCK?!",
+      "character": 1
+    },
+    {
+      "id": 3,
+      "type": "text",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Fuckity looks at you like she's about to laugh, clearly loving every second of your meltdown.",
+      "character": 500
+    },
+    {
+      "id": 4,
+      "type": "text",
+      "order": 4,
+      "probability": 100,
+      "styleClass": [],
+      "text": "For fuck's sake, someone tell me what's going on!!",
+      "character": 1
+    },
+    {
+      "id": 5,
+      "type": "text",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Welcome to the real world, champ. You're on my ship. Everything before? A simulation. You're welcome.",
+      "character": 19
+    },
+    {
+      "id": 6,
+      "type": "text",
+      "order": 6,
+      "probability": 100,
+      "styleClass": [],
+      "text": "You couldn't have mentioned that before I deep-throated your red tit? Now I wake up like some goddamn cyborg in a world that smells like ass?",
+      "character": 1
+    },
+    {
+      "id": 7,
+      "type": "text",
+      "order": 7,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Fuckity and Moanpheus exchange a look that says -he's got a point-",
+      "character": 500
+    },
+    {
+      "id": 8,
+      "type": "text",
+      "order": 8,
+      "probability": 100,
+      "styleClass": [],
+      "text": "You know what? That's actually smart.",
+      "character": 19
+    },
+    {
+      "id": 9,
+      "type": "text",
+      "order": 9,
+      "probability": 100,
+      "styleClass": [],
+      "text": "I'm writing that down.",
+      "character": 18
+    },
+    {
+      "id": 10,
+      "type": "text",
+      "order": 10,
+      "probability": 100,
+      "styleClass": [],
+      "text": "We'll add a -warning: may cause existential crisis and severe cable management issues- next time.",
+      "character": 1
+    },
+    {
+      "id": 11,
+      "type": "text",
+      "order": 11,
+      "probability": 100,
+      "styleClass": [],
+      "text": "You stand there, still half-convinced this is a prank, staring at the crazy ship and wondering if you can get a refund on reality.",
+      "character": 500
+    },
+    {
+      "id": 12,
+      "type": "button",
+      "order": 12,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Continue",
+      "conditions": [],
+      "cubeAction": {
+        "type": "redirection",
+        "value": "location/400"
+      }
+    }
+  ],
+  "conditions": [
+    3
+  ],
+  "effects": []
+}

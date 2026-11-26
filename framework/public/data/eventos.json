@@ -668,14 +668,15 @@
         "text": "Follow it",
         "conditions": [],
         "cubeAction": {
-          "type": "redirection",
-          "value": "location/1000"
+          "type": "launchevento",
+          "value": "matx0001"
         }
       }
     ],
     "conditions": [
       10000028,
-      13000000
+      13000000,
+      3
     ],
     "effects": []
   },
@@ -4664,6 +4665,56 @@
     ]
   },
   {
+    "id": "garage0002",
+    "type": 2,
+    "location": 1009,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Do you want to enable cheats?",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "button",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "YES",
+        "conditions": [
+          10000029
+        ],
+        "cubeAction": {
+          "type": "cheats",
+          "value": ""
+        }
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Back",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1009"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": []
+  },
+  {
     "id": "giftshop0001",
     "type": 0,
     "location": 3101,
@@ -5372,6 +5423,251 @@
       }
     ],
     "conditions": [],
+    "effects": []
+  },
+  {
+    "id": "gym0014",
+    "type": 2,
+    "location": 2126,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 1,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 2,
+        "type": "text",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Hey! What’s up?",
+        "character": 401
+      },
+      {
+        "id": 3,
+        "type": "image",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/mike/mike-001.webp"
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Nothing much. Just passing some time at the gym",
+        "character": 1
+      },
+      {
+        "id": 5,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You already know. Getting here is the hardest part. Once you’re through that door, you’ve basically won half the battle.",
+        "character": 401
+      },
+      {
+        "id": 6,
+        "type": "button",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "text": "If you say so",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/2101"
+        }
+      },
+      {
+        "id": 1,
+        "type": "code",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "functionName": "lauchEventoGroup",
+        "parameters": [
+          "gym0015",
+          "gym0016"
+        ],
+        "conditions": [
+          10000028
+        ]
+      }
+    ],
+    "conditions": [],
+    "effects": []
+  },
+  {
+    "id": "gym0015",
+    "type": 0,
+    "location": 2101,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Yo, dude!",
+        "character": 401
+      },
+      {
+        "id": 2,
+        "type": "text",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "What's good?",
+        "character": 1
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You got potential, man. Wanna level up for real?",
+        "character": 401
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "The fuck? You think I'm some hidden-power Pokémon or some shit? Hahaha",
+        "character": 1
+      },
+      {
+        "id": 5,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Hahaha, nah, check this out.",
+        "character": 401
+      },
+      {
+        "id": 6,
+        "type": "image",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/mike/mike-002.webp"
+      },
+      {
+        "id": 7,
+        "type": "text",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Shit, I dunno, man...",
+        "character": 1
+      },
+      {
+        "id": 8,
+        "type": "text",
+        "order": 8,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Think on it and hit me up next time.",
+        "character": 401
+      },
+      {
+        "id": 9,
+        "type": "text",
+        "order": 9,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Mike tucks the steroids into his gym bag, gives you a bro-pat on the shoulder, and dips.",
+        "character": 500
+      },
+      {
+        "id": 10,
+        "type": "button",
+        "order": 10,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Continue",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/2101"
+        }
+      }
+    ],
+    "conditions": [
+      13000000,
+      2
+    ],
+    "effects": []
+  },
+  {
+    "id": "gym0016",
+    "type": 0,
+    "location": 2101,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "The locker room hums with distant showers and the clang of metal doors. Mike pulls you past the last row of lockers, into a cramped nook where the light flickers and the air smells faintly of ammonia. He opens his bag, pulls out a small vial and a syringe, and fills it with calm precision. You watch, your pulse thumping in your throat. He glances at the entrance, then back at you.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "text",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Relax, man. Nobody comes back here. Here, this’ll kick in fast.",
+        "character": 401
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Strength +1",
+        "conditions": [],
+        "cubeAction": {
+          "type": "str",
+          "value": ""
+        }
+      },
+      {
+        "id": 4,
+        "type": "button",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Back",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/2101"
+        }
+      }
+    ],
+    "conditions": [
+      12000040,
+      2
+    ],
     "effects": []
   },
   {
@@ -8866,6 +9162,1398 @@
     "effects": []
   },
   {
+    "id": "matx0001",
+    "type": 0,
+    "location": 0,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You follow the rabbit a few steps before a sudden wave of exhaustion washes over you, making your eyelids heavy.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "text",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "While these effects take hold, the feel of your mattress meets your back, and as your eyes close for the last time, you open them to the ceiling of your room.",
+        "character": 500
+      },
+      {
+        "id": 3,
+        "type": "video",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/others/conejo.mp4"
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "What a strange dream.",
+        "character": 1
+      },
+      {
+        "id": 5,
+        "type": "button",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Wake up",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1000"
+        }
+      }
+    ],
+    "conditions": [
+      3,
+      13000000
+    ],
+    "effects": []
+  },
+  {
+    "id": "matx0002",
+    "type": 3,
+    "location": 220,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You step into the museum and make your way through the exhibits. Out of the corner of your eye, you could swear someone's watching you.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You turn to look again, but no one's there.",
+        "character": 500
+      },
+      {
+        "id": 3,
+        "type": "image",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/fuckity/fuckity-no-column.webp"
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "I must be going nuts",
+        "character": 1
+      },
+      {
+        "id": 5,
+        "type": "image",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/fuckity/fuckity-column.webp"
+      },
+      {
+        "id": 6,
+        "type": "button",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Keep walking",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/220"
+        }
+      }
+    ],
+    "conditions": [
+      3,
+      12000043,
+      13000000
+    ],
+    "effects": []
+  },
+  {
+    "id": "matx0003",
+    "type": 3,
+    "location": 1000,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "image",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/fuckity/fuckity-dark-room.webp"
+      },
+      {
+        "id": 2,
+        "type": "text",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "What the fu...",
+        "character": 1
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Before you can get another word out, Fuckity slaps her hand over your mouth.",
+        "character": 500
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Listen up! I know you're lost as hell, but the other day at the park you saw a rabbit and then bam, woke up in your room... That wasn't a dream, and now they're tracking you. I can't explain everything right now, but I'm gonna remove the trackers in your body. If I let go, you won't scream, right?",
+        "character": 18
+      },
+      {
+        "id": 5,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You nod, and Fuckity lets your mouth go and locks the door.",
+        "character": 500
+      },
+      {
+        "id": 6,
+        "type": "text",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "text": "No offense, but are you fucking crazy? What nuthouse did you break out of?",
+        "character": 1
+      },
+      {
+        "id": 7,
+        "type": "text",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "text": "No time. Explanations later.",
+        "character": 18
+      },
+      {
+        "id": 8,
+        "type": "text",
+        "order": 8,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Fuckity strips naked and rips your clothes off. You try to say something, but you just stare at her naked body, and before you even know what to say, she's already got your dick down her throat.",
+        "character": 500
+      },
+      {
+        "id": 9,
+        "type": "video",
+        "order": 9,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/fuckity/fuckity-room.webm"
+      },
+      {
+        "id": 10,
+        "type": "text",
+        "order": 10,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Work's finished. Your cum's free of trackers. Next time we bump into each other, you'll get your answers.",
+        "character": 18
+      },
+      {
+        "id": 11,
+        "type": "text",
+        "order": 11,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Fuckity throws her clothes back on and bails out the window, leaving you confused as hell but satisfied.",
+        "character": 500
+      },
+      {
+        "id": 12,
+        "type": "button",
+        "order": 12,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Continue",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1000"
+        }
+      }
+    ],
+    "conditions": [
+      3,
+      12000044,
+      13000000,
+      2011
+    ],
+    "effects": []
+  },
+  {
+    "id": "matx0004",
+    "type": 3,
+    "location": 30,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "While you're walking through the commercial district, everything goes black and you just feel a cloth over your head and someone shoving you into a car.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "text",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "After riding for about 10 or 15 minutes, you feel the car stop, someone pulls you out, and walks you inside some place. Once you're in, they take the hood off and you see Fuckity.",
+        "character": 500
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Today you get the answers I promised. Go in that room, please.",
+        "character": 18
+      },
+      {
+        "id": 4,
+        "type": "image",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/moanpheus/moanp1.webp"
+      },
+      {
+        "id": 5,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "At last",
+        "character": 19
+      },
+      {
+        "id": 6,
+        "type": "text",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Welcome! I'm Moanpheus. Come, have a seat.",
+        "character": 19
+      },
+      {
+        "id": 7,
+        "type": "text",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Both of you sit in two separate armchairs while Fuckity leans back against the wall with a serious face.",
+        "character": 500
+      },
+      {
+        "id": 8,
+        "type": "text",
+        "order": 8,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Look, I'm not joining a cult or any shit like that. I don't know what the hell is wrong with you two, but I'm not the guy you're looking for.",
+        "character": 1
+      },
+      {
+        "id": 9,
+        "type": "text",
+        "order": 9,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Moanpheus  unbuttons her shirt, and lets it drop to the floor. Her breasts are bare; the nipple on the left is painted deep blue , the one on the right a bright red.",
+        "character": 500
+      },
+      {
+        "id": 10,
+        "type": "image",
+        "order": 10,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/moanpheus/moanp2.webp"
+      },
+      {
+        "id": 11,
+        "type": "text",
+        "order": 11,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Baby. Red breast, blue breast. Suck the red one, and I'll pull you down the rabbit hole and show you how deep it really goes. Suck the blue one, and you wake up in your bed, back to your ordinary life, and pretend none of this happened.",
+        "character": 19
+      },
+      {
+        "id": 12,
+        "type": "button",
+        "order": 12,
+        "probability": 100,
+        "styleClass": [],
+        "text": "RED",
+        "conditions": [],
+        "cubeAction": {
+          "type": "launchevento",
+          "value": "matx0005"
+        }
+      },
+      {
+        "id": 13,
+        "type": "button",
+        "order": 13,
+        "probability": 100,
+        "styleClass": [],
+        "text": "BLUE",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/1000"
+        }
+      }
+    ],
+    "conditions": [
+      3,
+      12000045,
+      13000000
+    ],
+    "effects": []
+  },
+  {
+    "id": "matx0005",
+    "type": 0,
+    "location": 0,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "video",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/others/wakeupmat.mp4"
+      },
+      {
+        "id": 2,
+        "type": "text",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "WHAT THE FUUUUUUUUUCK?!",
+        "character": 1
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Fuckity looks at you like she's about to laugh, clearly loving every second of your meltdown.",
+        "character": 500
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "For fuck's sake, someone tell me what's going on!!",
+        "character": 1
+      },
+      {
+        "id": 5,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Welcome to the real world, champ. You're on my ship. Everything before? A simulation. You're welcome.",
+        "character": 19
+      },
+      {
+        "id": 6,
+        "type": "text",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You couldn't have mentioned that before I deep-throated your red tit? Now I wake up like some goddamn cyborg in a world that smells like ass?",
+        "character": 1
+      },
+      {
+        "id": 7,
+        "type": "text",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Fuckity and Moanpheus exchange a look that says -he's got a point-",
+        "character": 500
+      },
+      {
+        "id": 8,
+        "type": "text",
+        "order": 8,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You know what? That's actually smart.",
+        "character": 19
+      },
+      {
+        "id": 9,
+        "type": "text",
+        "order": 9,
+        "probability": 100,
+        "styleClass": [],
+        "text": "I'm writing that down.",
+        "character": 18
+      },
+      {
+        "id": 10,
+        "type": "text",
+        "order": 10,
+        "probability": 100,
+        "styleClass": [],
+        "text": "We'll add a -warning: may cause existential crisis and severe cable management issues- next time.",
+        "character": 1
+      },
+      {
+        "id": 11,
+        "type": "text",
+        "order": 11,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You stand there, still half-convinced this is a prank, staring at the crazy ship and wondering if you can get a refund on reality.",
+        "character": 500
+      },
+      {
+        "id": 12,
+        "type": "button",
+        "order": 12,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Continue",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/400"
+        }
+      }
+    ],
+    "conditions": [
+      3
+    ],
+    "effects": []
+  },
+  {
+    "id": "matx0006",
+    "type": 3,
+    "location": 4004,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 1,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You enter one of the ship's simulated environments, usually reserved for combat drills and other fun.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "text",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Fuckity, initiate the advanced simulation sequence.",
+        "character": 19
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Right away!",
+        "character": 18
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Oh, you'll absolutely enjoy this.",
+        "character": 19
+      },
+      {
+        "id": 5,
+        "type": "button",
+        "order": 999999,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Cum",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/400"
+        }
+      },
+      {
+        "id": 6,
+        "type": "video",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-1-1.webm"
+      },
+      {
+        "id": 7,
+        "type": "video",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-1-2.webm"
+      },
+      {
+        "id": 8,
+        "type": "video",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-1-3.webm"
+      },
+      {
+        "id": 9,
+        "type": "video",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-1-4.webm"
+      },
+      {
+        "id": 10,
+        "type": "video",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-1-5.webm"
+      },
+      {
+        "id": 11,
+        "type": "video",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-1-6.webm"
+      },
+      {
+        "id": 12,
+        "type": "video",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-1-7.webm"
+      },
+      {
+        "id": 13,
+        "type": "video",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-1-8.webm"
+      },
+      {
+        "id": 14,
+        "type": "video",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-1-9.webm"
+      },
+      {
+        "id": 15,
+        "type": "video",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-1-10.webm"
+      },
+      {
+        "id": 16,
+        "type": "video",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-1-11.webm"
+      },
+      {
+        "id": 17,
+        "type": "video",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-1-12.webm"
+      },
+      {
+        "id": 18,
+        "type": "video",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-1-13.webm"
+      },
+      {
+        "id": 19,
+        "type": "video",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-1-14.webm"
+      },
+      {
+        "id": 20,
+        "type": "video",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-1-15.webm"
+      },
+      {
+        "id": 21,
+        "type": "video",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-1-16.webm"
+      },
+      {
+        "id": 22,
+        "type": "video",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-1-17.webm"
+      },
+      {
+        "id": 23,
+        "type": "video",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-1-18.webm"
+      },
+      {
+        "id": 24,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-1.webm"
+      },
+      {
+        "id": 25,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-2.webm"
+      },
+      {
+        "id": 26,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-3.webm"
+      },
+      {
+        "id": 27,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-4.webm"
+      },
+      {
+        "id": 28,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-5.webm"
+      },
+      {
+        "id": 29,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-6.webm"
+      },
+      {
+        "id": 30,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-7.webm"
+      },
+      {
+        "id": 31,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-8.webm"
+      },
+      {
+        "id": 32,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-9.webm"
+      },
+      {
+        "id": 33,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-10.webm"
+      },
+      {
+        "id": 34,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-11.webm"
+      },
+      {
+        "id": 35,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-12.webm"
+      },
+      {
+        "id": 36,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-13.webm"
+      },
+      {
+        "id": 37,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-14.webm"
+      },
+      {
+        "id": 38,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-15.webm"
+      },
+      {
+        "id": 39,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-16.webm"
+      },
+      {
+        "id": 40,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-17.webm"
+      },
+      {
+        "id": 41,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-18.webm"
+      },
+      {
+        "id": 42,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-19.webm"
+      },
+      {
+        "id": 43,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-20.webm"
+      },
+      {
+        "id": 44,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-21.webm"
+      },
+      {
+        "id": 45,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-22.webm"
+      },
+      {
+        "id": 46,
+        "type": "video",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-3-1.webm"
+      },
+      {
+        "id": 47,
+        "type": "video",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-3-2.webm"
+      },
+      {
+        "id": 48,
+        "type": "video",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-3-3.webm"
+      },
+      {
+        "id": 49,
+        "type": "video",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-3-4.webm"
+      },
+      {
+        "id": 50,
+        "type": "video",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-3-5.webm"
+      },
+      {
+        "id": 51,
+        "type": "video",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-3-6.webm"
+      },
+      {
+        "id": 52,
+        "type": "video",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-3-7.webm"
+      },
+      {
+        "id": 53,
+        "type": "video",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-3-8.webm"
+      },
+      {
+        "id": 54,
+        "type": "video",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-3-9.webm"
+      },
+      {
+        "id": 55,
+        "type": "video",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-3-10.webm"
+      },
+      {
+        "id": 56,
+        "type": "video",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-3-11.webm"
+      },
+      {
+        "id": 57,
+        "type": "video",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-3-12.webm"
+      },
+      {
+        "id": 58,
+        "type": "video",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-3-13.webm"
+      },
+      {
+        "id": 59,
+        "type": "video",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-3-14.webm"
+      },
+      {
+        "id": 60,
+        "type": "video",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-3-15.webm"
+      },
+      {
+        "id": 61,
+        "type": "video",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-3-16.webm"
+      },
+      {
+        "id": 62,
+        "type": "video",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-3-17.webm"
+      },
+      {
+        "id": 63,
+        "type": "video",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-3-18.webm"
+      },
+      {
+        "id": 64,
+        "type": "video",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-3-19.webm"
+      },
+      {
+        "id": 65,
+        "type": "video",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-3-20.webm"
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      2025,
+      2031,
+      2043,
+      2037,
+      2007
+    ]
+  },
+  {
+    "id": "matx0007",
+    "type": 2,
+    "location": 4001,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Whatever you need- weapons, wheels, gear.It's all downloadable right here. What's on your wish list today?",
+        "character": 18
+      },
+      {
+        "id": 2,
+        "type": "button",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Money",
+        "conditions": [],
+        "cubeAction": {
+          "type": "buy",
+          "value": "money:-5000"
+        }
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Snack",
+        "conditions": [],
+        "cubeAction": {
+          "type": "buy",
+          "value": "snack:0"
+        }
+      },
+      {
+        "id": 4,
+        "type": "button",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Food",
+        "conditions": [],
+        "cubeAction": {
+          "type": "buy",
+          "value": "food:0"
+        }
+      },
+      {
+        "id": 5,
+        "type": "button",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Hygiene Kit",
+        "conditions": [],
+        "cubeAction": {
+          "type": "buy",
+          "value": "hygienekit:0"
+        }
+      },
+      {
+        "id": 6,
+        "type": "button",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Shower kit",
+        "conditions": [],
+        "cubeAction": {
+          "type": "buy",
+          "value": "showerkit:0"
+        }
+      },
+      {
+        "id": 7,
+        "type": "button",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Gym Coin",
+        "conditions": [],
+        "cubeAction": {
+          "type": "buy",
+          "value": "gymcoin:0"
+        }
+      },
+      {
+        "id": 8,
+        "type": "button",
+        "order": 8,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Flower",
+        "conditions": [],
+        "cubeAction": {
+          "type": "buy",
+          "value": "flower:0"
+        }
+      },
+      {
+        "id": 9,
+        "type": "button",
+        "order": 9,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Chocolate",
+        "conditions": [],
+        "cubeAction": {
+          "type": "buy",
+          "value": "chocolate:0"
+        }
+      },
+      {
+        "id": 10,
+        "type": "button",
+        "order": 10,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Perfume",
+        "conditions": [],
+        "cubeAction": {
+          "type": "buy",
+          "value": "perfume:0"
+        }
+      },
+      {
+        "id": 11,
+        "type": "button",
+        "order": 11,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Jewelry",
+        "conditions": [],
+        "cubeAction": {
+          "type": "buy",
+          "value": "jewelry:0"
+        }
+      },
+      {
+        "id": 12,
+        "type": "button",
+        "order": 12,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Teddy",
+        "conditions": [],
+        "cubeAction": {
+          "type": "buy",
+          "value": "teddy:0"
+        }
+      },
+      {
+        "id": 13,
+        "type": "button",
+        "order": 999999,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Exit",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/400"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": []
+  },
+  {
+    "id": "matx0008",
+    "type": 2,
+    "location": 4002,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Are you ready to alter reality?",
+        "character": 19
+      },
+      {
+        "id": 2,
+        "type": "button",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Increase NPC arousal",
+        "conditions": [],
+        "cubeAction": {
+          "type": "allArousalNPC",
+          "value": ""
+        }
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Increase NPC corruption",
+        "conditions": [],
+        "cubeAction": {
+          "type": "allCorrNpc",
+          "value": ""
+        }
+      },
+      {
+        "id": 4,
+        "type": "button",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Exit",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/400"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": []
+  },
+  {
+    "id": "matx0009",
+    "type": 2,
+    "location": 4003,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Sometimes waiting can be frustrating.",
+        "character": 18
+      },
+      {
+        "id": 2,
+        "type": "button",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Advance 1 hour",
+        "conditions": [],
+        "cubeAction": {
+          "type": "time",
+          "value": "1"
+        }
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Advance 6 hours",
+        "conditions": [],
+        "cubeAction": {
+          "type": "time",
+          "value": "6"
+        }
+      },
+      {
+        "id": 4,
+        "type": "button",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Advance 23 hours",
+        "conditions": [],
+        "cubeAction": {
+          "type": "time",
+          "value": "23"
+        }
+      },
+      {
+        "id": 5,
+        "type": "button",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Exit",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/400"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": []
+  },
+  {
     "id": "mom0001",
     "type": 3,
     "location": 1007,
@@ -12325,6 +14013,198 @@
     ]
   },
   {
+    "id": "park0002",
+    "type": 2,
+    "location": 2332,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 1,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You look toward the tree branch where you thought you saw a hidden silhouette among the leaves, but when you fix your gaze there, there is nothing. Only the moon shining through",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/locations/park/park-night-tree.webp"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Back",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/230"
+        }
+      },
+      {
+        "id": 4,
+        "type": "code",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "functionName": "lauchEventoGroup",
+        "parameters": [
+          "park0003",
+          "park0004"
+        ],
+        "conditions": [
+          10000028
+        ]
+      }
+    ],
+    "conditions": [],
+    "effects": []
+  },
+  {
+    "id": "park0003",
+    "type": 0,
+    "location": "230",
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "All of a sudden you hear leaves and grass rustling slightly. And before you can even blink, someone's standing right in front of you.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/suki/suki-presentation.webp"
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You're late! Listen up—come back tomorrow, everything's all set for the drop.",
+        "character": 16
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "The kunoichi vanishes in a flash, leaving you wondering what the hell just happened.",
+        "character": 500
+      },
+      {
+        "id": 5,
+        "type": "button",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Back",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/230"
+        }
+      }
+    ],
+    "conditions": [
+      13000000,
+      10000028,
+      2
+    ],
+    "effects": []
+  },
+  {
+    "id": "park0004",
+    "type": 0,
+    "location": 230,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Suki materializes from the darkness and passes you a sealed scroll.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/suki/suki-pergamino.webp"
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "I can't let you leave with it. Read it now. If this thing gets out without protection, we're all screwed.",
+        "character": 16
+      },
+      {
+        "id": 4,
+        "type": "button",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Read (Agy +1)",
+        "conditions": [],
+        "cubeAction": {
+          "type": "agy",
+          "value": "1"
+        }
+      },
+      {
+        "id": 5,
+        "type": "button",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Back",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/230"
+        }
+      }
+    ],
+    "conditions": [
+      10000028,
+      12000041,
+      2
+    ],
+    "effects": []
+  },
+  {
     "id": "patreon0001",
     "type": 2,
     "location": 300,
@@ -13214,6 +15094,423 @@
       10200,
       2040
     ]
+  },
+  {
+    "id": "table0001",
+    "type": 2,
+    "location": 2040,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 1,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "code",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "functionName": "lauchEventoGroup",
+        "parameters": [
+          "table0002",
+          "table0003"
+        ],
+        "conditions": [
+          10000028
+        ]
+      },
+      {
+        "id": 2,
+        "type": "text",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You walk up to the cafe tables and hear someone talking at you, but it's more like the guy's just yapping at thin air while he drinks his tea.",
+        "character": 500
+      },
+      {
+        "id": 3,
+        "type": "image",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/lucien/lucien-tip.webp"
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 10,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Okay ...",
+        "character": 1
+      },
+      {
+        "id": 5,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Confidence isn't optional. Walk into a room like your cock's already the biggest one there, even if it isn't.",
+        "character": 17
+      },
+      {
+        "id": 6,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Listen to her,actually listen. Then ask the right questions. Get her talking about her fantasies, and she'll end up begging you to make them real.",
+        "character": 17
+      },
+      {
+        "id": 7,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "A well-timed compliment goes further than a cheap pickup line. Tell her she smells good enough to eat, and watch her pupils dilate.",
+        "character": 17
+      },
+      {
+        "id": 8,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Body language is half the game. Lean in when she talks. Let your eyes drop to her lips for a second too long. If she mirrors you, she's already wet.",
+        "character": 17
+      },
+      {
+        "id": 9,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Don't just dive for her tits, no matter how spectacular they are. Find the spot behind her ear, the back of her neck, the inside of her wrist. Kiss her there and she'll unravel.",
+        "character": 17
+      },
+      {
+        "id": 10,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Foreplay starts before the clothes come off. Whisper something filthy in her ear while you're still in public. She'll be dripping before you even get home.",
+        "character": 17
+      },
+      {
+        "id": 11,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Make her laugh until she snorts. Then make her moan until she forgets her own name. That's how you become unforgettable.",
+        "character": 17
+      },
+      {
+        "id": 12,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Never rush the pussy. It's not a race. You want her so wet that sliding in feels like slipping into a warm bath, not a dry handshake.",
+        "character": 17
+      },
+      {
+        "id": 13,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Learn to eat pussy like it's your last meal on death row. Tongue, lips, fingers—all of it. If she isn't pulling your hair and cursing your name, you're not done.",
+        "character": 17
+      },
+      {
+        "id": 14,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Don't ask for permission for every little thing. Grab her by the waist, push her against the wall, and kiss her like you mean it. If she hesitates, back off. If she moans, keep going.",
+        "character": 17
+      },
+      {
+        "id": 15,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "A solid relationship is built on trust and honesty. But a great one includes dirty texts at noon and surprise blowjobs in the kitchen.",
+        "character": 17
+      },
+      {
+        "id": 16,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "If you're going to fuck her hard, look her in the eyes. If you're going to fuck her slow, watch her face. Either way, pay attention or you're just a human dildo.",
+        "character": 17
+      },
+      {
+        "id": 17,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Always keep lube by the bed. Even if she's a waterfall, extra slickness never hurt. Especially for anal—never go in dry unless she specifically begs for the burn.",
+        "character": 17
+      },
+      {
+        "id": 18,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Women aren't vending machines where you put in kindness coins and sex falls out. But if you're genuinely good, attentive, and can make her cum, she'll want to drain your balls on the regular.",
+        "character": 17
+      },
+      {
+        "id": 19,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "A guy with a big dick and no rhythm is worthless. A guy who knows how to finger her while kissing her neck is worth his weight in gold.",
+        "character": 17
+      },
+      {
+        "id": 20,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "When in doubt, make her cum. If she's right there, don't stop for anything. Leg cramp? Push through it. Die like a hero.",
+        "character": 17
+      },
+      {
+        "id": 21,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Sometimes the most romantic thing you can do is wash the dishes, then bend her over the counter. Chores and aftercare, darling. Both get you laid.",
+        "character": 17
+      },
+      {
+        "id": 22,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Remember her name, her favorite drink, and what makes her shiver. The little details turn a one-night stand into a regular thing.",
+        "character": 17
+      },
+      {
+        "id": 23,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "If you can't get it up, blame the alcohol, the moon, or her ex. Then eat her pussy until she forgets your cock took the night off.",
+        "character": 17
+      },
+      {
+        "id": 24,
+        "type": "text",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Never date a woman who doesn't laugh at your jokes. Unless her tits are spectacular and she laughs when you motorboat her. Then maybe compromise.",
+        "character": 17
+      },
+      {
+        "id": 25,
+        "type": "button",
+        "order": 11,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Leave",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/2003"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      2038
+    ]
+  },
+  {
+    "id": "table0002",
+    "type": 0,
+    "location": 2003,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You see a blonde at the cafe and take a few seconds to build up the nerve to approach her.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/lucien/blonde1.webp"
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Hey there, beautiful. You alone?",
+        "character": 1
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "The blonde turns around when you speak, but it's not what you expected. Nearby tables erupt in laughter while you wish you could just disappear.",
+        "character": 500
+      },
+      {
+        "id": 5,
+        "type": "image",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/lucien/blonde2.webp"
+      },
+      {
+        "id": 6,
+        "type": "text",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Uh... I... uh... sorry about that.",
+        "character": 1
+      },
+      {
+        "id": 7,
+        "type": "text",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Amid the laughter, a voice comes from another table.",
+        "character": 500
+      },
+      {
+        "id": 8,
+        "type": "text",
+        "order": 8,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Good attempt, boy. Come tomorrow when the embarrassment's faded a bit, and I'll treat you to some tea.",
+        "character": 17
+      },
+      {
+        "id": 9,
+        "type": "image",
+        "order": 9,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/lucien/lucien-presentation.webp"
+      },
+      {
+        "id": 10,
+        "type": "button",
+        "order": 10,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Leave",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/20"
+        }
+      }
+    ],
+    "conditions": [
+      13000000,
+      10000028,
+      2
+    ],
+    "effects": []
+  },
+  {
+    "id": "table0003",
+    "type": 0,
+    "location": 2003,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You ready for today's lesson, kid?",
+        "character": 17
+      },
+      {
+        "id": 2,
+        "type": "image",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "image": "assets/img/eventos/npc/lucien/lucien-lesson.webp"
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Listen to him (Charisma +1)",
+        "conditions": [],
+        "cubeAction": {
+          "type": "cha",
+          "value": "1"
+        }
+      },
+      {
+        "id": 4,
+        "type": "button",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Back",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/2003"
+        }
+      }
+    ],
+    "conditions": [
+      10000028,
+      12000042,
+      2
+    ],
+    "effects": []
   },
   {
     "id": "wdoor0001",

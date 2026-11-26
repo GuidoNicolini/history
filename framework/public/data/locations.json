@@ -472,6 +472,29 @@
     "subLocations": []
   },
   {
+    "id": 2332,
+    "name": "...",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/cheat-agy.webp"
+      }
+    ],
+    "url": "evento/park0002",
+    "backUrl": "park0002",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [
+      5,
+      2010
+    ],
+    "subLocations": []
+  },
+  {
     "id": 1045,
     "name": "Code Patreon",
     "type": 100,
@@ -519,6 +542,29 @@
     "conditionsVisible": [
       3000,
       10000007
+    ],
+    "subLocations": []
+  },
+  {
+    "id": 1050,
+    "name": "Cheats",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/cheats.webp"
+      }
+    ],
+    "url": "evento/garage0002",
+    "backUrl": "garage0002",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [
+      2,
+      10000029
     ],
     "subLocations": []
   },
@@ -634,6 +680,28 @@
     "styleClass": [],
     "conditionsAvailable": [],
     "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 2126,
+    "name": "Chat",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/steroids.webp"
+      }
+    ],
+    "url": "evento/gym0014",
+    "backUrl": "gym0014",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [
+      5
+    ],
     "subLocations": []
   },
   {
@@ -908,6 +976,91 @@
     "subLocations": []
   },
   {
+    "id": 4004,
+    "name": "Localhost Moanpheus",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/nave-local-moanp.webp"
+      }
+    ],
+    "url": "evento/matx0006",
+    "backUrl": "matx0006",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [
+      5,
+      3
+    ],
+    "conditionsVisible": [
+      203
+    ],
+    "subLocations": []
+  },
+  {
+    "id": 4001,
+    "name": "Items",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/nave-item.webp"
+      }
+    ],
+    "url": "evento/matx0007",
+    "backUrl": "matx0007",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 4002,
+    "name": "NPC",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/nave-rel.webp"
+      }
+    ],
+    "url": "evento/matx0008",
+    "backUrl": "matx0008",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
+    "id": 4003,
+    "name": "Time",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/nave-time.webp"
+      }
+    ],
+    "url": "evento/matx0009",
+    "backUrl": "matx0009",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": []
+  },
+  {
     "id": 2234,
     "name": "Donations",
     "type": 100,
@@ -1077,6 +1230,28 @@
       2,
       700,
       3002
+    ],
+    "subLocations": []
+  },
+  {
+    "id": 2040,
+    "name": "Lucien",
+    "type": 100,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/activities/cheat-char.webp"
+      }
+    ],
+    "url": "evento/table0001",
+    "backUrl": "table0001",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [
+      5
     ],
     "subLocations": []
   },
@@ -1382,7 +1557,8 @@
     "conditionsVisible": [],
     "subLocations": [
       2035,
-      2039
+      2039,
+      2040
     ]
   },
   {
@@ -1509,7 +1685,8 @@
     "conditionsAvailable": [],
     "conditionsVisible": [],
     "subLocations": [
-      1039
+      1039,
+      1050
     ]
   },
   {
@@ -1555,7 +1732,8 @@
     "conditionsAvailable": [],
     "conditionsVisible": [],
     "subLocations": [
-      2123
+      2123,
+      2126
     ]
   },
   {
@@ -1653,7 +1831,8 @@
     "subLocations": [
       10,
       20,
-      30
+      30,
+      40
     ]
   },
   {
@@ -1738,6 +1917,30 @@
       1043,
       1044,
       1046
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Reality...?",
+    "type": 10,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/distric/matrix.webp"
+      }
+    ],
+    "url": "location/40",
+    "backUrl": "location/1",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [
+      12000046
+    ],
+    "subLocations": [
+      400
     ]
   },
   {
@@ -1945,7 +2148,33 @@
       2301,
       2302,
       2303,
-      2331
+      2331,
+      2332
+    ]
+  },
+  {
+    "id": 400,
+    "name": "Ship",
+    "type": 20,
+    "images": [
+      {
+        "type": "thumbnail",
+        "url": "assets/img/locations/building/ship.webp"
+      }
+    ],
+    "url": "location/400",
+    "backUrl": "location/40",
+    "isAvailable": true,
+    "isVisible": true,
+    "lastTimeVisited": 0,
+    "styleClass": [],
+    "conditionsAvailable": [],
+    "conditionsVisible": [],
+    "subLocations": [
+      4001,
+      4002,
+      4003,
+      4004
     ]
   },
   {

@@ -6,13 +6,16 @@ import {HeroService} from '../../hero/services/hero-service';
 import {GameItems} from '../../../shared/enums/game-items';
 import {EventoService} from './evento-service';
 import { StoryState } from '../../../shared/services/story-state';
+import {Stats} from '../../../shared/enums/stats';
+import {NpcService} from '../../npc/services/npc-service';
+import {TimeService} from '../../time/services/time-service';
 
 @Injectable({
   providedIn: 'root',
 })
 export class CubeActionService {
 
-  constructor(private router: Router, private saveLoadService: SaveLoadService, private heroService: HeroService, private eventoService : EventoService, private storyState: StoryState) { }
+  constructor(private router: Router, private saveLoadService: SaveLoadService, private heroService: HeroService, private eventoService : EventoService, private storyState: StoryState, private npcService: NpcService, private timeService: TimeService) { }
 
   public applyAll(actions: CubeAction[]): void {
     if (!actions || actions.length === 0) return;
@@ -62,6 +65,52 @@ export class CubeActionService {
         }
         break;
       }
+
+      case 'cheats': {
+        this.storyState.setFlag('cheat_on', true);
+        break;
+      }
+
+      case "str": {
+        this.heroService.modifyStat(Stats.STRENGTH,1)
+        break;
+      }
+
+      case "agy": {
+        this.heroService.modifyStat(Stats.AGILITY,1)
+        break;
+      }
+
+      case "int": {
+        this.heroService.modifyStat(Stats.INTELLIGENCE,1)
+        break;
+      }
+
+      case "cha": {
+        this.heroService.modifyStat(Stats.CHARISMA,1)
+        break;
+      }
+
+      case "allArousalNPC": {
+        this.npcService.increaseAllArousal();
+        break;
+      }
+
+      case "allCorrNpc": {
+        this.npcService.increaseAllCorruption();
+        break;
+      }
+
+      case 'time': {
+        const hours = parseInt(String(action.value), 10);
+        if (!isNaN(hours) && hours > 0) {
+          this.timeService.advanceHours(hours);
+        }
+        break;
+      }
+
+
+
     }
   }
 }

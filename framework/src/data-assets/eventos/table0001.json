@@ -1,0 +1,249 @@
+{
+  "id": "table0001",
+  "type": 2,
+  "location": 2040,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 1,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "code",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "functionName": "lauchEventoGroup",
+      "parameters": [
+        "table0002",
+        "table0003"
+      ],
+      "conditions": [
+        10000028
+      ]
+    },
+    {
+      "id": 2,
+      "type": "text",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "text": "You walk up to the cafe tables and hear someone talking at you, but it's more like the guy's just yapping at thin air while he drinks his tea.",
+      "character": 500
+    },
+    {
+      "id": 3,
+      "type": "image",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "image": "assets/img/eventos/npc/lucien/lucien-tip.webp"
+    },
+    {
+      "id": 4,
+      "type": "text",
+      "order": 10,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Okay ...",
+      "character": 1
+    },
+    {
+      "id": 5,
+      "type": "text",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Confidence isn't optional. Walk into a room like your cock's already the biggest one there, even if it isn't.",
+      "character": 17
+    },
+    {
+      "id": 6,
+      "type": "text",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Listen to her,actually listen. Then ask the right questions. Get her talking about her fantasies, and she'll end up begging you to make them real.",
+      "character": 17
+    },
+    {
+      "id": 7,
+      "type": "text",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": "A well-timed compliment goes further than a cheap pickup line. Tell her she smells good enough to eat, and watch her pupils dilate.",
+      "character": 17
+    },
+    {
+      "id": 8,
+      "type": "text",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Body language is half the game. Lean in when she talks. Let your eyes drop to her lips for a second too long. If she mirrors you, she's already wet.",
+      "character": 17
+    },
+    {
+      "id": 9,
+      "type": "text",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Don't just dive for her tits, no matter how spectacular they are. Find the spot behind her ear, the back of her neck, the inside of her wrist. Kiss her there and she'll unravel.",
+      "character": 17
+    },
+    {
+      "id": 10,
+      "type": "text",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Foreplay starts before the clothes come off. Whisper something filthy in her ear while you're still in public. She'll be dripping before you even get home.",
+      "character": 17
+    },
+    {
+      "id": 11,
+      "type": "text",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Make her laugh until she snorts. Then make her moan until she forgets her own name. That's how you become unforgettable.",
+      "character": 17
+    },
+    {
+      "id": 12,
+      "type": "text",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Never rush the pussy. It's not a race. You want her so wet that sliding in feels like slipping into a warm bath, not a dry handshake.",
+      "character": 17
+    },
+    {
+      "id": 13,
+      "type": "text",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Learn to eat pussy like it's your last meal on death row. Tongue, lips, fingers—all of it. If she isn't pulling your hair and cursing your name, you're not done.",
+      "character": 17
+    },
+    {
+      "id": 14,
+      "type": "text",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Don't ask for permission for every little thing. Grab her by the waist, push her against the wall, and kiss her like you mean it. If she hesitates, back off. If she moans, keep going.",
+      "character": 17
+    },
+    {
+      "id": 15,
+      "type": "text",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": "A solid relationship is built on trust and honesty. But a great one includes dirty texts at noon and surprise blowjobs in the kitchen.",
+      "character": 17
+    },
+    {
+      "id": 16,
+      "type": "text",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": "If you're going to fuck her hard, look her in the eyes. If you're going to fuck her slow, watch her face. Either way, pay attention or you're just a human dildo.",
+      "character": 17
+    },
+    {
+      "id": 17,
+      "type": "text",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Always keep lube by the bed. Even if she's a waterfall, extra slickness never hurt. Especially for anal—never go in dry unless she specifically begs for the burn.",
+      "character": 17
+    },
+    {
+      "id": 18,
+      "type": "text",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Women aren't vending machines where you put in kindness coins and sex falls out. But if you're genuinely good, attentive, and can make her cum, she'll want to drain your balls on the regular.",
+      "character": 17
+    },
+    {
+      "id": 19,
+      "type": "text",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": "A guy with a big dick and no rhythm is worthless. A guy who knows how to finger her while kissing her neck is worth his weight in gold.",
+      "character": 17
+    },
+    {
+      "id": 20,
+      "type": "text",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": "When in doubt, make her cum. If she's right there, don't stop for anything. Leg cramp? Push through it. Die like a hero.",
+      "character": 17
+    },
+    {
+      "id": 21,
+      "type": "text",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Sometimes the most romantic thing you can do is wash the dishes, then bend her over the counter. Chores and aftercare, darling. Both get you laid.",
+      "character": 17
+    },
+    {
+      "id": 22,
+      "type": "text",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Remember her name, her favorite drink, and what makes her shiver. The little details turn a one-night stand into a regular thing.",
+      "character": 17
+    },
+    {
+      "id": 23,
+      "type": "text",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": "If you can't get it up, blame the alcohol, the moon, or her ex. Then eat her pussy until she forgets your cock took the night off.",
+      "character": 17
+    },
+    {
+      "id": 24,
+      "type": "text",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Never date a woman who doesn't laugh at your jokes. Unless her tits are spectacular and she laughs when you motorboat her. Then maybe compromise.",
+      "character": 17
+    },
+    {
+      "id": 25,
+      "type": "button",
+      "order": 11,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Leave",
+      "conditions": [],
+      "cubeAction": {
+        "type": "redirection",
+        "value": "location/2003"
+      }
+    }
+  ],
+  "conditions": [],
+  "effects": [
+    2038
+  ]
+}

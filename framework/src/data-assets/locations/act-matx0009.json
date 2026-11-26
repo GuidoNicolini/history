@@ -1,0 +1,20 @@
+{
+  "id": 4003,
+  "name": "Time",
+  "type": 100,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "assets/img/locations/activities/nave-time.webp"
+    }
+  ],
+  "url": "evento/matx0009",
+  "backUrl": "matx0009",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [],
+  "conditionsVisible": [],
+  "subLocations": []
+}
