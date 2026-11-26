@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit, ChangeDetectionStrategy} from '@angular/core';
 import {TextCube} from '../../models/Cube/text-cube';
 import {HeroService} from '../../../hero/services/hero-service';
 import {NpcService} from '../../../npc/services/npc-service';
@@ -9,6 +9,7 @@ import {UserConfigService} from '../../../../shared/services/user-config-service
   selector: 'app-text-view',
   standalone: false,
   templateUrl: './text-view.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './text-view.css',
 })
 export class TextView implements OnInit {

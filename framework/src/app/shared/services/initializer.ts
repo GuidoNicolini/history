@@ -27,8 +27,8 @@ export class Initializer {
     return this.http.get<T[]>(`data/${entity}.json`);
   }
 
-  initializeAllData() {
-    forkJoin({
+  initializeAllData(): Observable<void> {
+    return forkJoin({
       heroes: this.loadData<HeroState>('heroes'),
       eventos: this.loadData<EventoState>('eventos'),
       locations: this.loadData<any>('locations'),
@@ -36,22 +36,22 @@ export class Initializer {
       time: this.loadData<any>('time'),
       gameConditions: this.loadData<GameCondition>('gameConditions'),
       effects: this.loadData<EventoEffect>('eventoEffects')
-    }).subscribe(({heroes, eventos, locations, npcs, time, gameConditions, effects}) => {
+    }).pipe(
+      map(({heroes, eventos, locations, npcs, time, gameConditions, effects}) => {
+        if (heroes.length > 0) {
+          this.heroService.initializeHero(heroes[0]);
+        }
+        this.locationService.initilizeLocations(locations);
+        this.eventoService.initializeEventos(eventos);
+        this.npcService.initializeNpcs(npcs);
+        if (time.length > 0) {
+          this.timeService.initializeTime(time[0]);
+        }
+        this.conditionService.initializeConditions(gameConditions);
+        this.eventoEffectsService.initializeEffects(effects);
 
-
-      if (heroes.length > 0) {
-        this.heroService.initializeHero(heroes[0]);
-      }
-      this.locationService.initilizeLocations(locations)
-      this.eventoService.initializeEventos(eventos)
-      this.npcService.initializeNpcs(npcs);
-      if (time.length > 0) {
-        this.timeService.initializeTime(time[0])
-      }
-      this.conditionService.initializeConditions(gameConditions)
-      this.eventoEffectsService.initializeEffects(effects)
-
-      console.log('¡Todos los datos iniciales han sido cargados!');
-    });
+        console.log('¡Todos los datos iniciales han sido cargados!');
+      })
+    );
   }
 }

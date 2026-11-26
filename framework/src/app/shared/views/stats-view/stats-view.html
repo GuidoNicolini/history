@@ -1,0 +1,31 @@
+<div class="stats-container p-3 mb-3 text-start">
+  <div class="d-flex justify-content-between align-items-center stats-header" (click)="toggleExpand()">
+    <span class="header-title">
+      <i class="bi bi-person-lines-fill text-warning me-2 animate-bounce"></i>
+      Stats
+    </span>
+    <div class="d-flex align-items-center">
+      <i class="bi text-white" [class.bi-chevron-up]="isExpanded" [class.bi-chevron-down]="!isExpanded"></i>
+    </div>
+  </div>
+
+  <div class="stats-content" [class.expanded]="isExpanded">
+    <hr class="my-2 border-secondary">
+
+    <!-- Stats Grid -->
+    <div class="row g-2">
+      <div *ngFor="let stat of statsData()" class="col-6">
+        <div class="stat-card p-2 rounded d-flex align-items-center h-100" [ngClass]="stat.bgClass">
+          <div class="stat-icon-wrapper d-flex justify-content-center align-items-center me-2" style="font-size: 1.5rem;">
+            <span *ngIf="stat.isEmoji">{{ stat.icon }}</span>
+            <i *ngIf="!stat.isEmoji" class="bi {{ stat.icon }}"></i>
+          </div>
+          <div class="stat-info d-flex flex-column">
+            <span class="stat-name text-muted font-semibold" style="font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.5px;">{{ stat.name }}</span>
+            <span class="stat-value text-white font-bold" style="font-size: 1.25rem; line-height: 1.1;">{{ stat.value }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

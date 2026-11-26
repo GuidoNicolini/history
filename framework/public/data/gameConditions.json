@@ -1,5 +1,586 @@
 [
   {
+    "id": 12000006,
+    "type": "activation",
+    "target": "backyard0002",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000003,
+    "type": "activation",
+    "target": "bathroom0004",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000007,
+    "type": "activation",
+    "target": "cafe0003",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000025,
+    "type": "activation",
+    "target": "cafe0004",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000026,
+    "type": "activation",
+    "target": "cafe0005",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000027,
+    "type": "activation",
+    "target": "cafe0006",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000029,
+    "type": "activation",
+    "target": "cafe0007",
+    "operator": "<",
+    "value": 1
+  },
+  {
+    "id": 12000028,
+    "type": "activation",
+    "target": "cafe0007",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000009,
+    "type": "activation",
+    "target": "dad0002",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000010,
+    "type": "activation",
+    "target": "dad0003",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000011,
+    "type": "activation",
+    "target": "dad0004",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000012,
+    "type": "activation",
+    "target": "dad0005",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000013,
+    "type": "activation",
+    "target": "dad0006",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000024,
+    "type": "activation",
+    "target": "dad0007",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000004,
+    "type": "activation",
+    "target": "garage0001",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000040,
+    "type": "activation",
+    "target": "gym0015",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000008,
+    "type": "activation",
+    "target": "hero0001",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000039,
+    "type": "activation",
+    "target": "dad0008",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000000,
+    "type": "activation",
+    "target": "livingroom0003",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000043,
+    "type": "activation",
+    "target": "matx0001",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000044,
+    "type": "activation",
+    "target": "matx0002",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000045,
+    "type": "activation",
+    "target": "matx0003",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000046,
+    "type": "activation",
+    "target": "matx0005",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000019,
+    "type": "activation",
+    "target": "mom0005",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000014,
+    "type": "activation",
+    "target": "mom0005",
+    "operator": "<",
+    "value": 1
+  },
+  {
+    "id": 12000020,
+    "type": "activation",
+    "target": "mom0006",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000015,
+    "type": "activation",
+    "target": "mom0006",
+    "operator": "<",
+    "value": 1
+  },
+  {
+    "id": 12000021,
+    "type": "activation",
+    "target": "mom0007",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000016,
+    "type": "activation",
+    "target": "mom0007",
+    "operator": "<",
+    "value": 1
+  },
+  {
+    "id": 12000022,
+    "type": "activation",
+    "target": "mom0008",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000017,
+    "type": "activation",
+    "target": "mom0008",
+    "operator": "<",
+    "value": 1
+  },
+  {
+    "id": 12000023,
+    "type": "activation",
+    "target": "mom0009",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000018,
+    "type": "activation",
+    "target": "mom0009",
+    "operator": "<",
+    "value": 1
+  },
+  {
+    "id": 12000037,
+    "type": "activation",
+    "target": "morgan0001",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000038,
+    "type": "activation",
+    "target": "morgan0002",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000041,
+    "type": "activation",
+    "target": "park0003",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000005,
+    "type": "activation",
+    "target": "supermarket0001",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000030,
+    "type": "activation",
+    "target": "supermarket0003",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000031,
+    "type": "activation",
+    "target": "supermarket0004",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000032,
+    "type": "activation",
+    "target": "supermarket0005",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000033,
+    "type": "activation",
+    "target": "supermarket0006",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000034,
+    "type": "activation",
+    "target": "supermarket0007",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000036,
+    "type": "activation",
+    "target": "supermarket0008",
+    "operator": "<",
+    "value": 1
+  },
+  {
+    "id": 12000035,
+    "type": "activation",
+    "target": "supermarket0008",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000042,
+    "type": "activation",
+    "target": "table0002",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 12000002,
+    "type": "activation",
+    "target": "yourroom0006",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 13000000,
+    "type": "auto-activation",
+    "target": "",
+    "operator": "<",
+    "value": 1
+  },
+  {
+    "id": 13000004,
+    "type": "auto-activation",
+    "target": "",
+    "operator": "<",
+    "value": 10
+  },
+  {
+    "id": 13000009,
+    "type": "auto-activation",
+    "target": "",
+    "operator": "<",
+    "value": 100
+  },
+  {
+    "id": 13000005,
+    "type": "auto-activation",
+    "target": "",
+    "operator": "<",
+    "value": 15
+  },
+  {
+    "id": 13000010,
+    "type": "auto-activation",
+    "target": "",
+    "operator": "<",
+    "value": 150
+  },
+  {
+    "id": 13000001,
+    "type": "auto-activation",
+    "target": "",
+    "operator": "<",
+    "value": 2
+  },
+  {
+    "id": 13000006,
+    "type": "auto-activation",
+    "target": "",
+    "operator": "<",
+    "value": 20
+  },
+  {
+    "id": 13000011,
+    "type": "auto-activation",
+    "target": "",
+    "operator": "<",
+    "value": 200
+  },
+  {
+    "id": 13000007,
+    "type": "auto-activation",
+    "target": "",
+    "operator": "<",
+    "value": 25
+  },
+  {
+    "id": 13000002,
+    "type": "auto-activation",
+    "target": "",
+    "operator": "<",
+    "value": 3
+  },
+  {
+    "id": 13000003,
+    "type": "auto-activation",
+    "target": "",
+    "operator": "<",
+    "value": 5
+  },
+  {
+    "id": 13000008,
+    "type": "auto-activation",
+    "target": "",
+    "operator": "<",
+    "value": 50
+  },
+  {
+    "id": 13000012,
+    "type": "auto-activation",
+    "target": "",
+    "operator": "<",
+    "value": 500
+  },
+  {
+    "id": 1001008,
+    "type": "item",
+    "target": "roomKeyBossCafe",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 10008,
+    "type": "stat-npc",
+    "target": "6:arousal",
+    "operator": ">=",
+    "value": 25
+  },
+  {
+    "id": 10009,
+    "type": "stat-npc",
+    "target": "6:arousal",
+    "operator": ">=",
+    "value": 50
+  },
+  {
+    "id": 10010,
+    "type": "stat-npc",
+    "target": "6:arousal",
+    "operator": ">=",
+    "value": 75
+  },
+  {
+    "id": 10011,
+    "type": "stat-npc",
+    "target": "6:arousal",
+    "operator": ">=",
+    "value": 90
+  },
+  {
+    "id": 11084,
+    "type": "stat-npc",
+    "target": "6:corruption",
+    "operator": ">=",
+    "value": 10
+  },
+  {
+    "id": 11089,
+    "type": "stat-npc",
+    "target": "6:corruption",
+    "operator": ">=",
+    "value": 100
+  },
+  {
+    "id": 11080,
+    "type": "stat-npc",
+    "target": "6:corruption",
+    "operator": ">=",
+    "value": 2
+  },
+  {
+    "id": 11085,
+    "type": "stat-npc",
+    "target": "6:corruption",
+    "operator": ">=",
+    "value": 20
+  },
+  {
+    "id": 11081,
+    "type": "stat-npc",
+    "target": "6:corruption",
+    "operator": ">=",
+    "value": 4
+  },
+  {
+    "id": 11086,
+    "type": "stat-npc",
+    "target": "6:corruption",
+    "operator": ">=",
+    "value": 40
+  },
+  {
+    "id": 11082,
+    "type": "stat-npc",
+    "target": "6:corruption",
+    "operator": ">=",
+    "value": 6
+  },
+  {
+    "id": 11087,
+    "type": "stat-npc",
+    "target": "6:corruption",
+    "operator": ">=",
+    "value": 60
+  },
+  {
+    "id": 11083,
+    "type": "stat-npc",
+    "target": "6:corruption",
+    "operator": ">=",
+    "value": 8
+  },
+  {
+    "id": 11088,
+    "type": "stat-npc",
+    "target": "6:corruption",
+    "operator": ">=",
+    "value": 80
+  },
+  {
+    "id": 20088,
+    "type": "stat-npc",
+    "target": "6:level",
+    "operator": ">=",
+    "value": 10
+  },
+  {
+    "id": 20080,
+    "type": "stat-npc",
+    "target": "6:level",
+    "operator": ">=",
+    "value": 2
+  },
+  {
+    "id": 20081,
+    "type": "stat-npc",
+    "target": "6:level",
+    "operator": ">=",
+    "value": 3
+  },
+  {
+    "id": 20082,
+    "type": "stat-npc",
+    "target": "6:level",
+    "operator": ">=",
+    "value": 4
+  },
+  {
+    "id": 20083,
+    "type": "stat-npc",
+    "target": "6:level",
+    "operator": ">=",
+    "value": 5
+  },
+  {
+    "id": 20084,
+    "type": "stat-npc",
+    "target": "6:level",
+    "operator": ">=",
+    "value": 6
+  },
+  {
+    "id": 20085,
+    "type": "stat-npc",
+    "target": "6:level",
+    "operator": ">=",
+    "value": 7
+  },
+  {
+    "id": 20086,
+    "type": "stat-npc",
+    "target": "6:level",
+    "operator": ">=",
+    "value": 8
+  },
+  {
+    "id": 20087,
+    "type": "stat-npc",
+    "target": "6:level",
+    "operator": ">=",
+    "value": 9
+  },
+  {
     "id": 1001004,
     "type": "item",
     "target": "roomKeyBrother",
@@ -7,11 +588,417 @@
     "value": 1
   },
   {
+    "id": 10024,
+    "type": "stat-npc",
+    "target": "7:arousal",
+    "operator": ">=",
+    "value": 25
+  },
+  {
+    "id": 10025,
+    "type": "stat-npc",
+    "target": "7:arousal",
+    "operator": ">=",
+    "value": 50
+  },
+  {
+    "id": 10026,
+    "type": "stat-npc",
+    "target": "7:arousal",
+    "operator": ">=",
+    "value": 75
+  },
+  {
+    "id": 10027,
+    "type": "stat-npc",
+    "target": "7:arousal",
+    "operator": ">=",
+    "value": 90
+  },
+  {
+    "id": 11104,
+    "type": "stat-npc",
+    "target": "7:corruption",
+    "operator": ">=",
+    "value": 10
+  },
+  {
+    "id": 11109,
+    "type": "stat-npc",
+    "target": "7:corruption",
+    "operator": ">=",
+    "value": 100
+  },
+  {
+    "id": 11100,
+    "type": "stat-npc",
+    "target": "7:corruption",
+    "operator": ">=",
+    "value": 2
+  },
+  {
+    "id": 11105,
+    "type": "stat-npc",
+    "target": "7:corruption",
+    "operator": ">=",
+    "value": 20
+  },
+  {
+    "id": 11101,
+    "type": "stat-npc",
+    "target": "7:corruption",
+    "operator": ">=",
+    "value": 4
+  },
+  {
+    "id": 11106,
+    "type": "stat-npc",
+    "target": "7:corruption",
+    "operator": ">=",
+    "value": 40
+  },
+  {
+    "id": 11102,
+    "type": "stat-npc",
+    "target": "7:corruption",
+    "operator": ">=",
+    "value": 6
+  },
+  {
+    "id": 11107,
+    "type": "stat-npc",
+    "target": "7:corruption",
+    "operator": ">=",
+    "value": 60
+  },
+  {
+    "id": 11103,
+    "type": "stat-npc",
+    "target": "7:corruption",
+    "operator": ">=",
+    "value": 8
+  },
+  {
+    "id": 11108,
+    "type": "stat-npc",
+    "target": "7:corruption",
+    "operator": ">=",
+    "value": 80
+  },
+  {
+    "id": 10000012,
+    "type": "flag",
+    "target": "cassie_exclusive",
+    "operator": "==",
+    "value": "false"
+  },
+  {
+    "id": 10000013,
+    "type": "flag",
+    "target": "cassie_exclusive",
+    "operator": "==",
+    "value": "true"
+  },
+  {
+    "id": 20100,
+    "type": "stat-npc",
+    "target": "7:level",
+    "operator": ">=",
+    "value": 2
+  },
+  {
+    "id": 20101,
+    "type": "stat-npc",
+    "target": "7:level",
+    "operator": ">=",
+    "value": 3
+  },
+  {
+    "id": 20102,
+    "type": "stat-npc",
+    "target": "7:level",
+    "operator": ">=",
+    "value": 4
+  },
+  {
+    "id": 20103,
+    "type": "stat-npc",
+    "target": "7:level",
+    "operator": ">=",
+    "value": 5
+  },
+  {
+    "id": 10000029,
+    "type": "flag",
+    "target": "cheat_on",
+    "operator": "==",
+    "value": "false"
+  },
+  {
+    "id": 10000028,
+    "type": "flag",
+    "target": "cheat_on",
+    "operator": "==",
+    "value": "true"
+  },
+  {
     "id": 5,
     "type": "cd",
     "target": "",
     "operator": "==",
     "value": ""
+  },
+  {
+    "id": 10004,
+    "type": "stat-npc",
+    "target": "3:arousal",
+    "operator": ">=",
+    "value": 25
+  },
+  {
+    "id": 10005,
+    "type": "stat-npc",
+    "target": "3:arousal",
+    "operator": ">=",
+    "value": 50
+  },
+  {
+    "id": 10006,
+    "type": "stat-npc",
+    "target": "3:arousal",
+    "operator": ">=",
+    "value": 75
+  },
+  {
+    "id": 10007,
+    "type": "stat-npc",
+    "target": "3:arousal",
+    "operator": ">=",
+    "value": 90
+  },
+  {
+    "id": 11024,
+    "type": "stat-npc",
+    "target": "3:corruption",
+    "operator": ">=",
+    "value": 10
+  },
+  {
+    "id": 11029,
+    "type": "stat-npc",
+    "target": "3:corruption",
+    "operator": ">=",
+    "value": 100
+  },
+  {
+    "id": 11020,
+    "type": "stat-npc",
+    "target": "3:corruption",
+    "operator": ">=",
+    "value": 2
+  },
+  {
+    "id": 11025,
+    "type": "stat-npc",
+    "target": "3:corruption",
+    "operator": ">=",
+    "value": 20
+  },
+  {
+    "id": 11021,
+    "type": "stat-npc",
+    "target": "3:corruption",
+    "operator": ">=",
+    "value": 4
+  },
+  {
+    "id": 11026,
+    "type": "stat-npc",
+    "target": "3:corruption",
+    "operator": ">=",
+    "value": 40
+  },
+  {
+    "id": 11022,
+    "type": "stat-npc",
+    "target": "3:corruption",
+    "operator": ">=",
+    "value": 6
+  },
+  {
+    "id": 11027,
+    "type": "stat-npc",
+    "target": "3:corruption",
+    "operator": ">=",
+    "value": 60
+  },
+  {
+    "id": 11023,
+    "type": "stat-npc",
+    "target": "3:corruption",
+    "operator": ">=",
+    "value": 8
+  },
+  {
+    "id": 11028,
+    "type": "stat-npc",
+    "target": "3:corruption",
+    "operator": ">=",
+    "value": 80
+  },
+  {
+    "id": 20028,
+    "type": "stat-npc",
+    "target": "3:level",
+    "operator": ">=",
+    "value": 10
+  },
+  {
+    "id": 20020,
+    "type": "stat-npc",
+    "target": "3:level",
+    "operator": ">=",
+    "value": 2
+  },
+  {
+    "id": 20021,
+    "type": "stat-npc",
+    "target": "3:level",
+    "operator": ">=",
+    "value": 3
+  },
+  {
+    "id": 20022,
+    "type": "stat-npc",
+    "target": "3:level",
+    "operator": ">=",
+    "value": 4
+  },
+  {
+    "id": 20023,
+    "type": "stat-npc",
+    "target": "3:level",
+    "operator": ">=",
+    "value": 5
+  },
+  {
+    "id": 20024,
+    "type": "stat-npc",
+    "target": "3:level",
+    "operator": ">=",
+    "value": 6
+  },
+  {
+    "id": 20025,
+    "type": "stat-npc",
+    "target": "3:level",
+    "operator": ">=",
+    "value": 7
+  },
+  {
+    "id": 20026,
+    "type": "stat-npc",
+    "target": "3:level",
+    "operator": ">=",
+    "value": 8
+  },
+  {
+    "id": 20027,
+    "type": "stat-npc",
+    "target": "3:level",
+    "operator": ">=",
+    "value": 9
+  },
+  {
+    "id": 3003,
+    "type": "day",
+    "target": "",
+    "operator": ">=",
+    "value": 10
+  },
+  {
+    "id": 3004,
+    "type": "day",
+    "target": "",
+    "operator": ">=",
+    "value": 15
+  },
+  {
+    "id": 3008,
+    "type": "day",
+    "target": "",
+    "operator": ">=",
+    "value": 150
+  },
+  {
+    "id": 3000,
+    "type": "day",
+    "target": "",
+    "operator": ">=",
+    "value": 2
+  },
+  {
+    "id": 3009,
+    "type": "day",
+    "target": "",
+    "operator": ">=",
+    "value": 200
+  },
+  {
+    "id": 3001,
+    "type": "day",
+    "target": "",
+    "operator": ">=",
+    "value": 3
+  },
+  {
+    "id": 3005,
+    "type": "day",
+    "target": "",
+    "operator": ">=",
+    "value": 30
+  },
+  {
+    "id": 3010,
+    "type": "day",
+    "target": "",
+    "operator": ">=",
+    "value": 300
+  },
+  {
+    "id": 3011,
+    "type": "day",
+    "target": "",
+    "operator": ">=",
+    "value": 365
+  },
+  {
+    "id": 3002,
+    "type": "day",
+    "target": "",
+    "operator": ">=",
+    "value": 5
+  },
+  {
+    "id": 3006,
+    "type": "day",
+    "target": "",
+    "operator": ">=",
+    "value": 50
+  },
+  {
+    "id": 3007,
+    "type": "day",
+    "target": "",
+    "operator": ">=",
+    "value": 90
+  },
+  {
+    "id": 5999,
+    "type": "day",
+    "target": "",
+    "operator": "<=",
+    "value": 100000
   },
   {
     "id": 10,
@@ -273,6 +1260,62 @@
     "value": 75
   },
   {
+    "id": 850,
+    "type": "stat-hero",
+    "target": "cafe-exp",
+    "operator": ">=",
+    "value": 15
+  },
+  {
+    "id": 851,
+    "type": "stat-hero",
+    "target": "cafe-exp",
+    "operator": ">=",
+    "value": 40
+  },
+  {
+    "id": 852,
+    "type": "stat-hero",
+    "target": "cafe-exp",
+    "operator": ">=",
+    "value": 75
+  },
+  {
+    "id": 701,
+    "type": "stat-hero",
+    "target": "charisma",
+    "operator": ">=",
+    "value": 10
+  },
+  {
+    "id": 702,
+    "type": "stat-hero",
+    "target": "charisma",
+    "operator": ">=",
+    "value": 15
+  },
+  {
+    "id": 703,
+    "type": "stat-hero",
+    "target": "charisma",
+    "operator": ">=",
+    "value": 20
+  },
+  {
+    "id": 704,
+    "type": "stat-hero",
+    "target": "charisma",
+    "operator": ">=",
+    "value": 25
+  },
+  {
+    "id": 705,
+    "type": "stat-hero",
+    "target": "charisma",
+    "operator": ">=",
+    "value": 30
+  },
+  {
     "id": 700,
     "type": "stat-hero",
     "target": "charisma",
@@ -336,6 +1379,27 @@
     "value": 3
   },
   {
+    "id": 401,
+    "type": "stat-hero",
+    "target": "strength",
+    "operator": ">=",
+    "value": 10
+  },
+  {
+    "id": 402,
+    "type": "stat-hero",
+    "target": "strength",
+    "operator": ">=",
+    "value": 15
+  },
+  {
+    "id": 403,
+    "type": "stat-hero",
+    "target": "strength",
+    "operator": ">=",
+    "value": 20
+  },
+  {
     "id": 400,
     "type": "stat-hero",
     "target": "strength",
@@ -343,9 +1407,58 @@
     "value": 5
   },
   {
+    "id": 480,
+    "type": "stat-hero",
+    "target": "strength",
+    "operator": "<",
+    "value": 20
+  },
+  {
+    "id": 11000003,
+    "type": "imhere",
+    "target": "",
+    "operator": "==",
+    "value": 6
+  },
+  {
+    "id": 11000002,
+    "type": "imhere",
+    "target": "",
+    "operator": "==",
+    "value": 3
+  },
+  {
+    "id": 11000005,
+    "type": "imhere",
+    "target": "",
+    "operator": "==",
+    "value": 5
+  },
+  {
+    "id": 11000001,
+    "type": "imhere",
+    "target": "",
+    "operator": "==",
+    "value": 2
+  },
+  {
+    "id": 11000004,
+    "type": "imhere",
+    "target": "",
+    "operator": "==",
+    "value": 4
+  },
+  {
     "id": 1001000,
     "type": "item",
     "target": "food",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 1001009,
+    "type": "item",
+    "target": "gymcoin",
     "operator": ">=",
     "value": 1
   },
@@ -702,9 +1815,275 @@
   {
     "id": 1001001,
     "type": "item",
-    "target": "food",
+    "target": "snack",
     "operator": ">=",
     "value": 1
+  },
+  {
+    "id": 1001011,
+    "type": "item",
+    "target": "willAccess",
+    "operator": "<",
+    "value": 1
+  },
+  {
+    "id": 1001010,
+    "type": "item",
+    "target": "willAccess",
+    "operator": ">=",
+    "value": 1
+  },
+  {
+    "id": 10000010,
+    "type": "flag",
+    "target": "job_cafe",
+    "operator": "==",
+    "value": "false"
+  },
+  {
+    "id": 10000011,
+    "type": "flag",
+    "target": "job_cafe",
+    "operator": "==",
+    "value": "true"
+  },
+  {
+    "id": 10020,
+    "type": "stat-npc",
+    "target": "9:arousal",
+    "operator": ">=",
+    "value": 25
+  },
+  {
+    "id": 10021,
+    "type": "stat-npc",
+    "target": "9:arousal",
+    "operator": ">=",
+    "value": 50
+  },
+  {
+    "id": 10022,
+    "type": "stat-npc",
+    "target": "9:arousal",
+    "operator": ">=",
+    "value": 75
+  },
+  {
+    "id": 10023,
+    "type": "stat-npc",
+    "target": "9:arousal",
+    "operator": ">=",
+    "value": 90
+  },
+  {
+    "id": 11124,
+    "type": "stat-npc",
+    "target": "9:corruption",
+    "operator": ">=",
+    "value": 10
+  },
+  {
+    "id": 11129,
+    "type": "stat-npc",
+    "target": "9:corruption",
+    "operator": ">=",
+    "value": 100
+  },
+  {
+    "id": 11120,
+    "type": "stat-npc",
+    "target": "9:corruption",
+    "operator": ">=",
+    "value": 2
+  },
+  {
+    "id": 11125,
+    "type": "stat-npc",
+    "target": "9:corruption",
+    "operator": ">=",
+    "value": 20
+  },
+  {
+    "id": 11121,
+    "type": "stat-npc",
+    "target": "9:corruption",
+    "operator": ">=",
+    "value": 4
+  },
+  {
+    "id": 11126,
+    "type": "stat-npc",
+    "target": "9:corruption",
+    "operator": ">=",
+    "value": 40
+  },
+  {
+    "id": 11122,
+    "type": "stat-npc",
+    "target": "9:corruption",
+    "operator": ">=",
+    "value": 6
+  },
+  {
+    "id": 11127,
+    "type": "stat-npc",
+    "target": "9:corruption",
+    "operator": ">=",
+    "value": 60
+  },
+  {
+    "id": 11123,
+    "type": "stat-npc",
+    "target": "9:corruption",
+    "operator": ">=",
+    "value": 8
+  },
+  {
+    "id": 11128,
+    "type": "stat-npc",
+    "target": "9:corruption",
+    "operator": ">=",
+    "value": 80
+  },
+  {
+    "id": 10000014,
+    "type": "flag",
+    "target": "kimmy_exclusive",
+    "operator": "==",
+    "value": "false"
+  },
+  {
+    "id": 10000015,
+    "type": "flag",
+    "target": "kimmy_exclusive",
+    "operator": "==",
+    "value": "true"
+  },
+  {
+    "id": 20120,
+    "type": "stat-npc",
+    "target": "9:level",
+    "operator": ">=",
+    "value": 2
+  },
+  {
+    "id": 20121,
+    "type": "stat-npc",
+    "target": "9:level",
+    "operator": ">=",
+    "value": 3
+  },
+  {
+    "id": 20122,
+    "type": "stat-npc",
+    "target": "9:level",
+    "operator": ">=",
+    "value": 4
+  },
+  {
+    "id": 20123,
+    "type": "stat-npc",
+    "target": "9:level",
+    "operator": ">=",
+    "value": 5
+  },
+  {
+    "id": 10016,
+    "type": "stat-npc",
+    "target": "5:arousal",
+    "operator": ">=",
+    "value": 25
+  },
+  {
+    "id": 10017,
+    "type": "stat-npc",
+    "target": "5:arousal",
+    "operator": ">=",
+    "value": 50
+  },
+  {
+    "id": 10018,
+    "type": "stat-npc",
+    "target": "5:arousal",
+    "operator": ">=",
+    "value": 75
+  },
+  {
+    "id": 10019,
+    "type": "stat-npc",
+    "target": "5:arousal",
+    "operator": ">=",
+    "value": 90
+  },
+  {
+    "id": 11064,
+    "type": "stat-npc",
+    "target": "5:corruption",
+    "operator": ">=",
+    "value": 10
+  },
+  {
+    "id": 11069,
+    "type": "stat-npc",
+    "target": "5:corruption",
+    "operator": ">=",
+    "value": 100
+  },
+  {
+    "id": 11060,
+    "type": "stat-npc",
+    "target": "5:corruption",
+    "operator": ">=",
+    "value": 2
+  },
+  {
+    "id": 11065,
+    "type": "stat-npc",
+    "target": "5:corruption",
+    "operator": ">=",
+    "value": 20
+  },
+  {
+    "id": 11061,
+    "type": "stat-npc",
+    "target": "5:corruption",
+    "operator": ">=",
+    "value": 4
+  },
+  {
+    "id": 11066,
+    "type": "stat-npc",
+    "target": "5:corruption",
+    "operator": ">=",
+    "value": 40
+  },
+  {
+    "id": 11062,
+    "type": "stat-npc",
+    "target": "5:corruption",
+    "operator": ">=",
+    "value": 6
+  },
+  {
+    "id": 11067,
+    "type": "stat-npc",
+    "target": "5:corruption",
+    "operator": ">=",
+    "value": 60
+  },
+  {
+    "id": 11063,
+    "type": "stat-npc",
+    "target": "5:corruption",
+    "operator": ">=",
+    "value": 8
+  },
+  {
+    "id": 11068,
+    "type": "stat-npc",
+    "target": "5:corruption",
+    "operator": ">=",
+    "value": 80
   },
   {
     "id": 1001007,
@@ -714,11 +2093,109 @@
     "value": 1
   },
   {
+    "id": 11075,
+    "type": "stat-npc",
+    "target": "5:corruption",
+    "operator": "<=",
+    "value": 15
+  },
+  {
+    "id": 20068,
+    "type": "stat-npc",
+    "target": "5:level",
+    "operator": ">=",
+    "value": 10
+  },
+  {
+    "id": 20060,
+    "type": "stat-npc",
+    "target": "5:level",
+    "operator": ">=",
+    "value": 2
+  },
+  {
+    "id": 20061,
+    "type": "stat-npc",
+    "target": "5:level",
+    "operator": ">=",
+    "value": 3
+  },
+  {
+    "id": 20062,
+    "type": "stat-npc",
+    "target": "5:level",
+    "operator": ">=",
+    "value": 4
+  },
+  {
+    "id": 20063,
+    "type": "stat-npc",
+    "target": "5:level",
+    "operator": ">=",
+    "value": 5
+  },
+  {
+    "id": 20064,
+    "type": "stat-npc",
+    "target": "5:level",
+    "operator": ">=",
+    "value": 6
+  },
+  {
+    "id": 20065,
+    "type": "stat-npc",
+    "target": "5:level",
+    "operator": ">=",
+    "value": 7
+  },
+  {
+    "id": 20066,
+    "type": "stat-npc",
+    "target": "5:level",
+    "operator": ">=",
+    "value": 8
+  },
+  {
+    "id": 20067,
+    "type": "stat-npc",
+    "target": "5:level",
+    "operator": ">=",
+    "value": 9
+  },
+  {
     "id": 1001005,
     "type": "item",
     "target": "roomKeyMaster",
     "operator": ">=",
     "value": 1
+  },
+  {
+    "id": 10000007,
+    "type": "flag",
+    "target": "meet_dad",
+    "operator": "==",
+    "value": "true"
+  },
+  {
+    "id": 10000008,
+    "type": "flag",
+    "target": "meet_family",
+    "operator": "==",
+    "value": "false"
+  },
+  {
+    "id": 10000009,
+    "type": "flag",
+    "target": "meet_family",
+    "operator": "==",
+    "value": "true"
+  },
+  {
+    "id": 10000005,
+    "type": "flag",
+    "target": "meet_lil_sis",
+    "operator": "==",
+    "value": "true"
   },
   {
     "id": 10000001,
@@ -728,11 +2205,25 @@
     "value": "false"
   },
   {
+    "id": 10000004,
+    "type": "flag",
+    "target": "meet_mom",
+    "operator": "==",
+    "value": "true"
+  },
+  {
     "id": 10000000,
     "type": "flag",
     "target": "meet_mom",
     "operator": "==",
     "value": "false"
+  },
+  {
+    "id": 10000006,
+    "type": "flag",
+    "target": "meet_old_sis",
+    "operator": "==",
+    "value": "true"
   },
   {
     "id": 10000002,
@@ -749,11 +2240,424 @@
     "value": "false"
   },
   {
+    "id": 10000,
+    "type": "stat-npc",
+    "target": "2:arousal",
+    "operator": ">=",
+    "value": 25
+  },
+  {
+    "id": 10001,
+    "type": "stat-npc",
+    "target": "2:arousal",
+    "operator": ">=",
+    "value": 50
+  },
+  {
+    "id": 10002,
+    "type": "stat-npc",
+    "target": "2:arousal",
+    "operator": ">=",
+    "value": 75
+  },
+  {
+    "id": 10003,
+    "type": "stat-npc",
+    "target": "2:arousal",
+    "operator": ">=",
+    "value": 90
+  },
+  {
+    "id": 11004,
+    "type": "stat-npc",
+    "target": "2:corruption",
+    "operator": ">=",
+    "value": 10
+  },
+  {
+    "id": 11009,
+    "type": "stat-npc",
+    "target": "2:corruption",
+    "operator": ">=",
+    "value": 100
+  },
+  {
+    "id": 11000,
+    "type": "stat-npc",
+    "target": "2:corruption",
+    "operator": ">=",
+    "value": 2
+  },
+  {
+    "id": 11005,
+    "type": "stat-npc",
+    "target": "2:corruption",
+    "operator": ">=",
+    "value": 20
+  },
+  {
+    "id": 11001,
+    "type": "stat-npc",
+    "target": "2:corruption",
+    "operator": ">=",
+    "value": 4
+  },
+  {
+    "id": 11006,
+    "type": "stat-npc",
+    "target": "2:corruption",
+    "operator": ">=",
+    "value": 40
+  },
+  {
+    "id": 11002,
+    "type": "stat-npc",
+    "target": "2:corruption",
+    "operator": ">=",
+    "value": 6
+  },
+  {
+    "id": 11007,
+    "type": "stat-npc",
+    "target": "2:corruption",
+    "operator": ">=",
+    "value": 60
+  },
+  {
+    "id": 11003,
+    "type": "stat-npc",
+    "target": "2:corruption",
+    "operator": ">=",
+    "value": 8
+  },
+  {
+    "id": 11008,
+    "type": "stat-npc",
+    "target": "2:corruption",
+    "operator": ">=",
+    "value": 80
+  },
+  {
+    "id": 11015,
+    "type": "stat-npc",
+    "target": "2:corruption",
+    "operator": "<=",
+    "value": 15
+  },
+  {
+    "id": 20008,
+    "type": "stat-npc",
+    "target": "2:level",
+    "operator": ">=",
+    "value": 10
+  },
+  {
+    "id": 20000,
+    "type": "stat-npc",
+    "target": "2:level",
+    "operator": ">=",
+    "value": 2
+  },
+  {
+    "id": 20001,
+    "type": "stat-npc",
+    "target": "2:level",
+    "operator": ">=",
+    "value": 3
+  },
+  {
+    "id": 20002,
+    "type": "stat-npc",
+    "target": "2:level",
+    "operator": ">=",
+    "value": 4
+  },
+  {
+    "id": 20003,
+    "type": "stat-npc",
+    "target": "2:level",
+    "operator": ">=",
+    "value": 5
+  },
+  {
+    "id": 20004,
+    "type": "stat-npc",
+    "target": "2:level",
+    "operator": ">=",
+    "value": 6
+  },
+  {
+    "id": 20005,
+    "type": "stat-npc",
+    "target": "2:level",
+    "operator": ">=",
+    "value": 7
+  },
+  {
+    "id": 20006,
+    "type": "stat-npc",
+    "target": "2:level",
+    "operator": ">=",
+    "value": 8
+  },
+  {
+    "id": 20007,
+    "type": "stat-npc",
+    "target": "2:level",
+    "operator": ">=",
+    "value": 9
+  },
+  {
+    "id": 20015,
+    "type": "stat-npc",
+    "target": "2:level",
+    "operator": "<",
+    "value": 7
+  },
+  {
+    "id": 10000018,
+    "type": "flag",
+    "target": "museum_donation",
+    "operator": ">=",
+    "value": "1000"
+  },
+  {
+    "id": 10000024,
+    "type": "flag",
+    "target": "museum_donation",
+    "operator": ">=",
+    "value": "100000"
+  },
+  {
+    "id": 10000021,
+    "type": "flag",
+    "target": "museum_donation",
+    "operator": ">=",
+    "value": "10000"
+  },
+  {
+    "id": 10000026,
+    "type": "flag",
+    "target": "museum_donation",
+    "operator": ">=",
+    "value": "1000000"
+  },
+  {
+    "id": 10000022,
+    "type": "flag",
+    "target": "museum_donation",
+    "operator": ">=",
+    "value": "20000"
+  },
+  {
+    "id": 10000019,
+    "type": "flag",
+    "target": "museum_donation",
+    "operator": ">=",
+    "value": "2500"
+  },
+  {
+    "id": 10000027,
+    "type": "flag",
+    "target": "museum_donation",
+    "operator": ">=",
+    "value": "2000000"
+  },
+  {
+    "id": 10000020,
+    "type": "flag",
+    "target": "museum_donation",
+    "operator": ">=",
+    "value": "5000"
+  },
+  {
+    "id": 10000025,
+    "type": "flag",
+    "target": "museum_donation",
+    "operator": ">=",
+    "value": "500000"
+  },
+  {
+    "id": 10000023,
+    "type": "flag",
+    "target": "museum_donation",
+    "operator": ">=",
+    "value": "50000"
+  },
+  {
+    "id": 10012,
+    "type": "stat-npc",
+    "target": "4:arousal",
+    "operator": ">=",
+    "value": 25
+  },
+  {
+    "id": 10013,
+    "type": "stat-npc",
+    "target": "4:arousal",
+    "operator": ">=",
+    "value": 50
+  },
+  {
+    "id": 10014,
+    "type": "stat-npc",
+    "target": "4:arousal",
+    "operator": ">=",
+    "value": 75
+  },
+  {
+    "id": 10015,
+    "type": "stat-npc",
+    "target": "4:arousal",
+    "operator": ">=",
+    "value": 90
+  },
+  {
+    "id": 11044,
+    "type": "stat-npc",
+    "target": "4:corruption",
+    "operator": ">=",
+    "value": 10
+  },
+  {
+    "id": 11049,
+    "type": "stat-npc",
+    "target": "4:corruption",
+    "operator": ">=",
+    "value": 100
+  },
+  {
+    "id": 11040,
+    "type": "stat-npc",
+    "target": "4:corruption",
+    "operator": ">=",
+    "value": 2
+  },
+  {
+    "id": 11045,
+    "type": "stat-npc",
+    "target": "4:corruption",
+    "operator": ">=",
+    "value": 20
+  },
+  {
+    "id": 11041,
+    "type": "stat-npc",
+    "target": "4:corruption",
+    "operator": ">=",
+    "value": 4
+  },
+  {
+    "id": 11046,
+    "type": "stat-npc",
+    "target": "4:corruption",
+    "operator": ">=",
+    "value": 40
+  },
+  {
+    "id": 11042,
+    "type": "stat-npc",
+    "target": "4:corruption",
+    "operator": ">=",
+    "value": 6
+  },
+  {
+    "id": 11047,
+    "type": "stat-npc",
+    "target": "4:corruption",
+    "operator": ">=",
+    "value": 60
+  },
+  {
+    "id": 11043,
+    "type": "stat-npc",
+    "target": "4:corruption",
+    "operator": ">=",
+    "value": 8
+  },
+  {
+    "id": 11048,
+    "type": "stat-npc",
+    "target": "4:corruption",
+    "operator": ">=",
+    "value": 80
+  },
+  {
     "id": 1001006,
     "type": "item",
     "target": "roomKeyOldSister",
     "operator": ">=",
     "value": 1
+  },
+  {
+    "id": 11055,
+    "type": "stat-npc",
+    "target": "4:corruption",
+    "operator": "<=",
+    "value": 15
+  },
+  {
+    "id": 20048,
+    "type": "stat-npc",
+    "target": "4:level",
+    "operator": ">=",
+    "value": 10
+  },
+  {
+    "id": 20040,
+    "type": "stat-npc",
+    "target": "4:level",
+    "operator": ">=",
+    "value": 2
+  },
+  {
+    "id": 20041,
+    "type": "stat-npc",
+    "target": "4:level",
+    "operator": ">=",
+    "value": 3
+  },
+  {
+    "id": 20042,
+    "type": "stat-npc",
+    "target": "4:level",
+    "operator": ">=",
+    "value": 4
+  },
+  {
+    "id": 20043,
+    "type": "stat-npc",
+    "target": "4:level",
+    "operator": ">=",
+    "value": 5
+  },
+  {
+    "id": 20044,
+    "type": "stat-npc",
+    "target": "4:level",
+    "operator": ">=",
+    "value": 6
+  },
+  {
+    "id": 20045,
+    "type": "stat-npc",
+    "target": "4:level",
+    "operator": ">=",
+    "value": 7
+  },
+  {
+    "id": 20046,
+    "type": "stat-npc",
+    "target": "4:level",
+    "operator": ">=",
+    "value": 8
+  },
+  {
+    "id": 20047,
+    "type": "stat-npc",
+    "target": "4:level",
+    "operator": ">=",
+    "value": 9
   },
   {
     "id": 90,
@@ -812,18 +2716,172 @@
     "value": 90
   },
   {
+    "id": 50001,
+    "type": "relation",
+    "target": "1:2",
+    "operator": ">=",
+    "value": 10
+  },
+  {
+    "id": 50010,
+    "type": "relation",
+    "target": "1:2",
+    "operator": ">=",
+    "value": 100
+  },
+  {
+    "id": 50002,
+    "type": "relation",
+    "target": "1:2",
+    "operator": ">=",
+    "value": 20
+  },
+  {
+    "id": 50003,
+    "type": "relation",
+    "target": "1:2",
+    "operator": ">=",
+    "value": 30
+  },
+  {
+    "id": 50004,
+    "type": "relation",
+    "target": "1:2",
+    "operator": ">=",
+    "value": 40
+  },
+  {
+    "id": 50005,
+    "type": "relation",
+    "target": "1:2",
+    "operator": ">=",
+    "value": 50
+  },
+  {
+    "id": 50006,
+    "type": "relation",
+    "target": "1:2",
+    "operator": ">=",
+    "value": 60
+  },
+  {
+    "id": 50007,
+    "type": "relation",
+    "target": "1:2",
+    "operator": ">=",
+    "value": 70
+  },
+  {
+    "id": 50008,
+    "type": "relation",
+    "target": "1:2",
+    "operator": ">=",
+    "value": 80
+  },
+  {
+    "id": 50009,
+    "type": "relation",
+    "target": "1:2",
+    "operator": ">=",
+    "value": 90
+  },
+  {
+    "id": 50000,
+    "type": "relation",
+    "target": "1:4",
+    "operator": "<=",
+    "value": 10
+  },
+  {
+    "id": 2003,
+    "type": "time",
+    "target": "",
+    "operator": "between-time",
+    "value": "10:18"
+  },
+  {
+    "id": 2004,
+    "type": "time",
+    "target": "",
+    "operator": "between-time",
+    "value": "11:19"
+  },
+  {
+    "id": 2008,
+    "type": "time",
+    "target": "",
+    "operator": "between-time",
+    "value": "18:22"
+  },
+  {
+    "id": 2009,
+    "type": "time",
+    "target": "",
+    "operator": "between-time",
+    "value": "20:1"
+  },
+  {
+    "id": 2011,
+    "type": "time",
+    "target": "",
+    "operator": "between-time",
+    "value": "20:5"
+  },
+  {
+    "id": 2010,
+    "type": "time",
+    "target": "",
+    "operator": "between-time",
+    "value": "20:6"
+  },
+  {
+    "id": 2005,
+    "type": "time",
+    "target": "",
+    "operator": "between-time",
+    "value": "22:8"
+  },
+  {
+    "id": 2007,
+    "type": "time",
+    "target": "",
+    "operator": "between-time",
+    "value": "7:18"
+  },
+  {
     "id": 2001,
     "type": "time",
     "target": "",
-    "operator": "between",
+    "operator": "between-time",
     "value": "7:22"
+  },
+  {
+    "id": 2002,
+    "type": "time",
+    "target": "",
+    "operator": "between-time",
+    "value": "7:23"
+  },
+  {
+    "id": 2006,
+    "type": "time",
+    "target": "",
+    "operator": "between-time",
+    "value": "8:18"
   },
   {
     "id": 2000,
     "type": "time",
     "target": "",
-    "operator": "between",
+    "operator": "between-time",
     "value": "8:19"
+  },
+  {
+    "id": 8,
+    "type": "vip-off",
+    "target": "",
+    "operator": "==",
+    "value": ""
   },
   {
     "id": 1,
@@ -852,5 +2910,26 @@
     "target": "",
     "operator": "==",
     "value": 4
+  },
+  {
+    "id": 6,
+    "type": "vip",
+    "target": "",
+    "operator": "==",
+    "value": 5
+  },
+  {
+    "id": 10000016,
+    "type": "flag",
+    "target": "work",
+    "operator": "==",
+    "value": "false"
+  },
+  {
+    "id": 10000017,
+    "type": "flag",
+    "target": "work",
+    "operator": "==",
+    "value": "true"
   }
 ]

@@ -1,0 +1,23 @@
+{
+  "id": "supermarket0002",
+  "type": 2,
+  "location": 300,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 10,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "code",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "functionName": "lauchEventoGroup",
+      "parameters": ["supermarket0003","supermarket0004","supermarket0005","supermarket0006","supermarket0007","supermarket0008","supermarket0009"],
+      "conditions": []
+    }
+  ],
+  "conditions": [],
+  "effects": []
+}

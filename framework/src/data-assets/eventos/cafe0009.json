@@ -1,0 +1,64 @@
+{
+  "id": "cafe0009",
+  "type": 2,
+  "location": 200,
+  "probability": 1,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 0,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Hey Cassie, how are you?",
+      "character": 1
+    },
+    {
+      "id": 2,
+      "type": "text",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Hi, little heart, sorry, I'm super busy today. One customer leaves and three come in. But here, have a little coffee and we’ll chat another day, okay?",
+      "character": 7
+    },
+    {
+      "id": 3,
+      "type": "text",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Cassie hands you a coffee and you thank her with a smile.",
+      "character": 500
+    },
+    {
+      "id": 4,
+      "type": "text",
+      "order": 4,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Sure, Cassie, we’ll talk another day.",
+      "character": 1
+    },
+    {
+      "id": 5,
+      "type": "button",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": "End chat",
+      "conditions": [],
+      "cubeAction": {
+        "type": "redirection",
+        "value": "location/200"
+      }
+    }
+  ],
+  "conditions": [1],
+  "effects": [
+    3
+  ]
+}

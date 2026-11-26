@@ -1,0 +1,20 @@
+{
+  "id": 2033,
+  "name": "Chat",
+  "type": 100,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "assets/img/locations/activities/cafe-chat-cassie.webp"
+    }
+  ],
+  "url": "evento/cafe0008",
+  "backUrl": "cafe0008",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [5],
+  "conditionsVisible": [700,1,12000029,10000011],
+  "subLocations": []
+}

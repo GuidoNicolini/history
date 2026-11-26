@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit, ChangeDetectionStrategy} from '@angular/core';
 import {Location} from '../../models/location';
 import {Router} from '@angular/router';
 
@@ -7,6 +7,7 @@ import {Router} from '@angular/router';
   selector: 'app-card',
   standalone: false,
   templateUrl: './card.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './card.css',
 })
 export class Card implements OnInit {
@@ -14,13 +15,11 @@ export class Card implements OnInit {
   @Input() location!: Location;
   thumbnail : string = ""
 
-
-
-
-  constructor(private router: Router) {
-
-
+  get styleClasses(): string[] {
+    return Array.isArray(this.location?.styleClass) ? this.location.styleClass : [];
   }
+
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
     if (this.location?.images) {
@@ -37,8 +36,6 @@ export class Card implements OnInit {
     if (this.location?.url) {
       this.router.navigate([this.location.url]);
     }
-
-
 
   }
 }

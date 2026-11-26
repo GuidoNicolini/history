@@ -1,0 +1,68 @@
+{
+  "id": "mom0002",
+  "type": 1,
+  "location": 1006,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 7,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "The glow of the television numbs your mind until a soft rustle pulls your attention. From the right, a silhouette glides into the room.",
+      "character": 500
+    },
+    {
+      "id": 2,
+      "type": "text",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Sorry, honey, I lost an earring around here this morning… let me just…",
+      "character": 2
+    },
+    {
+      "id": 3,
+      "type": "image",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "image": "assets/img/eventos/npc/mom/mom-ass-tv.webp"
+    },
+    {
+      "id": 4,
+      "type": "text",
+      "order": 4,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Your eyes, which had been fixed on the TV minutes ago, widen like saucers and lock onto a new image that burns into your memory.",
+      "character": 500
+    },
+    {
+      "id": 5,
+      "type": "button",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Stop watching",
+      "conditions": [],
+      "cubeAction": {
+        "type": "redirection",
+        "value": "location/100"
+      }
+    }
+  ],
+  "conditions": [
+    20000,
+    94,
+    5
+  ],
+  "effects": [
+    2002,
+    2012
+  ]
+}

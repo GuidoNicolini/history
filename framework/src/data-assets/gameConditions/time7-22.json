@@ -2,6 +2,6 @@
   "id": 2001,
   "type": "time",
   "target": "",
-  "operator": "between",
+  "operator": "between-time",
   "value": "7:22"
 }

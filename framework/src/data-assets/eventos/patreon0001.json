@@ -1,0 +1,45 @@
+{
+  "id": "patreon0001",
+  "type": 2,
+  "location": 300,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 0,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Remember that you must enter the code every time you launch the game, and thank you very much for supporting me!",
+      "character": 500
+    },
+    {
+      "id": 2,
+      "type": "form",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "fuctionName": "vip",
+      "placeHolder": "code",
+      "parameters" : []
+    },
+    {
+      "id": 3,
+      "type": "button",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Back",
+      "conditions": [],
+      "cubeAction":{
+        "type": "redirection",
+        "value": "location/1000"
+      }
+    }
+  ],
+  "conditions": [],
+  "effects": []
+}

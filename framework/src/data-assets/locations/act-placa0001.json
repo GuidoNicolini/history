@@ -1,0 +1,20 @@
+{
+  "id": 2230,
+  "name": "Active Citizen",
+  "type": 100,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "assets/img/locations/activities/active-citizen-placa.webp"
+    }
+  ],
+  "url": "evento/placa0001",
+  "backUrl": "placa0001",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [],
+  "conditionsVisible": [],
+  "subLocations": []
+}

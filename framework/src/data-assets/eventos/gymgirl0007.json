@@ -1,0 +1,47 @@
+{
+  "id": "gymgirl0007",
+  "type": 2,
+  "location": 2102,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 0,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "After finishing your workout, you notice you still have some energy left for a little cardio",
+      "character": 500
+    },
+    {
+      "id": 2,
+      "type": "video",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "video": "assets/videos/gym/gym-girl-exito-1.webm"
+    },
+    {
+      "id": 3,
+      "type": "button",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Finish",
+      "conditions": [],
+      "cubeAction": {
+        "type": "redirection",
+        "value": "location/210"
+      }
+    }
+  ],
+  "conditions": [],
+  "effects": [
+    2005,
+    2005,
+    2005
+  ]
+}

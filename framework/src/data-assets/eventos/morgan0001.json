@@ -1,0 +1,114 @@
+{
+  "id": "morgan0001",
+  "type": 3,
+  "location": 220,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 0,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "As you enter the old museum, the echo of your footsteps bounces among dusty display cases. Near the front desk, you hear a woman’s agitated voice. It’s Morgan, the manager, talking on the phone with her back to you.",
+      "character": 500
+    },
+    {
+      "id": 2,
+      "type": "image",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "image": "assets/img/eventos/npc/morgan/morgan-telephone.webp"
+    },
+    {
+      "id": 3,
+      "type": "text",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "text": " ...No, I can’t accept that. The deadline is coming and we barely cover the electricity. The city government is squeezing us with new taxes every week. If we don’t find a way out, they’ll close the museum before the end of the month. ... I know, I know. I just took this position thinking I could save something, but it’s not that simple.",
+      "character": 12
+    },
+    {
+      "id": 4,
+      "type": "text",
+      "order": 4,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Morgan hangs up with a long sigh. She hasn’t seen you. You approach cautiously, clearing your throat.",
+      "character": 500
+    },
+    {
+      "id": 5,
+      "type": "text",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Excuse me... I couldn’t help overhearing. Are you okay?",
+      "character": 1
+    },
+    {
+      "id": 6,
+      "type": "text",
+      "order": 6,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Oh, sorry. I didn’t mean to dump that in the hallway. It’s just that this place is falling apart and the city administration won’t stop tightening the screws. Two months ago they gave me this job like it was a prize, but it’s a trap full of debt.",
+      "character": 12
+    },
+    {
+      "id": 7,
+      "type": "text",
+      "order": 7,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Have you thought about asking for donations? At least to buy time. The museum has its charm, I’m sure neighbors would want to help.",
+      "character": 1
+    },
+    {
+      "id": 8,
+      "type": "text",
+      "order": 8,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Donations... I’d never seriously considered it. Maybe you’re right. At least we’d keep the lights on another month. Hey, thanks... Not everyone stops to ask.",
+      "character": 12
+    },
+    {
+      "id": 9,
+      "type": "text",
+      "order": 9,
+      "probability": 100,
+      "styleClass": [],
+      "text": "She holds your gaze a moment longer than necessary, then clicks her pen twice against the counter, considering. A new idea takes root behind her tired eyes.",
+      "character": 500
+    },
+    {
+      "id": 10,
+      "type": "button",
+      "order": 10,
+      "probability": 100,
+      "styleClass": [],
+      "text": "First donation ($100)",
+      "conditions": [],
+      "cubeAction": {
+        "type": "redirection",
+        "value": "location/220"
+      }
+    }
+  ],
+  "conditions": [
+    13000000,
+    700,
+    1000004
+  ],
+  "effects": [
+    2040,
+    10105,
+    2000002
+  ]
+}

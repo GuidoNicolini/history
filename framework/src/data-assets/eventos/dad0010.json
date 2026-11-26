@@ -1,0 +1,126 @@
+{
+  "id": "dad0010",
+  "type": 0,
+  "location": 1006,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 0,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "The couch shifts as your {{dad}} sits beside you, eyes on the TV.",
+      "character": 500
+    },
+    {
+      "id": 2,
+      "type": "image",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "image": "assets/img/eventos/npc/dad/dad-taking-tv-2.webp"
+    },
+    {
+      "id": 3,
+      "type": "text",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "text": "So, everything okay with you these days?",
+      "character": 3
+    },
+    {
+      "id": 4,
+      "type": "text",
+      "order": 4,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Yeah, fine. Nothing much.",
+      "character": 1
+    },
+    {
+      "id": 5,
+      "type": "text",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Just then, your {{mom}} crosses in front of the screen, heading into the kitchen. Your {{dad}} watches her go, then turns to you with a smirk.",
+      "character": 500
+    },
+    {
+      "id": 6,
+      "type": "image",
+      "order": 6,
+      "probability": 100,
+      "styleClass": [],
+      "image": "assets/img/eventos/npc/dad/dad-mom-tv-taking.webp"
+    },
+    {
+      "id": 7,
+      "type": "text",
+      "order": 7,
+      "probability": 100,
+      "styleClass": [],
+      "text": "You know, she’s still as hot as the day I met her.",
+      "character": 3
+    },
+    {
+      "id": 8,
+      "type": "text",
+      "order": 8,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Heat crawls up your neck, but you keep your face straight and your eyes on the television.",
+      "character": 500
+    },
+    {
+      "id": 9,
+      "type": "text",
+      "order": 9,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Is she? I barely noticed.",
+      "character": 1
+    },
+    {
+      "id": 10,
+      "type": "text",
+      "order": 10,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Your {{dad}} laughs, low and knowing, like you two just shared a secret.",
+      "character": 500
+    },
+    {
+      "id": 11,
+      "type": "button",
+      "order": 11,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Continue",
+      "conditions": [],
+      "cubeAction": {
+        "type": "redirection",
+        "value": "location/1006"
+      }
+    }
+  ],
+  "conditions": [
+    13000000,
+    2001,
+    20022
+  ],
+  "effects": [
+    30,
+    2042,
+    1001002,
+    7003,
+    7003,
+    7002,
+    7002
+  ]
+}

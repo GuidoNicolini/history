@@ -1,0 +1,20 @@
+{
+  "id": 2039,
+  "name": "Wait tables",
+  "type": 100,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "assets/img/locations/activities/cafe-wait-tables.webp"
+    }
+  ],
+  "url": "evento/cafe0018",
+  "backUrl": "cafe0018",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [5],
+  "conditionsVisible": [20,10000011,852],
+  "subLocations": []
+}

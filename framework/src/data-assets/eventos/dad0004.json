@@ -1,0 +1,121 @@
+{
+  "id": "dad0004",
+  "type": 3,
+  "location": 1000,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 0,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "image",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "image": "assets/img/eventos/npc/dad/dad-chat-snap.webp"
+    },
+    {
+      "id": 2,
+      "type": "text",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Hey, champ. Sit down.",
+      "character": 3
+    },
+    {
+      "id": 3,
+      "type": "text",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Don’t even start. I know. I’m a piece of shit. A monster who can’t stop touching his own {{mom}} .",
+      "character": 1
+    },
+    {
+      "id": 4,
+      "type": "text",
+      "order": 4,
+      "probability": 100,
+      "styleClass": [],
+      "text": "You’re not a monster. You have enough testosterone to fuel a rocket. I’d be more worried if you didn’t have these impulses. But the smacking... that’s where we need a solution.",
+      "character": 3
+    },
+    {
+      "id": 5,
+      "type": "text",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": " I promised you, twice, and I broke it. I don’t even recognize myself.",
+      "character": 1
+    },
+    {
+      "id": 6,
+      "type": "text",
+      "order": 6,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Hey. Look at me. Nobody’s keeping a tally. Your {{mom}} isn’t furious anymore. She’s... confused, but she understands. We talked. She said, and I quote, “He’s not mean, he’s just got too much fire.” So, knowing that, I’m going to help you blow off some steam without getting handsy. Here.",
+      "character": 3
+    },
+    {
+      "id": 7,
+      "type": "text",
+      "order": 7,
+      "probability": 100,
+      "styleClass": [],
+      "text": "You take what looks like a piece of paper from your {{dad}} ’s hand. When you flip it over, you realize it’s a photo.",
+      "character": 500
+    },
+    {
+      "id": 8,
+      "type": "image",
+      "order": 8,
+      "probability": 100,
+      "styleClass": [],
+      "image": "assets/img/eventos/npc/dad/mom-dadgif-pic.webp"
+    },
+    {
+      "id": 9,
+      "type": "text",
+      "order": 9,
+      "probability": 100,
+      "styleClass": [],
+      "text": "{{dad}} ... I... I can’t take this. It feels like I’m betraying both of you. {{mom}} would hate me.",
+      "character": 1
+    },
+    {
+      "id": 10,
+      "type": "text",
+      "order": 10,
+      "probability": 100,
+      "styleClass": [],
+      "text": "She’ll never know. This is between us. I’d rather you jerk off to a picture than keep smacking her real ass in the kitchen. Trust me, this is the safer play. But if she ever finds that photo, I’m dead. So hide it well.",
+      "character": 3
+    },
+    {
+      "id": 11,
+      "type": "button",
+      "order": 11,
+      "probability": 100,
+      "styleClass": [],
+      "text": "End chat",
+      "conditions": [],
+      "cubeAction": {
+        "type": "redirection",
+        "value": "location/1000"
+      }
+    }
+  ],
+  "conditions": [
+    12000021,
+    13000000
+  ],
+  "effects": [
+    1001002,
+    7003,
+    1003
+  ]
+}

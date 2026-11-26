@@ -1,19 +1,14 @@
 import {Injectable, signal} from '@angular/core';
 import {GameCondition} from '../models/game-condition';
-import { ISaveable } from '../../../shared/interfaces/saveable.interface';
-import { SaveLoadService } from '../../../shared/services/save-load-service';
 
 @Injectable({
   providedIn: 'root',
 })
-export class ConditionService implements ISaveable {
-  public saveKey = 'conditions';
+export class ConditionService {
   //el primer number es para el id
   public state = signal<Record<number,GameCondition>>({})
 
-  constructor(private saveLoadService: SaveLoadService) {
-    this.saveLoadService.register(this);
-  }
+  constructor() {}
 
   /**
    * Inicializa el estado con una lista de condiciones.
@@ -42,19 +37,5 @@ export class ConditionService implements ISaveable {
     return conditionsId
       .map(id => currentState[id])
       .filter((condition): condition is GameCondition => condition !== undefined);
-  }
-
-  /**
-   * Exporta el estado actual de las condiciones.
-   */
-  public exportState(): Record<number, GameCondition> {
-    return this.state();
-  }
-
-  /**
-   * Importa un estado previamente exportado.
-   */
-  public importState(newState: Record<number, GameCondition>): void {
-    this.state.set(newState);
   }
 }

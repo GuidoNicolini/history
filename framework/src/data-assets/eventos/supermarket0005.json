@@ -1,0 +1,79 @@
+{
+  "id": "supermarket0005",
+  "type": 2,
+  "location": 300,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 0,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 100,
+      "type": "button",
+      "order": 100,
+      "probability": 100,
+      "styleClass": [],
+      "text": "FInish chatting",
+      "conditions": [],
+      "cubeAction": {
+        "type": "redirection",
+        "value": "location/300"
+      }
+    },
+    {
+      "id": 50,
+      "type": "image",
+      "order": 50,
+      "probability": 100,
+      "styleClass": [],
+      "image": "assets/img/eventos/npc/kimmy/kimmy-chat-event.webp"
+    },
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Kimmy… you’re practically glowing today. Again.",
+      "character": 1
+    },
+    {
+      "id": 2,
+      "type": "text",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "text": "You noticed! It’s all about my secret tricks, sweetie. Gotta maintain that sparkle somehow.",
+      "character": 9
+    },
+    {
+      "id": 51,
+      "type": "text",
+      "order": 51,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Oh, I bet I’ve got a pretty clear mental picture of those tricks. Maybe even caught a glimpse once or twice.",
+      "character": 1
+    },
+    {
+      "id": 52,
+      "type": "text",
+      "order": 52,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Kimmy doesn’t flinch. She just bites her bottom lip, shoots you a slow, deliberate wink, and lets her smile do the rest of the talking.",
+      "character": 500
+    }
+  ],
+  "conditions": [
+    13000000,
+    2,
+    11123,
+    702,
+    12000031
+  ],
+  "effects": [
+    1001008,
+    2040
+  ]
+}

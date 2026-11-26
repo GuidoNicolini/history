@@ -1,0 +1,45 @@
+{
+  "id": "gymgirl0002",
+  "type": 2,
+  "location": 2102,
+  "probability": 200,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 0,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "You start calling for help, and after a while, your shouts reach the ears of a girl who was working out. But instead of helping you, she apparently decided to do something else before getting you out of the situation you're in",
+      "character": 500
+    },
+    {
+      "id": 2,
+      "type": "video",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "video": "assets/videos/gym/gym-girl-2.webm"
+    },
+    {
+      "id": 3,
+      "type": "button",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "text": "You thank her as you watch her return to what she was doing",
+      "conditions": [],
+      "cubeAction": {
+        "type": "redirection",
+        "value": "location/210"
+      }
+    }
+  ],
+  "conditions": [1],
+  "effects": [
+    2005
+  ]
+}

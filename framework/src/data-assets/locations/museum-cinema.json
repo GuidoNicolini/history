@@ -1,0 +1,20 @@
+{
+  "id": 2201,
+  "name": "Little Cinema",
+  "type": 40,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "assets/img/locations/room/museum-cinema.webp"
+    }
+  ],
+  "url": "location/2201",
+  "backUrl": "location/220",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [],
+  "conditionsVisible": [12000038],
+  "subLocations": []
+}

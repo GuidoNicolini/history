@@ -1,0 +1,104 @@
+{
+  "id": "dad0003",
+  "type": 3,
+  "location": 1000,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 0,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "image",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "image": "assets/img/eventos/npc/dad/dad-chat-snap.webp"
+    },
+    {
+      "id": 2,
+      "type": "text",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "text": "I think you know why I'm here, right?",
+      "character": 3
+    },
+    {
+      "id": 3,
+      "type": "text",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Yeah, I said I wouldn't, but I lost it again. Sorry.",
+      "character": 1
+    },
+    {
+      "id": 4,
+      "type": "text",
+      "order": 4,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Look, I talked to your {{mom}} . She's not stupid—she knows you're dealing with hormones and weird shit. You're not evil, just horny and dumb.",
+      "character": 3
+    },
+    {
+      "id": 5,
+      "type": "text",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Does she hate me?",
+      "character": 1
+    },
+    {
+      "id": 6,
+      "type": "text",
+      "order": 6,
+      "probability": 100,
+      "styleClass": [],
+      "text": "No. She loves you no matter what. You could be the worst criminal on earth and she'd still love you. She's just worried about you.",
+      "character": 3
+    },
+    {
+      "id": 7,
+      "type": "text",
+      "order": 7,
+      "probability": 100,
+      "styleClass": [],
+      "text": "I'll be better. I promise. From now on, I'll stop and think before my hands do something stupid.",
+      "character": 1
+    },
+    {
+      "id": 9,
+      "type": "text",
+      "order": 9,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Your {{dad}} gives you a few pats on the back, a warm smile on his face, and walks out of your room.",
+      "character": 500
+    },
+    {
+      "id": 10,
+      "type": "button",
+      "order": 10,
+      "probability": 100,
+      "styleClass": [],
+      "text": "End chat",
+      "conditions": [],
+      "cubeAction": {
+        "type": "redirection",
+        "value": "location/1000"
+      }
+    }
+  ],
+  "conditions": [
+    12000020,
+    13000000
+  ],
+  "effects": [
+    1001002,
+    7003,
+    1003
+  ]
+}

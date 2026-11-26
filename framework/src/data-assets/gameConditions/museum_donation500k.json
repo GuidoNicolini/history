@@ -1,0 +1,7 @@
+{
+  "id": 10000025,
+  "type": "flag",
+  "target": "museum_donation",
+  "operator": ">=",
+  "value": "500000"
+}

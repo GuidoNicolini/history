@@ -1,37 +1,64 @@
-<div class="warning-card">
-  <div class="emoji-big">🔞⚠️</div>
-  <h1>ADULT CONTENT WARNING</h1>
+<div class="start-view-container">
+  <!-- Dynamic background elements -->
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
 
-  <div class="age-confirm">
-    🔞 By accessing or playing this game, you confirm that you are <strong>18 years or older</strong><br>
-    (or the age of majority in your jurisdiction).
-  </div>
+  <div class="content-wrapper">
+    <!-- Warning Card -->
+    <div class="premium-warning-card">
+      <div class="card-header">
+        <div class="warning-icon-wrapper">
+          <span class="pulse-ring"></span>
+          <span class="emoji">🔞</span>
+        </div>
+        <h1 class="gradient-text">ADULT CONTENT WARNING</h1>
+      </div>
 
-  <ul class="list-points">
-    <li>This game is a work of <strong>FICTION</strong>.</li>
-    <li>All characters, names, events, and scenarios depicted are entirely <strong>FICTIONAL</strong>.</li>
-    <li>Every character portrayed in this game is <strong>18 years of age or older</strong>.</li>
-  </ul>
+      <div class="age-confirm-box">
+        <span class="icon">🛡️</span>
+        <p>By accessing or playing this game, you confirm that you are <strong>18 years or older</strong> (or the age of majority in your jurisdiction).</p>
+      </div>
 
-  <div class="legal-note">
-    If you are under the legal age, please exit immediately.
-  </div>
-  <div class="footer-note">
-    🎭 This warning must remain visible before accessing game content.
+      <div class="points-grid">
+        <div class="point-item">
+          <span class="point-icon">📖</span>
+          <p>This game is a work of<br><strong>FICTION</strong>.</p>
+        </div>
+        <div class="point-item">
+          <span class="point-icon">🎭</span>
+          <p>All characters and events are<br><strong>FICTIONAL</strong>.</p>
+        </div>
+        <div class="point-item">
+          <span class="point-icon">🧑</span>
+          <p>Every character portrayed is<br><strong>18+ YEARS OLD</strong>.</p>
+        </div>
+      </div>
+
+      <div class="legal-footer">
+        <p class="exit-note">If you are under the legal age, please exit immediately.</p>
+      </div>
+    </div>
+
+    <!-- Loading Alert -->
+    <div *ngIf="isLoading" class="premium-loading-alert">
+      <div class="spinner"></div>
+      <p>Game's loading… just like something else in your pants. 5 seconds.</p>
+    </div>
+
+    <!-- Actions -->
+    <div class="action-buttons">
+      <button class="premium-btn btn-primary" (click)="newGame()">
+        <span class="btn-icon">✨</span>
+        <span class="btn-text">New Game</span>
+      </button>
+      <button class="premium-btn btn-secondary" (click)="continueGame()">
+        <span class="btn-icon">▶️</span>
+        <span class="btn-text">Continue Game</span>
+      </button>
+      <button class="premium-btn btn-tertiary" (click)="loadGame()">
+        <span class="btn-icon">📂</span>
+        <span class="btn-text">Load Game</span>
+      </button>
+    </div>
   </div>
 </div>
-
-
-<br>
-
-<!-- Alerta de carga -->
-<div *ngIf="isLoading" class="alert-loading" style="background-color: #ffcc00; padding: 10px; margin-bottom: 15px; text-align: center; border-radius: 5px; font-weight: bold;">
-  Game's loading… just like something else in your pants. 5 seconds.
-</div>
-
-<br>
-
-
-<button type="button" class="btn btn-info btn-lg mx-2" (click)="newGame()">New Game</button>
-<button type="button" class="btn btn-info btn-lg mx-2" (click)="continueGame()">Continue Game</button>
-<button type="button" class="btn btn-warning btn-lg mx-2" (click)="loadGame()">Load Game</button>

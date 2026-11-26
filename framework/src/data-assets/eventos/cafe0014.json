@@ -1,0 +1,49 @@
+{
+  "id": "cafe0014",
+  "type": 2,
+  "location": 2003,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 1,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "You clean the cafe tables.",
+      "character": 500
+    },
+    {
+      "id": 2,
+      "type": "image",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "image": "assets/img/eventos/locations/cafe/cafe-clean-tables.webp"
+    },
+    {
+      "id": 3,
+      "type": "button",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Finish",
+      "conditions": [],
+      "cubeAction": {
+        "type": "redirection",
+        "value": "location/2003"
+      }
+    }
+  ],
+  "conditions": [],
+  "effects": [
+    14,
+    2050,
+    30,
+    10005,
+    2051
+  ]
+}

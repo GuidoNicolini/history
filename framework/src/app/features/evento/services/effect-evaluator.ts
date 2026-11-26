@@ -6,6 +6,7 @@ import { TimeService } from '../../time/services/time-service';
 import { Stats } from '../../../shared/enums/stats';
 import { GameItems } from '../../../shared/enums/game-items';
 import { CharacterID } from '../../../shared/enums/character-id';
+import { StoryState } from '../../../shared/services/story-state';
 
 @Injectable({
   providedIn: 'root',
@@ -15,7 +16,8 @@ export class EffectEvaluator {
   constructor(
     private heroService: HeroService,
     private npcService: NpcService,
-    private timeService: TimeService
+    private timeService: TimeService,
+    private storyState: StoryState
   ) {}
 
   public applyAll(effects: EventoEffect[]): void {
@@ -49,6 +51,7 @@ export class EffectEvaluator {
         } else {
           this.heroService.removeItem(effect.target as unknown as GameItems, amount);
         }
+
         break;
       }
       case 'relation': {
@@ -89,10 +92,8 @@ export class EffectEvaluator {
         break;
       }
       case 'npc-lvl': {
-        const [idString, valueString] = String(effect.value).split(':');
-        const npcId = parseInt(idString, 10) as CharacterID;
-        const amount = isPlus ? Number(valueString) : -Number(valueString);
-        this.npcService.modifyStat(npcId, Stats.LEVEL, amount);
+        const npcId: number = effect.value
+        this.npcService.modifyStat(npcId, Stats.LEVEL, 1);
         break;
       }
 
@@ -113,6 +114,12 @@ export class EffectEvaluator {
       case "hygiene": {
         const amount = isPlus ? Number(effect.value) : -Number(effect.value);
         this.heroService.modifyStat(Stats.HYGIENE, amount);
+        break;
+      }
+      case 'flag': {
+        const amount = isPlus ? Number(effect.value) : -Number(effect.value);
+        const currentValue = Number(this.storyState.getFlag(effect.target)) || 0;
+        this.storyState.setFlag(effect.target, currentValue + amount);
         break;
       }
     }

@@ -1,0 +1,7 @@
+{
+  "id": 50003,
+  "type": "relation",
+  "target": "1:2",
+  "operator": ">=",
+  "value": 30
+}

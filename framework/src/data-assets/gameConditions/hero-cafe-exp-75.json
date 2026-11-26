@@ -1,0 +1,8 @@
+{
+  "id": 852,
+  "type": "stat-hero",
+  "target": "cafe-exp",
+  "operator": ">=",
+  "value": 75
+}
+

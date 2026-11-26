@@ -1,3 +1,50 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+}
+
+.side-menu-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px 14px;
+  background: linear-gradient(180deg, #111116 0%, #07070a 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-right: 1px solid rgba(255, 255, 255, 0.07);
+  height: 100%;
+  min-height: 100vh;
+  box-shadow: 4px 0 24px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+}
+
+.side-menu-header {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.widgets-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.progress-section {
+  margin-top: 8px;
+}
+
+.patreon-section {
+  margin-top: auto;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .patreon-container {
   opacity: 0;
   visibility: hidden;
@@ -22,4 +69,198 @@
 
 .patreon-image:hover {
   transform: scale(1.05);
+}
+
+/* Game Title General Styling */
+.game-title-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  border-radius: 12px;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+}
+
+.game-title {
+  margin: 0;
+  font-family: 'Outfit', 'Inter', 'Helvetica Neue', sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  transition: all 0.5s ease;
+  font-size: 1.8rem;
+  text-align: center;
+  width: 100%;
+}
+
+.vip-badge-container {
+  margin-top: 6px;
+  display: flex;
+  justify-content: center;
+}
+
+.vip-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transition: all 0.5s ease;
+}
+
+/* ==================== VIP LEVEL 0 (NO VIP) ==================== */
+.vip-0 .game-title {
+  color: #ffffff;
+}
+
+/* ==================== VIP LEVEL 1 (Passerby) ==================== */
+.vip-1 .game-title {
+  color: #f1f3f5;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+.vip-1 .vip-badge {
+  background: linear-gradient(135deg, #8e9eab, #eef2f3);
+  color: #343a40;
+  border: 1px solid rgba(255,255,255,0.4);
+}
+
+/* ==================== VIP LEVEL 2 (Resident) ==================== */
+.vip-2 .game-title {
+  color: #e3fafc;
+  text-shadow: 0 0 8px rgba(34, 184, 207, 0.4);
+}
+.vip-2 .vip-badge {
+  background: linear-gradient(135deg, #15aabf, #22b8cf);
+  color: #ffffff;
+  border: 1px solid rgba(255,255,255,0.25);
+  box-shadow: 0 0 10px rgba(34, 184, 207, 0.3);
+}
+
+/* ==================== VIP LEVEL 3 (Active Citizen) ==================== */
+.vip-3 {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.vip-3 .game-title {
+  color: #e8ecfb;
+  text-shadow: 0 0 12px rgba(92, 124, 250, 0.6);
+  animation: gentle-glow 3s ease-in-out infinite alternate;
+}
+.vip-3 .vip-badge {
+  background: linear-gradient(135deg, #4c6ef5, #5c7cfa);
+  color: #ffffff;
+  border: 1px solid rgba(255,255,255,0.3);
+  box-shadow: 0 0 12px rgba(76, 110, 245, 0.5);
+  letter-spacing: 2px;
+}
+
+/* ==================== VIP LEVEL 4 (City Planner) ==================== */
+.vip-4 {
+  background: rgba(253, 126, 20, 0.05);
+  border: 1px solid rgba(253, 126, 20, 0.15);
+  box-shadow: inset 0 0 15px rgba(253, 126, 20, 0.1);
+  animation: planner-pulse 4s ease-in-out infinite;
+}
+.vip-4 .game-title {
+  background: linear-gradient(135deg, #ffe066, #ff922b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 8px rgba(253, 126, 20, 0.3));
+}
+.vip-4 .vip-badge {
+  background: linear-gradient(135deg, #fcc419, #ff922b);
+  color: #1c1917;
+  font-weight: 800;
+  border: 1px solid rgba(255,255,255,0.4);
+  box-shadow: 0 0 15px rgba(253, 126, 20, 0.6);
+}
+
+/* ==================== VIP LEVEL 5 (The Mayor) ==================== */
+.vip-5 {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1.5px solid rgba(255, 215, 0, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(255, 215, 0, 0.15),
+              inset 0 0 20px rgba(255, 215, 0, 0.1);
+  animation: float-and-glow 5s ease-in-out infinite;
+}
+.vip-5 .game-title {
+  background: linear-gradient(45deg, #ff007f, #7f00ff, #00f2fe, #ff007f);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow-text 6s linear infinite;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.25));
+  font-weight: 900;
+}
+.vip-5 .vip-badge {
+  background: linear-gradient(45deg, #ff007f, #7f00ff, #00f2fe, #ff007f);
+  background-size: 300% 300%;
+  animation: rainbow-bg 6s linear infinite;
+  color: #ffffff;
+  font-weight: 800;
+  border: 1px solid rgba(255,255,255,0.5);
+  box-shadow: 0 0 20px rgba(127, 0, 255, 0.6), 0 0 10px rgba(0, 242, 254, 0.4);
+}
+
+/* ==================== ANIMATIONS ==================== */
+@keyframes gentle-glow {
+  0% {
+    text-shadow: 0 0 8px rgba(92, 124, 250, 0.4);
+  }
+  100% {
+    text-shadow: 0 0 16px rgba(92, 124, 250, 0.8);
+  }
+}
+
+@keyframes planner-pulse {
+  0%, 100% {
+    transform: scale(1);
+    border-color: rgba(253, 126, 20, 0.15);
+  }
+  50% {
+    transform: scale(1.02);
+    border-color: rgba(253, 126, 20, 0.35);
+    box-shadow: 0 0 15px rgba(253, 126, 20, 0.2);
+  }
+}
+
+@keyframes float-and-glow {
+  0%, 100% {
+    transform: translateY(0px);
+    box-shadow: 0 8px 32px 0 rgba(255, 215, 0, 0.15),
+                inset 0 0 20px rgba(255, 215, 0, 0.1);
+  }
+  50% {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 36px 0 rgba(255, 215, 0, 0.3),
+                inset 0 0 25px rgba(255, 215, 0, 0.2);
+    border-color: rgba(255, 215, 0, 0.5);
+  }
+}
+
+@keyframes rainbow-text {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes rainbow-bg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

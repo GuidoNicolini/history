@@ -4,8 +4,6 @@ name: Build Electron App
 on:
   push:
     branches: [ "dev" ] # Se ejecuta cuando hay un push a la rama 'dev'
-  pull_request:
-    branches: [ "dev" ] # Opcional: también cuando se hace un PR hacia 'dev'
 
 jobs:
   build:
@@ -13,7 +11,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [windows-latest, macos-latest]
+        os: [windows-latest, macos-latest, ubuntu-latest]
 
     defaults:
       run:
@@ -28,7 +26,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '26.4.0'
           cache: 'npm' # Esto acelera futuras ejecuciones guardando las dependencias en caché
           cache-dependency-path: framework/package-lock.json # Le indica dónde buscar el archivo
 
@@ -41,7 +39,7 @@ jobs:
         # Usamos curl para descargar un archivo ZIP llamado archivos.zip y unzip para extraerlo
         # IMPORTANTE: Reemplaza "URL_AQUI" por el enlace de descarga directa de tu archivos.zip
         run: |
-          curl -L "https://www.dropbox.com/scl/fi/cjd4ze665btznqcpydwhh/archivos.zip?rlkey=l9xxezanbdo33cjakksr66re3&st=9t8t5lqg&dl=1" -o archivos.zip
+          curl -L "https://www.dropbox.com/scl/fi/cerpuk7wbs2fm6blyvu0q/archivos.zip?rlkey=7gz5an6mzi7yn6o55sohi5hz0&st=zcvq99m0&dl=0" -o archivos.zip
           # Crea el directorio public si no existe y extrae el zip dentro. 
           # Al descomprimir se creará la carpeta public/assets porque está dentro del zip
           unzip -o archivos.zip -d public
@@ -55,8 +53,7 @@ jobs:
       # 7. Empaquetar Electron con electron-builder
       - name: Make/Distribute Electron App
         run: npm run dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Necesario si electron-builder publica en GitHub Releases
+
 
       # 8. Subir los archivos generados como artefactos (para poder descargarlos desde GitHub)
       - name: Upload Artifacts
@@ -65,6 +62,6 @@ jobs:
           name: electron-app-${{ matrix.os }}
           # Usamos la carpeta configurada en package.json (release/)
           path: |
-            framework/release/*.exe
-            framework/release/*.dmg
+            framework/release/*-unpacked/
             framework/release/*.zip
+

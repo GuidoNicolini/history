@@ -1,0 +1,20 @@
+{
+  "id": 2234,
+  "name": "Donations",
+  "type": 100,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "assets/img/locations/activities/museum-donations.webp"
+    }
+  ],
+  "url": "evento/museo0062",
+  "backUrl": "museo0062",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [],
+  "conditionsVisible": [12000037],
+  "subLocations": []
+}

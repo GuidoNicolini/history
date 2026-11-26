@@ -1,0 +1,86 @@
+{
+  "id": "mom0010",
+  "type": 3,
+  "location": 1001,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 10,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "You enter the master bedroom and find your {{mom}} making the bed.",
+      "character": 500
+    },
+    {
+      "id": 2,
+      "type": "image",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "image": "assets/img/eventos/npc/mom/mom-room-cleaning-bed-1.gif"
+    },
+    {
+      "id": 3,
+      "type": "image",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "image": "assets/img/eventos/npc/mom/mom-room-cleaning-bed-2.gif"
+    },
+    {
+      "id": 4,
+      "type": "text",
+      "order": 4,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Hey there, baby, what are you up to?",
+      "character": 2
+    },
+    {
+      "id": 5,
+      "type": "text",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Bored, just wandering around the house.",
+      "character": 1
+    },
+    {
+      "id": 6,
+      "type": "text",
+      "order": 6,
+      "probability": 100,
+      "styleClass": [],
+      "text": "If that’s the case, help me tidy up and we can chat a bit while we’re at it, okay?",
+      "character": 2
+    },
+    {
+      "id": 7,
+      "type": "button",
+      "order": 7,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Yeah, sure.",
+      "conditions": [],
+      "cubeAction": {
+        "type": "redirection",
+        "value": "location/1001"
+      }
+    }
+  ],
+  "conditions": [
+    5,
+    2003
+  ],
+  "effects": [
+    1001001,
+    2050,
+    2002,
+    45
+  ]
+}

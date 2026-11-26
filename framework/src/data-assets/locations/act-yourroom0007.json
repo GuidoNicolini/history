@@ -1,0 +1,20 @@
+{
+  "id": 1048,
+  "name": "Nap",
+  "type": 100,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "assets/img/locations/activities/nap.webp"
+    }
+  ],
+  "url": "evento/yourroom0007",
+  "backUrl": "yourroom0007",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [5],
+  "conditionsVisible": [],
+  "subLocations": []
+}

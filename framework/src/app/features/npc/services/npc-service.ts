@@ -62,6 +62,12 @@ export class NpcService implements ISaveable {
     return npc ? npc.name : '';
   }
 
+  public getCurrentLocation(npcId: CharacterID): LocationID | undefined {
+    const npcs = this.state();
+    const npc = npcs[npcId];
+    return npc ? npc.currentLocation : undefined;
+  }
+
   public modifyStat(npcId: CharacterID, stat: Stats, amount: number): void {
     this.state.update(npcs => {
       const npc = npcs[npcId];
@@ -148,6 +154,14 @@ export class NpcService implements ISaveable {
     }
   }
 
+  public increaseAllCorruption(): void {
+    const npcs = this.state();
+    for (const idStr of Object.keys(npcs)) {
+      const npcId = parseInt(idStr, 10) as CharacterID;
+      this.modifyStat(npcId, Stats.CORRUPTION, 1);
+    }
+  }
+
   // MOTOR DE RUTINAS
 
   public updateRoutines(day: Day, time: number): void {
@@ -213,16 +227,41 @@ export class NpcService implements ISaveable {
   }
 
   // 6. GUARDADO Y CARGA
-  public exportState(): { npcs: Record<number, NpcState>, relations: Record<number, RelationState> } {
+  public exportState(): { npcs: Record<number, { stats: Record<Stats, number>, currentLocation: LocationID }>, relations: Record<number, RelationState> } {
+    const currentState = this.state();
+    const exportedNpcs: Record<number, { stats: Record<Stats, number>, currentLocation: LocationID }> = {};
+    Object.keys(currentState).forEach(idStr => {
+      const id = parseInt(idStr, 10);
+      exportedNpcs[id] = {
+        stats: currentState[id].stats,
+        currentLocation: currentState[id].currentLocation
+      };
+    });
     return {
-      npcs: this.state(),
+      npcs: exportedNpcs,
       relations: this.stateRelation()
     };
   }
 
-  public importState(savedState: { npcs: Record<number, NpcState>, relations: Record<number, RelationState> }): void {
+  public importState(savedState: { npcs: Record<number, { stats: Record<Stats, number>, currentLocation: LocationID }>, relations: Record<number, RelationState> }): void {
+    if (!savedState) return;
     if (savedState.npcs) {
-      this.state.set(savedState.npcs);
+      this.state.update(currentNpcs => {
+        const updatedNpcs = { ...currentNpcs };
+        Object.keys(savedState.npcs).forEach(idStr => {
+          const id = parseInt(idStr, 10);
+          const savedNpc = savedState.npcs[id];
+          const currentNpc = currentNpcs[id];
+          if (currentNpc && savedNpc) {
+            updatedNpcs[id] = {
+              ...currentNpc,
+              stats: savedNpc.stats,
+              currentLocation: savedNpc.currentLocation
+            };
+          }
+        });
+        return updatedNpcs;
+      });
     }
     if (savedState.relations) {
       this.stateRelation.set(savedState.relations);

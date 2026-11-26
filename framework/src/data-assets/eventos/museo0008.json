@@ -1,0 +1,55 @@
+{
+  "id": "museo0008",
+  "type": 3,
+  "location": 2201,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 5,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "You find a spot right in the middle of the museum’s modest screening room. The cushion hugs you way better than you’d have guessed, so you lean back, let your shoulders drop, and surrender to a first-rate educational feature.",
+      "character": 500
+    },
+    {
+      "id": 2,
+      "type": "video",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "video": "assets/videos/museum/mus-8.webm"
+    },
+    {
+      "id": 3,
+      "type": "button",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Stop watching",
+      "conditions": [],
+      "cubeAction": {
+        "type": "redirection",
+        "value": "location/220"
+      }
+    }
+  ],
+  "conditions": [
+    1000007,
+    10000019,
+    1,
+    5
+  ],
+  "effects": [
+    2001,
+    30,
+    10105,
+    10105,
+    10105,
+    2000003
+  ]
+}

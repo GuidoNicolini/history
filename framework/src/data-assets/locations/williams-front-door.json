@@ -1,0 +1,20 @@
+{
+  "id": 1101,
+  "name": "House",
+  "type": 40,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "assets/img/locations/room/williams-front-door.webp"
+    }
+  ],
+  "url": "location/1101",
+  "backUrl": "location/110",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [],
+  "conditionsVisible": [],
+  "subLocations": [1103,1104,1105,1106,1107]
+}

@@ -52,6 +52,16 @@
         "type": "redirection",
         "value": "location/1006"
       }
+    },
+    {
+      "id": 6,
+      "type": "code",
+      "order": 4,
+      "probability": 100,
+      "styleClass": [],
+      "functionName": "lauchEventoGroup",
+      "parameters": ["mom0002","dad0009","dad0010","mom0013","mom0014","momdad0002"],
+      "conditions": []
     }
   ],
   "conditions": [],

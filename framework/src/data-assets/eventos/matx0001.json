@@ -1,0 +1,64 @@
+{
+  "id": "matx0001",
+  "type": 0,
+  "location": 0,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 0,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "You follow the rabbit a few steps before a sudden wave of exhaustion washes over you, making your eyelids heavy.",
+      "character": 500
+    },
+    {
+      "id": 2,
+      "type": "text",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "text": "While these effects take hold, the feel of your mattress meets your back, and as your eyes close for the last time, you open them to the ceiling of your room.",
+      "character": 500
+    },
+    {
+      "id": 3,
+      "type": "video",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "video": "assets/videos/others/conejo.mp4"
+    },
+    {
+      "id": 4,
+      "type": "text",
+      "order": 4,
+      "probability": 100,
+      "styleClass": [],
+      "text": "What a strange dream.",
+      "character": 1
+    },
+    {
+      "id": 5,
+      "type": "button",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Wake up",
+      "conditions": [],
+      "cubeAction": {
+        "type": "redirection",
+        "value": "location/1000"
+      }
+    }
+  ],
+  "conditions": [
+    3,
+    13000000
+  ],
+  "effects": []
+}

@@ -1,13 +1,13 @@
 {
-  "name": "framework",
-  "version": "0.0.0",
-  "description": "Descripción de tu aplicación",
+  "name": "HappyCity",
+  "version": "1.10.0",
+  "description": "An adult visual novel game",
   "author": "Happy Dev",
-  "repository": "github:GuidoNicolini/history",
   "main": "main.js",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "dev": "npm run build:data && npm run start",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
@@ -17,7 +17,7 @@
     "dist": "npm run build && electron-builder"
   },
   "build": {
-    "appId": "com.framework.app",
+    "appId": "com.HappyCity.app",
     "productName": "HappyCity",
     "directories": {
       "output": "release"
@@ -30,20 +30,18 @@
     ],
     "mac": {
       "target": [
-        "dmg",
         "zip"
+
       ]
     },
     "win": {
       "target": [
-        "nsis",
-        "zip"
+        "dir"
       ]
     },
     "linux": {
       "target": [
-        "AppImage",
-        "tar.gz"
+        "dir"
       ]
     }
   },
@@ -60,26 +58,27 @@
     ]
   },
   "private": true,
-  "packageManager": "npm@11.6.2",
+  "packageManager": "npm@12.0.2",
   "dependencies": {
-    "@angular/common": "^21.0.0",
-    "@angular/compiler": "^21.0.0",
-    "@angular/core": "^21.0.0",
-    "@angular/forms": "^21.0.0",
-    "@angular/platform-browser": "^21.0.0",
-    "@angular/router": "^21.0.0",
+    "@angular/common": "^22.1.2",
+    "@angular/compiler": "^22.1.2",
+    "@angular/core": "^22.1.2",
+    "@angular/forms": "^22.1.2",
+    "@angular/platform-browser": "^22.1.2",
+    "@angular/router": "^22.1.2",
     "bootstrap": "^5.3.8",
-    "rxjs": "~7.8.0",
-    "tslib": "^2.3.0"
+    "bootstrap-icons": "^1.13.1",
+    "rxjs": "~7.8.2",
+    "tslib": "^2.8.1"
   },
   "devDependencies": {
-    "@angular/build": "^21.0.0",
-    "@angular/cli": "^21.0.0",
-    "@angular/compiler-cli": "^21.0.0",
-    "electron": "^28.2.1",
-    "electron-builder": "^25.1.8",
-    "jsdom": "^27.1.0",
-    "typescript": "~5.9.2",
-    "vitest": "^4.0.8"
+    "@angular/build": "^22.1.4",
+    "@angular/cli": "^22.1.4",
+    "@angular/compiler-cli": "^22.1.2",
+    "electron": "^43.4.0",
+    "electron-builder": "^26.15.3",
+    "jsdom": "^30.0.1",
+    "typescript": "~6.0.3",
+    "vitest": "^4.1.10"
   }
 }

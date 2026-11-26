@@ -1,0 +1,115 @@
+{
+  "id": "dad0008",
+  "type": 2,
+  "location": 1000,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 0,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "So you're in your room rehearsing some smooth shit to charm the girls, when a knock hits your door. You open it and there's {{dad}} , smirking like a proud devil.",
+      "character": 500
+    },
+    {
+      "id": 2,
+      "type": "text",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Got something for you, kid. Guaranteed you'll love it more than that poor pillow.",
+      "character": 3
+    },
+    {
+      "id": 3,
+      "type": "text",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "text": "He drags a big-ass box from behind the hallway, clearly enjoying the suspense. He passes it over, barely holding back a chuckle.",
+      "character": 500
+    },
+    {
+      "id": 4,
+      "type": "text",
+      "order": 4,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Put this baby to good use and let your pillow have a break, alright? Heh.",
+      "character": 3
+    },
+    {
+      "id": 5,
+      "type": "text",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": "You tear open the box, hyped as hell… until you're staring at a lifelike sex doll, your cheeks burning redder than a stoplight.",
+      "character": 500
+    },
+    {
+      "id": 6,
+      "type": "image",
+      "order": 6,
+      "probability": 100,
+      "styleClass": [],
+      "image": "assets/img/eventos/npc/dad/dad-gift-doll.jpg"
+    },
+    {
+      "id": 7,
+      "type": "text",
+      "order": 7,
+      "probability": 100,
+      "styleClass": [],
+      "text": "I'll take that blush as a thank you. She's the premium model—full custom, hair, eyes, you name it. Much better practice than a pillow, and she won't snore.",
+      "character": 3
+    },
+    {
+      "id": 8,
+      "type": "text",
+      "order": 8,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Uh… thanks, {{dad}} .",
+      "character": 1
+    },
+    {
+      "id": 9,
+      "type": "text",
+      "order": 9,
+      "probability": 100,
+      "styleClass": [],
+      "text": " Don't mention it. But seriously, scrub her down after every session. Hygiene, kid. Hygiene.",
+      "character": 3
+    },
+    {
+      "id": 10,
+      "type": "button",
+      "order": 10,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Keep practicing",
+      "conditions": [],
+      "cubeAction": {
+        "type": "redirection",
+        "value": "location/1000"
+      }
+    }
+  ],
+  "conditions": [
+    92,
+    20021,
+    12000024,
+    13000000
+  ],
+  "effects": [
+    1001002,
+    7003,
+    2015
+  ]
+}

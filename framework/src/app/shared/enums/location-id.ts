@@ -3,9 +3,12 @@ export enum LocationID {
 
   HAPPYCITY = 1,
 
-  /****** Neigborhood  *****/
+  /************************* Neigborhood  *****/
 
   NEIGBORHOOD = 10,
+
+  /****** Home *****/
+
   HOME = 100,
   YOURROOM = 1000,
   PARENTS_ROOM= 1001,
@@ -16,6 +19,9 @@ export enum LocationID {
   LIVING_ROOM = 1006,
   KITCHEN = 1007,
   BACKYARD = 1008,
+  GARAGE = 1009,
+
+  FUCK_DOLL = 1010,
 
   /****** Activities Home *****/
 
@@ -33,7 +39,156 @@ export enum LocationID {
   CHARISMA_YOURROOM = 1031,
   JERKOFF_YOURROOM = 1032,
   WATCHTV_LIVING_ROOM = 1033,
+  CLEAN_BATHROOM = 1034,
+  CLEAN_DISHES = 1035,
+  CLEAN_YOUR_ROOM = 1036,
+  CUT_GLASS = 1037,
+  VACUUM_LIVING_ROOM = 1038,
+  WASH_CAR_GARAGE = 1039,
+  PLAY_WITH_LIL_SIS = 1040,
+  CHAT_WITH_MOM_KITCHEN= 1041,
+  CHAT_WITH_DAD_LIVINGROOM= 1042,
+  PLAY_WITH_BRO_LIVINGROOM = 1043,
+  CHAT_WITH_OLD_SIS_LIVINGROOM = 1044,
+  CODE_PATREON = 1045,
+  FAMILY_DINNER = 1046,
+  NAP = 1048,
+  SUNBATHING= 1049,
+  GARAGE_CHEATS = 1050,
 
+  /****** williams *****/
+
+
+  WILLIAMS = 110,
+  WILLIAMS_FRONT_DOOR = 1101,
+  WILLIAMS_BACKYARD = 1102,
+  WILLIAMS_LIVINGROOM = 1103,
+  WILLIAMS_KITCHEN = 1104,
+  WILLIAMS_BATHROOM = 1105,
+  WILLIAMS_MASTERROOM = 1106,
+  WILLIAMS_DAUGHTER_ROOM= 1107,
+
+
+  /****** ACTIVITIES williams *****/
+
+  /************************** DOWNTOWN  *****/
+
+  DOWNTOWN = 20,
+
+  /****** Cafe  *****/
+
+  CAFE = 200,
+  CAFE_BATHROOM = 2001,
+  CAFE_BOSS_OFFICE = 2002,
+  CAFE_TABLES = 2003,
+
+  /****** Activities cafe  *****/
+
+  CAFE_ASK_JOB = 2030,
+  CAFE_HAND_OUT_FLYER = 2031,
+  CAFE_BUY_COFFEE = 2032,
+  CAFE_CHAT_CASSIE = 2033,
+  CAFE_CASSIE_BJ_BATHROOM = 2034,
+  CAFE_LIMPIAR_MESAS = 2035,
+  CAFE_LIMPIAR_BATHROOM =2036,
+  CAFE_LIMPIAR_OFFICINA_JEFE = 2037,
+  CAFE_MAKE_COFFEE = 2038,
+  CAFE_WAIT_TABLES = 2039,
+  CAFE_LUCIEN_CHEAT = 2040,
+
+
+  /****** Gym  *****/
+  GYM = 210,
+  GYM_SHOWER = 2101,
+  GYM_WEIGHT_ROOM = 2102,
+  GYM_ZOOM = 2103,
+
+
+
+
+  /****** Activities GYM  *****/
+  BENCH_PRESS = 2121,
+  STRETCH_GYM = 2122,
+  SHOWER_GYM =2123,
+  DRINK_PROTEIN = 2124,
+  BUY_GYM_COIN = 2125,
+  STEROIDS = 2126,
+
+
+  /****** Museum  *****/
+  MUSEUM = 220,
+
+  MUSEUM_CINEMA = 2201,
+
+
+  /****** Activities Museum  *****/
+  PLACA1 = 2230,
+  PLACA2 = 2231,
+  PLACA3 = 2232,
+  DONATIONS = 2234,
+
+
+  /****** Park *****/
+
+  PARK = 230,
+  PARK_BENCH = 2301,
+  PARK_BUSHES = 2302,
+  PARK_FOUNTAIN = 2303,
+
+  /****** Activities Park *****/
+
+  PARK_BENCH_REST = 2330,
+  PARK_RUNNING = 2331,
+  PARK_NINJA = 2332,
+
+
+  /****** Departments *****/
+
+  DEPARMENTS = 240,
+
+  /****** activities Departments *****/
+
+
+  /********************************** COMMERCIAL DISTRIC  *****/
+
+COMMERCIAL_DISTRIC = 30,
+
+
+
+  /****** SUPERMARKET *****/
+
+  SUPERMARKET = 300,
+
+  /****** GIFT SHOP *****/
+
+  GIFT_SHOP = 310,
+
+  /****** ACTIVITIES SUPERMARKET *****/
+
+  BUY_SUPER = 3001,
+  CHAT_KIMMY = 3002,
+
+
+  /****** ACTIVITIES GIFT SHOP *****/
+
+  BUY_GIFT = 3101,
+
+
+  /********************************** MATRIX DISTRIC  *****/
+
+  MATRIX = 40,
+
+  /********************** NAVE *******************/
+  SHIP = 400,
+
+
+
+  /************************* ACTIVITIES NAVE *************/
+
+  SHIP_ITEMS= 4001, //matx0007
+  SHIP_RELATIONS = 4002, //matx0008
+  SHIP_TIME = 4003,    //matx0009
+  SHIP_LOCAL_MOANPHEUS = 4004,  //matx0006
 
 
 }

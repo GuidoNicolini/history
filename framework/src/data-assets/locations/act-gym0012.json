@@ -1,0 +1,20 @@
+{
+  "id": 2124,
+  "name": "Drink Protein",
+  "type": 100,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "assets/img/locations/activities/drink-protein.webp"
+    }
+  ],
+  "url": "evento/gym0012",
+  "backUrl": "gym0012",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [5,1001009],
+  "conditionsVisible": [],
+  "subLocations": []
+}

@@ -1,0 +1,167 @@
+{
+  "id": "momdad0002",
+  "type": 0,
+  "location": 1006,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 10,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "You're sprawled on the couch, flipping channels without much conviction. The cushion beside you sinks: your {{dad}} drops down with a sigh. A few seconds later your {{mom}} appears with two cups of coffee.",
+      "character": 500
+    },
+    {
+      "id": 2,
+      "type": "image",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "image": "assets/img/eventos/npc/momxdad/mom-dad-living-two.webp"
+    },
+    {
+      "id": 3,
+      "type": "text",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "text": "What are you two watching?",
+      "character": 2
+    },
+    {
+      "id": 4,
+      "type": "text",
+      "order": 4,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Nothing important. I was just letting the TV decide for me.",
+      "character": 1
+    },
+    {
+      "id": 5,
+      "type": "text",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Perfect for a quiet moment.",
+      "character": 3
+    },
+    {
+      "id": 6,
+      "type": "text",
+      "order": 6,
+      "probability": 100,
+      "styleClass": [],
+      "text": "The movie playing shows a couple embracing in a parking lot under light rain. Your {{dad}} lets out a low laugh, the kind that carries memories.",
+      "character": 500
+    },
+    {
+      "id": 7,
+      "type": "text",
+      "order": 7,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Do you remember, honey, that night in the movie theater parking lot? With the storm and your soaked dress... We didn't even see half of the movie.",
+      "character": 3
+    },
+    {
+      "id": 8,
+      "type": "text",
+      "order": 8,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Your {{mom}} tenses her shoulders, her gaze darting from the screen to your {{dad}} , a mix of laughter and panic.",
+      "character": 500
+    },
+    {
+      "id": 9,
+      "type": "text",
+      "order": 9,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Hey! Don't talk about that here, we're not alone.",
+      "character": 2
+    },
+    {
+      "id": 10,
+      "type": "text",
+      "order": 10,
+      "probability": 100,
+      "styleClass": [],
+      "text": "She gives his arm a playful slap. Your {{dad}} raises his hands, pretending to surrender, but the smile doesn't leave his face for a second.",
+      "character": 500
+    },
+    {
+      "id": 11,
+      "type": "text",
+      "order": 11,
+      "probability": 100,
+      "styleClass": [],
+      "text": "I'm just saying that night you gave me your best smile... and something else I won't mention. Oh no, just kidding, just kidding.",
+      "character": 3
+    },
+    {
+      "id": 12,
+      "type": "text",
+      "order": 12,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Oh, shut up. You have no shame, do you?",
+      "character": 2
+    },
+    {
+      "id": 13,
+      "type": "text",
+      "order": 13,
+      "probability": 100,
+      "styleClass": [],
+      "text": "...I think I'll go get some water.",
+      "character": 1
+    },
+    {
+      "id": 14,
+      "type": "text",
+      "order": 14,
+      "probability": 100,
+      "styleClass": [],
+      "text": "But you don't move. You stay there, eyes fixed on the TV, ears burning, while your {{dad}} wraps his arm around your {{mom}} 's shoulders and whispers something you can't hear. She lets out a soft giggle and leans into him, still blushing. The movie continues, but your mind is already racing with mental images.",
+      "character": 500
+    },
+    {
+      "id": 15,
+      "type": "button",
+      "order": 15,
+      "probability": 100,
+      "styleClass": [],
+      "text": "End movie",
+      "conditions": [],
+      "cubeAction": {
+        "type": "redirection",
+        "value": "location/1000"
+      }
+    }
+  ],
+  "conditions": [
+    13000003,
+    5,
+    2003
+  ],
+  "effects": [
+    1001001,
+    1001001,
+    1001002,
+    1001002,
+    1002001,
+    1002001,
+    7002,
+    7002,
+    7003,
+    7003,
+    31
+  ]
+}

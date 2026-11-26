@@ -1,0 +1,27 @@
+{
+  "id": "gymproxy10002",
+  "type": 2,
+  "location": 2102,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 0,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "code",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "functionName": "lauchEventoGroup",
+      "parameters": [
+        "gym0004",
+        "gym0005",
+        "gym0006"
+      ],
+      "conditions": []
+    }
+  ],
+  "conditions": [],
+  "effects": []
+}

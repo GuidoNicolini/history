@@ -1,0 +1,35 @@
+{
+  "id": "masterroom0002",
+  "type": 0,
+  "location": 1001,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 0,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "The brass knob is cool under your fingertips. The house is a tomb of shadows and silence. Just as you start to turn it, a jolt of reality freezes you solid. Walking into master room at this hour,no knock, no warning, is an insane gamble you can’t afford. You pull back as if the handle had turned to fire, swallow the lump in your throat, and slink away down the hall, your footsteps swallowed by the dark.",
+      "character": 500
+    },
+    {
+      "id": 2,
+      "type": "button",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Get back",
+      "conditions": [],
+      "cubeAction": {
+        "type": "redirection",
+        "value": "location/100"
+      }
+    }
+  ],
+  "conditions": [],
+  "effects": []
+}

@@ -1,0 +1,62 @@
+{
+  "id": "livingroom0008",
+  "type": 2,
+  "location": 1006,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 5,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "You enjoy a happy dinner filled with laughter and casual chatter.",
+      "character": 500
+    },
+    {
+      "id": 2,
+      "type": "image",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "image": "assets/img/eventos/locations/livingroom/family-dinner.webp"
+    },
+    {
+      "id": 3,
+      "type": "button",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Finish dinner",
+      "conditions": [],
+      "cubeAction": {
+        "type": "redirection",
+        "value": "location/100"
+      }
+    }
+  ],
+  "conditions": [],
+  "effects": [
+    8,
+    30,
+    2042,
+    1001001,
+    1001002,
+    1001003,
+    1001004,
+    1001005,
+    1002001,
+    1002002,
+    1002003,
+    1002004,
+    1003001,
+    1003002,
+    1003003,
+    1004001,
+    1004002,
+    1005001
+  ]
+}

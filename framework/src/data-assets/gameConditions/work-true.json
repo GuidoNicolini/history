@@ -1,0 +1,7 @@
+{
+  "id": 10000017,
+  "type": "flag",
+  "target": "work",
+  "operator": "==",
+  "value": "true"
+}

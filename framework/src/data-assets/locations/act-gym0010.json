@@ -1,0 +1,20 @@
+{
+  "id": 2122,
+  "name": "Stretch",
+  "type": 100,
+  "images": [
+    {
+      "type": "thumbnail",
+      "url": "assets/img/locations/activities/gym-stretch.webp"
+    }
+  ],
+  "url": "evento/gym0010",
+  "backUrl": "gym0010",
+  "isAvailable": true,
+  "isVisible": true,
+  "lastTimeVisited": 0,
+  "styleClass": [],
+  "conditionsAvailable": [14,5,1001009],
+  "conditionsVisible": [],
+  "subLocations": []
+}

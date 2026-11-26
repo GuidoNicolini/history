@@ -127,16 +127,40 @@ export class LocationService implements ISaveable {
    * Exporta el estado actual del servicio de Locations.
    * @returns El estado actual.
    */
-  public exportState(): Record<number, Location> {
-    return this.state();
+  public exportState(): Record<number, { lastTimeVisited: number }> {
+    const currentState = this.state();
+    const exported: Record<number, { lastTimeVisited: number }> = {};
+    Object.keys(currentState).forEach(idStr => {
+      const id = parseInt(idStr, 10);
+      exported[id] = {
+        lastTimeVisited: currentState[id].lastTimeVisited
+      };
+    });
+    return exported;
   }
 
   /**
    * Importa y establece un estado para el servicio de Locations.
    * @param state El estado a importar.
    */
-  public importState(state: Record<number, Location>): void {
-    this.state.set(state);
+  public importState(state: Record<number, { lastTimeVisited: number }>): void {
+    if (state) {
+      this.state.update(currentState => {
+        const updatedState = { ...currentState };
+        Object.keys(state).forEach(idStr => {
+          const id = parseInt(idStr, 10);
+          const savedLoc = state[id];
+          const currentLoc = currentState[id];
+          if (currentLoc && savedLoc) {
+            updatedState[id] = {
+              ...currentLoc,
+              lastTimeVisited: savedLoc.lastTimeVisited
+            };
+          }
+        });
+        return updatedState;
+      });
+    }
   }
 
 

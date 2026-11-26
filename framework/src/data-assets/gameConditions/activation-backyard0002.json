@@ -1,0 +1,7 @@
+{
+  "id": 12000006,
+  "type": "activation",
+  "target": "backyard0002",
+  "operator": ">=",
+  "value": 1
+}

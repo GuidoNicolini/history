@@ -1,0 +1,30 @@
+{
+  "id": "gym0004",
+  "type": 2,
+  "location": 2102,
+  "probability": 800,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 0,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "code",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "functionName": "lauchEventoGroup",
+      "parameters": [
+        "gymgirl0001",
+        "gymgirl0002",
+        "gymgirl0003",
+        "gymgirl0004",
+        "gymgirl0005",
+        "gymgirl0006"
+      ],
+      "conditions": []
+    }
+  ],
+  "conditions": [],
+  "effects": []
+}

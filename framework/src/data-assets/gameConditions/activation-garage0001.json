@@ -1,0 +1,7 @@
+{
+  "id": 12000004,
+  "type": "activation",
+  "target": "garage0001",
+  "operator": ">=",
+  "value": 1
+}

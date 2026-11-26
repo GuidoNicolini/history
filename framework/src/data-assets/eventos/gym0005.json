@@ -1,0 +1,52 @@
+{
+  "id": "gym0005",
+  "type": 2,
+  "location": 2102,
+  "probability": 50,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 0,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "You start calling for help, and after a while your shouts reach the ears of others in the gym, but before helping, they don't miss the chance to laugh at you for a while.",
+      "character": 500
+    },
+    {
+      "id": 2,
+      "type": "image",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "image": "assets/img/eventos/locations/gym/gymbros-lol.gif"
+    },
+    {
+      "id": 3,
+      "type": "button",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "text": "You thank them and lower your head",
+      "conditions": [],
+      "cubeAction": {
+        "type": "redirection",
+        "value": "location/210"
+      }
+    }
+  ],
+  "conditions": [],
+  "effects": [
+    2050,
+    2005,
+    2005,
+    2005,
+    2005,
+    2005,
+    2005,
+    2005
+  ]
+}

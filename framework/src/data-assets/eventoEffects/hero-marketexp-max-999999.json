@@ -1,0 +1,7 @@
+{
+  "id": 2052,
+  "type": "hero-stat",
+  "target": "market-exp",
+  "operator": "plus",
+  "value": 999999
+}

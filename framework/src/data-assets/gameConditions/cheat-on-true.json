@@ -1,0 +1,7 @@
+{
+  "id": 10000028,
+  "type": "flag",
+  "target": "cheat_on",
+  "operator": "==",
+  "value": "true"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "doll0006",
+  "type": 3,
+  "location": 1010,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 0,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "The box opens with a soft tear. You lift the doll out, her smooth skin cool against your hands. You squirt a generous amount of gel onto your fingers and rub it over the important zones, making everything slick. Then you turn her over, adjusting her limbs until she’s exactly how you want. Your pulse picks up as you settle into position.",
+      "character": 500
+    },
+    {
+      "id": 2,
+      "type": "video",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "video": "assets/videos/doll/doll-6.webm"
+    },
+    {
+      "id": 3,
+      "type": "button",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Finish",
+      "conditions": [],
+      "cubeAction": {
+        "type": "redirection",
+        "value": "location/1000"
+      }
+    }
+  ],
+  "conditions": [
+    12000039,
+    201,
+    1
+  ],
+  "effects": [
+    2005,
+    2005,
+    45,
+    2050,
+    2020,
+    2026,
+    2038,
+    2032,
+    2015
+  ]
+}

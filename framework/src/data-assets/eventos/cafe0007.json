@@ -1,0 +1,88 @@
+{
+  "id": "cafe0007",
+  "type": 2,
+  "location": 200,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 0,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Cassie, I’ve been observing the way you treat some of the regulars, and I’ve gotta ask: is that kind of attention strictly for them?",
+      "character": 1
+    },
+    {
+      "id": 2,
+      "type": "image",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "image": "assets/img/eventos/npc/cassie/cassie-chat-event.webp"
+    },
+    {
+      "id": 3,
+      "type": "text",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "text": "By the tone of your voice, you’re not asking for an extra shot of espresso, are you? Ha!",
+      "character": 7
+    },
+    {
+      "id": 4,
+      "type": "text",
+      "order": 4,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Your coffee’s the best, no lie, but my mind’s definitely on that special “customer service” I’ve caught glimpses of",
+      "character": 1
+    },
+    {
+      "id": 5,
+      "type": "text",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Listen, I’m swamped lately, but every once in a while I can slip into the bathroom and work a little fast magic. Just a taste. You in?",
+      "character": 7
+    },
+    {
+      "id": 6,
+      "type": "text",
+      "order": 6,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Thanks, Cassie. You’re a fucking angel.",
+      "character": 1
+    },
+    {
+      "id": 7,
+      "type": "button",
+      "order": 7,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Finish chatting",
+      "conditions": [],
+      "cubeAction": {
+        "type": "redirection",
+        "value": "location/200"
+      }
+    }
+  ],
+  "conditions": [
+    13000000,
+    1,
+    12000027,
+    703,
+    11105
+  ],
+  "effects": [
+    1001006,
+    2040
+  ]
+}

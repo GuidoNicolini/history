@@ -1,0 +1,78 @@
+{
+  "id": "supermarket0003",
+  "type": 2,
+  "location": 300,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 0,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 100,
+      "type": "button",
+      "order": 100,
+      "probability": 100,
+      "styleClass": [],
+      "text": "FInish chatting",
+      "conditions": [],
+      "cubeAction": {
+        "type": "redirection",
+        "value": "location/300"
+      }
+    },
+    {
+      "id": 50,
+      "type": "image",
+      "order": 50,
+      "probability": 100,
+      "styleClass": [],
+      "image": "assets/img/eventos/npc/kimmy/kimmy-chat-event.webp"
+    },
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Uh, h-hi... you doing okay today?",
+      "character": 1
+    },
+    {
+      "id": 2,
+      "type": "text",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Hey there! Everything's awesome. Need something, or just passing through?",
+      "character": 9
+    },
+    {
+      "id": 51,
+      "type": "text",
+      "order": 51,
+      "probability": 100,
+      "styleClass": [],
+      "text": "It's just... I've seen you here a bunch, and I finally got the guts to say more than \"paper or plastic,\" so... yeah, wanted to know your name or something, hehe.",
+      "character": 1
+    },
+    {
+      "id": 52,
+      "type": "text",
+      "order": 52,
+      "probability": 100,
+      "styleClass": [],
+      "text": "That's honestly the sweetest thing I've heard all week. I'm Kimmy. And you are...?",
+      "character": 9
+    }
+  ],
+  "conditions": [
+    13000000,
+    2,
+    11121,
+    700
+  ],
+  "effects": [
+    1001008,
+    2040
+  ]
+}

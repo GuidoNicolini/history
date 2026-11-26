@@ -18,6 +18,14 @@ export class StoryState implements ISaveable {
     'meet_lil_sis' :false,
     'meet_old_sis' : false,
     'meet_dad' : false,
+    'meet_family' : false,
+    'job_cafe' : false,
+    'work' : false,
+    'cassie_exclusive' : false,
+    'kimmy_exclusive' : false,
+    'museum_donation' : 0,
+    'cheat_on' : false,
+
 
   });
 
@@ -29,10 +37,6 @@ export class StoryState implements ISaveable {
     return this.flags()[key];
   }
 
-  /**
-   * Exporta el estado actual de la historia.
-   * @returns El estado actual.
-   */
   public exportState(): Record<string, any> {
     return this.flags();
   }
@@ -42,7 +46,12 @@ export class StoryState implements ISaveable {
    * @param state El estado a importar.
    */
   public importState(state: Record<string, any>): void {
-    this.flags.set(state);
+    if (state) {
+      this.flags.update(currentFlags => ({
+        ...currentFlags,
+        ...state
+      }));
+    }
   }
 
 }

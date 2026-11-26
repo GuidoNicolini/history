@@ -1,0 +1,7 @@
+{
+  "id": 1001010,
+  "type": "item",
+  "target": "willAccess",
+  "operator": ">=",
+  "value": 1
+}

@@ -1,0 +1,7 @@
+{
+  "id": 10000013,
+  "type": "flag",
+  "target": "cassie_exclusive",
+  "operator": "==",
+  "value": "true"
+}

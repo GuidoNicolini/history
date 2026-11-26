@@ -1,0 +1,101 @@
+{
+  "id": "giftshop0001",
+  "type": 0,
+  "location": 3101,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 0,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Hi, welcome to our charming gift shop. What will you take with you today?",
+      "character": 13
+    },
+    {
+      "id": 2,
+      "type": "button",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Flowers - $100",
+      "conditions": [1000004],
+      "cubeAction":{
+        "type": "buy",
+        "value": "flower:100"
+      }
+    },
+
+    {
+      "id": 3,
+      "type": "button",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Chocolate - $300",
+      "conditions": [1000007],
+      "cubeAction":{
+        "type": "buy",
+        "value": "chocolate:300"
+      }
+    },
+    {
+      "id": 4,
+      "type": "button",
+      "order": 4,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Perfume - $500",
+      "conditions": [1000009],
+      "cubeAction":{
+        "type": "buy",
+        "value": "perfume:500"
+      }
+    },
+    {
+      "id": 5,
+      "type": "button",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Teddy - $1000",
+      "conditions": [1000014],
+      "cubeAction":{
+        "type": "buy",
+        "value": "teddy:1000"
+      }
+    },
+    {
+      "id": 6,
+      "type": "button",
+      "order": 6,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Jewelry - $5000",
+      "conditions": [1000022],
+      "cubeAction":{
+        "type": "buy",
+        "value": "jewelry:5000"
+      }
+    },
+    {
+      "id": 999,
+      "type": "button",
+      "order": 999,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Back",
+      "conditions": [],
+      "cubeAction": {
+        "type": "redirection",
+        "value": "location/310"
+      }
+    }
+  ],
+  "conditions": [],
+  "effects": []
+}

@@ -1,0 +1,7 @@
+{
+  "id": 11023,
+  "type": "stat-npc",
+  "target": "3:corruption",
+  "operator": ">=",
+  "value": 8
+}

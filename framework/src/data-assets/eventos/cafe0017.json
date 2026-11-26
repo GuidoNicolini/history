@@ -1,0 +1,53 @@
+{
+  "id": "cafe0017",
+  "type": 2,
+  "location": 200,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 1,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "You make coffee for the customers",
+      "character": 500
+    },
+    {
+      "id": 2,
+      "type": "image",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "image": "assets/img/eventos/locations/cafe/cafe-make-coffee.gif"
+    },
+    {
+      "id": 3,
+      "type": "button",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Finish",
+      "conditions": [],
+      "cubeAction": {
+        "type": "redirection",
+        "value": "location/200"
+      }
+    }
+  ],
+  "conditions": [],
+  "effects": [
+    18,
+    2050,
+    31,
+    10005,
+    10005,
+    10005,
+    2051,
+    2051,
+    2051
+  ]
+}

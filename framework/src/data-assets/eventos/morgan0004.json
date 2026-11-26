@@ -1,0 +1,131 @@
+{
+  "id": "morgan0004",
+  "type": 3,
+  "location": 220,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 0,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Well, well. Look who finally decided to become a permanent exhibit. You’re here more often than some employees.",
+      "character": 12
+    },
+    {
+      "id": 2,
+      "type": "text",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "text": "What can I say? I’ve developed a deep, meaningful connection with dusty halls and old projectors. Total culture lover, hehe.",
+      "character": 1
+    },
+    {
+      "id": 3,
+      "type": "text",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "text": "You’re adorable. But seriously, this place feels brighter when you’re around. You know you’re always welcome, right?",
+      "character": 12
+    },
+    {
+      "id": 4,
+      "type": "text",
+      "order": 4,
+      "probability": 100,
+      "styleClass": [],
+      "text": "After a welcome like that, how could I stay away? So, how’s funding? Still drowning or finally floating?",
+      "character": 1
+    },
+    {
+      "id": 5,
+      "type": "text",
+      "order": 5,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Floating. Actually, more than floating—we’re cruising. No more panic attacks over the power bill. I even slept through the night.",
+      "character": 12
+    },
+    {
+      "id": 6,
+      "type": "text",
+      "order": 6,
+      "probability": 100,
+      "styleClass": [],
+      "text": "That’s honestly great. You deserve the calm.",
+      "character": 1
+    },
+    {
+      "id": 7,
+      "type": "text",
+      "order": 7,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Out of the corner of your eye, you notice a visitor hovering near the reception, glancing at Morgan with the impatience of someone who wants help.",
+      "character": 500
+    },
+    {
+      "id": 8,
+      "type": "text",
+      "order": 8,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Ugh, duty calls. Before I go,new films arrived for the mini cinema. Go see one, on the house if you want. And next slow day, I want that longer chat. No interruptions.",
+      "character": 12
+    },
+    {
+      "id": 9,
+      "type": "text",
+      "order": 9,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Deal. I’ll hold you to that.",
+      "character": 1
+    },
+    {
+      "id": 10,
+      "type": "text",
+      "order": 10,
+      "probability": 100,
+      "styleClass": [],
+      "text": "You better. Later, culture lover.",
+      "character": 12
+    },
+    {
+      "id": 11,
+      "type": "text",
+      "order": 11,
+      "probability": 100,
+      "styleClass": [],
+      "text": "She gives you a quick smile, then walks toward the waiting visitor, already shifting into professional mode.",
+      "character": 500
+    },
+    {
+      "id": 12,
+      "type": "button",
+      "order": 12,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Finish",
+      "conditions": [],
+      "cubeAction": {
+        "type": "redirection",
+        "value": "location/220"
+      }
+    }
+  ],
+  "conditions": [
+    10000020,
+    13000000
+  ],
+  "effects": [
+    1001011,
+    2042
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "gymgirl0001",
+  "type": 2,
+  "location": 2102,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 0,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "You start calling for help, and after a while, your shouts reach the ears of a girl who was working out. She helps you out of the embarrassing situation you've gotten yourself into",
+      "character": 500
+    },
+    {
+      "id": 2,
+      "type": "video",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "video": "assets/videos/gym/gym-girl-1.webm"
+    },
+    {
+      "id": 3,
+      "type": "button",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "text": "You thank her and give her an embarrassed smile.",
+      "conditions": [],
+      "cubeAction": {
+        "type": "redirection",
+        "value": "location/210"
+      }
+    }
+  ],
+  "conditions": [],
+  "effects": [
+    2002
+  ]
+}

@@ -25,9 +25,151 @@
         "location": 0,
         "routineConditions": [],
         "weight": 1
+      },
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 9,
+        "finalTime": 10,
+        "location": 1005,
+        "routineConditions": [],
+        "weight": 100
+      },
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 8,
+        "finalTime": 22,
+        "location": 1006,
+        "routineConditions": [],
+        "weight": 100
+      },
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 8,
+        "finalTime": 22,
+        "location": 1006,
+        "routineConditions": [],
+        "weight": 100
+      },
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 9,
+        "finalTime": 10,
+        "location": 1007,
+        "routineConditions": [],
+        "weight": 100
+      },
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 16,
+        "finalTime": 21,
+        "location": 1007,
+        "routineConditions": [],
+        "weight": 75
+      },
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 10,
+        "finalTime": 18,
+        "location": 1008,
+        "routineConditions": [],
+        "weight": 100
+      },
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 9,
+        "finalTime": 20,
+        "location": 1009,
+        "routineConditions": [],
+        "weight": 35
       }
     ],
     "avatar": "assets/img/avatars/brother.png"
+  },
+  {
+    "id": 7,
+    "name": "Cassie",
+    "stats": {
+      "level": 1,
+      "arousal": 0,
+      "corruption": 1
+    },
+    "attractions": {},
+    "currentLocation": "0",
+    "routines": [
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 0,
+        "finalTime": 23,
+        "location": 0,
+        "routineConditions": [],
+        "weight": 1
+      }
+    ],
+    "avatar": "assets/img/avatars/cassie.webp"
   },
   {
     "id": 3,
@@ -38,7 +180,117 @@
       "corruption": 0
     },
     "attractions": {},
-    "currentLocation": "1",
+    "currentLocation": "0",
+    "routines": [
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 0,
+        "finalTime": 23,
+        "location": 0,
+        "routineConditions": [],
+        "weight": 1
+      },
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 5,
+        "finalTime": 6,
+        "location": 1005,
+        "routineConditions": [],
+        "weight": 100
+      },
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 8,
+        "finalTime": 22,
+        "location": 1006,
+        "routineConditions": [],
+        "weight": 100
+      },
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 8,
+        "finalTime": 10,
+        "location": 1007,
+        "routineConditions": [],
+        "weight": 100
+      },
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 10,
+        "finalTime": 18,
+        "location": 1008,
+        "routineConditions": [],
+        "weight": 120
+      },
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 9,
+        "finalTime": 20,
+        "location": 1009,
+        "routineConditions": [],
+        "weight": 120
+      }
+    ],
+    "avatar": "assets/img/avatars/dad.png"
+  },
+  {
+    "id": 18,
+    "name": "Fuckity",
+    "stats": {
+      "level": 1,
+      "arousal": 0,
+      "corruption": 0
+    },
+    "attractions": {},
+    "currentLocation": "0",
     "routines": [
       {
         "days": [
@@ -57,7 +309,217 @@
         "weight": 1
       }
     ],
-    "avatar": "assets/img/avatars/dad.png"
+    "avatar": "assets/img/avatars/fuckity.webp"
+  },
+  {
+    "id": 400,
+    "name": "James",
+    "stats": {
+      "level": 1,
+      "arousal": 0,
+      "corruption": 0
+    },
+    "attractions": {},
+    "currentLocation": "0",
+    "routines": [
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 0,
+        "finalTime": 23,
+        "location": 0,
+        "routineConditions": [],
+        "weight": 1
+      }
+    ],
+    "avatar": "assets/img/avatars/james.webp"
+  },
+  {
+    "id": 10,
+    "name": "Karyn",
+    "stats": {
+      "level": 1,
+      "arousal": 0,
+      "corruption": 0
+    },
+    "attractions": {},
+    "currentLocation": "0",
+    "routines": [
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 0,
+        "finalTime": 23,
+        "location": 0,
+        "routineConditions": [],
+        "weight": 1
+      }
+    ],
+    "avatar": "assets/img/avatars/karyn.webp"
+  },
+  {
+    "id": 9,
+    "name": "Kimmy",
+    "stats": {
+      "level": 1,
+      "arousal": 0,
+      "corruption": 1
+    },
+    "attractions": {},
+    "currentLocation": "0",
+    "routines": [
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 0,
+        "finalTime": 23,
+        "location": 0,
+        "routineConditions": [],
+        "weight": 1
+      }
+    ],
+    "avatar": "assets/img/avatars/kimmy-kim.webp"
+  },
+  {
+    "id": 17,
+    "name": "Lucien",
+    "stats": {
+      "level": 1,
+      "arousal": 0,
+      "corruption": 0
+    },
+    "attractions": {},
+    "currentLocation": "0",
+    "routines": [
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 0,
+        "finalTime": 23,
+        "location": 0,
+        "routineConditions": [],
+        "weight": 1
+      }
+    ],
+    "avatar": "assets/img/avatars/lucien.webp"
+  },
+  {
+    "id": 13,
+    "name": "Micaela",
+    "stats": {
+      "level": 1,
+      "arousal": 0,
+      "corruption": 0
+    },
+    "attractions": {},
+    "currentLocation": "0",
+    "routines": [
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 0,
+        "finalTime": 23,
+        "location": 0,
+        "routineConditions": [],
+        "weight": 1
+      }
+    ],
+    "avatar": "assets/img/avatars/micaela.webp"
+  },
+  {
+    "id": 401,
+    "name": "Mike",
+    "stats": {
+      "level": 1,
+      "arousal": 0,
+      "corruption": 0
+    },
+    "attractions": {},
+    "currentLocation": "0",
+    "routines": [
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 0,
+        "finalTime": 23,
+        "location": 0,
+        "routineConditions": [],
+        "weight": 1
+      }
+    ],
+    "avatar": "assets/img/avatars/mike.webp"
+  },
+  {
+    "id": 19,
+    "name": "Moanpheus",
+    "stats": {
+      "level": 1,
+      "arousal": 0,
+      "corruption": 0
+    },
+    "attractions": {},
+    "currentLocation": "0",
+    "routines": [
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 0,
+        "finalTime": 23,
+        "location": 0,
+        "routineConditions": [],
+        "weight": 1
+      }
+    ],
+    "avatar": "assets/img/avatars/moanpheus.webp"
   },
   {
     "id": 2,
@@ -68,7 +530,133 @@
       "corruption": 0
     },
     "attractions": {},
-    "currentLocation": "1",
+    "currentLocation": "0",
+    "routines": [
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 0,
+        "finalTime": 23,
+        "location": 0,
+        "routineConditions": [],
+        "weight": 1
+      },
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 6,
+        "finalTime": 7,
+        "location": 1005,
+        "routineConditions": [],
+        "weight": 100
+      },
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 8,
+        "finalTime": 22,
+        "location": 1006,
+        "routineConditions": [],
+        "weight": 100
+      },
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 7,
+        "finalTime": 11,
+        "location": 1007,
+        "routineConditions": [],
+        "weight": 100
+      },
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 16,
+        "finalTime": 21,
+        "location": 1007,
+        "routineConditions": [],
+        "weight": 100
+      },
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 10,
+        "finalTime": 18,
+        "location": 1008,
+        "routineConditions": [],
+        "weight": 40
+      },
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 9,
+        "finalTime": 20,
+        "location": 1009,
+        "routineConditions": [],
+        "weight": 25
+      }
+    ],
+    "avatar": "assets/img/avatars/mom.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Monique",
+    "stats": {
+      "level": 1,
+      "arousal": 0,
+      "corruption": 0
+    },
+    "attractions": {},
+    "currentLocation": "0",
     "routines": [
       {
         "days": [
@@ -87,7 +675,67 @@
         "weight": 1
       }
     ],
-    "avatar": "assets/img/avatars/mom.jpg"
+    "avatar": "assets/img/avatars/monique.webp"
+  },
+  {
+    "id": 12,
+    "name": "Morgan",
+    "stats": {
+      "level": 1,
+      "arousal": 0,
+      "corruption": 0
+    },
+    "attractions": {},
+    "currentLocation": "0",
+    "routines": [
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 0,
+        "finalTime": 23,
+        "location": 0,
+        "routineConditions": [],
+        "weight": 1
+      }
+    ],
+    "avatar": "assets/img/avatars/morgan.webp"
+  },
+  {
+    "id": 15,
+    "name": "Naomi",
+    "stats": {
+      "level": 1,
+      "arousal": 0,
+      "corruption": 0
+    },
+    "attractions": {},
+    "currentLocation": "0",
+    "routines": [
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 0,
+        "finalTime": 23,
+        "location": 0,
+        "routineConditions": [],
+        "weight": 1
+      }
+    ],
+    "avatar": "assets/img/avatars/naomi.webp"
   },
   {
     "id": 500,
@@ -124,9 +772,195 @@
         "location": 0,
         "routineConditions": [],
         "weight": 1
+      },
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 8,
+        "finalTime": 9,
+        "location": 1005,
+        "routineConditions": [],
+        "weight": 100
+      },
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 8,
+        "finalTime": 22,
+        "location": 1006,
+        "routineConditions": [],
+        "weight": 100
+      },
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 9,
+        "finalTime": 10,
+        "location": 1007,
+        "routineConditions": [],
+        "weight": 100
+      },
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 16,
+        "finalTime": 21,
+        "location": 1007,
+        "routineConditions": [],
+        "weight": 75
+      },
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 10,
+        "finalTime": 18,
+        "location": 1008,
+        "routineConditions": [],
+        "weight": 65
+      },
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 9,
+        "finalTime": 20,
+        "location": 1009,
+        "routineConditions": [],
+        "weight": 5
       }
     ],
     "avatar": "assets/img/avatars/old-sister.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Robert",
+    "stats": {
+      "level": 1,
+      "arousal": 0,
+      "corruption": 0
+    },
+    "attractions": {},
+    "currentLocation": "0",
+    "routines": [
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 0,
+        "finalTime": 23,
+        "location": 0,
+        "routineConditions": [],
+        "weight": 1
+      }
+    ],
+    "avatar": "assets/img/avatars/robert.webp"
+  },
+  {
+    "id": 11,
+    "name": "Sonya",
+    "stats": {
+      "level": 1,
+      "arousal": 0,
+      "corruption": 0
+    },
+    "attractions": {},
+    "currentLocation": "0",
+    "routines": [
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 0,
+        "finalTime": 23,
+        "location": 0,
+        "routineConditions": [],
+        "weight": 1
+      }
+    ],
+    "avatar": "assets/img/avatars/sonya.webp"
+  },
+  {
+    "id": 16,
+    "name": "suki",
+    "stats": {
+      "level": 1,
+      "arousal": 0,
+      "corruption": 0
+    },
+    "attractions": {},
+    "currentLocation": "0",
+    "routines": [
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 0,
+        "finalTime": 23,
+        "location": 0,
+        "routineConditions": [],
+        "weight": 1
+      }
+    ],
+    "avatar": "assets/img/avatars/suki.webp"
   },
   {
     "id": 5,
@@ -154,6 +988,102 @@
         "location": 0,
         "routineConditions": [],
         "weight": 1
+      },
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 10,
+        "finalTime": 11,
+        "location": 1005,
+        "routineConditions": [],
+        "weight": 100
+      },
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 8,
+        "finalTime": 22,
+        "location": 1006,
+        "routineConditions": [],
+        "weight": 100
+      },
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 9,
+        "finalTime": 10,
+        "location": 1007,
+        "routineConditions": [],
+        "weight": 100
+      },
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 16,
+        "finalTime": 21,
+        "location": 1007,
+        "routineConditions": [],
+        "weight": 75
+      },
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 10,
+        "finalTime": 18,
+        "location": 1008,
+        "routineConditions": [],
+        "weight": 80
+      },
+      {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "initialTime": 9,
+        "finalTime": 20,
+        "location": 1009,
+        "routineConditions": [],
+        "weight": 20
       }
     ],
     "avatar": "assets/img/avatars/young-sister.jpg"

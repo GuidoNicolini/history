@@ -8,6 +8,7 @@ import {NpcService} from '../../npc/services/npc-service';
 import {TimeService} from '../../time/services/time-service';
 import {EventoService} from '../../evento/services/evento-service';
 import {VipService} from '../../../shared/services/vip-service';
+import {CharacterID} from '../../../shared/enums/character-id';
 
 @Injectable({
   providedIn: 'root',
@@ -67,7 +68,7 @@ export class ConditionEvaluator {
         break;
 
       case 'day':
-        currentValue = this.timeService.state().day;
+        currentValue = this.timeService.state().date;
         break;
 
       case 'vip': {
@@ -76,7 +77,13 @@ export class ConditionEvaluator {
         // devolvemos directamente el estado (boolean) si no hay un operador para verificar.
         // Para mantener compatibilidad con la estructura actual:
         currentValue = this.vipService.getVipStatus(condition.value as number);
+        return currentValue
         break;
+      }
+
+      case 'vip-off': {
+        const level = condition.value ? Number(condition.value) : 1;
+        return !this.vipService.getVipStatus(level);
       }
 
       case 'cd': {
@@ -89,10 +96,25 @@ export class ConditionEvaluator {
         // Si nunca se ha activado o no tiene lastDayActivated, permitimos activarlo (ya que no hay cooldown que comprobar)
         if (evento.lastDayActivated === undefined || evento.lastDayActivated === null || evento.lastDayActivated === 0) return true;
 
-        const currentDay = this.timeService.state().day;
+        const currentDay = this.timeService.state().date;
         const cooldown = evento.cooldownDuration || 0;
 
         return (currentDay - evento.lastDayActivated) >= cooldown;
+      }
+
+      case 'imhere': {
+
+        if (!contextId) return false;
+
+        const npcId = parseInt(String(condition.value), 10) as any;
+        const eventLocation = this.eventoService.getEventoLocation(contextId);
+
+
+        if (eventLocation === undefined) return false;
+
+        const npcLocation = this.npcService.getCurrentLocation(npcId);
+
+        return npcLocation == eventLocation;
       }
 
       case 'random': {
@@ -100,10 +122,31 @@ export class ConditionEvaluator {
         return (Math.random() * 100) < probability;
       }
 
+      case 'activation': {
+        const eventoId = condition.target;
+        if (!eventoId) {
+          currentValue = 0;
+        } else {
+          const evento = this.eventoService.getEventoById(eventoId);
+          currentValue = evento ? evento.numberOfTimesActivated : 0;
+        }
+        break;
+      }
+
+      case 'auto-activation': {
+        if (!contextId) {
+          return false
+        } else {
+          const evento = this.eventoService.getEventoById(contextId);
+          currentValue = evento ? evento.numberOfTimesActivated : 0;
+        }
+        break;
+      }
+
+
+
     }
 
-    // Para 'vip', si currentValue es boolean y no hay operador o el operador es '==', podemos retornar currentValue
-    if (condition.type === 'vip' && !condition.operator) return currentValue;
 
     // Si la condición de 'cd' hace return directamente, solo procesamos el operador para los otros casos
     if (!condition.operator) return true;
@@ -131,6 +174,27 @@ export class ConditionEvaluator {
         const [minStr, maxStr] = String(expectedValue).split(':');
         return currentValue >= parseInt(minStr, 10) && currentValue <= parseInt(maxStr, 10);
       }
+
+      // 'between-time' contempla rangos horarios que pueden cruzar la medianoche (ej: 22:06)
+      case 'between-time': {
+        const [minStr, maxStr] = String(expectedValue).split(':');
+        const min = parseInt(minStr, 10);
+        const max = parseInt(maxStr, 10);
+
+        if (min <= max) {
+          // Rango normal en el mismo día (ej: 07 a 22)
+          return currentValue >= min && currentValue <= max;
+        } else {
+          // Rango que cruza la medianoche (ej: 22 a 06)
+          console.log("estoy atravesando los horarios")
+          console.log("current value = " + currentValue);
+          console.log("min = " + min);
+          console.log("max = " + max);
+          console.log("resultado = " + (currentValue >= min || currentValue <= max))
+          return currentValue >= min || currentValue <= max;
+        }
+      }
+
       default: return false;
     }
   }
