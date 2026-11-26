@@ -9720,7 +9720,7 @@
         "conditions": [],
         "cubeAction": {
           "type": "buy",
-          "value": "money:-1000"
+          "value": "money:-5000"
         }
       },
       {
@@ -9734,6 +9734,271 @@
         "cubeAction": {
           "type": "buy",
           "value": "snack:0"
+        }
+      },
+      {
+        "id": 4,
+        "type": "button",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Food",
+        "conditions": [],
+        "cubeAction": {
+          "type": "buy",
+          "value": "food:0"
+        }
+      },
+      {
+        "id": 5,
+        "type": "button",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Hygiene Kit",
+        "conditions": [],
+        "cubeAction": {
+          "type": "buy",
+          "value": "hygienekit:0"
+        }
+      },
+      {
+        "id": 6,
+        "type": "button",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Shower kit",
+        "conditions": [],
+        "cubeAction": {
+          "type": "buy",
+          "value": "showerkit:0"
+        }
+      },
+      {
+        "id": 7,
+        "type": "button",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Gym Coin",
+        "conditions": [],
+        "cubeAction": {
+          "type": "buy",
+          "value": "gymcoin:0"
+        }
+      },
+      {
+        "id": 8,
+        "type": "button",
+        "order": 8,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Flower",
+        "conditions": [],
+        "cubeAction": {
+          "type": "buy",
+          "value": "flower:0"
+        }
+      },
+      {
+        "id": 9,
+        "type": "button",
+        "order": 9,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Chocolate",
+        "conditions": [],
+        "cubeAction": {
+          "type": "buy",
+          "value": "chocolate:0"
+        }
+      },
+      {
+        "id": 10,
+        "type": "button",
+        "order": 10,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Perfume",
+        "conditions": [],
+        "cubeAction": {
+          "type": "buy",
+          "value": "perfume:0"
+        }
+      },
+      {
+        "id": 11,
+        "type": "button",
+        "order": 11,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Jewelry",
+        "conditions": [],
+        "cubeAction": {
+          "type": "buy",
+          "value": "jewelry:0"
+        }
+      },
+      {
+        "id": 12,
+        "type": "button",
+        "order": 12,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Teddy",
+        "conditions": [],
+        "cubeAction": {
+          "type": "buy",
+          "value": "teddy:0"
+        }
+      },
+      {
+        "id": 13,
+        "type": "button",
+        "order": 999999,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Exit",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/400"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": []
+  },
+  {
+    "id": "matx0008",
+    "type": 2,
+    "location": 4002,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Are you ready to alter reality?",
+        "character": 19
+      },
+      {
+        "id": 2,
+        "type": "button",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Increase NPC arousal",
+        "conditions": [],
+        "cubeAction": {
+          "type": "allArousalNPC",
+          "value": ""
+        }
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Increase NPC corruption",
+        "conditions": [],
+        "cubeAction": {
+          "type": "allCorrNpc",
+          "value": ""
+        }
+      },
+      {
+        "id": 4,
+        "type": "button",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Exit",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/400"
+        }
+      }
+    ],
+    "conditions": [],
+    "effects": []
+  },
+  {
+    "id": "matx0009",
+    "type": 2,
+    "location": 4003,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 0,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Sometimes waiting can be frustrating.",
+        "character": 18
+      },
+      {
+        "id": 2,
+        "type": "button",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Advance 1 hour",
+        "conditions": [],
+        "cubeAction": {
+          "type": "time",
+          "value": "1"
+        }
+      },
+      {
+        "id": 3,
+        "type": "button",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Advance 6 hour",
+        "conditions": [],
+        "cubeAction": {
+          "type": "time",
+          "value": "6"
+        }
+      },
+      {
+        "id": 4,
+        "type": "button",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Advance 23 hour",
+        "conditions": [],
+        "cubeAction": {
+          "type": "time",
+          "value": "23"
+        }
+      },
+      {
+        "id": 5,
+        "type": "button",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Exit",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/400"
         }
       }
     ],

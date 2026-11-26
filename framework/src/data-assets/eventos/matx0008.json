@@ -1,0 +1,61 @@
+{
+  "id": "matx0008",
+  "type": 2,
+  "location": 4002,
+  "probability": 100,
+  "numberOfTimesActivated": 0,
+  "cooldownDuration": 0,
+  "lastDayActivated": 0,
+  "cubes": [
+    {
+      "id": 1,
+      "type": "text",
+      "order": 1,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Are you ready to alter reality?",
+      "character": 19
+    },
+    {
+      "id": 2,
+      "type": "button",
+      "order": 2,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Increase NPC arousal",
+      "conditions": [],
+      "cubeAction": {
+        "type": "allArousalNPC",
+        "value": ""
+      }
+    },
+    {
+      "id": 3,
+      "type": "button",
+      "order": 3,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Increase NPC corruption",
+      "conditions": [],
+      "cubeAction": {
+        "type": "allCorrNpc",
+        "value": ""
+      }
+    },
+    {
+      "id": 4,
+      "type": "button",
+      "order": 4,
+      "probability": 100,
+      "styleClass": [],
+      "text": "Exit",
+      "conditions": [],
+      "cubeAction": {
+        "type": "redirection",
+        "value": "location/400"
+      }
+    }
+  ],
+  "conditions": [],
+  "effects": []
+}
