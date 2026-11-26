@@ -16,11 +16,11 @@ export class VipService {
     { level: 5, value: false },
   ];
 
-  private clave1Hash: number = -1321864579;
-  private clave2Hash: number = -1322941018;
-  private clave3Hash: number = 960069353;
-  private clave4Hash: number = -1553857978;
-  private clave5Hash: number = 1669421157;
+  private clave1Hash: number = -391702975;
+  private clave2Hash: number = -1852384322;
+  private clave3Hash: number = -1060003304;
+  private clave4Hash: number = -1363054400;
+  private clave5Hash: number = 1212695418;
 
 
   private hashString(str: string): number {

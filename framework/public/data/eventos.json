@@ -9693,6 +9693,554 @@
     "effects": []
   },
   {
+    "id": "matx0006",
+    "type": 3,
+    "location": 4004,
+    "probability": 100,
+    "numberOfTimesActivated": 0,
+    "cooldownDuration": 1,
+    "lastDayActivated": 0,
+    "cubes": [
+      {
+        "id": 1,
+        "type": "text",
+        "order": 1,
+        "probability": 100,
+        "styleClass": [],
+        "text": "You enter one of the ship's simulated environments, usually reserved for combat drills and other fun.",
+        "character": 500
+      },
+      {
+        "id": 2,
+        "type": "text",
+        "order": 2,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Fuckity, initiate the advanced simulation sequence.",
+        "character": 19
+      },
+      {
+        "id": 3,
+        "type": "text",
+        "order": 3,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Right away!",
+        "character": 18
+      },
+      {
+        "id": 4,
+        "type": "text",
+        "order": 4,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Oh, you'll absolutely enjoy this.",
+        "character": 19
+      },
+      {
+        "id": 5,
+        "type": "button",
+        "order": 999999,
+        "probability": 100,
+        "styleClass": [],
+        "text": "Cum",
+        "conditions": [],
+        "cubeAction": {
+          "type": "redirection",
+          "value": "location/400"
+        }
+      },
+      {
+        "id": 6,
+        "type": "video",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-1-1.webm"
+      },
+      {
+        "id": 7,
+        "type": "video",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-1-2.webm"
+      },
+      {
+        "id": 8,
+        "type": "video",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-1-3.webm"
+      },
+      {
+        "id": 9,
+        "type": "video",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-1-4.webm"
+      },
+      {
+        "id": 10,
+        "type": "video",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-1-5.webm"
+      },
+      {
+        "id": 11,
+        "type": "video",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-1-6.webm"
+      },
+      {
+        "id": 12,
+        "type": "video",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-1-7.webm"
+      },
+      {
+        "id": 13,
+        "type": "video",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-1-8.webm"
+      },
+      {
+        "id": 14,
+        "type": "video",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-1-9.webm"
+      },
+      {
+        "id": 15,
+        "type": "video",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-1-10.webm"
+      },
+      {
+        "id": 16,
+        "type": "video",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-1-11.webm"
+      },
+      {
+        "id": 17,
+        "type": "video",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-1-12.webm"
+      },
+      {
+        "id": 18,
+        "type": "video",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-1-13.webm"
+      },
+      {
+        "id": 19,
+        "type": "video",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-1-14.webm"
+      },
+      {
+        "id": 20,
+        "type": "video",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-1-15.webm"
+      },
+      {
+        "id": 21,
+        "type": "video",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-1-16.webm"
+      },
+      {
+        "id": 22,
+        "type": "video",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-1-17.webm"
+      },
+      {
+        "id": 23,
+        "type": "video",
+        "order": 5,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-1-18.webm"
+      },
+      {
+        "id": 24,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-1.webm"
+      },
+      {
+        "id": 25,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-2.webm"
+      },
+      {
+        "id": 26,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-3.webm"
+      },
+      {
+        "id": 27,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-4.webm"
+      },
+      {
+        "id": 28,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-5.webm"
+      },
+      {
+        "id": 29,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-6.webm"
+      },
+      {
+        "id": 30,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-7.webm"
+      },
+      {
+        "id": 31,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-8.webm"
+      },
+      {
+        "id": 32,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-9.webm"
+      },
+      {
+        "id": 33,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-10.webm"
+      },
+      {
+        "id": 34,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-11.webm"
+      },
+      {
+        "id": 35,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-12.webm"
+      },
+      {
+        "id": 36,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-13.webm"
+      },
+      {
+        "id": 37,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-14.webm"
+      },
+      {
+        "id": 38,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-15.webm"
+      },
+      {
+        "id": 39,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-16.webm"
+      },
+      {
+        "id": 40,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-17.webm"
+      },
+      {
+        "id": 41,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-18.webm"
+      },
+      {
+        "id": 42,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-19.webm"
+      },
+      {
+        "id": 43,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-20.webm"
+      },
+      {
+        "id": 44,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-21.webm"
+      },
+      {
+        "id": 45,
+        "type": "video",
+        "order": 6,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-2-22.webm"
+      },
+      {
+        "id": 46,
+        "type": "video",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-3-1.webm"
+      },
+      {
+        "id": 47,
+        "type": "video",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-3-2.webm"
+      },
+      {
+        "id": 48,
+        "type": "video",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-3-3.webm"
+      },
+      {
+        "id": 49,
+        "type": "video",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-3-4.webm"
+      },
+      {
+        "id": 50,
+        "type": "video",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-3-5.webm"
+      },
+      {
+        "id": 51,
+        "type": "video",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-3-6.webm"
+      },
+      {
+        "id": 52,
+        "type": "video",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-3-7.webm"
+      },
+      {
+        "id": 53,
+        "type": "video",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-3-8.webm"
+      },
+      {
+        "id": 54,
+        "type": "video",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-3-9.webm"
+      },
+      {
+        "id": 55,
+        "type": "video",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-3-10.webm"
+      },
+      {
+        "id": 56,
+        "type": "video",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-3-11.webm"
+      },
+      {
+        "id": 57,
+        "type": "video",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-3-12.webm"
+      },
+      {
+        "id": 58,
+        "type": "video",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-3-13.webm"
+      },
+      {
+        "id": 59,
+        "type": "video",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-3-14.webm"
+      },
+      {
+        "id": 60,
+        "type": "video",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-3-15.webm"
+      },
+      {
+        "id": 61,
+        "type": "video",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-3-16.webm"
+      },
+      {
+        "id": 62,
+        "type": "video",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-3-17.webm"
+      },
+      {
+        "id": 63,
+        "type": "video",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-3-18.webm"
+      },
+      {
+        "id": 64,
+        "type": "video",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-3-19.webm"
+      },
+      {
+        "id": 65,
+        "type": "video",
+        "order": 7,
+        "probability": 100,
+        "styleClass": [],
+        "video": "assets/videos/moanpheus/moan-3-20.webm"
+      }
+    ],
+    "conditions": [],
+    "effects": [
+      2025,
+      2031,
+      2043,
+      2037,
+      2007
+    ]
+  },
+  {
     "id": "matx0007",
     "type": 2,
     "location": 4001,
@@ -9968,7 +10516,7 @@
         "order": 3,
         "probability": 100,
         "styleClass": [],
-        "text": "Advance 6 hour",
+        "text": "Advance 6 hours",
         "conditions": [],
         "cubeAction": {
           "type": "time",
@@ -9981,7 +10529,7 @@
         "order": 4,
         "probability": 100,
         "styleClass": [],
-        "text": "Advance 23 hour",
+        "text": "Advance 23 hours",
         "conditions": [],
         "cubeAction": {
           "type": "time",
